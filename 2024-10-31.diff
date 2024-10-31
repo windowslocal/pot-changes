@@ -1,0 +1,179 @@
+
+
+#################### Thu, 31 Oct 2024 21:57:43 +0000 ####################
+
+--- po/git.pot.old	2024-10-31 21:57:43.346693761 +0000
++++ po/git.pot.new	2024-10-31 21:57:43.422694268 +0000
+@@ -2127,9 +2127,6 @@
+ msgid "..."
+ msgstr ""
+ 
+-msgid ".git file absolute/relative path mismatch"
+-msgstr ""
+-
+ msgid ".git file broken"
+ msgstr ""
+ 
+@@ -3117,9 +3114,6 @@
+ msgid "Compressing objects"
+ msgstr ""
+ 
+-msgid "Compressing objects by path"
+-msgstr ""
+-
+ msgid "Compute object ID and optionally create an object from a file"
+ msgstr ""
+ 
+@@ -4969,10 +4963,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "Path-based delta compression using up to %d threads"
+-msgstr ""
+-
+-#, c-format
+ msgid "Pathspec '%s' is in submodule '%.*s'"
+ msgstr ""
+ 
+@@ -8855,15 +8845,9 @@
+ msgid "cannot use --attr-source or GIT_ATTR_SOURCE without repo"
+ msgstr ""
+ 
+-msgid "cannot use --filter with --path-walk"
+-msgstr ""
+-
+ msgid "cannot use --filter with --stdin-packs"
+ msgstr ""
+ 
+-msgid "cannot use --shallow with --path-walk"
+-msgstr ""
+-
+ msgid "cannot use --stdin-packs with --cruft"
+ msgstr ""
+ 
+@@ -8874,9 +8858,6 @@
+ msgid "cannot use bare repository '%s' (safe.bareRepository is '%s')"
+ msgstr ""
+ 
+-msgid "cannot use delta islands with --path-walk"
+-msgstr ""
+-
+ msgid "cannot use internal rev list with --cruft"
+ msgstr ""
+ 
+@@ -11745,9 +11726,6 @@
+ msgid "failed to open temporary file"
+ msgstr ""
+ 
+-msgid "failed to pack objects via path-walk"
+-msgstr ""
+-
+ #, c-format
+ msgid "failed to parse %s"
+ msgstr ""
+@@ -13014,15 +12992,10 @@
+ msgid "git notes show [<object>]"
+ msgstr ""
+ 
+-msgid ""
+-"git pack-objects [-q | --progress | --all-progress] [--all-progress-implied]\n"
+-"                 [--no-reuse-delta] [--delta-base-offset] [--non-empty]\n"
+-"                 [--local] [--incremental] [--window=<n>] [--depth=<n>]\n"
+-"                 [--revs [--unpacked | --all]] [--keep-pack=<pack-name>]\n"
+-"                 [--cruft] [--cruft-expiration=<time>]\n"
+-"                 [--stdout [--filter=<filter-spec>] | <base-name>]\n"
+-"                 [--shallow] [--keep-true-parents] [--[no-]sparse]\n"
+-"                 [--path-walk] < <object-list>"
++msgid "git pack-objects --stdout [<options>] [< <ref-list> | < <object-list>]"
++msgstr ""
++
++msgid "git pack-objects [<options>] <base-name> [< <ref-list> | < <object-list>]"
+ msgstr ""
+ 
+ msgid "git pack-refs [--all] [--no-prune] [--auto] [--include <pattern>] [--exclude <pattern>]"
+@@ -13144,10 +13117,7 @@
+ msgid "git remote update [<options>] [<group> | <remote>]..."
+ msgstr ""
+ 
+-msgid ""
+-"git repack [-a] [-A] [-d] [-f] [-F] [-l] [-n] [-q] [-b] [-m]\n"
+-"[--window=<n>] [--depth=<n>] [--threads=<n>] [--keep-pack=<pack-name>]\n"
+-"[--write-midx] [--path-walk]"
++msgid "git repack [<options>]"
+ msgstr ""
+ 
+ msgid "git replace -d <object>..."
+@@ -13467,9 +13437,6 @@
+ msgid "gitdir"
+ msgstr ""
+ 
+-msgid "gitdir absolute/relative path mismatch"
+-msgstr ""
+-
+ msgid "gitdir file does not exist"
+ msgstr ""
+ 
+@@ -16381,9 +16348,6 @@
+ msgid "pass --no-reuse-object to git-pack-objects"
+ msgstr ""
+ 
+-msgid "pass --path-walk to git-pack-objects"
+-msgstr ""
+-
+ msgid "pass -b flag to git-mailinfo"
+ msgstr ""
+ 
+@@ -19822,9 +19786,6 @@
+ msgid "unable to set SO_KEEPALIVE on socket"
+ msgstr ""
+ 
+-msgid "unable to set extensions.relativeWorktrees setting"
+-msgstr ""
+-
+ #, c-format
+ msgid "unable to set permission to '%s'"
+ msgstr ""
+@@ -19912,9 +19873,6 @@
+ msgid "unable to upgrade repository format to support partial clone"
+ msgstr ""
+ 
+-msgid "unable to upgrade repository format to support relative worktrees"
+-msgstr ""
+-
+ #, c-format
+ msgid "unable to verify %s on good revision"
+ msgstr ""
+@@ -20699,9 +20657,6 @@
+ msgid "use per-worktree config file"
+ msgstr ""
+ 
+-msgid "use relative paths for worktrees"
+-msgstr ""
+-
+ msgid "use repository config file"
+ msgstr ""
+ 
+@@ -20756,9 +20711,6 @@
+ msgid "use the merge-base of upstream and branch as the current base"
+ msgstr ""
+ 
+-msgid "use the path-walk API to walk objects when possible"
+-msgstr ""
+-
+ msgid "use the same output mode as git-annotate (Default: off)"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
