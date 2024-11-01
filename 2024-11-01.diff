@@ -1,0 +1,101 @@
+
+
+#################### Fri, 01 Nov 2024 15:57:28 +0000 ####################
+
+--- po/git.pot.old	2024-11-01 15:57:28.147102517 +0000
++++ po/git.pot.new	2024-11-01 15:57:28.223102051 +0000
+@@ -2127,6 +2127,9 @@
+ msgid "..."
+ msgstr ""
+ 
++msgid ".git file absolute/relative path mismatch"
++msgstr ""
++
+ msgid ".git file broken"
+ msgstr ""
+ 
+@@ -4140,9 +4143,6 @@
+ "which will accept this suggestion.\n"
+ msgstr ""
+ 
+-msgid "If you are attempting to repair this repo corruption by refetching the missing object, use 'git fetch --refetch' with the missing object."
+-msgstr ""
+-
+ #, c-format
+ msgid "If you are sure you want to delete it, run 'git branch -D %s'"
+ msgstr ""
+@@ -6209,9 +6209,6 @@
+ msgid "This is a combination of %d commits."
+ msgstr ""
+ 
+-msgid "This is probably due to repo corruption."
+-msgstr ""
+-
+ msgid "This is the 1st commit message:"
+ msgstr ""
+ 
+@@ -6770,10 +6767,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "You are attempting to fetch %s, which is in the commit graph file but not in the object database."
+-msgstr ""
+-
+-#, c-format
+ msgid "You are currently bisecting, started from branch '%s'."
+ msgstr ""
+ 
+@@ -13437,6 +13430,9 @@
+ msgid "gitdir"
+ msgstr ""
+ 
++msgid "gitdir absolute/relative path mismatch"
++msgstr ""
++
+ msgid "gitdir file does not exist"
+ msgstr ""
+ 
+@@ -19786,6 +19782,9 @@
+ msgid "unable to set SO_KEEPALIVE on socket"
+ msgstr ""
+ 
++msgid "unable to set extensions.relativeWorktrees setting"
++msgstr ""
++
+ #, c-format
+ msgid "unable to set permission to '%s'"
+ msgstr ""
+@@ -19873,6 +19872,9 @@
+ msgid "unable to upgrade repository format to support partial clone"
+ msgstr ""
+ 
++msgid "unable to upgrade repository format to support relative worktrees"
++msgstr ""
++
+ #, c-format
+ msgid "unable to verify %s on good revision"
+ msgstr ""
+@@ -20657,6 +20659,9 @@
+ msgid "use per-worktree config file"
+ msgstr ""
+ 
++msgid "use relative paths for worktrees"
++msgstr ""
++
+ msgid "use repository config file"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
