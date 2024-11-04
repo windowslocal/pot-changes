@@ -1,0 +1,70 @@
+
+
+#################### Mon, 04 Nov 2024 02:12:00 +0000 ####################
+
+--- po/git.pot.old	2024-11-04 02:12:00.428103079 +0000
++++ po/git.pot.new	2024-11-04 02:12:00.500103273 +0000
+@@ -9639,9 +9639,6 @@
+ msgid "could not finish pack-objects"
+ msgstr ""
+ 
+-msgid "could not finish pack-objects to repack local links"
+-msgstr ""
+-
+ msgid "could not finish pack-objects to repack promisor objects"
+ msgstr ""
+ 
+@@ -10149,9 +10146,6 @@
+ msgid "could not start pack-objects"
+ msgstr ""
+ 
+-msgid "could not start pack-objects to repack local links"
+-msgstr ""
+-
+ msgid "could not start pack-objects to repack promisor objects"
+ msgstr ""
+ 
+@@ -11573,9 +11567,6 @@
+ msgid "failed to expand user dir in: '%s'"
+ msgstr ""
+ 
+-msgid "failed to feed local object to pack-objects"
+-msgstr ""
+-
+ msgid "failed to feed promisor objects to pack-objects"
+ msgstr ""
+ 
+@@ -13840,9 +13831,6 @@
+ msgid "immediately exit upon the first failed test"
+ msgstr ""
+ 
+-msgid "implies --missing=allow-any"
+-msgstr ""
+-
+ msgid ""
+ "import all tags and associated objects when fetching\n"
+ "or do not fetch any tag at all (--no-tags)"
+@@ -13947,9 +13935,6 @@
+ msgid "index-pack died"
+ msgstr ""
+ 
+-msgid "index-pack: Expecting full hex object ID lines only from pack-objects."
+-msgstr ""
+-
+ #, c-format
+ msgid "index-version: was %d, set to %d"
+ msgstr ""
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
