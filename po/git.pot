@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-11-05 05:20+0000\n"
+"POT-Creation-Date: 2024-11-05 13:12+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -4925,8 +4925,8 @@ msgstr ""
 msgid "ref"
 msgstr ""
 
-#: builtin/clone.c:151
-msgid "deepen history of shallow clone, excluding rev"
+#: builtin/clone.c:151 builtin/fetch.c:2314 builtin/pull.c:222
+msgid "deepen history of shallow clone, excluding ref"
 msgstr ""
 
 #: builtin/clone.c:153 builtin/submodule--helper.c:1882
@@ -7214,10 +7214,6 @@ msgstr ""
 
 #: builtin/fetch.c:2312 builtin/pull.c:219
 msgid "deepen history of shallow repository based on time"
-msgstr ""
-
-#: builtin/fetch.c:2314 builtin/pull.c:222
-msgid "deepen history of shallow clone, excluding ref"
 msgstr ""
 
 #: builtin/fetch.c:2318 builtin/pull.c:228
@@ -23439,7 +23435,7 @@ msgstr ""
 msgid "migrated refs can be found at '%s'"
 msgstr ""
 
-#: refs/files-backend.c:2643 refs/reftable-backend.c:1212
+#: refs/files-backend.c:2643 refs/reftable-backend.c:1291
 #, c-format
 msgid ""
 "cannot lock ref '%s': expected symref with target '%s': but is a regular ref"
@@ -23454,80 +23450,80 @@ msgstr ""
 msgid "Checking references consistency"
 msgstr ""
 
-#: refs/reftable-backend.c:619
+#: refs/reftable-backend.c:691
 #, c-format
 msgid "refname is dangerous: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1055
+#: refs/reftable-backend.c:1134
 #, c-format
 msgid "trying to write ref '%s' with nonexistent object %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1062
+#: refs/reftable-backend.c:1141
 #, c-format
 msgid "trying to write non-commit object %s to branch '%s'"
 msgstr ""
 
-#: refs/reftable-backend.c:1088
+#: refs/reftable-backend.c:1167
 #, c-format
 msgid ""
 "multiple updates for 'HEAD' (including one via its referent '%s') are not "
 "allowed"
 msgstr ""
 
-#: refs/reftable-backend.c:1136
+#: refs/reftable-backend.c:1215
 #, c-format
 msgid "cannot lock ref '%s': unable to resolve reference '%s'"
 msgstr ""
 
-#: refs/reftable-backend.c:1154
+#: refs/reftable-backend.c:1233
 #, c-format
 msgid "cannot lock ref '%s': error reading reference"
 msgstr ""
 
-#: refs/reftable-backend.c:1193
+#: refs/reftable-backend.c:1272
 #, c-format
 msgid ""
 "multiple updates for '%s' (including one via symref '%s') are not allowed"
 msgstr ""
 
-#: refs/reftable-backend.c:1228
+#: refs/reftable-backend.c:1307
 #, c-format
 msgid "cannot lock ref '%s': reference already exists"
 msgstr ""
 
-#: refs/reftable-backend.c:1234
+#: refs/reftable-backend.c:1313
 #, c-format
 msgid "cannot lock ref '%s': reference is missing but expected %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1239
+#: refs/reftable-backend.c:1318
 #, c-format
 msgid "cannot lock ref '%s': is at %s but expected %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1277
+#: refs/reftable-backend.c:1356
 #, c-format
 msgid "reftable: transaction prepare: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1505
+#: refs/reftable-backend.c:1584
 #, c-format
 msgid "reftable: transaction failure: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1539
+#: refs/reftable-backend.c:1618
 #, c-format
 msgid "unable to compact stack: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1589
+#: refs/reftable-backend.c:1668
 #, c-format
 msgid "refname %s not found"
 msgstr ""
 
-#: refs/reftable-backend.c:1593
+#: refs/reftable-backend.c:1672
 #, c-format
 msgid "refname %s is a symbolic ref, copying it is not supported"
 msgstr ""
