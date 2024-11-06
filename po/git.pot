@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-11-06 05:57+0000\n"
+"POT-Creation-Date: 2024-11-06 13:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -1681,7 +1681,7 @@ msgstr ""
 #: builtin/fast-export.c:1258 builtin/index-pack.c:1867 builtin/log.c:2420
 #: builtin/reset.c:395 builtin/reset.c:456 builtin/rm.c:291
 #: builtin/stash.c:1819 builtin/worktree.c:821 builtin/worktree.c:1064
-#: fetch-pack.c:346 http-fetch.c:157 http-fetch.c:166 revision.c:3166
+#: fetch-pack.c:348 http-fetch.c:157 http-fetch.c:166 revision.c:3166
 #, c-format
 msgid "the option '%s' requires '%s'"
 msgstr ""
@@ -5057,7 +5057,7 @@ msgstr ""
 msgid "Could not find remote branch %s to clone."
 msgstr ""
 
-#: builtin/clone.c:649 fetch-pack.c:2101
+#: builtin/clone.c:649 fetch-pack.c:2103
 msgid "remote did not send all necessary objects"
 msgstr ""
 
@@ -5178,7 +5178,7 @@ msgstr ""
 msgid "--filter is ignored in local clones; use file:// instead."
 msgstr ""
 
-#: builtin/clone.c:1320 fetch-pack.c:1219 fetch-pack.c:1572
+#: builtin/clone.c:1320 fetch-pack.c:1221 fetch-pack.c:1574
 msgid "source repository is shallow, reject to clone."
 msgstr ""
 
@@ -17925,12 +17925,12 @@ msgstr ""
 msgid "[GLE %ld] unable to get protocol information for '%ls'"
 msgstr ""
 
-#: compat/mingw.c:2696
+#: compat/mingw.c:2841
 #, c-format
 msgid "failed to copy SID (%ld)"
 msgstr ""
 
-#: compat/mingw.c:2782
+#: compat/mingw.c:2927
 #, c-format
 msgid "failed to get owner for '%s' (%ld)"
 msgstr ""
@@ -19618,195 +19618,205 @@ msgstr ""
 msgid "too many args to run %s"
 msgstr ""
 
-#: fetch-pack.c:215
+#: fetch-pack.c:127
+#, c-format
+msgid ""
+"You are attempting to fetch %s, which is in the commit graph file but not in "
+"the object database.\n"
+"This is probably due to repo corruption.\n"
+"If you are attempting to repair this repo corruption by refetching the "
+"missing object, use 'git fetch --refetch' with the missing object."
+msgstr ""
+
+#: fetch-pack.c:217
 msgid "git fetch-pack: expected shallow list"
 msgstr ""
 
-#: fetch-pack.c:218
+#: fetch-pack.c:220
 msgid "git fetch-pack: expected a flush packet after shallow list"
 msgstr ""
 
-#: fetch-pack.c:229
+#: fetch-pack.c:231
 msgid "git fetch-pack: expected ACK/NAK, got a flush packet"
 msgstr ""
 
-#: fetch-pack.c:249
+#: fetch-pack.c:251
 #, c-format
 msgid "git fetch-pack: expected ACK/NAK, got '%s'"
 msgstr ""
 
-#: fetch-pack.c:260
+#: fetch-pack.c:262
 msgid "unable to write to remote"
 msgstr ""
 
-#: fetch-pack.c:314
+#: fetch-pack.c:316
 msgid "Server supports filter"
 msgstr ""
 
-#: fetch-pack.c:439 fetch-pack.c:1526
+#: fetch-pack.c:441 fetch-pack.c:1528
 #, c-format
 msgid "invalid shallow line: %s"
 msgstr ""
 
-#: fetch-pack.c:445 fetch-pack.c:1532
+#: fetch-pack.c:447 fetch-pack.c:1534
 #, c-format
 msgid "invalid unshallow line: %s"
 msgstr ""
 
-#: fetch-pack.c:447 fetch-pack.c:1534
+#: fetch-pack.c:449 fetch-pack.c:1536
 #, c-format
 msgid "object not found: %s"
 msgstr ""
 
-#: fetch-pack.c:450 fetch-pack.c:1537
+#: fetch-pack.c:452 fetch-pack.c:1539
 #, c-format
 msgid "error in object: %s"
 msgstr ""
 
-#: fetch-pack.c:452 fetch-pack.c:1539
+#: fetch-pack.c:454 fetch-pack.c:1541
 #, c-format
 msgid "no shallow found: %s"
 msgstr ""
 
-#: fetch-pack.c:455 fetch-pack.c:1543
+#: fetch-pack.c:457 fetch-pack.c:1545
 #, c-format
 msgid "expected shallow/unshallow, got %s"
 msgstr ""
 
-#: fetch-pack.c:505
+#: fetch-pack.c:507
 #, c-format
 msgid "got %s %d %s"
 msgstr ""
 
-#: fetch-pack.c:525
+#: fetch-pack.c:527
 #, c-format
 msgid "invalid commit %s"
 msgstr ""
 
-#: fetch-pack.c:560
+#: fetch-pack.c:562
 msgid "giving up"
 msgstr ""
 
-#: fetch-pack.c:575 progress.h:25
+#: fetch-pack.c:577 progress.h:25
 msgid "done"
 msgstr ""
 
-#: fetch-pack.c:587
+#: fetch-pack.c:589
 #, c-format
 msgid "got %s (%d) %s"
 msgstr ""
 
-#: fetch-pack.c:626
+#: fetch-pack.c:628
 #, c-format
 msgid "Marking %s as complete"
 msgstr ""
 
-#: fetch-pack.c:844
+#: fetch-pack.c:846
 #, c-format
 msgid "already have %s (%s)"
 msgstr ""
 
-#: fetch-pack.c:940
+#: fetch-pack.c:942
 msgid "fetch-pack: unable to fork off sideband demultiplexer"
 msgstr ""
 
-#: fetch-pack.c:948
+#: fetch-pack.c:950
 msgid "protocol error: bad pack header"
 msgstr ""
 
-#: fetch-pack.c:1033
+#: fetch-pack.c:1035
 #, c-format
 msgid "fetch-pack: unable to fork off %s"
 msgstr ""
 
-#: fetch-pack.c:1039
+#: fetch-pack.c:1041
 msgid "fetch-pack: invalid index-pack output"
 msgstr ""
 
-#: fetch-pack.c:1058
+#: fetch-pack.c:1060
 #, c-format
 msgid "%s failed"
 msgstr ""
 
-#: fetch-pack.c:1060
+#: fetch-pack.c:1062
 msgid "error in sideband demultiplexer"
 msgstr ""
 
-#: fetch-pack.c:1116
+#: fetch-pack.c:1118
 #, c-format
 msgid "Server version is %.*s"
 msgstr ""
 
-#: fetch-pack.c:1124 fetch-pack.c:1130 fetch-pack.c:1133 fetch-pack.c:1139
-#: fetch-pack.c:1143 fetch-pack.c:1147 fetch-pack.c:1151 fetch-pack.c:1155
-#: fetch-pack.c:1159 fetch-pack.c:1163 fetch-pack.c:1167 fetch-pack.c:1171
-#: fetch-pack.c:1177 fetch-pack.c:1183 fetch-pack.c:1188 fetch-pack.c:1193
+#: fetch-pack.c:1126 fetch-pack.c:1132 fetch-pack.c:1135 fetch-pack.c:1141
+#: fetch-pack.c:1145 fetch-pack.c:1149 fetch-pack.c:1153 fetch-pack.c:1157
+#: fetch-pack.c:1161 fetch-pack.c:1165 fetch-pack.c:1169 fetch-pack.c:1173
+#: fetch-pack.c:1179 fetch-pack.c:1185 fetch-pack.c:1190 fetch-pack.c:1195
 #, c-format
 msgid "Server supports %s"
 msgstr ""
 
-#: fetch-pack.c:1126
+#: fetch-pack.c:1128
 msgid "Server does not support shallow clients"
 msgstr ""
 
-#: fetch-pack.c:1186
+#: fetch-pack.c:1188
 msgid "Server does not support --shallow-since"
 msgstr ""
 
-#: fetch-pack.c:1191
+#: fetch-pack.c:1193
 msgid "Server does not support --shallow-exclude"
 msgstr ""
 
-#: fetch-pack.c:1195
+#: fetch-pack.c:1197
 msgid "Server does not support --deepen"
 msgstr ""
 
-#: fetch-pack.c:1197
+#: fetch-pack.c:1199
 msgid "Server does not support this repository's object format"
 msgstr ""
 
-#: fetch-pack.c:1210
+#: fetch-pack.c:1212
 msgid "no common commits"
 msgstr ""
 
-#: fetch-pack.c:1225 fetch-pack.c:1785
+#: fetch-pack.c:1227 fetch-pack.c:1787
 msgid "git fetch-pack: fetch failed."
 msgstr ""
 
-#: fetch-pack.c:1339
+#: fetch-pack.c:1341
 #, c-format
 msgid "mismatched algorithms: client %s; server %s"
 msgstr ""
 
-#: fetch-pack.c:1343
+#: fetch-pack.c:1345
 #, c-format
 msgid "the server does not support algorithm '%s'"
 msgstr ""
 
-#: fetch-pack.c:1376
+#: fetch-pack.c:1378
 msgid "Server does not support shallow requests"
 msgstr ""
 
-#: fetch-pack.c:1421 fetch-pack.c:2194
+#: fetch-pack.c:1423 fetch-pack.c:2196
 msgid "unable to write request to remote"
 msgstr ""
 
-#: fetch-pack.c:1445
+#: fetch-pack.c:1447
 #, c-format
 msgid "expected '%s', received '%s'"
 msgstr ""
 
-#: fetch-pack.c:1448
+#: fetch-pack.c:1450
 #, c-format
 msgid "expected '%s'"
 msgstr ""
 
-#: fetch-pack.c:1482
+#: fetch-pack.c:1484
 #, c-format
 msgid "unexpected acknowledgment line: '%s'"
 msgstr ""
 
-#: fetch-pack.c:1487
+#: fetch-pack.c:1489
 #, c-format
 msgid "error processing acks: %d"
 msgstr ""
@@ -19814,7 +19824,7 @@ msgstr ""
 #. TRANSLATORS: The parameter will be 'ready', a protocol
 #. keyword.
 #.
-#: fetch-pack.c:1501
+#: fetch-pack.c:1503
 #, c-format
 msgid "expected packfile to be sent after '%s'"
 msgstr ""
@@ -19822,49 +19832,49 @@ msgstr ""
 #. TRANSLATORS: The parameter will be 'ready', a protocol
 #. keyword.
 #.
-#: fetch-pack.c:1507
+#: fetch-pack.c:1509
 #, c-format
 msgid "expected no other sections to be sent after no '%s'"
 msgstr ""
 
-#: fetch-pack.c:1548
+#: fetch-pack.c:1550
 #, c-format
 msgid "error processing shallow info: %d"
 msgstr ""
 
-#: fetch-pack.c:1597
+#: fetch-pack.c:1599
 #, c-format
 msgid "expected wanted-ref, got '%s'"
 msgstr ""
 
-#: fetch-pack.c:1602
+#: fetch-pack.c:1604
 #, c-format
 msgid "unexpected wanted-ref: '%s'"
 msgstr ""
 
-#: fetch-pack.c:1607
+#: fetch-pack.c:1609
 #, c-format
 msgid "error processing wanted refs: %d"
 msgstr ""
 
-#: fetch-pack.c:1637
+#: fetch-pack.c:1639
 msgid "git fetch-pack: expected response end packet"
 msgstr ""
 
-#: fetch-pack.c:2078
+#: fetch-pack.c:2080
 msgid "no matching remote head"
 msgstr ""
 
-#: fetch-pack.c:2216
+#: fetch-pack.c:2218
 msgid "unexpected 'ready' from remote"
 msgstr ""
 
-#: fetch-pack.c:2248
+#: fetch-pack.c:2250
 #, c-format
 msgid "no such remote ref %s"
 msgstr ""
 
-#: fetch-pack.c:2251
+#: fetch-pack.c:2253
 #, c-format
 msgid "Server does not allow request for unadvertised object %s"
 msgstr ""
