@@ -1,0 +1,39 @@
+
+
+#################### Wed, 06 Nov 2024 05:57:24 +0000 ####################
+
+--- po/git.pot.old	2024-11-06 05:57:24.719378677 +0000
++++ po/git.pot.new	2024-11-06 05:57:24.795378854 +0000
+@@ -10392,7 +10392,7 @@
+ msgid "deepen history of shallow clone"
+ msgstr ""
+ 
+-msgid "deepen history of shallow clone, excluding rev"
++msgid "deepen history of shallow clone, excluding ref"
+ msgstr ""
+ 
+ msgid "deepen history of shallow repository based on time"
+@@ -17104,6 +17104,9 @@
+ msgid "redirecting to %s"
+ msgstr ""
+ 
++msgid "ref"
++msgstr ""
++
+ #, c-format
+ msgid "ref '%s' is excluded by the rev-list options"
+ msgstr ""
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
