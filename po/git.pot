@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-11-15 04:57+0000\n"
+"POT-Creation-Date: 2024-11-19 07:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: add-interactive.c:1171 apply.c:5074 apply.c:5077 builtin/am.c:2366
 #: builtin/am.c:2369 builtin/bugreport.c:124 builtin/clone.c:144
-#: builtin/diagnose.c:28 builtin/fetch.c:2277 builtin/hook.c:31
+#: builtin/diagnose.c:28 builtin/fetch.c:2287 builtin/hook.c:31
 #: builtin/merge.c:274 builtin/pull.c:197 builtin/submodule--helper.c:1856
 #: builtin/submodule--helper.c:1859
 msgid "path"
@@ -840,8 +840,8 @@ msgstr ""
 #: builtin/commit.c:361 builtin/commit.c:364 builtin/commit.c:1241
 #: builtin/commit.c:1297 builtin/commit.c:1314 builtin/describe.c:623
 #: builtin/diff-tree.c:167 builtin/difftool.c:752 builtin/fast-export.c:1273
-#: builtin/fetch.c:2388 builtin/fetch.c:2415 builtin/fetch.c:2429
-#: builtin/fetch.c:2434 builtin/help.c:621 builtin/index-pack.c:1982
+#: builtin/fetch.c:2398 builtin/fetch.c:2425 builtin/fetch.c:2439
+#: builtin/fetch.c:2444 builtin/help.c:621 builtin/index-pack.c:1986
 #: builtin/init-db.c:116 builtin/log.c:2250 builtin/log.c:2252
 #: builtin/ls-files.c:747 builtin/merge-base.c:177 builtin/merge-base.c:183
 #: builtin/merge-tree.c:598 builtin/merge.c:1428 builtin/merge.c:1430
@@ -1637,7 +1637,7 @@ msgstr ""
 msgid "report archived files on stderr"
 msgstr ""
 
-#: archive.c:662 builtin/clone.c:148 builtin/fetch.c:2308
+#: archive.c:662 builtin/clone.c:148 builtin/fetch.c:2318
 #: builtin/pack-objects.c:4400 builtin/pack-objects.c:4404 builtin/pull.c:218
 msgid "time"
 msgstr ""
@@ -1678,10 +1678,11 @@ msgstr ""
 
 #: archive.c:683 builtin/add.c:420 builtin/add.c:452 builtin/checkout.c:1921
 #: builtin/clone.c:1258 builtin/clone.c:1261 builtin/commit.c:373
-#: builtin/fast-export.c:1258 builtin/index-pack.c:1978 builtin/log.c:2424
-#: builtin/reset.c:395 builtin/reset.c:456 builtin/rm.c:291
-#: builtin/stash.c:1819 builtin/worktree.c:822 builtin/worktree.c:1065
-#: fetch-pack.c:348 http-fetch.c:157 http-fetch.c:166 revision.c:3167
+#: builtin/fast-export.c:1258 builtin/index-pack.c:1978
+#: builtin/index-pack.c:1980 builtin/log.c:2424 builtin/reset.c:395
+#: builtin/reset.c:456 builtin/rm.c:291 builtin/stash.c:1819
+#: builtin/worktree.c:822 builtin/worktree.c:1065 fetch-pack.c:348
+#: http-fetch.c:157 http-fetch.c:166 revision.c:3167
 #, c-format
 msgid "the option '%s' requires '%s'"
 msgstr ""
@@ -1761,7 +1762,7 @@ msgstr ""
 #: bisect.c:164 builtin/cat-file.c:236 builtin/cat-file.c:500
 #: builtin/index-pack.c:780 builtin/notes.c:722 builtin/pack-objects.c:311
 #: builtin/pack-objects.c:372 builtin/pack-objects.c:480 combine-diff.c:343
-#: object-file.c:2000 object-file.c:2006 rerere.c:987
+#: object-file.c:1995 object-file.c:2001 rerere.c:987
 #, c-format
 msgid "unable to read %s"
 msgstr ""
@@ -2112,9 +2113,9 @@ msgstr ""
 msgid "The following paths are ignored by one of your .gitignore files:\n"
 msgstr ""
 
-#: builtin/add.c:250 builtin/clean.c:936 builtin/fetch.c:2298 builtin/mv.c:191
+#: builtin/add.c:250 builtin/clean.c:936 builtin/fetch.c:2308 builtin/mv.c:191
 #: builtin/prune-packed.c:18 builtin/pull.c:211 builtin/push.c:568
-#: builtin/remote.c:1538 builtin/rm.c:251 builtin/send-pack.c:193
+#: builtin/remote.c:1546 builtin/rm.c:251 builtin/send-pack.c:193
 msgid "dry run"
 msgstr ""
 
@@ -3091,7 +3092,7 @@ msgid "show work cost statistics"
 msgstr ""
 
 #: builtin/blame.c:890 builtin/checkout.c:1691 builtin/clone.c:110
-#: builtin/commit-graph.c:82 builtin/commit-graph.c:252 builtin/fetch.c:2305
+#: builtin/commit-graph.c:82 builtin/commit-graph.c:252 builtin/fetch.c:2315
 #: builtin/merge.c:288 builtin/multi-pack-index.c:132
 #: builtin/multi-pack-index.c:191 builtin/multi-pack-index.c:218
 #: builtin/multi-pack-index.c:247 builtin/pull.c:123 builtin/push.c:584
@@ -4910,7 +4911,7 @@ msgstr ""
 msgid "path to git-upload-pack on the remote"
 msgstr ""
 
-#: builtin/clone.c:146 builtin/fetch.c:2306 builtin/pull.c:215
+#: builtin/clone.c:146 builtin/fetch.c:2316 builtin/pull.c:215
 msgid "depth"
 msgstr ""
 
@@ -4922,11 +4923,11 @@ msgstr ""
 msgid "create a shallow clone since a specific time"
 msgstr ""
 
-#: builtin/clone.c:150 builtin/fetch.c:2310 builtin/pull.c:221
+#: builtin/clone.c:150 builtin/fetch.c:2320 builtin/pull.c:221
 msgid "ref"
 msgstr ""
 
-#: builtin/clone.c:151 builtin/fetch.c:2311 builtin/pull.c:222
+#: builtin/clone.c:151 builtin/fetch.c:2321 builtin/pull.c:222
 msgid "deepen history of shallow clone, excluding ref"
 msgstr ""
 
@@ -4964,12 +4965,12 @@ msgstr ""
 msgid "set config inside the new repository"
 msgstr ""
 
-#: builtin/clone.c:165 builtin/fetch.c:2331 builtin/ls-remote.c:87
+#: builtin/clone.c:165 builtin/fetch.c:2341 builtin/ls-remote.c:87
 #: builtin/pull.c:237 builtin/push.c:593 builtin/send-pack.c:199
 msgid "server-specific"
 msgstr ""
 
-#: builtin/clone.c:165 builtin/fetch.c:2331 builtin/ls-remote.c:87
+#: builtin/clone.c:165 builtin/fetch.c:2341 builtin/ls-remote.c:87
 #: builtin/pull.c:238 builtin/push.c:593 builtin/send-pack.c:200
 msgid "option to transmit"
 msgstr ""
@@ -5050,7 +5051,7 @@ msgstr ""
 msgid "failed to copy file to '%s'"
 msgstr ""
 
-#: builtin/clone.c:424 refs/files-backend.c:3771
+#: builtin/clone.c:424 refs/files-backend.c:3770
 #, c-format
 msgid "failed to iterate over '%s'"
 msgstr ""
@@ -5125,7 +5126,7 @@ msgstr ""
 msgid "repository '%s' does not exist"
 msgstr ""
 
-#: builtin/clone.c:1047 builtin/fetch.c:2443
+#: builtin/clone.c:1047 builtin/fetch.c:2453
 #, c-format
 msgid "depth %s is not a positive number"
 msgstr ""
@@ -5287,7 +5288,7 @@ msgid ""
 "                       <split-options>"
 msgstr ""
 
-#: builtin/commit-graph.c:55 builtin/fetch.c:2320 builtin/log.c:2081
+#: builtin/commit-graph.c:55 builtin/fetch.c:2330 builtin/log.c:2081
 #: builtin/repack.c:1245 builtin/repack.c:1247
 msgid "dir"
 msgstr ""
@@ -5774,7 +5775,7 @@ msgstr ""
 msgid "version"
 msgstr ""
 
-#: builtin/commit.c:1533 builtin/commit.c:1704 builtin/fetch.c:2299
+#: builtin/commit.c:1533 builtin/commit.c:1704 builtin/fetch.c:2309
 #: builtin/push.c:569 builtin/worktree.c:1049
 msgid "machine-readable output"
 msgstr ""
@@ -6885,31 +6886,31 @@ msgstr ""
 msgid "label tags with mark ids"
 msgstr ""
 
-#: builtin/fast-import.c:3116
+#: builtin/fast-import.c:3129
 #, c-format
 msgid "Missing from marks for submodule '%s'"
 msgstr ""
 
-#: builtin/fast-import.c:3118
+#: builtin/fast-import.c:3131
 #, c-format
 msgid "Missing to marks for submodule '%s'"
 msgstr ""
 
-#: builtin/fast-import.c:3246
+#: builtin/fast-import.c:3259
 #, c-format
 msgid "Expected 'mark' command, got %s"
 msgstr ""
 
-#: builtin/fast-import.c:3251
+#: builtin/fast-import.c:3264
 #, c-format
 msgid "Expected 'to' command, got %s"
 msgstr ""
 
-#: builtin/fast-import.c:3347
+#: builtin/fast-import.c:3360
 msgid "Expected format name:filename for submodule rewrite option"
 msgstr ""
 
-#: builtin/fast-import.c:3406
+#: builtin/fast-import.c:3420
 #, c-format
 msgid "feature '%s' forbidden in input without --allow-unsafe-features"
 msgstr ""
@@ -7070,7 +7071,7 @@ msgstr ""
 msgid "option \"%s\" is ignored for %s"
 msgstr ""
 
-#: builtin/fetch.c:1485 object-file.c:2841
+#: builtin/fetch.c:1485 object-file.c:2836
 #, c-format
 msgid "%s is not a valid object"
 msgstr ""
@@ -7080,253 +7081,253 @@ msgstr ""
 msgid "the object %s does not exist"
 msgstr ""
 
-#: builtin/fetch.c:1844
+#: builtin/fetch.c:1854
 msgid "multiple branches detected, incompatible with --set-upstream"
 msgstr ""
 
-#: builtin/fetch.c:1856
+#: builtin/fetch.c:1866
 #, c-format
 msgid ""
 "could not set upstream of HEAD to '%s' from '%s' when it does not point to "
 "any branch."
 msgstr ""
 
-#: builtin/fetch.c:1869
+#: builtin/fetch.c:1879
 msgid "not setting upstream for a remote remote-tracking branch"
 msgstr ""
 
-#: builtin/fetch.c:1871
+#: builtin/fetch.c:1881
 msgid "not setting upstream for a remote tag"
 msgstr ""
 
-#: builtin/fetch.c:1873
+#: builtin/fetch.c:1883
 msgid "unknown branch type"
 msgstr ""
 
-#: builtin/fetch.c:1875
+#: builtin/fetch.c:1885
 msgid ""
 "no source branch found;\n"
 "you need to specify exactly one branch with the --set-upstream option"
 msgstr ""
 
-#: builtin/fetch.c:2025 builtin/fetch.c:2105
+#: builtin/fetch.c:2035 builtin/fetch.c:2115
 #, c-format
 msgid "Fetching %s\n"
 msgstr ""
 
-#: builtin/fetch.c:2036 builtin/fetch.c:2108
+#: builtin/fetch.c:2046 builtin/fetch.c:2118
 #, c-format
 msgid "could not fetch %s"
 msgstr ""
 
-#: builtin/fetch.c:2048
+#: builtin/fetch.c:2058
 #, c-format
 msgid "could not fetch '%s' (exit code: %d)\n"
 msgstr ""
 
-#: builtin/fetch.c:2169
+#: builtin/fetch.c:2179
 msgid ""
 "no remote repository specified; please specify either a URL or a\n"
 "remote name from which new revisions should be fetched"
 msgstr ""
 
-#: builtin/fetch.c:2205
+#: builtin/fetch.c:2215
 msgid "you need to specify a tag name"
 msgstr ""
 
-#: builtin/fetch.c:2270 builtin/pull.c:192
+#: builtin/fetch.c:2280 builtin/pull.c:192
 msgid "fetch from all remotes"
 msgstr ""
 
-#: builtin/fetch.c:2272 builtin/pull.c:252
+#: builtin/fetch.c:2282 builtin/pull.c:252
 msgid "set upstream for git pull/fetch"
 msgstr ""
 
-#: builtin/fetch.c:2274 builtin/pull.c:195
+#: builtin/fetch.c:2284 builtin/pull.c:195
 msgid "append to .git/FETCH_HEAD instead of overwriting"
 msgstr ""
 
-#: builtin/fetch.c:2276
+#: builtin/fetch.c:2286
 msgid "use atomic transaction to update references"
 msgstr ""
 
-#: builtin/fetch.c:2278 builtin/pull.c:198
+#: builtin/fetch.c:2288 builtin/pull.c:198
 msgid "path to upload pack on remote end"
 msgstr ""
 
-#: builtin/fetch.c:2279
+#: builtin/fetch.c:2289
 msgid "force overwrite of local reference"
 msgstr ""
 
-#: builtin/fetch.c:2281
+#: builtin/fetch.c:2291
 msgid "fetch from multiple remotes"
 msgstr ""
 
-#: builtin/fetch.c:2283 builtin/pull.c:202
+#: builtin/fetch.c:2293 builtin/pull.c:202
 msgid "fetch all tags and associated objects"
 msgstr ""
 
-#: builtin/fetch.c:2285
+#: builtin/fetch.c:2295
 msgid "do not fetch all tags (--no-tags)"
 msgstr ""
 
-#: builtin/fetch.c:2287
+#: builtin/fetch.c:2297
 msgid "number of submodules fetched in parallel"
 msgstr ""
 
-#: builtin/fetch.c:2289
+#: builtin/fetch.c:2299
 msgid "modify the refspec to place all refs within refs/prefetch/"
 msgstr ""
 
-#: builtin/fetch.c:2291 builtin/pull.c:205
+#: builtin/fetch.c:2301 builtin/pull.c:205
 msgid "prune remote-tracking branches no longer on remote"
 msgstr ""
 
-#: builtin/fetch.c:2293
+#: builtin/fetch.c:2303
 msgid "prune local tags no longer on remote and clobber changed tags"
 msgstr ""
 
-#: builtin/fetch.c:2294 builtin/fetch.c:2323 builtin/pull.c:126
+#: builtin/fetch.c:2304 builtin/fetch.c:2333 builtin/pull.c:126
 msgid "on-demand"
 msgstr ""
 
-#: builtin/fetch.c:2295
+#: builtin/fetch.c:2305
 msgid "control recursive fetching of submodules"
 msgstr ""
 
-#: builtin/fetch.c:2301
+#: builtin/fetch.c:2311
 msgid "write fetched references to the FETCH_HEAD file"
 msgstr ""
 
-#: builtin/fetch.c:2302 builtin/pull.c:213
+#: builtin/fetch.c:2312 builtin/pull.c:213
 msgid "keep downloaded pack"
 msgstr ""
 
-#: builtin/fetch.c:2304
+#: builtin/fetch.c:2314
 msgid "allow updating of HEAD ref"
 msgstr ""
 
-#: builtin/fetch.c:2307 builtin/fetch.c:2313 builtin/pull.c:216
+#: builtin/fetch.c:2317 builtin/fetch.c:2323 builtin/pull.c:216
 #: builtin/pull.c:225
 msgid "deepen history of shallow clone"
 msgstr ""
 
-#: builtin/fetch.c:2309 builtin/pull.c:219
+#: builtin/fetch.c:2319 builtin/pull.c:219
 msgid "deepen history of shallow repository based on time"
 msgstr ""
 
-#: builtin/fetch.c:2315 builtin/pull.c:228
+#: builtin/fetch.c:2325 builtin/pull.c:228
 msgid "convert to a complete repository"
 msgstr ""
 
-#: builtin/fetch.c:2318
+#: builtin/fetch.c:2328
 msgid "re-fetch without negotiating common commits"
 msgstr ""
 
-#: builtin/fetch.c:2321
+#: builtin/fetch.c:2331
 msgid "prepend this to submodule path output"
 msgstr ""
 
-#: builtin/fetch.c:2324
+#: builtin/fetch.c:2334
 msgid ""
 "default for recursive fetching of submodules (lower priority than config "
 "files)"
 msgstr ""
 
-#: builtin/fetch.c:2328 builtin/pull.c:231
+#: builtin/fetch.c:2338 builtin/pull.c:231
 msgid "accept refs that update .git/shallow"
 msgstr ""
 
-#: builtin/fetch.c:2329 builtin/pull.c:233
+#: builtin/fetch.c:2339 builtin/pull.c:233
 msgid "refmap"
 msgstr ""
 
-#: builtin/fetch.c:2330 builtin/pull.c:234
+#: builtin/fetch.c:2340 builtin/pull.c:234
 msgid "specify fetch refmap"
 msgstr ""
 
-#: builtin/fetch.c:2333 builtin/pull.c:246 builtin/rebase.c:1110
+#: builtin/fetch.c:2343 builtin/pull.c:246 builtin/rebase.c:1110
 #: builtin/replay.c:309
 msgid "revision"
 msgstr ""
 
-#: builtin/fetch.c:2334 builtin/pull.c:247
+#: builtin/fetch.c:2344 builtin/pull.c:247
 msgid "report that we have only objects reachable from this object"
 msgstr ""
 
-#: builtin/fetch.c:2336
+#: builtin/fetch.c:2346
 msgid "do not fetch a packfile; instead, print ancestors of negotiation tips"
 msgstr ""
 
-#: builtin/fetch.c:2339 builtin/fetch.c:2341
+#: builtin/fetch.c:2349 builtin/fetch.c:2351
 msgid "run 'maintenance --auto' after fetching"
 msgstr ""
 
-#: builtin/fetch.c:2343 builtin/pull.c:250
+#: builtin/fetch.c:2353 builtin/pull.c:250
 msgid "check for forced-updates on all updated branches"
 msgstr ""
 
-#: builtin/fetch.c:2345
+#: builtin/fetch.c:2355
 msgid "write the commit-graph after fetching"
 msgstr ""
 
-#: builtin/fetch.c:2347
+#: builtin/fetch.c:2357
 msgid "accept refspecs from stdin"
 msgstr ""
 
-#: builtin/fetch.c:2423
+#: builtin/fetch.c:2433
 msgid "--negotiate-only needs one or more --negotiation-tip=*"
 msgstr ""
 
-#: builtin/fetch.c:2427
+#: builtin/fetch.c:2437
 msgid "negative depth in --deepen is not supported"
 msgstr ""
 
-#: builtin/fetch.c:2436
+#: builtin/fetch.c:2446
 msgid "--unshallow on a complete repository does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2456
+#: builtin/fetch.c:2466
 #, c-format
 msgid "failed to fetch bundles from '%s'"
 msgstr ""
 
-#: builtin/fetch.c:2468
+#: builtin/fetch.c:2478
 msgid "fetch --all does not take a repository argument"
 msgstr ""
 
-#: builtin/fetch.c:2470
+#: builtin/fetch.c:2480
 msgid "fetch --all does not make sense with refspecs"
 msgstr ""
 
-#: builtin/fetch.c:2484
+#: builtin/fetch.c:2494
 #, c-format
 msgid "no such remote or remote group: %s"
 msgstr ""
 
-#: builtin/fetch.c:2492
+#: builtin/fetch.c:2502
 msgid "fetching a group and specifying refspecs does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2510
+#: builtin/fetch.c:2520
 msgid "must supply remote when using --negotiate-only"
 msgstr ""
 
-#: builtin/fetch.c:2515
+#: builtin/fetch.c:2525
 msgid "protocol does not support --negotiate-only, exiting"
 msgstr ""
 
-#: builtin/fetch.c:2543
+#: builtin/fetch.c:2553
 msgid ""
 "--filter can only be used with the remote configured in extensions."
 "partialclone"
 msgstr ""
 
-#: builtin/fetch.c:2547
+#: builtin/fetch.c:2557
 msgid "--atomic can only be used when fetching from one remote"
 msgstr ""
 
-#: builtin/fetch.c:2551
+#: builtin/fetch.c:2561
 msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
 
@@ -8902,15 +8903,19 @@ msgstr ""
 msgid "unknown hash algorithm '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1980
+#: builtin/index-pack.c:1982
+msgid "--promisor cannot be used with a pack name"
+msgstr ""
+
+#: builtin/index-pack.c:1984
 msgid "--stdin requires a git repository"
 msgstr ""
 
-#: builtin/index-pack.c:2006
+#: builtin/index-pack.c:2010
 msgid "--verify with no packfile name given"
 msgstr ""
 
-#: builtin/index-pack.c:2072 builtin/unpack-objects.c:679
+#: builtin/index-pack.c:2076 builtin/unpack-objects.c:679
 msgid "fsck error in pack objects"
 msgstr ""
 
@@ -10962,7 +10967,7 @@ msgstr ""
 msgid "use notes from <notes-ref>"
 msgstr ""
 
-#: builtin/notes.c:1137 builtin/remote.c:1822 parse-options.c:873
+#: builtin/notes.c:1137 builtin/remote.c:1830 parse-options.c:873
 #, c-format
 msgid "unknown subcommand: `%s'"
 msgstr ""
@@ -11021,7 +11026,7 @@ msgstr ""
 msgid "failed to stat %s"
 msgstr ""
 
-#: builtin/pack-objects.c:1359 object-file.c:2329
+#: builtin/pack-objects.c:1359 object-file.c:2324
 #, c-format
 msgid "failed utime() on %s"
 msgstr ""
@@ -13129,128 +13134,133 @@ msgstr ""
 
 #: builtin/remote.c:1420
 #, c-format
+msgid "'%s/HEAD' was detached at '%s' and now points to '%s'\n"
+msgstr ""
+
+#: builtin/remote.c:1423
+#, c-format
 msgid ""
 "'%s/HEAD' used to point to '%s' (which is not a remote branch), but now "
 "points to '%s'\n"
 msgstr ""
 
-#: builtin/remote.c:1436
+#: builtin/remote.c:1439
 msgid "set refs/remotes/<name>/HEAD according to remote"
 msgstr ""
 
-#: builtin/remote.c:1438
+#: builtin/remote.c:1441
 msgid "delete refs/remotes/<name>/HEAD"
 msgstr ""
 
-#: builtin/remote.c:1452
+#: builtin/remote.c:1455
 msgid "Cannot determine remote HEAD"
 msgstr ""
 
-#: builtin/remote.c:1454
+#: builtin/remote.c:1457
 msgid "Multiple remote HEAD branches. Please choose one explicitly with:"
 msgstr ""
 
-#: builtin/remote.c:1464
+#: builtin/remote.c:1467
 #, c-format
 msgid "Could not delete %s"
 msgstr ""
 
-#: builtin/remote.c:1472
+#: builtin/remote.c:1475
 #, c-format
 msgid "Not a valid ref: %s"
 msgstr ""
 
-#: builtin/remote.c:1475
+#: builtin/remote.c:1481
 #, c-format
 msgid "Could not setup %s"
 msgstr ""
 
-#: builtin/remote.c:1494
+#: builtin/remote.c:1502
 #, c-format
 msgid " %s will become dangling!"
 msgstr ""
 
-#: builtin/remote.c:1495
+#: builtin/remote.c:1503
 #, c-format
 msgid " %s has become dangling!"
 msgstr ""
 
-#: builtin/remote.c:1504
+#: builtin/remote.c:1512
 #, c-format
 msgid "Pruning %s"
 msgstr ""
 
-#: builtin/remote.c:1505
+#: builtin/remote.c:1513
 #, c-format
 msgid "URL: %s"
 msgstr ""
 
-#: builtin/remote.c:1519
+#: builtin/remote.c:1527
 #, c-format
 msgid " * [would prune] %s"
 msgstr ""
 
-#: builtin/remote.c:1522
+#: builtin/remote.c:1530
 #, c-format
 msgid " * [pruned] %s"
 msgstr ""
 
-#: builtin/remote.c:1570
+#: builtin/remote.c:1578
 msgid "prune remotes after fetching"
 msgstr ""
 
-#: builtin/remote.c:1633 builtin/remote.c:1689 builtin/remote.c:1745
+#: builtin/remote.c:1641 builtin/remote.c:1697 builtin/remote.c:1753
 #, c-format
 msgid "No such remote '%s'"
 msgstr ""
 
-#: builtin/remote.c:1651
+#: builtin/remote.c:1659
 msgid "add branch"
 msgstr ""
 
-#: builtin/remote.c:1658
+#: builtin/remote.c:1666
 msgid "no remote specified"
 msgstr ""
 
-#: builtin/remote.c:1674
+#: builtin/remote.c:1682
 msgid "query push URLs rather than fetch URLs"
 msgstr ""
 
-#: builtin/remote.c:1676
+#: builtin/remote.c:1684
 msgid "return all URLs"
 msgstr ""
 
-#: builtin/remote.c:1718
+#: builtin/remote.c:1726
 msgid "manipulate push URLs"
 msgstr ""
 
-#: builtin/remote.c:1720
+#: builtin/remote.c:1728
 msgid "add URL"
 msgstr ""
 
-#: builtin/remote.c:1722
+#: builtin/remote.c:1730
 msgid "delete URLs"
 msgstr ""
 
-#: builtin/remote.c:1730
+#: builtin/remote.c:1738
 msgid "--add --delete doesn't make sense"
-msgstr ""
-
-#: builtin/remote.c:1769
-#, c-format
-msgid "Invalid old URL pattern: %s"
 msgstr ""
 
 #: builtin/remote.c:1777
 #, c-format
+msgid "Invalid old URL pattern: %s"
+msgstr ""
+
+#: builtin/remote.c:1785
+#, c-format
 msgid "No such URL found: %s"
 msgstr ""
 
-#: builtin/remote.c:1779
+#: builtin/remote.c:1787
 msgid "Will not delete all non-push URLs"
 msgstr ""
 
-#: builtin/remote.c:1800
+#: builtin/remote.c:1808
 msgid "be verbose; must be placed before a subcommand"
 msgstr ""
 
@@ -21505,274 +21515,274 @@ msgstr ""
 msgid "Failed to convert object from %s to %s"
 msgstr ""
 
-#: object-file.c:538
+#: object-file.c:533
 #, c-format
 msgid "object directory %s does not exist; check .git/objects/info/alternates"
 msgstr ""
 
-#: object-file.c:598
+#: object-file.c:593
 #, c-format
 msgid "unable to normalize alternate object path: %s"
 msgstr ""
 
-#: object-file.c:673
+#: object-file.c:668
 #, c-format
 msgid "%s: ignoring alternate object stores, nesting too deep"
 msgstr ""
 
-#: object-file.c:720
+#: object-file.c:715
 msgid "unable to fdopen alternates lockfile"
 msgstr ""
 
-#: object-file.c:738
+#: object-file.c:733
 msgid "unable to read alternates file"
 msgstr ""
 
-#: object-file.c:745
+#: object-file.c:740
 msgid "unable to move new alternates file into place"
 msgstr ""
 
-#: object-file.c:823
+#: object-file.c:818
 #, c-format
 msgid "path '%s' does not exist"
 msgstr ""
 
-#: object-file.c:844
+#: object-file.c:839
 #, c-format
 msgid "reference repository '%s' as a linked checkout is not supported yet."
 msgstr ""
 
-#: object-file.c:850
+#: object-file.c:845
 #, c-format
 msgid "reference repository '%s' is not a local repository."
 msgstr ""
 
-#: object-file.c:856
+#: object-file.c:851
 #, c-format
 msgid "reference repository '%s' is shallow"
 msgstr ""
 
-#: object-file.c:864
+#: object-file.c:859
 #, c-format
 msgid "reference repository '%s' is grafted"
 msgstr ""
 
-#: object-file.c:895
+#: object-file.c:890
 #, c-format
 msgid "could not find object directory matching %s"
 msgstr ""
 
-#: object-file.c:945
+#: object-file.c:940
 #, c-format
 msgid "invalid line while parsing alternate refs: %s"
 msgstr ""
 
-#: object-file.c:1101
+#: object-file.c:1096
 #, c-format
 msgid "attempting to mmap %<PRIuMAX> over limit %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:1136
+#: object-file.c:1131
 #, c-format
 msgid "mmap failed%s"
 msgstr ""
 
-#: object-file.c:1310
+#: object-file.c:1305
 #, c-format
 msgid "object file %s is empty"
 msgstr ""
 
-#: object-file.c:1433 object-file.c:3057
+#: object-file.c:1428 object-file.c:3052
 #, c-format
 msgid "corrupt loose object '%s'"
 msgstr ""
 
-#: object-file.c:1435 object-file.c:3061
+#: object-file.c:1430 object-file.c:3056
 #, c-format
 msgid "garbage at end of loose object '%s'"
 msgstr ""
 
-#: object-file.c:1545
+#: object-file.c:1540
 #, c-format
 msgid "unable to open loose object %s"
 msgstr ""
 
-#: object-file.c:1564
+#: object-file.c:1559
 #, c-format
 msgid "unable to parse %s header"
 msgstr ""
 
-#: object-file.c:1566
+#: object-file.c:1561
 msgid "invalid object type"
 msgstr ""
 
-#: object-file.c:1577
+#: object-file.c:1572
 #, c-format
 msgid "unable to unpack %s header"
 msgstr ""
 
-#: object-file.c:1581
+#: object-file.c:1576
 #, c-format
 msgid "header for %s too long, exceeds %d bytes"
 msgstr ""
 
-#: object-file.c:1587
+#: object-file.c:1582
 #, c-format
 msgid "loose object %s (stored in %s) is corrupt"
 msgstr ""
 
-#: object-file.c:1702
+#: object-file.c:1697
 #, c-format
 msgid "replacement %s not found for %s"
 msgstr ""
 
-#: object-file.c:1705
+#: object-file.c:1700
 #, c-format
 msgid "packed object %s (stored in %s) is corrupt"
 msgstr ""
 
-#: object-file.c:1746 object-file.c:1807
+#: object-file.c:1741 object-file.c:1802
 #, c-format
 msgid "missing mapping of %s to %s"
 msgstr ""
 
-#: object-file.c:1985 object-file.c:1991 object-file.c:2870
+#: object-file.c:1980 object-file.c:1986 object-file.c:2865
 #, c-format
 msgid "unable to open %s"
 msgstr ""
 
-#: object-file.c:2011
+#: object-file.c:2006
 #, c-format
 msgid "files '%s' and '%s' differ in contents"
 msgstr ""
 
-#: object-file.c:2074
+#: object-file.c:2069
 #, c-format
 msgid "unable to write file %s"
 msgstr ""
 
-#: object-file.c:2084
+#: object-file.c:2079
 #, c-format
 msgid "unable to set permission to '%s'"
 msgstr ""
 
-#: object-file.c:2121
+#: object-file.c:2116
 msgid "error when closing loose object file"
 msgstr ""
 
-#: object-file.c:2197
+#: object-file.c:2192
 #, c-format
 msgid "insufficient permission for adding an object to repository database %s"
 msgstr ""
 
-#: object-file.c:2202
+#: object-file.c:2197
 msgid "unable to create temporary file"
 msgstr ""
 
-#: object-file.c:2245
+#: object-file.c:2240
 msgid "unable to write loose object file"
 msgstr ""
 
-#: object-file.c:2311
+#: object-file.c:2306
 #, c-format
 msgid "unable to deflate new object %s (%d)"
 msgstr ""
 
-#: object-file.c:2315
+#: object-file.c:2310
 #, c-format
 msgid "deflateEnd on object %s failed (%d)"
 msgstr ""
 
-#: object-file.c:2318
+#: object-file.c:2313
 #, c-format
 msgid "confused by unstable object source data for %s"
 msgstr ""
 
-#: object-file.c:2417
+#: object-file.c:2412
 #, c-format
 msgid "write stream object %ld != %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:2428
+#: object-file.c:2423
 #, c-format
 msgid "unable to stream deflate new object (%d)"
 msgstr ""
 
-#: object-file.c:2431
+#: object-file.c:2426
 #, c-format
 msgid "deflateEnd on stream object failed (%d)"
 msgstr ""
 
-#: object-file.c:2448
+#: object-file.c:2443
 #, c-format
 msgid "unable to create directory %s"
 msgstr ""
 
-#: object-file.c:2570
+#: object-file.c:2565
 #, c-format
 msgid "cannot read object for %s"
 msgstr ""
 
-#: object-file.c:2573
+#: object-file.c:2568
 #, c-format
 msgid "cannot map object %s to %s"
 msgstr ""
 
-#: object-file.c:2623
+#: object-file.c:2618
 #, c-format
 msgid "object fails fsck: %s"
 msgstr ""
 
-#: object-file.c:2656
+#: object-file.c:2651
 msgid "refusing to create malformed object"
 msgstr ""
 
-#: object-file.c:2725
+#: object-file.c:2720
 #, c-format
 msgid "read error while indexing %s"
 msgstr ""
 
-#: object-file.c:2728
+#: object-file.c:2723
 #, c-format
 msgid "short read while indexing %s"
 msgstr ""
 
-#: object-file.c:2801 object-file.c:2811
+#: object-file.c:2796 object-file.c:2806
 #, c-format
 msgid "%s: failed to insert into database"
 msgstr ""
 
-#: object-file.c:2817
+#: object-file.c:2812
 #, c-format
 msgid "%s: unsupported file type"
 msgstr ""
 
-#: object-file.c:2843
+#: object-file.c:2838
 #, c-format
 msgid "%s is not a valid '%s' object"
 msgstr ""
 
-#: object-file.c:3068
+#: object-file.c:3063
 #, c-format
 msgid "hash mismatch for %s (expected %s)"
 msgstr ""
 
-#: object-file.c:3094
+#: object-file.c:3089
 #, c-format
 msgid "unable to mmap %s"
 msgstr ""
 
-#: object-file.c:3100
+#: object-file.c:3095
 #, c-format
 msgid "unable to unpack header of %s"
 msgstr ""
 
-#: object-file.c:3106
+#: object-file.c:3101
 #, c-format
 msgid "unable to parse header of %s"
 msgstr ""
 
-#: object-file.c:3117
+#: object-file.c:3112
 #, c-format
 msgid "unable to unpack contents of %s"
 msgstr ""
@@ -23386,71 +23396,71 @@ msgstr ""
 msgid "update_ref failed for ref '%s': %s"
 msgstr ""
 
-#: refs.c:2184
+#: refs.c:2192
 #, c-format
 msgid "multiple updates for ref '%s' not allowed"
 msgstr ""
 
-#: refs.c:2282
+#: refs.c:2290
 msgid "ref updates forbidden inside quarantine environment"
 msgstr ""
 
-#: refs.c:2293
+#: refs.c:2301
 msgid "ref updates aborted by hook"
 msgstr ""
 
-#: refs.c:2401 refs.c:2435
+#: refs.c:2409 refs.c:2443
 #, c-format
 msgid "'%s' exists; cannot create '%s'"
 msgstr ""
 
-#: refs.c:2407 refs.c:2447
+#: refs.c:2415 refs.c:2455
 #, c-format
 msgid "cannot process '%s' and '%s' at the same time"
 msgstr ""
 
-#: refs.c:2572 refs.c:2582
+#: refs.c:2580 refs.c:2590
 #, c-format
 msgid "could not delete reference %s: %s"
 msgstr ""
 
-#: refs.c:2585
+#: refs.c:2593
 #, c-format
 msgid "could not delete references: %s"
 msgstr ""
 
-#: refs.c:2900
+#: refs.c:2908
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
 
-#: refs.c:2935
+#: refs.c:2943
 #, c-format
 msgid "could not remove temporary migration directory '%s'"
 msgstr ""
 
-#: refs.c:2959
+#: refs.c:2967
 #, c-format
 msgid "migrated refs can be found at '%s'"
 msgstr ""
 
-#: refs/files-backend.c:2644 refs/reftable-backend.c:1293
+#: refs/files-backend.c:2643 refs/reftable-backend.c:1295
 #, c-format
 msgid ""
 "cannot lock ref '%s': expected symref with target '%s': but is a regular ref"
 msgstr ""
 
-#: refs/files-backend.c:3650
+#: refs/files-backend.c:3649
 #, c-format
 msgid "cannot read ref file '%s': %s"
 msgstr ""
 
-#: refs/files-backend.c:3738
+#: refs/files-backend.c:3737
 #, c-format
 msgid "cannot open directory %s"
 msgstr ""
 
-#: refs/files-backend.c:3790
+#: refs/files-backend.c:3789
 msgid "Checking references consistency"
 msgstr ""
 
@@ -23459,75 +23469,75 @@ msgstr ""
 msgid "refname is dangerous: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1134
+#: refs/reftable-backend.c:1136
 #, c-format
 msgid "trying to write ref '%s' with nonexistent object %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1141
+#: refs/reftable-backend.c:1143
 #, c-format
 msgid "trying to write non-commit object %s to branch '%s'"
 msgstr ""
 
-#: refs/reftable-backend.c:1167
+#: refs/reftable-backend.c:1169
 #, c-format
 msgid ""
 "multiple updates for 'HEAD' (including one via its referent '%s') are not "
 "allowed"
 msgstr ""
 
-#: refs/reftable-backend.c:1217
+#: refs/reftable-backend.c:1219
 #, c-format
 msgid "cannot lock ref '%s': unable to resolve reference '%s'"
 msgstr ""
 
-#: refs/reftable-backend.c:1235
+#: refs/reftable-backend.c:1237
 #, c-format
 msgid "cannot lock ref '%s': error reading reference"
 msgstr ""
 
-#: refs/reftable-backend.c:1274
+#: refs/reftable-backend.c:1276
 #, c-format
 msgid ""
 "multiple updates for '%s' (including one via symref '%s') are not allowed"
 msgstr ""
 
-#: refs/reftable-backend.c:1309
+#: refs/reftable-backend.c:1311
 #, c-format
 msgid "cannot lock ref '%s': reference already exists"
 msgstr ""
 
-#: refs/reftable-backend.c:1315
+#: refs/reftable-backend.c:1317
 #, c-format
 msgid "cannot lock ref '%s': reference is missing but expected %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1320
+#: refs/reftable-backend.c:1322
 #, c-format
 msgid "cannot lock ref '%s': is at %s but expected %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1358
+#: refs/reftable-backend.c:1360
 #, c-format
 msgid "reftable: transaction prepare: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1586
+#: refs/reftable-backend.c:1588
 #, c-format
 msgid "reftable: transaction failure: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1613
+#: refs/reftable-backend.c:1615
 #, c-format
 msgid "unable to compact stack: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1663
+#: refs/reftable-backend.c:1665
 #, c-format
 msgid "refname %s not found"
 msgstr ""
 
-#: refs/reftable-backend.c:1667
+#: refs/reftable-backend.c:1669
 #, c-format
 msgid "refname %s is a symbolic ref, copying it is not supported"
 msgstr ""
