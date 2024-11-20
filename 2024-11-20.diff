@@ -1,0 +1,30 @@
+
+
+#################### Wed, 20 Nov 2024 06:57:38 +0000 ####################
+
+--- po/git.pot.old	2024-11-20 06:57:37.936620622 +0000
++++ po/git.pot.new	2024-11-20 06:57:38.012620942 +0000
+@@ -1965,6 +1965,9 @@
+ msgid "--progress can't be used with --incremental or porcelain formats"
+ msgstr ""
+ 
++msgid "--promisor cannot be used with a pack name"
++msgstr ""
++
+ msgid "--quiet is only valid with a single pathname"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
