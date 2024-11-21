@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-11-20 06:57+0000\n"
+"POT-Creation-Date: 2024-11-21 06:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -8143,30 +8143,41 @@ msgid "%s scheduler is not available"
 msgstr ""
 
 #: builtin/gc.c:2894
-msgid "another process is scheduling background maintenance"
+#, c-format
+msgid ""
+"unable to create '%s.lock': %s.\n"
+"\n"
+"Another scheduled git-maintenance(1) process seems to be running in this\n"
+"repository. Please make sure no other maintenance processes are running and\n"
+"then try again. If it still fails, a git-maintenance(1) process may have\n"
+"crashed in this repository earlier: remove the file manually to continue."
 msgstr ""
 
-#: builtin/gc.c:2916
-msgid "git maintenance start [--scheduler=<scheduler>]"
+#: builtin/gc.c:2901
+msgid "cannot acquire lock for scheduled background maintenance"
 msgstr ""
 
 #: builtin/gc.c:2925
+msgid "git maintenance start [--scheduler=<scheduler>]"
+msgstr ""
+
+#: builtin/gc.c:2934
 msgid "scheduler"
 msgstr ""
 
-#: builtin/gc.c:2926
+#: builtin/gc.c:2935
 msgid "scheduler to trigger git maintenance run"
 msgstr ""
 
-#: builtin/gc.c:2941
+#: builtin/gc.c:2950
 msgid "failed to set up maintenance schedule"
 msgstr ""
 
-#: builtin/gc.c:2944
+#: builtin/gc.c:2953
 msgid "failed to add repo to global config"
 msgstr ""
 
-#: builtin/gc.c:2966
+#: builtin/gc.c:2975
 msgid "git maintenance <subcommand> [<options>]"
 msgstr ""
 
@@ -23319,45 +23330,45 @@ msgstr ""
 msgid "multiple updates for ref '%s' not allowed"
 msgstr ""
 
-#: refs.c:2247
+#: refs.c:2250
 msgid "ref updates forbidden inside quarantine environment"
 msgstr ""
 
-#: refs.c:2258
+#: refs.c:2261
 msgid "ref updates aborted by hook"
 msgstr ""
 
-#: refs.c:2366 refs.c:2396
+#: refs.c:2369 refs.c:2399
 #, c-format
 msgid "'%s' exists; cannot create '%s'"
 msgstr ""
 
-#: refs.c:2372 refs.c:2407
+#: refs.c:2375 refs.c:2410
 #, c-format
 msgid "cannot process '%s' and '%s' at the same time"
 msgstr ""
 
-#: refs.c:2540 refs.c:2550
+#: refs.c:2543 refs.c:2553
 #, c-format
 msgid "could not delete reference %s: %s"
 msgstr ""
 
-#: refs.c:2553
+#: refs.c:2556
 #, c-format
 msgid "could not delete references: %s"
 msgstr ""
 
-#: refs.c:2874
+#: refs.c:2877
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
 
-#: refs.c:2909
+#: refs.c:2912
 #, c-format
 msgid "could not remove temporary migration directory '%s'"
 msgstr ""
 
-#: refs.c:2933
+#: refs.c:2936
 #, c-format
 msgid "migrated refs can be found at '%s'"
 msgstr ""
