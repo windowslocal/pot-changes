@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-11-22 08:57+0000\n"
+"POT-Creation-Date: 2024-11-25 08:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -814,7 +814,7 @@ msgstr ""
 msgid "unclosed quote"
 msgstr ""
 
-#: alias.c:77 builtin/cat-file.c:1184 builtin/notes.c:450 builtin/notes.c:516
+#: alias.c:77 builtin/cat-file.c:1178 builtin/notes.c:450 builtin/notes.c:516
 #: builtin/notes.c:598 builtin/notes.c:610 builtin/notes.c:696
 #: builtin/notes.c:773 builtin/notes.c:927 builtin/notes.c:1085
 #: builtin/notes.c:1109 builtin/prune-packed.c:29 builtin/receive-pack.c:2527
@@ -2600,7 +2600,7 @@ msgid "n"
 msgstr ""
 
 #: builtin/am.c:2378 builtin/branch.c:776 builtin/bugreport.c:126
-#: builtin/cat-file.c:1068 builtin/cat-file.c:1072 builtin/cat-file.c:1079
+#: builtin/cat-file.c:1062 builtin/cat-file.c:1066 builtin/cat-file.c:1073
 #: builtin/clone.c:160 builtin/diagnose.c:30 builtin/for-each-ref.c:47
 #: builtin/init-db.c:107 builtin/ls-files.c:637 builtin/ls-tree.c:368
 #: builtin/refs.c:27 builtin/replace.c:572 builtin/submodule--helper.c:1877
@@ -3043,7 +3043,7 @@ msgstr ""
 msgid "need a command"
 msgstr ""
 
-#: builtin/bisect.c:1457 builtin/cat-file.c:847
+#: builtin/bisect.c:1457 builtin/cat-file.c:841
 #, c-format
 msgid "unknown command: '%s'"
 msgstr ""
@@ -3823,52 +3823,52 @@ msgstr ""
 msgid "%s is currently not supported with remote-object-info"
 msgstr ""
 
-#: builtin/cat-file.c:781
+#: builtin/cat-file.c:775
 msgid "flush is only for --buffer mode"
 msgstr ""
 
-#: builtin/cat-file.c:823
+#: builtin/cat-file.c:817
 msgid "empty command in input"
 msgstr ""
 
-#: builtin/cat-file.c:825
+#: builtin/cat-file.c:819
 #, c-format
 msgid "whitespace before command: '%s'"
 msgstr ""
 
-#: builtin/cat-file.c:834
+#: builtin/cat-file.c:828
 #, c-format
 msgid "%s requires arguments"
 msgstr ""
 
-#: builtin/cat-file.c:839
+#: builtin/cat-file.c:833
 #, c-format
 msgid "%s takes no arguments"
 msgstr ""
 
-#: builtin/cat-file.c:1008
+#: builtin/cat-file.c:1002
 msgid "only one batch option may be specified"
 msgstr ""
 
-#: builtin/cat-file.c:1042
+#: builtin/cat-file.c:1036
 msgid "git cat-file <type> <object>"
 msgstr ""
 
-#: builtin/cat-file.c:1043
+#: builtin/cat-file.c:1037
 msgid "git cat-file (-e | -p) <object>"
 msgstr ""
 
-#: builtin/cat-file.c:1044
+#: builtin/cat-file.c:1038
 msgid "git cat-file (-t | -s) [--allow-unknown-type] <object>"
 msgstr ""
 
-#: builtin/cat-file.c:1045
+#: builtin/cat-file.c:1039
 msgid ""
 "git cat-file (--textconv | --filters)\n"
 "             [<rev>:<path|tree-ish> | --path=<path|tree-ish> <rev>]"
 msgstr ""
 
-#: builtin/cat-file.c:1047
+#: builtin/cat-file.c:1041
 msgid ""
 "git cat-file (--batch | --batch-check | --batch-command) [--batch-all-"
 "objects]\n"
@@ -3876,139 +3876,139 @@ msgid ""
 "             [--textconv | --filters] [-Z]"
 msgstr ""
 
-#: builtin/cat-file.c:1054
+#: builtin/cat-file.c:1048
 msgid "Check object existence or emit object contents"
 msgstr ""
 
-#: builtin/cat-file.c:1056
+#: builtin/cat-file.c:1050
 msgid "check if <object> exists"
 msgstr ""
 
-#: builtin/cat-file.c:1057
+#: builtin/cat-file.c:1051
 msgid "pretty-print <object> content"
 msgstr ""
 
-#: builtin/cat-file.c:1059
+#: builtin/cat-file.c:1053
 msgid "Emit [broken] object attributes"
 msgstr ""
 
-#: builtin/cat-file.c:1060
+#: builtin/cat-file.c:1054
 msgid "show object type (one of 'blob', 'tree', 'commit', 'tag', ...)"
 msgstr ""
 
-#: builtin/cat-file.c:1061
+#: builtin/cat-file.c:1055
 msgid "show object size"
 msgstr ""
 
-#: builtin/cat-file.c:1063
+#: builtin/cat-file.c:1057
 msgid "allow -s and -t to work with broken/corrupt objects"
 msgstr ""
 
-#: builtin/cat-file.c:1064 builtin/log.c:268
+#: builtin/cat-file.c:1058 builtin/log.c:268
 msgid "use mail map file"
 msgstr ""
 
-#: builtin/cat-file.c:1067
+#: builtin/cat-file.c:1061
 msgid "Batch objects requested on stdin (or --batch-all-objects)"
 msgstr ""
 
-#: builtin/cat-file.c:1069
+#: builtin/cat-file.c:1063
 msgid "show full <object> or <rev> contents"
 msgstr ""
 
-#: builtin/cat-file.c:1073
+#: builtin/cat-file.c:1067
 msgid "like --batch, but don't emit <contents>"
 msgstr ""
 
-#: builtin/cat-file.c:1076
+#: builtin/cat-file.c:1070
 msgid "stdin is NUL-terminated"
 msgstr ""
 
-#: builtin/cat-file.c:1078
+#: builtin/cat-file.c:1072
 msgid "stdin and stdout is NUL-terminated"
 msgstr ""
 
-#: builtin/cat-file.c:1080
+#: builtin/cat-file.c:1074
 msgid "read commands from stdin"
 msgstr ""
 
-#: builtin/cat-file.c:1084
+#: builtin/cat-file.c:1078
 msgid "with --batch[-check]: ignores stdin, batches all known objects"
 msgstr ""
 
-#: builtin/cat-file.c:1086
+#: builtin/cat-file.c:1080
 msgid "Change or optimize batch output"
 msgstr ""
 
-#: builtin/cat-file.c:1087
+#: builtin/cat-file.c:1081
 msgid "buffer --batch output"
 msgstr ""
 
-#: builtin/cat-file.c:1089
+#: builtin/cat-file.c:1083
 msgid "follow in-tree symlinks"
 msgstr ""
 
-#: builtin/cat-file.c:1091
+#: builtin/cat-file.c:1085
 msgid "do not order objects before emitting them"
 msgstr ""
 
-#: builtin/cat-file.c:1093
+#: builtin/cat-file.c:1087
 msgid ""
 "Emit object (blob or tree) with conversion or filter (stand-alone, or with "
 "batch)"
 msgstr ""
 
-#: builtin/cat-file.c:1095
+#: builtin/cat-file.c:1089
 msgid "run textconv on object's content"
 msgstr ""
 
-#: builtin/cat-file.c:1097
+#: builtin/cat-file.c:1091
 msgid "run filters on object's content"
 msgstr ""
 
-#: builtin/cat-file.c:1098
+#: builtin/cat-file.c:1092
 msgid "blob|tree"
 msgstr ""
 
-#: builtin/cat-file.c:1099
+#: builtin/cat-file.c:1093
 msgid "use a <path> for (--textconv | --filters); Not with 'batch'"
 msgstr ""
 
-#: builtin/cat-file.c:1120
+#: builtin/cat-file.c:1114
 #, c-format
 msgid "'%s=<%s>' needs '%s' or '%s'"
 msgstr ""
 
-#: builtin/cat-file.c:1122
+#: builtin/cat-file.c:1116
 msgid "path|tree-ish"
 msgstr ""
 
-#: builtin/cat-file.c:1129 builtin/cat-file.c:1132 builtin/cat-file.c:1135
-#: builtin/cat-file.c:1138 builtin/cat-file.c:1141
+#: builtin/cat-file.c:1123 builtin/cat-file.c:1126 builtin/cat-file.c:1129
+#: builtin/cat-file.c:1132 builtin/cat-file.c:1135
 #, c-format
 msgid "'%s' requires a batch mode"
 msgstr ""
 
-#: builtin/cat-file.c:1162
+#: builtin/cat-file.c:1156
 #, c-format
 msgid "'-%c' is incompatible with batch mode"
 msgstr ""
 
-#: builtin/cat-file.c:1165
+#: builtin/cat-file.c:1159
 msgid "batch modes take no arguments"
 msgstr ""
 
-#: builtin/cat-file.c:1173 builtin/cat-file.c:1176
+#: builtin/cat-file.c:1167 builtin/cat-file.c:1170
 #, c-format
 msgid "<rev> required with '%s'"
 msgstr ""
 
-#: builtin/cat-file.c:1179
+#: builtin/cat-file.c:1173
 #, c-format
 msgid "<object> required with '-%c'"
 msgstr ""
 
-#: builtin/cat-file.c:1188
+#: builtin/cat-file.c:1182
 #, c-format
 msgid "only two arguments allowed in <type> <object> mode, not %d"
 msgstr ""
@@ -19058,7 +19058,7 @@ msgstr ""
 msgid "Unknown value for 'diff.submodule' config variable: '%s'"
 msgstr ""
 
-#: diff.c:471 diff.c:511 merge-recursive.c:3957 transport.c:1134
+#: diff.c:471 diff.c:511 merge-recursive.c:3957 transport.c:1085
 #, c-format
 msgid "unknown value for config '%s': %s"
 msgstr ""
@@ -19723,7 +19723,11 @@ msgstr ""
 msgid "unable to write request to remote"
 msgstr ""
 
-#: fetch-object-info.c:57
+#: fetch-object-info.c:49
+msgid "object-info capability is not enabled on the server"
+msgstr ""
+
+#: fetch-object-info.c:54
 msgid "wrong protocol version. expected v2"
 msgstr ""
 
@@ -22254,21 +22258,21 @@ msgstr ""
 msgid "could not write '%s' promisor file"
 msgstr ""
 
-#: packfile.c:644
+#: packfile.c:642
 msgid "offset before end of packfile (broken .idx?)"
 msgstr ""
 
-#: packfile.c:682
+#: packfile.c:680
 #, c-format
 msgid "packfile %s cannot be mapped%s"
 msgstr ""
 
-#: packfile.c:1971
+#: packfile.c:1968
 #, c-format
 msgid "offset before start of pack index for %s (corrupt index?)"
 msgstr ""
 
-#: packfile.c:1975
+#: packfile.c:1972
 #, c-format
 msgid "offset beyond end of pack index for %s (truncated index?)"
 msgstr ""
@@ -22654,7 +22658,7 @@ msgstr ""
 msgid "unknown element '%s' from remote info"
 msgstr ""
 
-#: promisor-remote.c:530
+#: promisor-remote.c:531
 #, c-format
 msgid "accepted promisor remote '%s' not found"
 msgstr ""
@@ -26098,7 +26102,7 @@ msgstr ""
 msgid "can't connect to subservice %s"
 msgstr ""
 
-#: transport-helper.c:718 transport.c:537
+#: transport-helper.c:718 transport.c:500
 msgid "--negotiate-only requires protocol v2"
 msgstr ""
 
@@ -26246,35 +26250,35 @@ msgstr ""
 msgid "server options require protocol version 2 or later"
 msgstr ""
 
-#: transport.c:540
+#: transport.c:503
 msgid "server does not support wait-for-done"
 msgstr ""
 
-#: transport.c:917
+#: transport.c:868
 msgid "could not parse transport.color.* config"
 msgstr ""
 
-#: transport.c:993
+#: transport.c:944
 msgid "support for protocol v2 not implemented yet"
 msgstr ""
 
-#: transport.c:1211
+#: transport.c:1162
 #, c-format
 msgid "transport '%s' not allowed"
 msgstr ""
 
-#: transport.c:1263
+#: transport.c:1214
 msgid "git-over-rsync is no longer supported"
 msgstr ""
 
-#: transport.c:1368
+#: transport.c:1319
 #, c-format
 msgid ""
 "The following submodule paths contain changes that can\n"
 "not be found on any remote:\n"
 msgstr ""
 
-#: transport.c:1372
+#: transport.c:1323
 #, c-format
 msgid ""
 "\n"
@@ -26290,23 +26294,23 @@ msgid ""
 "\n"
 msgstr ""
 
-#: transport.c:1380
+#: transport.c:1331
 msgid "Aborting."
 msgstr ""
 
-#: transport.c:1531
+#: transport.c:1482
 msgid "failed to push all needed submodules"
 msgstr ""
 
-#: transport.c:1687
+#: transport.c:1638
 msgid "bundle-uri operation not supported by protocol"
 msgstr ""
 
-#: transport.c:1690
+#: transport.c:1641
 msgid "could not retrieve server-advertised bundle-uri list"
 msgstr ""
 
-#: transport.c:1714
+#: transport.c:1665
 msgid "operation not supported by protocol"
 msgstr ""
 
