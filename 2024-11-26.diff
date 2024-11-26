@@ -1,0 +1,40 @@
+
+
+#################### Tue, 26 Nov 2024 23:57:21 +0000 ####################
+
+--- po/git.pot.old	2024-11-26 23:57:21.540058489 +0000
++++ po/git.pot.new	2024-11-26 23:57:21.612058953 +0000
+@@ -2763,9 +2763,6 @@
+ msgid "CRLF would be replaced by LF in %s"
+ msgstr ""
+ 
+-msgid "CURLSSLOPT_NO_REVOKE not supported with cURL < 7.44.0"
+-msgstr ""
+-
+ msgid "Can merge only exactly one commit into empty head"
+ msgstr ""
+ 
+@@ -5086,9 +5083,6 @@
+ msgid "Pruning %s"
+ msgstr ""
+ 
+-msgid "Public key pinning not supported with cURL < 7.39.0"
+-msgstr ""
+-
+ msgid "Pulling is not possible because you have unmerged files."
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
