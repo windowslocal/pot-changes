@@ -1,0 +1,88 @@
+
+
+#################### Wed, 04 Dec 2024 03:26:18 +0000 ####################
+
+--- po/git.pot.old	2024-12-04 03:26:18.615561987 +0000
++++ po/git.pot.new	2024-12-04 03:26:18.691562909 +0000
+@@ -2763,9 +2763,6 @@
+ msgid "CRLF would be replaced by LF in %s"
+ msgstr ""
+ 
+-msgid "CURLSSLOPT_NO_REVOKE not supported with cURL < 7.44.0"
+-msgstr ""
+-
+ msgid "Can merge only exactly one commit into empty head"
+ msgstr ""
+ 
+@@ -5086,9 +5083,6 @@
+ msgid "Pruning %s"
+ msgstr ""
+ 
+-msgid "Public key pinning not supported with cURL < 7.39.0"
+-msgstr ""
+-
+ msgid "Pulling is not possible because you have unmerged files."
+ msgstr ""
+ 
+@@ -7605,9 +7599,6 @@
+ msgid "another 'rebase' process appears to be running; '%s.lock' already exists"
+ msgstr ""
+ 
+-msgid "another process is scheduling background maintenance"
+-msgstr ""
+-
+ msgid "any cloned submodules will be shallow"
+ msgstr ""
+ 
+@@ -8289,6 +8280,9 @@
+ msgid "cannot abort from a branch yet to be born"
+ msgstr ""
+ 
++msgid "cannot acquire lock for scheduled background maintenance"
++msgstr ""
++
+ msgid "cannot advance target with multiple source branches because ordering would be ill-defined"
+ msgstr ""
+ 
+@@ -8668,6 +8662,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "cannot read ref file '%s'"
++msgstr ""
++
++#, c-format
+ msgid "cannot read the current contents of '%s'"
+ msgstr ""
+ 
+@@ -19323,6 +19321,16 @@
+ msgstr ""
+ 
+ #, c-format
++msgid ""
++"unable to create '%s.lock': %s.\n"
++"\n"
++"Another scheduled git-maintenance(1) process seems to be running in this\n"
++"repository. Please make sure no other maintenance processes are running and\n"
++"then try again. If it still fails, a git-maintenance(1) process may have\n"
++"crashed in this repository earlier: remove the file manually to continue."
++msgstr ""
++
++#, c-format
+ msgid "unable to create backing store for newly created file %s"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
