@@ -374,3 +374,379 @@ level=error msg="config variable 'http.cookieFile' in manpage does not match str
 level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
 
 ERROR: fail to execute "git-po-helper check-pot"
+
+
+#################### Wed, 04 Dec 2024 06:57:29 +0000 ####################
+
+--- po/git.pot.old	2024-12-04 06:57:28.949348851 +0000
++++ po/git.pot.new	2024-12-04 06:57:29.021349374 +0000
+@@ -786,6 +786,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "%s is currently not supported with remote-object-info"
++msgstr ""
++
++#, c-format
+ msgid "%s is neither a commit nor blob"
+ msgstr ""
+ 
+@@ -1522,6 +1526,26 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "'%s/HEAD' has changed from '%s' and now points to '%s'\n"
++msgstr ""
++
++#, c-format
++msgid "'%s/HEAD' is now created and points to '%s'\n"
++msgstr ""
++
++#, c-format
++msgid "'%s/HEAD' is unchanged and points to '%s'\n"
++msgstr ""
++
++#, c-format
++msgid "'%s/HEAD' used to point to '%s' (which is not a remote branch), but now points to '%s'\n"
++msgstr ""
++
++#, c-format
++msgid "'%s/HEAD' was detached at '%s' and now points to '%s'\n"
++msgstr ""
++
++#, c-format
+ msgid "'%s=<%s>' needs '%s' or '%s'"
+ msgstr ""
+ 
+@@ -2101,6 +2125,9 @@
+ msgid "..."
+ msgstr ""
+ 
++msgid ".git file absolute/relative path mismatch"
++msgstr ""
++
+ msgid ".git file broken"
+ msgstr ""
+ 
+@@ -2763,9 +2790,6 @@
+ msgid "CRLF would be replaced by LF in %s"
+ msgstr ""
+ 
+-msgid "CURLSSLOPT_NO_REVOKE not supported with cURL < 7.44.0"
+-msgstr ""
+-
+ msgid "Can merge only exactly one commit into empty head"
+ msgstr ""
+ 
+@@ -3274,7 +3298,7 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "Could not setup %s"
++msgid "Could not set up %s"
+ msgstr ""
+ 
+ #, c-format
+@@ -5086,9 +5110,6 @@
+ msgid "Pruning %s"
+ msgstr ""
+ 
+-msgid "Public key pinning not supported with cURL < 7.39.0"
+-msgstr ""
+-
+ msgid "Pulling is not possible because you have unmerged files."
+ msgstr ""
+ 
+@@ -7605,9 +7626,6 @@
+ msgid "another 'rebase' process appears to be running; '%s.lock' already exists"
+ msgstr ""
+ 
+-msgid "another process is scheduling background maintenance"
+-msgstr ""
+-
+ msgid "any cloned submodules will be shallow"
+ msgstr ""
+ 
+@@ -8289,6 +8307,9 @@
+ msgid "cannot abort from a branch yet to be born"
+ msgstr ""
+ 
++msgid "cannot acquire lock for scheduled background maintenance"
++msgstr ""
++
+ msgid "cannot advance target with multiple source branches because ordering would be ill-defined"
+ msgstr ""
+ 
+@@ -8668,6 +8689,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "cannot read ref file '%s'"
++msgstr ""
++
++#, c-format
+ msgid "cannot read the current contents of '%s'"
+ msgstr ""
+ 
+@@ -8852,9 +8877,6 @@
+ msgid "cannot write bundle version %d with algorithm %s"
+ msgstr ""
+ 
+-msgid "cannot write incremental MIDX with bitmap"
+-msgstr ""
+-
+ msgid "cannot write split index for a sparse index"
+ msgstr ""
+ 
+@@ -9692,6 +9714,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "could not load reverse index for MIDX %s"
++msgstr ""
++
++#, c-format
+ msgid "could not lock '%s'"
+ msgstr ""
+ 
+@@ -10380,6 +10406,9 @@
+ msgid "credential-cache--daemon unavailable; no unix socket support"
+ msgstr ""
+ 
++msgid "currently, --write-bitmap-index requires --name-hash-version=1"
++msgstr ""
++
+ msgid "daemon failed to start"
+ msgstr ""
+ 
+@@ -11850,6 +11879,9 @@
+ msgid "failed to set up maintenance schedule"
+ msgstr ""
+ 
++msgid "failed to setup revision walk"
++msgstr ""
++
+ msgid "failed to sign the push certificate"
+ msgstr ""
+ 
+@@ -11927,6 +11959,10 @@
+ msgid "failed to update remote for submodule '%s'"
+ msgstr ""
+ 
++#, c-format
++msgid "failed to walk children of tree %s: not found"
++msgstr ""
++
+ msgid "failed to write archive"
+ msgstr ""
+ 
+@@ -12284,6 +12320,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "found %i tags; gave up search at %s\n"
++msgstr ""
++
++#, c-format
+ msgid "found %u common ancestor:"
+ msgid_plural "found %u common ancestors:"
+ msgstr[0] ""
+@@ -13092,7 +13132,10 @@
+ msgid "git remote update [<options>] [<group> | <remote>]..."
+ msgstr ""
+ 
+-msgid "git repack [<options>]"
++msgid ""
++"git repack [-a] [-A] [-d] [-f] [-F] [-l] [-n] [-q] [-b] [-m]\n"
++"[--window=<n>] [--depth=<n>] [--threads=<n>] [--keep-pack=<pack-name>]\n"
++"[--write-midx] [--name-hash-version=<n>]"
+ msgstr ""
+ 
+ msgid "git replace -d <object>..."
+@@ -13412,6 +13455,9 @@
+ msgid "gitdir"
+ msgstr ""
+ 
++msgid "gitdir absolute/relative path mismatch"
++msgstr ""
++
+ msgid "gitdir file does not exist"
+ msgstr ""
+ 
+@@ -14049,6 +14095,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "invalid --name-hash-version option: %d"
++msgstr ""
++
++#, c-format
+ msgid "invalid --stat value: %s"
+ msgstr ""
+ 
+@@ -15019,12 +15069,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid ""
+-"more than %i tags found; listed %i most recent\n"
+-"gave up search at %s\n"
+-msgstr ""
+-
+-#, c-format
+ msgid "more than one %s"
+ msgstr ""
+ 
+@@ -15182,6 +15226,9 @@
+ msgid "must supply remote when using --negotiate-only"
+ msgstr ""
+ 
++msgid "must supply valid remote when using remote-object-info"
++msgstr ""
++
+ msgid "n"
+ msgstr ""
+ 
+@@ -15858,6 +15905,9 @@
+ msgid "object type mismatch at %s"
+ msgstr ""
+ 
++msgid "object-info capability is not enabled on the server"
++msgstr ""
++
+ msgid "object-info: expected flush after arguments"
+ msgstr ""
+ 
+@@ -17369,6 +17419,9 @@
+ msgid "remote-helper doesn't support push; refspec needed"
+ msgstr ""
+ 
++msgid "remote-object-info requires protocol v2"
++msgstr ""
++
+ #, c-format
+ msgid "remote-tracking branch '%s' not found"
+ msgstr ""
+@@ -18538,6 +18591,9 @@
+ msgid "specify the hash algorithm to use"
+ msgstr ""
+ 
++msgid "specify the name hash version to use for grouping similar objects by path"
++msgstr ""
++
+ msgid "specify the reference format to convert to"
+ msgstr ""
+ 
+@@ -18918,6 +18974,9 @@
+ msgid "test-tool cache-tree <options> (control|prime|update)"
+ msgstr ""
+ 
++msgid "test-tool path-walk <options> -- <revision-options>"
++msgstr ""
++
+ msgid "test-tool serve-v2 [<options>]"
+ msgstr ""
+ 
+@@ -19099,6 +19158,21 @@
+ "\tgit config --global --unset --fixed-value scalar.repo \"%s\""
+ msgstr ""
+ 
++msgid "toggle inclusion of blob objects"
++msgstr ""
++
++msgid "toggle inclusion of commit objects"
++msgstr ""
++
++msgid "toggle inclusion of tag objects"
++msgstr ""
++
++msgid "toggle inclusion of tree objects"
++msgstr ""
++
++msgid "toggle pruning of uninteresting paths"
++msgstr ""
++
+ msgid "toggle the use of a sparse index"
+ msgstr ""
+ 
+@@ -19323,6 +19397,16 @@
+ msgstr ""
+ 
+ #, c-format
++msgid ""
++"unable to create '%s.lock': %s.\n"
++"\n"
++"Another scheduled git-maintenance(1) process seems to be running in this\n"
++"repository. Please make sure no other maintenance processes are running and\n"
++"then try again. If it still fails, a git-maintenance(1) process may have\n"
++"crashed in this repository earlier: remove the file manually to continue."
++msgstr ""
++
++#, c-format
+ msgid "unable to create backing store for newly created file %s"
+ msgstr ""
+ 
+@@ -19742,6 +19826,9 @@
+ msgid "unable to set SO_KEEPALIVE on socket"
+ msgstr ""
+ 
++msgid "unable to set extensions.relativeWorktrees setting"
++msgstr ""
++
+ #, c-format
+ msgid "unable to set permission to '%s'"
+ msgstr ""
+@@ -19829,6 +19916,9 @@
+ msgid "unable to upgrade repository format to support partial clone"
+ msgstr ""
+ 
++msgid "unable to upgrade repository format to support relative worktrees"
++msgstr ""
++
+ #, c-format
+ msgid "unable to verify %s on good revision"
+ msgstr ""
+@@ -20601,6 +20691,9 @@
+ msgid "use per-worktree config file"
+ msgstr ""
+ 
++msgid "use relative paths for worktrees"
++msgstr ""
++
+ msgid "use repository config file"
+ msgstr ""
+ 
+@@ -20664,6 +20757,9 @@
+ msgid "use the specified diff tool"
+ msgstr ""
+ 
++msgid "use the specified name-hash function to group similar objects"
++msgstr ""
++
+ msgid "use the stable patch-id algorithm"
+ msgstr ""
+ 
+@@ -21000,6 +21096,9 @@
+ msgid "wrong object type in link"
+ msgstr ""
+ 
++msgid "wrong protocol version. expected v2"
++msgstr ""
++
+ #, c-format
+ msgid "wrote %<PRIu32> objects while expecting %<PRIu32>"
+ msgstr ""
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
