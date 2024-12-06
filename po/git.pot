@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-04 21:57+0000\n"
+"POT-Creation-Date: 2024-12-06 06:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: add-interactive.c:1172 apply.c:5075 apply.c:5078 builtin/am.c:2367
 #: builtin/am.c:2370 builtin/bugreport.c:124 builtin/clone.c:147
-#: builtin/diagnose.c:28 builtin/fetch.c:2308 builtin/hook.c:32
+#: builtin/diagnose.c:28 builtin/fetch.c:2307 builtin/hook.c:32
 #: builtin/merge.c:277 builtin/pull.c:198 builtin/submodule--helper.c:1864
 #: builtin/submodule--helper.c:1867
 msgid "path"
@@ -684,7 +684,7 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"Disable this message with \"git config advice.%s false\""
+"Disable this message with \"git config set advice.%s false\""
 msgstr ""
 
 #: advice.c:112
@@ -838,10 +838,10 @@ msgstr ""
 #: builtin/checkout.c:1804 builtin/checkout.c:1914 builtin/checkout.c:1917
 #: builtin/clean.c:968 builtin/clone.c:1027 builtin/clone.c:1032
 #: builtin/commit.c:364 builtin/commit.c:367 builtin/commit.c:1244
-#: builtin/commit.c:1300 builtin/commit.c:1317 builtin/describe.c:625
+#: builtin/commit.c:1300 builtin/commit.c:1317 builtin/describe.c:623
 #: builtin/diff-tree.c:168 builtin/difftool.c:755 builtin/fast-export.c:1276
-#: builtin/fetch.c:2419 builtin/fetch.c:2446 builtin/fetch.c:2460
-#: builtin/fetch.c:2465 builtin/help.c:621 builtin/index-pack.c:2025
+#: builtin/fetch.c:2418 builtin/fetch.c:2445 builtin/fetch.c:2459
+#: builtin/fetch.c:2464 builtin/help.c:621 builtin/index-pack.c:2025
 #: builtin/init-db.c:116 builtin/log.c:2253 builtin/log.c:2255
 #: builtin/ls-files.c:750 builtin/merge-base.c:177 builtin/merge-base.c:183
 #: builtin/merge-tree.c:598 builtin/merge.c:1431 builtin/merge.c:1433
@@ -1637,7 +1637,7 @@ msgstr ""
 msgid "report archived files on stderr"
 msgstr ""
 
-#: archive.c:663 builtin/clone.c:151 builtin/fetch.c:2339
+#: archive.c:663 builtin/clone.c:151 builtin/fetch.c:2338
 #: builtin/pack-objects.c:4437 builtin/pack-objects.c:4441 builtin/pull.c:219
 msgid "time"
 msgstr ""
@@ -2112,7 +2112,7 @@ msgstr ""
 msgid "The following paths are ignored by one of your .gitignore files:\n"
 msgstr ""
 
-#: builtin/add.c:251 builtin/clean.c:939 builtin/fetch.c:2329 builtin/mv.c:193
+#: builtin/add.c:251 builtin/clean.c:939 builtin/fetch.c:2328 builtin/mv.c:193
 #: builtin/prune-packed.c:18 builtin/pull.c:212 builtin/push.c:570
 #: builtin/remote.c:1564 builtin/rm.c:254 builtin/send-pack.c:193
 msgid "dry run"
@@ -3091,7 +3091,7 @@ msgid "show work cost statistics"
 msgstr ""
 
 #: builtin/blame.c:897 builtin/checkout.c:1693 builtin/clone.c:113
-#: builtin/commit-graph.c:83 builtin/commit-graph.c:254 builtin/fetch.c:2336
+#: builtin/commit-graph.c:83 builtin/commit-graph.c:254 builtin/fetch.c:2335
 #: builtin/merge.c:291 builtin/multi-pack-index.c:133
 #: builtin/multi-pack-index.c:193 builtin/multi-pack-index.c:221
 #: builtin/multi-pack-index.c:251 builtin/pull.c:124 builtin/push.c:586
@@ -3813,7 +3813,7 @@ msgstr ""
 msgid "must supply valid remote when using remote-object-info"
 msgstr ""
 
-#: builtin/cat-file.c:611 builtin/describe.c:549
+#: builtin/cat-file.c:611 builtin/describe.c:547
 #, c-format
 msgid "Not a valid object name %s"
 msgstr ""
@@ -4804,7 +4804,7 @@ msgid "remove whole directories"
 msgstr ""
 
 #: builtin/clean.c:944 builtin/config.c:878 builtin/config.c:932
-#: builtin/config.c:989 builtin/describe.c:597 builtin/describe.c:599
+#: builtin/config.c:989 builtin/describe.c:595 builtin/describe.c:597
 #: builtin/grep.c:1001 builtin/log.c:278 builtin/log.c:280
 #: builtin/ls-files.c:613 builtin/name-rev.c:575 builtin/name-rev.c:577
 #: builtin/pack-refs.c:36 builtin/pack-refs.c:38 builtin/show-ref.c:321
@@ -4910,7 +4910,7 @@ msgstr ""
 msgid "path to git-upload-pack on the remote"
 msgstr ""
 
-#: builtin/clone.c:149 builtin/fetch.c:2337 builtin/pull.c:216
+#: builtin/clone.c:149 builtin/fetch.c:2336 builtin/pull.c:216
 msgid "depth"
 msgstr ""
 
@@ -4922,11 +4922,11 @@ msgstr ""
 msgid "create a shallow clone since a specific time"
 msgstr ""
 
-#: builtin/clone.c:153 builtin/fetch.c:2341 builtin/pull.c:222
+#: builtin/clone.c:153 builtin/fetch.c:2340 builtin/pull.c:222
 msgid "ref"
 msgstr ""
 
-#: builtin/clone.c:154 builtin/fetch.c:2342 builtin/pull.c:223
+#: builtin/clone.c:154 builtin/fetch.c:2341 builtin/pull.c:223
 msgid "deepen history of shallow clone, excluding ref"
 msgstr ""
 
@@ -4964,12 +4964,12 @@ msgstr ""
 msgid "set config inside the new repository"
 msgstr ""
 
-#: builtin/clone.c:168 builtin/fetch.c:2362 builtin/ls-remote.c:87
+#: builtin/clone.c:168 builtin/fetch.c:2361 builtin/ls-remote.c:87
 #: builtin/pull.c:238 builtin/push.c:595 builtin/send-pack.c:199
 msgid "server-specific"
 msgstr ""
 
-#: builtin/clone.c:168 builtin/fetch.c:2362 builtin/ls-remote.c:87
+#: builtin/clone.c:168 builtin/fetch.c:2361 builtin/ls-remote.c:87
 #: builtin/pull.c:239 builtin/push.c:595 builtin/send-pack.c:200
 msgid "option to transmit"
 msgstr ""
@@ -5125,7 +5125,7 @@ msgstr ""
 msgid "repository '%s' does not exist"
 msgstr ""
 
-#: builtin/clone.c:1050 builtin/fetch.c:2474
+#: builtin/clone.c:1050 builtin/fetch.c:2473
 #, c-format
 msgid "depth %s is not a positive number"
 msgstr ""
@@ -5287,7 +5287,7 @@ msgid ""
 "                       <split-options>"
 msgstr ""
 
-#: builtin/commit-graph.c:55 builtin/fetch.c:2351 builtin/log.c:2084
+#: builtin/commit-graph.c:55 builtin/fetch.c:2350 builtin/log.c:2084
 #: builtin/repack.c:1247 builtin/repack.c:1249
 msgid "dir"
 msgstr ""
@@ -5774,7 +5774,7 @@ msgstr ""
 msgid "version"
 msgstr ""
 
-#: builtin/commit.c:1536 builtin/commit.c:1707 builtin/fetch.c:2330
+#: builtin/commit.c:1536 builtin/commit.c:1707 builtin/fetch.c:2329
 #: builtin/push.c:571 builtin/worktree.c:1054
 msgid "machine-readable output"
 msgstr ""
@@ -6513,114 +6513,109 @@ msgstr ""
 
 #: builtin/describe.c:342
 #, c-format
-msgid "no tag exactly matches '%s'"
-msgstr ""
-
-#: builtin/describe.c:344
-#, c-format
 msgid "No exact match on refs or tags, searching to describe\n"
 msgstr ""
 
-#: builtin/describe.c:413
+#: builtin/describe.c:411
 #, c-format
 msgid "finished search at %s\n"
 msgstr ""
 
-#: builtin/describe.c:440
+#: builtin/describe.c:438
 #, c-format
 msgid ""
 "No annotated tags can describe '%s'.\n"
 "However, there were unannotated tags: try --tags."
 msgstr ""
 
-#: builtin/describe.c:444
+#: builtin/describe.c:442
 #, c-format
 msgid ""
 "No tags can describe '%s'.\n"
 "Try --always, or create some tags."
 msgstr ""
 
-#: builtin/describe.c:474
+#: builtin/describe.c:472
 #, c-format
 msgid "traversed %lu commits\n"
 msgstr ""
 
-#: builtin/describe.c:477
+#: builtin/describe.c:475
 #, c-format
 msgid "found %i tags; gave up search at %s\n"
 msgstr ""
 
-#: builtin/describe.c:546
+#: builtin/describe.c:544
 #, c-format
 msgid "describe %s\n"
 msgstr ""
 
-#: builtin/describe.c:557
+#: builtin/describe.c:555
 #, c-format
 msgid "%s is neither a commit nor blob"
 msgstr ""
 
-#: builtin/describe.c:585
+#: builtin/describe.c:583
 msgid "find the tag that comes after the commit"
 msgstr ""
 
-#: builtin/describe.c:586
+#: builtin/describe.c:584
 msgid "debug search strategy on stderr"
 msgstr ""
 
-#: builtin/describe.c:587
+#: builtin/describe.c:585
 msgid "use any ref"
 msgstr ""
 
-#: builtin/describe.c:588
+#: builtin/describe.c:586
 msgid "use any tag, even unannotated"
 msgstr ""
 
-#: builtin/describe.c:589
+#: builtin/describe.c:587
 msgid "always use long format"
 msgstr ""
 
-#: builtin/describe.c:590
+#: builtin/describe.c:588
 msgid "only follow first parent"
 msgstr ""
 
-#: builtin/describe.c:593
+#: builtin/describe.c:591
 msgid "only output exact matches"
 msgstr ""
 
-#: builtin/describe.c:596
+#: builtin/describe.c:594
 msgid "consider <n> most recent tags (default: 10)"
 msgstr ""
 
-#: builtin/describe.c:598
+#: builtin/describe.c:596
 msgid "only consider tags matching <pattern>"
 msgstr ""
 
-#: builtin/describe.c:600
+#: builtin/describe.c:598
 msgid "do not consider tags matching <pattern>"
 msgstr ""
 
-#: builtin/describe.c:602 builtin/name-rev.c:589
+#: builtin/describe.c:600 builtin/name-rev.c:589
 msgid "show abbreviated commit object as fallback"
 msgstr ""
 
-#: builtin/describe.c:603 builtin/describe.c:606
+#: builtin/describe.c:601 builtin/describe.c:604
 msgid "mark"
 msgstr ""
 
-#: builtin/describe.c:604
+#: builtin/describe.c:602
 msgid "append <mark> on dirty working tree (default: \"-dirty\")"
 msgstr ""
 
-#: builtin/describe.c:607
+#: builtin/describe.c:605
 msgid "append <mark> on broken working tree (default: \"-broken\")"
 msgstr ""
 
-#: builtin/describe.c:671
+#: builtin/describe.c:669
 msgid "No names found, cannot describe anything."
 msgstr ""
 
-#: builtin/describe.c:736 builtin/describe.c:738
+#: builtin/describe.c:734 builtin/describe.c:736
 #, c-format
 msgid "option '%s' and commit-ishes cannot be used together"
 msgstr ""
@@ -7090,253 +7085,253 @@ msgid ""
 "until the remote changes HEAD to something else."
 msgstr ""
 
-#: builtin/fetch.c:1874
+#: builtin/fetch.c:1873
 msgid "multiple branches detected, incompatible with --set-upstream"
 msgstr ""
 
-#: builtin/fetch.c:1886
+#: builtin/fetch.c:1885
 #, c-format
 msgid ""
 "could not set upstream of HEAD to '%s' from '%s' when it does not point to "
 "any branch."
 msgstr ""
 
-#: builtin/fetch.c:1899
+#: builtin/fetch.c:1898
 msgid "not setting upstream for a remote remote-tracking branch"
 msgstr ""
 
-#: builtin/fetch.c:1901
+#: builtin/fetch.c:1900
 msgid "not setting upstream for a remote tag"
 msgstr ""
 
-#: builtin/fetch.c:1903
+#: builtin/fetch.c:1902
 msgid "unknown branch type"
 msgstr ""
 
-#: builtin/fetch.c:1905
+#: builtin/fetch.c:1904
 msgid ""
 "no source branch found;\n"
 "you need to specify exactly one branch with the --set-upstream option"
 msgstr ""
 
-#: builtin/fetch.c:2056 builtin/fetch.c:2136
+#: builtin/fetch.c:2055 builtin/fetch.c:2135
 #, c-format
 msgid "Fetching %s\n"
 msgstr ""
 
-#: builtin/fetch.c:2067 builtin/fetch.c:2139
+#: builtin/fetch.c:2066 builtin/fetch.c:2138
 #, c-format
 msgid "could not fetch %s"
 msgstr ""
 
-#: builtin/fetch.c:2079
+#: builtin/fetch.c:2078
 #, c-format
 msgid "could not fetch '%s' (exit code: %d)\n"
 msgstr ""
 
-#: builtin/fetch.c:2200
+#: builtin/fetch.c:2199
 msgid ""
 "no remote repository specified; please specify either a URL or a\n"
 "remote name from which new revisions should be fetched"
 msgstr ""
 
-#: builtin/fetch.c:2236
+#: builtin/fetch.c:2235
 msgid "you need to specify a tag name"
 msgstr ""
 
-#: builtin/fetch.c:2301 builtin/pull.c:193
+#: builtin/fetch.c:2300 builtin/pull.c:193
 msgid "fetch from all remotes"
 msgstr ""
 
-#: builtin/fetch.c:2303 builtin/pull.c:253
+#: builtin/fetch.c:2302 builtin/pull.c:253
 msgid "set upstream for git pull/fetch"
 msgstr ""
 
-#: builtin/fetch.c:2305 builtin/pull.c:196
+#: builtin/fetch.c:2304 builtin/pull.c:196
 msgid "append to .git/FETCH_HEAD instead of overwriting"
 msgstr ""
 
-#: builtin/fetch.c:2307
+#: builtin/fetch.c:2306
 msgid "use atomic transaction to update references"
 msgstr ""
 
-#: builtin/fetch.c:2309 builtin/pull.c:199
+#: builtin/fetch.c:2308 builtin/pull.c:199
 msgid "path to upload pack on remote end"
 msgstr ""
 
-#: builtin/fetch.c:2310
+#: builtin/fetch.c:2309
 msgid "force overwrite of local reference"
 msgstr ""
 
-#: builtin/fetch.c:2312
+#: builtin/fetch.c:2311
 msgid "fetch from multiple remotes"
 msgstr ""
 
-#: builtin/fetch.c:2314 builtin/pull.c:203
+#: builtin/fetch.c:2313 builtin/pull.c:203
 msgid "fetch all tags and associated objects"
 msgstr ""
 
-#: builtin/fetch.c:2316
+#: builtin/fetch.c:2315
 msgid "do not fetch all tags (--no-tags)"
 msgstr ""
 
-#: builtin/fetch.c:2318
+#: builtin/fetch.c:2317
 msgid "number of submodules fetched in parallel"
 msgstr ""
 
-#: builtin/fetch.c:2320
+#: builtin/fetch.c:2319
 msgid "modify the refspec to place all refs within refs/prefetch/"
 msgstr ""
 
-#: builtin/fetch.c:2322 builtin/pull.c:206
+#: builtin/fetch.c:2321 builtin/pull.c:206
 msgid "prune remote-tracking branches no longer on remote"
 msgstr ""
 
-#: builtin/fetch.c:2324
+#: builtin/fetch.c:2323
 msgid "prune local tags no longer on remote and clobber changed tags"
 msgstr ""
 
-#: builtin/fetch.c:2325 builtin/fetch.c:2354 builtin/pull.c:127
+#: builtin/fetch.c:2324 builtin/fetch.c:2353 builtin/pull.c:127
 msgid "on-demand"
 msgstr ""
 
-#: builtin/fetch.c:2326
+#: builtin/fetch.c:2325
 msgid "control recursive fetching of submodules"
 msgstr ""
 
-#: builtin/fetch.c:2332
+#: builtin/fetch.c:2331
 msgid "write fetched references to the FETCH_HEAD file"
 msgstr ""
 
-#: builtin/fetch.c:2333 builtin/pull.c:214
+#: builtin/fetch.c:2332 builtin/pull.c:214
 msgid "keep downloaded pack"
 msgstr ""
 
-#: builtin/fetch.c:2335
+#: builtin/fetch.c:2334
 msgid "allow updating of HEAD ref"
 msgstr ""
 
-#: builtin/fetch.c:2338 builtin/fetch.c:2344 builtin/pull.c:217
+#: builtin/fetch.c:2337 builtin/fetch.c:2343 builtin/pull.c:217
 #: builtin/pull.c:226
 msgid "deepen history of shallow clone"
 msgstr ""
 
-#: builtin/fetch.c:2340 builtin/pull.c:220
+#: builtin/fetch.c:2339 builtin/pull.c:220
 msgid "deepen history of shallow repository based on time"
 msgstr ""
 
-#: builtin/fetch.c:2346 builtin/pull.c:229
+#: builtin/fetch.c:2345 builtin/pull.c:229
 msgid "convert to a complete repository"
 msgstr ""
 
-#: builtin/fetch.c:2349
+#: builtin/fetch.c:2348
 msgid "re-fetch without negotiating common commits"
 msgstr ""
 
-#: builtin/fetch.c:2352
+#: builtin/fetch.c:2351
 msgid "prepend this to submodule path output"
 msgstr ""
 
-#: builtin/fetch.c:2355
+#: builtin/fetch.c:2354
 msgid ""
 "default for recursive fetching of submodules (lower priority than config "
 "files)"
 msgstr ""
 
-#: builtin/fetch.c:2359 builtin/pull.c:232
+#: builtin/fetch.c:2358 builtin/pull.c:232
 msgid "accept refs that update .git/shallow"
 msgstr ""
 
-#: builtin/fetch.c:2360 builtin/pull.c:234
+#: builtin/fetch.c:2359 builtin/pull.c:234
 msgid "refmap"
 msgstr ""
 
-#: builtin/fetch.c:2361 builtin/pull.c:235
+#: builtin/fetch.c:2360 builtin/pull.c:235
 msgid "specify fetch refmap"
 msgstr ""
 
-#: builtin/fetch.c:2364 builtin/pull.c:247 builtin/rebase.c:1113
+#: builtin/fetch.c:2363 builtin/pull.c:247 builtin/rebase.c:1113
 #: builtin/replay.c:311
 msgid "revision"
 msgstr ""
 
-#: builtin/fetch.c:2365 builtin/pull.c:248
+#: builtin/fetch.c:2364 builtin/pull.c:248
 msgid "report that we have only objects reachable from this object"
 msgstr ""
 
-#: builtin/fetch.c:2367
+#: builtin/fetch.c:2366
 msgid "do not fetch a packfile; instead, print ancestors of negotiation tips"
 msgstr ""
 
-#: builtin/fetch.c:2370 builtin/fetch.c:2372
+#: builtin/fetch.c:2369 builtin/fetch.c:2371
 msgid "run 'maintenance --auto' after fetching"
 msgstr ""
 
-#: builtin/fetch.c:2374 builtin/pull.c:251
+#: builtin/fetch.c:2373 builtin/pull.c:251
 msgid "check for forced-updates on all updated branches"
 msgstr ""
 
-#: builtin/fetch.c:2376
+#: builtin/fetch.c:2375
 msgid "write the commit-graph after fetching"
 msgstr ""
 
-#: builtin/fetch.c:2378
+#: builtin/fetch.c:2377
 msgid "accept refspecs from stdin"
 msgstr ""
 
-#: builtin/fetch.c:2454
+#: builtin/fetch.c:2453
 msgid "--negotiate-only needs one or more --negotiation-tip=*"
 msgstr ""
 
-#: builtin/fetch.c:2458
+#: builtin/fetch.c:2457
 msgid "negative depth in --deepen is not supported"
 msgstr ""
 
-#: builtin/fetch.c:2467
+#: builtin/fetch.c:2466
 msgid "--unshallow on a complete repository does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2487
+#: builtin/fetch.c:2486
 #, c-format
 msgid "failed to fetch bundles from '%s'"
 msgstr ""
 
-#: builtin/fetch.c:2499
+#: builtin/fetch.c:2498
 msgid "fetch --all does not take a repository argument"
 msgstr ""
 
-#: builtin/fetch.c:2501
+#: builtin/fetch.c:2500
 msgid "fetch --all does not make sense with refspecs"
 msgstr ""
 
-#: builtin/fetch.c:2515
+#: builtin/fetch.c:2514
 #, c-format
 msgid "no such remote or remote group: %s"
 msgstr ""
 
-#: builtin/fetch.c:2523
+#: builtin/fetch.c:2522
 msgid "fetching a group and specifying refspecs does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2541
+#: builtin/fetch.c:2540
 msgid "must supply remote when using --negotiate-only"
 msgstr ""
 
-#: builtin/fetch.c:2546
+#: builtin/fetch.c:2545
 msgid "protocol does not support --negotiate-only, exiting"
 msgstr ""
 
-#: builtin/fetch.c:2574
+#: builtin/fetch.c:2573
 msgid ""
 "--filter can only be used with the remote configured in extensions."
 "partialclone"
 msgstr ""
 
-#: builtin/fetch.c:2578
+#: builtin/fetch.c:2577
 msgid "--atomic can only be used when fetching from one remote"
 msgstr ""
 
-#: builtin/fetch.c:2582
+#: builtin/fetch.c:2581
 msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
 
@@ -17873,7 +17868,7 @@ msgid ""
 "to convert the grafts into replace refs.\n"
 "\n"
 "Turn this message off by running\n"
-"\"git config advice.graftFileDeprecated false\""
+"\"git config set advice.graftFileDeprecated false\""
 msgstr ""
 
 #: commit.c:580
@@ -20425,7 +20420,7 @@ msgstr[1] ""
 #, c-format
 msgid ""
 "The '%s' hook was ignored because it's not set as executable.\n"
-"You can disable this warning with `git config advice.ignoredHook false`."
+"You can disable this warning with `git config set advice.ignoredHook false`."
 msgstr ""
 
 #: http-fetch.c:134 http-fetch.c:149
@@ -21904,7 +21899,7 @@ msgid ""
 "\n"
 "where \"$br\" is somehow empty and a 40-hex ref is created. Please\n"
 "examine these refs and maybe delete them. Turn this message off by\n"
-"running \"git config advice.objectNameWarning false\""
+"running \"git config set advice.objectNameWarning false\""
 msgstr ""
 
 #: object-name.c:1069

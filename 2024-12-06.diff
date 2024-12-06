@@ -1,0 +1,67 @@
+
+
+#################### Fri, 06 Dec 2024 06:57:22 +0000 ####################
+
+--- po/git.pot.old	2024-12-06 06:57:22.821305086 +0000
++++ po/git.pot.new	2024-12-06 06:57:22.897305563 +0000
+@@ -67,7 +67,7 @@
+ #, c-format
+ msgid ""
+ "\n"
+-"Disable this message with \"git config advice.%s false\""
++"Disable this message with \"git config set advice.%s false\""
+ msgstr ""
+ 
+ msgid ""
+@@ -4012,7 +4012,7 @@
+ "\n"
+ "where \"$br\" is somehow empty and a 40-hex ref is created. Please\n"
+ "examine these refs and maybe delete them. Turn this message off by\n"
+-"running \"git config advice.objectNameWarning false\""
++"running \"git config set advice.objectNameWarning false\""
+ msgstr ""
+ 
+ msgid "Git pack format"
+@@ -5777,7 +5777,7 @@
+ "to convert the grafts into replace refs.\n"
+ "\n"
+ "Turn this message off by running\n"
+-"\"git config advice.graftFileDeprecated false\""
++"\"git config set advice.graftFileDeprecated false\""
+ msgstr ""
+ 
+ msgid "Switch branches"
+@@ -5843,7 +5843,7 @@
+ #, c-format
+ msgid ""
+ "The '%s' hook was ignored because it's not set as executable.\n"
+-"You can disable this warning with `git config advice.ignoredHook false`."
++"You can disable this warning with `git config set advice.ignoredHook false`."
+ msgstr ""
+ 
+ msgid "The --edit-todo action can only be used during interactive rebase."
+@@ -15553,10 +15553,6 @@
+ msgid "no such task: '%s'"
+ msgstr ""
+ 
+-#, c-format
+-msgid "no tag exactly matches '%s'"
+-msgstr ""
+-
+ msgid "no tag message?"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
