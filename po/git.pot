@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-06 06:57+0000\n"
+"POT-Creation-Date: 2024-12-07 13:13+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -210,7 +210,7 @@ msgstr ""
 
 #: add-interactive.c:1172 apply.c:5075 apply.c:5078 builtin/am.c:2367
 #: builtin/am.c:2370 builtin/bugreport.c:124 builtin/clone.c:147
-#: builtin/diagnose.c:28 builtin/fetch.c:2307 builtin/hook.c:32
+#: builtin/diagnose.c:28 builtin/fetch.c:2326 builtin/hook.c:32
 #: builtin/merge.c:277 builtin/pull.c:198 builtin/submodule--helper.c:1864
 #: builtin/submodule--helper.c:1867
 msgid "path"
@@ -838,10 +838,10 @@ msgstr ""
 #: builtin/checkout.c:1804 builtin/checkout.c:1914 builtin/checkout.c:1917
 #: builtin/clean.c:968 builtin/clone.c:1027 builtin/clone.c:1032
 #: builtin/commit.c:364 builtin/commit.c:367 builtin/commit.c:1244
-#: builtin/commit.c:1300 builtin/commit.c:1317 builtin/describe.c:623
+#: builtin/commit.c:1300 builtin/commit.c:1317 builtin/describe.c:626
 #: builtin/diff-tree.c:168 builtin/difftool.c:755 builtin/fast-export.c:1276
-#: builtin/fetch.c:2418 builtin/fetch.c:2445 builtin/fetch.c:2459
-#: builtin/fetch.c:2464 builtin/help.c:621 builtin/index-pack.c:2025
+#: builtin/fetch.c:2437 builtin/fetch.c:2464 builtin/fetch.c:2478
+#: builtin/fetch.c:2483 builtin/help.c:621 builtin/index-pack.c:2025
 #: builtin/init-db.c:116 builtin/log.c:2253 builtin/log.c:2255
 #: builtin/ls-files.c:750 builtin/merge-base.c:177 builtin/merge-base.c:183
 #: builtin/merge-tree.c:598 builtin/merge.c:1431 builtin/merge.c:1433
@@ -1637,7 +1637,7 @@ msgstr ""
 msgid "report archived files on stderr"
 msgstr ""
 
-#: archive.c:663 builtin/clone.c:151 builtin/fetch.c:2338
+#: archive.c:663 builtin/clone.c:151 builtin/fetch.c:2357
 #: builtin/pack-objects.c:4437 builtin/pack-objects.c:4441 builtin/pull.c:219
 msgid "time"
 msgstr ""
@@ -2112,7 +2112,7 @@ msgstr ""
 msgid "The following paths are ignored by one of your .gitignore files:\n"
 msgstr ""
 
-#: builtin/add.c:251 builtin/clean.c:939 builtin/fetch.c:2328 builtin/mv.c:193
+#: builtin/add.c:251 builtin/clean.c:939 builtin/fetch.c:2347 builtin/mv.c:193
 #: builtin/prune-packed.c:18 builtin/pull.c:212 builtin/push.c:570
 #: builtin/remote.c:1564 builtin/rm.c:254 builtin/send-pack.c:193
 msgid "dry run"
@@ -2730,6 +2730,22 @@ msgstr ""
 msgid "git archive: expected a flush"
 msgstr ""
 
+#: builtin/backfill.c:29
+msgid "git backfill [--batch-size=<n>] [--[no-]sparse]"
+msgstr ""
+
+#: builtin/backfill.c:96
+msgid "problem loading sparse-checkout"
+msgstr ""
+
+#: builtin/backfill.c:129
+msgid "Minimun number of objects to request at a time"
+msgstr ""
+
+#: builtin/backfill.c:131
+msgid "Restrict the missing objects to the current sparse-checkout"
+msgstr ""
+
 #: builtin/bisect.c:30
 msgid ""
 "git bisect start [--term-(new|bad)=<term> --term-(old|good)=<term>]    [--no-"
@@ -3091,7 +3107,7 @@ msgid "show work cost statistics"
 msgstr ""
 
 #: builtin/blame.c:897 builtin/checkout.c:1693 builtin/clone.c:113
-#: builtin/commit-graph.c:83 builtin/commit-graph.c:254 builtin/fetch.c:2335
+#: builtin/commit-graph.c:83 builtin/commit-graph.c:254 builtin/fetch.c:2354
 #: builtin/merge.c:291 builtin/multi-pack-index.c:133
 #: builtin/multi-pack-index.c:193 builtin/multi-pack-index.c:221
 #: builtin/multi-pack-index.c:251 builtin/pull.c:124 builtin/push.c:586
@@ -3813,7 +3829,7 @@ msgstr ""
 msgid "must supply valid remote when using remote-object-info"
 msgstr ""
 
-#: builtin/cat-file.c:611 builtin/describe.c:547
+#: builtin/cat-file.c:611 builtin/describe.c:550
 #, c-format
 msgid "Not a valid object name %s"
 msgstr ""
@@ -4804,7 +4820,7 @@ msgid "remove whole directories"
 msgstr ""
 
 #: builtin/clean.c:944 builtin/config.c:878 builtin/config.c:932
-#: builtin/config.c:989 builtin/describe.c:595 builtin/describe.c:597
+#: builtin/config.c:989 builtin/describe.c:598 builtin/describe.c:600
 #: builtin/grep.c:1001 builtin/log.c:278 builtin/log.c:280
 #: builtin/ls-files.c:613 builtin/name-rev.c:575 builtin/name-rev.c:577
 #: builtin/pack-refs.c:36 builtin/pack-refs.c:38 builtin/show-ref.c:321
@@ -4910,7 +4926,7 @@ msgstr ""
 msgid "path to git-upload-pack on the remote"
 msgstr ""
 
-#: builtin/clone.c:149 builtin/fetch.c:2336 builtin/pull.c:216
+#: builtin/clone.c:149 builtin/fetch.c:2355 builtin/pull.c:216
 msgid "depth"
 msgstr ""
 
@@ -4922,11 +4938,11 @@ msgstr ""
 msgid "create a shallow clone since a specific time"
 msgstr ""
 
-#: builtin/clone.c:153 builtin/fetch.c:2340 builtin/pull.c:222
+#: builtin/clone.c:153 builtin/fetch.c:2359 builtin/pull.c:222
 msgid "ref"
 msgstr ""
 
-#: builtin/clone.c:154 builtin/fetch.c:2341 builtin/pull.c:223
+#: builtin/clone.c:154 builtin/fetch.c:2360 builtin/pull.c:223
 msgid "deepen history of shallow clone, excluding ref"
 msgstr ""
 
@@ -4964,12 +4980,12 @@ msgstr ""
 msgid "set config inside the new repository"
 msgstr ""
 
-#: builtin/clone.c:168 builtin/fetch.c:2361 builtin/ls-remote.c:87
+#: builtin/clone.c:168 builtin/fetch.c:2380 builtin/ls-remote.c:87
 #: builtin/pull.c:238 builtin/push.c:595 builtin/send-pack.c:199
 msgid "server-specific"
 msgstr ""
 
-#: builtin/clone.c:168 builtin/fetch.c:2361 builtin/ls-remote.c:87
+#: builtin/clone.c:168 builtin/fetch.c:2380 builtin/ls-remote.c:87
 #: builtin/pull.c:239 builtin/push.c:595 builtin/send-pack.c:200
 msgid "option to transmit"
 msgstr ""
@@ -5125,7 +5141,7 @@ msgstr ""
 msgid "repository '%s' does not exist"
 msgstr ""
 
-#: builtin/clone.c:1050 builtin/fetch.c:2473
+#: builtin/clone.c:1050 builtin/fetch.c:2492
 #, c-format
 msgid "depth %s is not a positive number"
 msgstr ""
@@ -5287,7 +5303,7 @@ msgid ""
 "                       <split-options>"
 msgstr ""
 
-#: builtin/commit-graph.c:55 builtin/fetch.c:2350 builtin/log.c:2084
+#: builtin/commit-graph.c:55 builtin/fetch.c:2369 builtin/log.c:2084
 #: builtin/repack.c:1247 builtin/repack.c:1249
 msgid "dir"
 msgstr ""
@@ -5774,7 +5790,7 @@ msgstr ""
 msgid "version"
 msgstr ""
 
-#: builtin/commit.c:1536 builtin/commit.c:1707 builtin/fetch.c:2329
+#: builtin/commit.c:1536 builtin/commit.c:1707 builtin/fetch.c:2348
 #: builtin/push.c:571 builtin/worktree.c:1054
 msgid "machine-readable output"
 msgstr ""
@@ -6513,109 +6529,114 @@ msgstr ""
 
 #: builtin/describe.c:342
 #, c-format
+msgid "no tag exactly matches '%s'"
+msgstr ""
+
+#: builtin/describe.c:344
+#, c-format
 msgid "No exact match on refs or tags, searching to describe\n"
 msgstr ""
 
-#: builtin/describe.c:411
+#: builtin/describe.c:414
 #, c-format
 msgid "finished search at %s\n"
 msgstr ""
 
-#: builtin/describe.c:438
+#: builtin/describe.c:441
 #, c-format
 msgid ""
 "No annotated tags can describe '%s'.\n"
 "However, there were unannotated tags: try --tags."
 msgstr ""
 
-#: builtin/describe.c:442
+#: builtin/describe.c:445
 #, c-format
 msgid ""
 "No tags can describe '%s'.\n"
 "Try --always, or create some tags."
 msgstr ""
 
-#: builtin/describe.c:472
+#: builtin/describe.c:475
 #, c-format
 msgid "traversed %lu commits\n"
 msgstr ""
 
-#: builtin/describe.c:475
+#: builtin/describe.c:478
 #, c-format
 msgid "found %i tags; gave up search at %s\n"
 msgstr ""
 
-#: builtin/describe.c:544
+#: builtin/describe.c:547
 #, c-format
 msgid "describe %s\n"
 msgstr ""
 
-#: builtin/describe.c:555
+#: builtin/describe.c:558
 #, c-format
 msgid "%s is neither a commit nor blob"
 msgstr ""
 
-#: builtin/describe.c:583
+#: builtin/describe.c:586
 msgid "find the tag that comes after the commit"
 msgstr ""
 
-#: builtin/describe.c:584
+#: builtin/describe.c:587
 msgid "debug search strategy on stderr"
 msgstr ""
 
-#: builtin/describe.c:585
+#: builtin/describe.c:588
 msgid "use any ref"
 msgstr ""
 
-#: builtin/describe.c:586
+#: builtin/describe.c:589
 msgid "use any tag, even unannotated"
 msgstr ""
 
-#: builtin/describe.c:587
+#: builtin/describe.c:590
 msgid "always use long format"
 msgstr ""
 
-#: builtin/describe.c:588
+#: builtin/describe.c:591
 msgid "only follow first parent"
 msgstr ""
 
-#: builtin/describe.c:591
+#: builtin/describe.c:594
 msgid "only output exact matches"
 msgstr ""
 
-#: builtin/describe.c:594
+#: builtin/describe.c:597
 msgid "consider <n> most recent tags (default: 10)"
 msgstr ""
 
-#: builtin/describe.c:596
+#: builtin/describe.c:599
 msgid "only consider tags matching <pattern>"
 msgstr ""
 
-#: builtin/describe.c:598
+#: builtin/describe.c:601
 msgid "do not consider tags matching <pattern>"
 msgstr ""
 
-#: builtin/describe.c:600 builtin/name-rev.c:589
+#: builtin/describe.c:603 builtin/name-rev.c:589
 msgid "show abbreviated commit object as fallback"
 msgstr ""
 
-#: builtin/describe.c:601 builtin/describe.c:604
+#: builtin/describe.c:604 builtin/describe.c:607
 msgid "mark"
 msgstr ""
 
-#: builtin/describe.c:602
+#: builtin/describe.c:605
 msgid "append <mark> on dirty working tree (default: \"-dirty\")"
 msgstr ""
 
-#: builtin/describe.c:605
+#: builtin/describe.c:608
 msgid "append <mark> on broken working tree (default: \"-broken\")"
 msgstr ""
 
-#: builtin/describe.c:669
+#: builtin/describe.c:672
 msgid "No names found, cannot describe anything."
 msgstr ""
 
-#: builtin/describe.c:734 builtin/describe.c:736
+#: builtin/describe.c:735 builtin/describe.c:737
 #, c-format
 msgid "option '%s' and commit-ishes cannot be used together"
 msgstr ""
@@ -7085,253 +7106,253 @@ msgid ""
 "until the remote changes HEAD to something else."
 msgstr ""
 
-#: builtin/fetch.c:1873
+#: builtin/fetch.c:1892
 msgid "multiple branches detected, incompatible with --set-upstream"
 msgstr ""
 
-#: builtin/fetch.c:1885
+#: builtin/fetch.c:1904
 #, c-format
 msgid ""
 "could not set upstream of HEAD to '%s' from '%s' when it does not point to "
 "any branch."
 msgstr ""
 
-#: builtin/fetch.c:1898
+#: builtin/fetch.c:1917
 msgid "not setting upstream for a remote remote-tracking branch"
 msgstr ""
 
-#: builtin/fetch.c:1900
+#: builtin/fetch.c:1919
 msgid "not setting upstream for a remote tag"
 msgstr ""
 
-#: builtin/fetch.c:1902
+#: builtin/fetch.c:1921
 msgid "unknown branch type"
 msgstr ""
 
-#: builtin/fetch.c:1904
+#: builtin/fetch.c:1923
 msgid ""
 "no source branch found;\n"
 "you need to specify exactly one branch with the --set-upstream option"
 msgstr ""
 
-#: builtin/fetch.c:2055 builtin/fetch.c:2135
+#: builtin/fetch.c:2074 builtin/fetch.c:2154
 #, c-format
 msgid "Fetching %s\n"
 msgstr ""
 
-#: builtin/fetch.c:2066 builtin/fetch.c:2138
+#: builtin/fetch.c:2085 builtin/fetch.c:2157
 #, c-format
 msgid "could not fetch %s"
 msgstr ""
 
-#: builtin/fetch.c:2078
+#: builtin/fetch.c:2097
 #, c-format
 msgid "could not fetch '%s' (exit code: %d)\n"
 msgstr ""
 
-#: builtin/fetch.c:2199
+#: builtin/fetch.c:2218
 msgid ""
 "no remote repository specified; please specify either a URL or a\n"
 "remote name from which new revisions should be fetched"
 msgstr ""
 
-#: builtin/fetch.c:2235
+#: builtin/fetch.c:2254
 msgid "you need to specify a tag name"
 msgstr ""
 
-#: builtin/fetch.c:2300 builtin/pull.c:193
+#: builtin/fetch.c:2319 builtin/pull.c:193
 msgid "fetch from all remotes"
 msgstr ""
 
-#: builtin/fetch.c:2302 builtin/pull.c:253
+#: builtin/fetch.c:2321 builtin/pull.c:253
 msgid "set upstream for git pull/fetch"
 msgstr ""
 
-#: builtin/fetch.c:2304 builtin/pull.c:196
+#: builtin/fetch.c:2323 builtin/pull.c:196
 msgid "append to .git/FETCH_HEAD instead of overwriting"
 msgstr ""
 
-#: builtin/fetch.c:2306
+#: builtin/fetch.c:2325
 msgid "use atomic transaction to update references"
 msgstr ""
 
-#: builtin/fetch.c:2308 builtin/pull.c:199
+#: builtin/fetch.c:2327 builtin/pull.c:199
 msgid "path to upload pack on remote end"
 msgstr ""
 
-#: builtin/fetch.c:2309
+#: builtin/fetch.c:2328
 msgid "force overwrite of local reference"
 msgstr ""
 
-#: builtin/fetch.c:2311
+#: builtin/fetch.c:2330
 msgid "fetch from multiple remotes"
 msgstr ""
 
-#: builtin/fetch.c:2313 builtin/pull.c:203
+#: builtin/fetch.c:2332 builtin/pull.c:203
 msgid "fetch all tags and associated objects"
 msgstr ""
 
-#: builtin/fetch.c:2315
+#: builtin/fetch.c:2334
 msgid "do not fetch all tags (--no-tags)"
 msgstr ""
 
-#: builtin/fetch.c:2317
+#: builtin/fetch.c:2336
 msgid "number of submodules fetched in parallel"
 msgstr ""
 
-#: builtin/fetch.c:2319
+#: builtin/fetch.c:2338
 msgid "modify the refspec to place all refs within refs/prefetch/"
 msgstr ""
 
-#: builtin/fetch.c:2321 builtin/pull.c:206
+#: builtin/fetch.c:2340 builtin/pull.c:206
 msgid "prune remote-tracking branches no longer on remote"
 msgstr ""
 
-#: builtin/fetch.c:2323
+#: builtin/fetch.c:2342
 msgid "prune local tags no longer on remote and clobber changed tags"
 msgstr ""
 
-#: builtin/fetch.c:2324 builtin/fetch.c:2353 builtin/pull.c:127
+#: builtin/fetch.c:2343 builtin/fetch.c:2372 builtin/pull.c:127
 msgid "on-demand"
 msgstr ""
 
-#: builtin/fetch.c:2325
+#: builtin/fetch.c:2344
 msgid "control recursive fetching of submodules"
 msgstr ""
 
-#: builtin/fetch.c:2331
+#: builtin/fetch.c:2350
 msgid "write fetched references to the FETCH_HEAD file"
 msgstr ""
 
-#: builtin/fetch.c:2332 builtin/pull.c:214
+#: builtin/fetch.c:2351 builtin/pull.c:214
 msgid "keep downloaded pack"
 msgstr ""
 
-#: builtin/fetch.c:2334
+#: builtin/fetch.c:2353
 msgid "allow updating of HEAD ref"
 msgstr ""
 
-#: builtin/fetch.c:2337 builtin/fetch.c:2343 builtin/pull.c:217
+#: builtin/fetch.c:2356 builtin/fetch.c:2362 builtin/pull.c:217
 #: builtin/pull.c:226
 msgid "deepen history of shallow clone"
 msgstr ""
 
-#: builtin/fetch.c:2339 builtin/pull.c:220
+#: builtin/fetch.c:2358 builtin/pull.c:220
 msgid "deepen history of shallow repository based on time"
 msgstr ""
 
-#: builtin/fetch.c:2345 builtin/pull.c:229
+#: builtin/fetch.c:2364 builtin/pull.c:229
 msgid "convert to a complete repository"
 msgstr ""
 
-#: builtin/fetch.c:2348
+#: builtin/fetch.c:2367
 msgid "re-fetch without negotiating common commits"
 msgstr ""
 
-#: builtin/fetch.c:2351
+#: builtin/fetch.c:2370
 msgid "prepend this to submodule path output"
 msgstr ""
 
-#: builtin/fetch.c:2354
+#: builtin/fetch.c:2373
 msgid ""
 "default for recursive fetching of submodules (lower priority than config "
 "files)"
 msgstr ""
 
-#: builtin/fetch.c:2358 builtin/pull.c:232
+#: builtin/fetch.c:2377 builtin/pull.c:232
 msgid "accept refs that update .git/shallow"
 msgstr ""
 
-#: builtin/fetch.c:2359 builtin/pull.c:234
+#: builtin/fetch.c:2378 builtin/pull.c:234
 msgid "refmap"
 msgstr ""
 
-#: builtin/fetch.c:2360 builtin/pull.c:235
+#: builtin/fetch.c:2379 builtin/pull.c:235
 msgid "specify fetch refmap"
 msgstr ""
 
-#: builtin/fetch.c:2363 builtin/pull.c:247 builtin/rebase.c:1113
+#: builtin/fetch.c:2382 builtin/pull.c:247 builtin/rebase.c:1113
 #: builtin/replay.c:311
 msgid "revision"
 msgstr ""
 
-#: builtin/fetch.c:2364 builtin/pull.c:248
+#: builtin/fetch.c:2383 builtin/pull.c:248
 msgid "report that we have only objects reachable from this object"
 msgstr ""
 
-#: builtin/fetch.c:2366
+#: builtin/fetch.c:2385
 msgid "do not fetch a packfile; instead, print ancestors of negotiation tips"
 msgstr ""
 
-#: builtin/fetch.c:2369 builtin/fetch.c:2371
+#: builtin/fetch.c:2388 builtin/fetch.c:2390
 msgid "run 'maintenance --auto' after fetching"
 msgstr ""
 
-#: builtin/fetch.c:2373 builtin/pull.c:251
+#: builtin/fetch.c:2392 builtin/pull.c:251
 msgid "check for forced-updates on all updated branches"
 msgstr ""
 
-#: builtin/fetch.c:2375
+#: builtin/fetch.c:2394
 msgid "write the commit-graph after fetching"
 msgstr ""
 
-#: builtin/fetch.c:2377
+#: builtin/fetch.c:2396
 msgid "accept refspecs from stdin"
 msgstr ""
 
-#: builtin/fetch.c:2453
+#: builtin/fetch.c:2472
 msgid "--negotiate-only needs one or more --negotiation-tip=*"
 msgstr ""
 
-#: builtin/fetch.c:2457
+#: builtin/fetch.c:2476
 msgid "negative depth in --deepen is not supported"
 msgstr ""
 
-#: builtin/fetch.c:2466
+#: builtin/fetch.c:2485
 msgid "--unshallow on a complete repository does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2486
+#: builtin/fetch.c:2505
 #, c-format
 msgid "failed to fetch bundles from '%s'"
 msgstr ""
 
-#: builtin/fetch.c:2498
+#: builtin/fetch.c:2517
 msgid "fetch --all does not take a repository argument"
 msgstr ""
 
-#: builtin/fetch.c:2500
+#: builtin/fetch.c:2519
 msgid "fetch --all does not make sense with refspecs"
 msgstr ""
 
-#: builtin/fetch.c:2514
+#: builtin/fetch.c:2533
 #, c-format
 msgid "no such remote or remote group: %s"
 msgstr ""
 
-#: builtin/fetch.c:2522
+#: builtin/fetch.c:2541
 msgid "fetching a group and specifying refspecs does not make sense"
 msgstr ""
 
-#: builtin/fetch.c:2540
+#: builtin/fetch.c:2559
 msgid "must supply remote when using --negotiate-only"
 msgstr ""
 
-#: builtin/fetch.c:2545
+#: builtin/fetch.c:2564
 msgid "protocol does not support --negotiate-only, exiting"
 msgstr ""
 
-#: builtin/fetch.c:2573
+#: builtin/fetch.c:2592
 msgid ""
 "--filter can only be used with the remote configured in extensions."
 "partialclone"
 msgstr ""
 
-#: builtin/fetch.c:2577
+#: builtin/fetch.c:2596
 msgid "--atomic can only be used when fetching from one remote"
 msgstr ""
 
-#: builtin/fetch.c:2581
+#: builtin/fetch.c:2600
 msgid "--stdin can only be used when fetching from one remote"
 msgstr ""
 
@@ -8601,12 +8622,12 @@ msgstr ""
 msgid "no info viewer handled the request"
 msgstr ""
 
-#: builtin/help.c:575 builtin/help.c:586 git.c:376
+#: builtin/help.c:575 builtin/help.c:586 git.c:375
 #, c-format
 msgid "'%s' is aliased to '%s'"
 msgstr ""
 
-#: builtin/help.c:589 git.c:406
+#: builtin/help.c:589 git.c:405
 #, c-format
 msgid "bad alias.%s string: %s"
 msgstr ""
@@ -16821,722 +16842,726 @@ msgid "Create an archive of files from a named tree"
 msgstr ""
 
 #: command-list.h:60
-msgid "Use binary search to find the commit that introduced a bug"
+msgid "Download missing objects in a partial clone"
 msgstr ""
 
 #: command-list.h:61
-msgid "Show what revision and author last modified each line of a file"
+msgid "Use binary search to find the commit that introduced a bug"
 msgstr ""
 
 #: command-list.h:62
-msgid "List, create, or delete branches"
+msgid "Show what revision and author last modified each line of a file"
 msgstr ""
 
 #: command-list.h:63
-msgid "Collect information for user to file a bug report"
+msgid "List, create, or delete branches"
 msgstr ""
 
 #: command-list.h:64
-msgid "Move objects and refs by archive"
+msgid "Collect information for user to file a bug report"
 msgstr ""
 
 #: command-list.h:65
-msgid "Provide contents or details of repository objects"
+msgid "Move objects and refs by archive"
 msgstr ""
 
 #: command-list.h:66
-msgid "Display gitattributes information"
+msgid "Provide contents or details of repository objects"
 msgstr ""
 
 #: command-list.h:67
-msgid "Debug gitignore / exclude files"
+msgid "Display gitattributes information"
 msgstr ""
 
 #: command-list.h:68
-msgid "Show canonical names and email addresses of contacts"
+msgid "Debug gitignore / exclude files"
 msgstr ""
 
 #: command-list.h:69
-msgid "Ensures that a reference name is well formed"
+msgid "Show canonical names and email addresses of contacts"
 msgstr ""
 
 #: command-list.h:70
-msgid "Switch branches or restore working tree files"
+msgid "Ensures that a reference name is well formed"
 msgstr ""
 
 #: command-list.h:71
-msgid "Copy files from the index to the working tree"
+msgid "Switch branches or restore working tree files"
 msgstr ""
 
 #: command-list.h:72
-msgid "Find commits yet to be applied to upstream"
+msgid "Copy files from the index to the working tree"
 msgstr ""
 
 #: command-list.h:73
-msgid "Apply the changes introduced by some existing commits"
+msgid "Find commits yet to be applied to upstream"
 msgstr ""
 
 #: command-list.h:74
-msgid "Graphical alternative to git-commit"
+msgid "Apply the changes introduced by some existing commits"
 msgstr ""
 
 #: command-list.h:75
-msgid "Remove untracked files from the working tree"
+msgid "Graphical alternative to git-commit"
 msgstr ""
 
 #: command-list.h:76
-msgid "Clone a repository into a new directory"
+msgid "Remove untracked files from the working tree"
 msgstr ""
 
 #: command-list.h:77
-msgid "Display data in columns"
+msgid "Clone a repository into a new directory"
 msgstr ""
 
 #: command-list.h:78
-msgid "Record changes to the repository"
+msgid "Display data in columns"
 msgstr ""
 
 #: command-list.h:79
-msgid "Write and verify Git commit-graph files"
+msgid "Record changes to the repository"
 msgstr ""
 
 #: command-list.h:80
-msgid "Create a new commit object"
+msgid "Write and verify Git commit-graph files"
 msgstr ""
 
 #: command-list.h:81
-msgid "Get and set repository or global options"
+msgid "Create a new commit object"
 msgstr ""
 
 #: command-list.h:82
-msgid "Count unpacked number of objects and their disk consumption"
+msgid "Get and set repository or global options"
 msgstr ""
 
 #: command-list.h:83
-msgid "Retrieve and store user credentials"
+msgid "Count unpacked number of objects and their disk consumption"
 msgstr ""
 
 #: command-list.h:84
-msgid "Helper to temporarily store passwords in memory"
+msgid "Retrieve and store user credentials"
 msgstr ""
 
 #: command-list.h:85
-msgid "Helper to store credentials on disk"
+msgid "Helper to temporarily store passwords in memory"
 msgstr ""
 
 #: command-list.h:86
-msgid "Export a single commit to a CVS checkout"
+msgid "Helper to store credentials on disk"
 msgstr ""
 
 #: command-list.h:87
-msgid "Salvage your data out of another SCM people love to hate"
+msgid "Export a single commit to a CVS checkout"
 msgstr ""
 
 #: command-list.h:88
-msgid "A CVS server emulator for Git"
+msgid "Salvage your data out of another SCM people love to hate"
 msgstr ""
 
 #: command-list.h:89
-msgid "A really simple server for Git repositories"
+msgid "A CVS server emulator for Git"
 msgstr ""
 
 #: command-list.h:90
-msgid "Give an object a human readable name based on an available ref"
+msgid "A really simple server for Git repositories"
 msgstr ""
 
 #: command-list.h:91
-msgid "Generate a zip archive of diagnostic information"
+msgid "Give an object a human readable name based on an available ref"
 msgstr ""
 
 #: command-list.h:92
-msgid "Show changes between commits, commit and working tree, etc"
+msgid "Generate a zip archive of diagnostic information"
 msgstr ""
 
 #: command-list.h:93
-msgid "Compares files in the working tree and the index"
+msgid "Show changes between commits, commit and working tree, etc"
 msgstr ""
 
 #: command-list.h:94
-msgid "Compare a tree to the working tree or index"
+msgid "Compares files in the working tree and the index"
 msgstr ""
 
 #: command-list.h:95
-msgid "Compares the content and mode of blobs found via two tree objects"
+msgid "Compare a tree to the working tree or index"
 msgstr ""
 
 #: command-list.h:96
-msgid "Show changes using common diff tools"
+msgid "Compares the content and mode of blobs found via two tree objects"
 msgstr ""
 
 #: command-list.h:97
-msgid "Git data exporter"
+msgid "Show changes using common diff tools"
 msgstr ""
 
 #: command-list.h:98
-msgid "Backend for fast Git data importers"
+msgid "Git data exporter"
 msgstr ""
 
 #: command-list.h:99
-msgid "Download objects and refs from another repository"
+msgid "Backend for fast Git data importers"
 msgstr ""
 
 #: command-list.h:100
-msgid "Receive missing objects from another repository"
+msgid "Download objects and refs from another repository"
 msgstr ""
 
 #: command-list.h:101
-msgid "Rewrite branches"
+msgid "Receive missing objects from another repository"
 msgstr ""
 
 #: command-list.h:102
-msgid "Produce a merge commit message"
+msgid "Rewrite branches"
 msgstr ""
 
 #: command-list.h:103
-msgid "Output information on each ref"
+msgid "Produce a merge commit message"
 msgstr ""
 
 #: command-list.h:104
-msgid "Run a Git command on a list of repositories"
+msgid "Output information on each ref"
 msgstr ""
 
 #: command-list.h:105
-msgid "Prepare patches for e-mail submission"
+msgid "Run a Git command on a list of repositories"
 msgstr ""
 
 #: command-list.h:106
-msgid "Verifies the connectivity and validity of the objects in the database"
+msgid "Prepare patches for e-mail submission"
 msgstr ""
 
 #: command-list.h:107
-msgid "Cleanup unnecessary files and optimize the local repository"
+msgid "Verifies the connectivity and validity of the objects in the database"
 msgstr ""
 
 #: command-list.h:108
-msgid "Extract commit ID from an archive created using git-archive"
+msgid "Cleanup unnecessary files and optimize the local repository"
 msgstr ""
 
 #: command-list.h:109
-msgid "Print lines matching a pattern"
+msgid "Extract commit ID from an archive created using git-archive"
 msgstr ""
 
 #: command-list.h:110
-msgid "A portable graphical interface to Git"
+msgid "Print lines matching a pattern"
 msgstr ""
 
 #: command-list.h:111
-msgid "Compute object ID and optionally create an object from a file"
+msgid "A portable graphical interface to Git"
 msgstr ""
 
 #: command-list.h:112
-msgid "Display help information about Git"
+msgid "Compute object ID and optionally create an object from a file"
 msgstr ""
 
 #: command-list.h:113
-msgid "Run git hooks"
+msgid "Display help information about Git"
 msgstr ""
 
 #: command-list.h:114
-msgid "Server side implementation of Git over HTTP"
+msgid "Run git hooks"
 msgstr ""
 
 #: command-list.h:115
-msgid "Download from a remote Git repository via HTTP"
+msgid "Server side implementation of Git over HTTP"
 msgstr ""
 
 #: command-list.h:116
-msgid "Push objects over HTTP/DAV to another repository"
+msgid "Download from a remote Git repository via HTTP"
 msgstr ""
 
 #: command-list.h:117
-msgid "Send a collection of patches from stdin to an IMAP folder"
+msgid "Push objects over HTTP/DAV to another repository"
 msgstr ""
 
 #: command-list.h:118
-msgid "Build pack index file for an existing packed archive"
+msgid "Send a collection of patches from stdin to an IMAP folder"
 msgstr ""
 
 #: command-list.h:119
-msgid "Create an empty Git repository or reinitialize an existing one"
+msgid "Build pack index file for an existing packed archive"
 msgstr ""
 
 #: command-list.h:120
-msgid "Instantly browse your working repository in gitweb"
+msgid "Create an empty Git repository or reinitialize an existing one"
 msgstr ""
 
 #: command-list.h:121
-msgid "Add or parse structured information in commit messages"
+msgid "Instantly browse your working repository in gitweb"
 msgstr ""
 
 #: command-list.h:122
-msgid "Show commit logs"
+msgid "Add or parse structured information in commit messages"
 msgstr ""
 
 #: command-list.h:123
-msgid "Show information about files in the index and the working tree"
+msgid "Show commit logs"
 msgstr ""
 
 #: command-list.h:124
-msgid "List references in a remote repository"
+msgid "Show information about files in the index and the working tree"
 msgstr ""
 
 #: command-list.h:125
-msgid "List the contents of a tree object"
+msgid "List references in a remote repository"
 msgstr ""
 
 #: command-list.h:126
-msgid "Extracts patch and authorship from a single e-mail message"
+msgid "List the contents of a tree object"
 msgstr ""
 
 #: command-list.h:127
-msgid "Simple UNIX mbox splitter program"
+msgid "Extracts patch and authorship from a single e-mail message"
 msgstr ""
 
 #: command-list.h:128
-msgid "Run tasks to optimize Git repository data"
+msgid "Simple UNIX mbox splitter program"
 msgstr ""
 
 #: command-list.h:129
-msgid "Join two or more development histories together"
+msgid "Run tasks to optimize Git repository data"
 msgstr ""
 
 #: command-list.h:130
-msgid "Find as good common ancestors as possible for a merge"
+msgid "Join two or more development histories together"
 msgstr ""
 
 #: command-list.h:131
-msgid "Run a three-way file merge"
+msgid "Find as good common ancestors as possible for a merge"
 msgstr ""
 
 #: command-list.h:132
-msgid "Run a merge for files needing merging"
+msgid "Run a three-way file merge"
 msgstr ""
 
 #: command-list.h:133
-msgid "The standard helper program to use with git-merge-index"
+msgid "Run a merge for files needing merging"
 msgstr ""
 
 #: command-list.h:134
-msgid "Perform merge without touching index or working tree"
+msgid "The standard helper program to use with git-merge-index"
 msgstr ""
 
 #: command-list.h:135
-msgid "Run merge conflict resolution tools to resolve merge conflicts"
+msgid "Perform merge without touching index or working tree"
 msgstr ""
 
 #: command-list.h:136
-msgid "Creates a tag object with extra validation"
+msgid "Run merge conflict resolution tools to resolve merge conflicts"
 msgstr ""
 
 #: command-list.h:137
-msgid "Build a tree-object from ls-tree formatted text"
+msgid "Creates a tag object with extra validation"
 msgstr ""
 
 #: command-list.h:138
-msgid "Write and verify multi-pack-indexes"
+msgid "Build a tree-object from ls-tree formatted text"
 msgstr ""
 
 #: command-list.h:139
-msgid "Move or rename a file, a directory, or a symlink"
+msgid "Write and verify multi-pack-indexes"
 msgstr ""
 
 #: command-list.h:140
-msgid "Find symbolic names for given revs"
+msgid "Move or rename a file, a directory, or a symlink"
 msgstr ""
 
 #: command-list.h:141
-msgid "Add or inspect object notes"
+msgid "Find symbolic names for given revs"
 msgstr ""
 
 #: command-list.h:142
-msgid "Import from and submit to Perforce repositories"
+msgid "Add or inspect object notes"
 msgstr ""
 
 #: command-list.h:143
-msgid "Create a packed archive of objects"
+msgid "Import from and submit to Perforce repositories"
 msgstr ""
 
 #: command-list.h:144
-msgid "Find redundant pack files"
+msgid "Create a packed archive of objects"
 msgstr ""
 
 #: command-list.h:145
-msgid "Pack heads and tags for efficient repository access"
+msgid "Find redundant pack files"
 msgstr ""
 
 #: command-list.h:146
-msgid "Compute unique ID for a patch"
+msgid "Pack heads and tags for efficient repository access"
 msgstr ""
 
 #: command-list.h:147
-msgid "Prune all unreachable objects from the object database"
+msgid "Compute unique ID for a patch"
 msgstr ""
 
 #: command-list.h:148
-msgid "Remove extra objects that are already in pack files"
+msgid "Prune all unreachable objects from the object database"
 msgstr ""
 
 #: command-list.h:149
-msgid "Fetch from and integrate with another repository or a local branch"
+msgid "Remove extra objects that are already in pack files"
 msgstr ""
 
 #: command-list.h:150
-msgid "Update remote refs along with associated objects"
+msgid "Fetch from and integrate with another repository or a local branch"
 msgstr ""
 
 #: command-list.h:151
-msgid "Applies a quilt patchset onto the current branch"
+msgid "Update remote refs along with associated objects"
 msgstr ""
 
 #: command-list.h:152
-msgid "Compare two commit ranges (e.g. two versions of a branch)"
+msgid "Applies a quilt patchset onto the current branch"
 msgstr ""
 
 #: command-list.h:153
-msgid "Reads tree information into the index"
+msgid "Compare two commit ranges (e.g. two versions of a branch)"
 msgstr ""
 
 #: command-list.h:154
-msgid "Reapply commits on top of another base tip"
+msgid "Reads tree information into the index"
 msgstr ""
 
 #: command-list.h:155
-msgid "Receive what is pushed into the repository"
+msgid "Reapply commits on top of another base tip"
 msgstr ""
 
 #: command-list.h:156
-msgid "Manage reflog information"
+msgid "Receive what is pushed into the repository"
 msgstr ""
 
 #: command-list.h:157
-msgid "Low-level access to refs"
+msgid "Manage reflog information"
 msgstr ""
 
 #: command-list.h:158
-msgid "Manage set of tracked repositories"
+msgid "Low-level access to refs"
 msgstr ""
 
 #: command-list.h:159
-msgid "Pack unpacked objects in a repository"
+msgid "Manage set of tracked repositories"
 msgstr ""
 
 #: command-list.h:160
-msgid "Create, list, delete refs to replace objects"
+msgid "Pack unpacked objects in a repository"
 msgstr ""
 
 #: command-list.h:161
-msgid "EXPERIMENTAL: Replay commits on a new base, works with bare repos too"
+msgid "Create, list, delete refs to replace objects"
 msgstr ""
 
 #: command-list.h:162
-msgid "Generates a summary of pending changes"
+msgid "EXPERIMENTAL: Replay commits on a new base, works with bare repos too"
 msgstr ""
 
 #: command-list.h:163
-msgid "Reuse recorded resolution of conflicted merges"
+msgid "Generates a summary of pending changes"
 msgstr ""
 
 #: command-list.h:164
-msgid "Reset current HEAD to the specified state"
+msgid "Reuse recorded resolution of conflicted merges"
 msgstr ""
 
 #: command-list.h:165
-msgid "Restore working tree files"
+msgid "Reset current HEAD to the specified state"
 msgstr ""
 
 #: command-list.h:166
-msgid "Lists commit objects in reverse chronological order"
+msgid "Restore working tree files"
 msgstr ""
 
 #: command-list.h:167
-msgid "Pick out and massage parameters"
+msgid "Lists commit objects in reverse chronological order"
 msgstr ""
 
 #: command-list.h:168
-msgid "Revert some existing commits"
+msgid "Pick out and massage parameters"
 msgstr ""
 
 #: command-list.h:169
-msgid "Remove files from the working tree and from the index"
+msgid "Revert some existing commits"
 msgstr ""
 
 #: command-list.h:170
-msgid "Send a collection of patches as emails"
+msgid "Remove files from the working tree and from the index"
 msgstr ""
 
 #: command-list.h:171
-msgid "Push objects over Git protocol to another repository"
+msgid "Send a collection of patches as emails"
 msgstr ""
 
 #: command-list.h:172
-msgid "Git's i18n setup code for shell scripts"
+msgid "Push objects over Git protocol to another repository"
 msgstr ""
 
 #: command-list.h:173
-msgid "Common Git shell script setup code"
+msgid "Git's i18n setup code for shell scripts"
 msgstr ""
 
 #: command-list.h:174
-msgid "Restricted login shell for Git-only SSH access"
+msgid "Common Git shell script setup code"
 msgstr ""
 
 #: command-list.h:175
-msgid "Summarize 'git log' output"
+msgid "Restricted login shell for Git-only SSH access"
 msgstr ""
 
 #: command-list.h:176
-msgid "Show various types of objects"
+msgid "Summarize 'git log' output"
 msgstr ""
 
 #: command-list.h:177
-msgid "Show branches and their commits"
+msgid "Show various types of objects"
 msgstr ""
 
 #: command-list.h:178
-msgid "Show packed archive index"
+msgid "Show branches and their commits"
 msgstr ""
 
 #: command-list.h:179
-msgid "List references in a local repository"
+msgid "Show packed archive index"
 msgstr ""
 
 #: command-list.h:180
-msgid "Reduce your working tree to a subset of tracked files"
+msgid "List references in a local repository"
 msgstr ""
 
 #: command-list.h:181
-msgid "Add file contents to the staging area"
+msgid "Reduce your working tree to a subset of tracked files"
 msgstr ""
 
 #: command-list.h:182
-msgid "Stash the changes in a dirty working directory away"
+msgid "Add file contents to the staging area"
 msgstr ""
 
 #: command-list.h:183
-msgid "Show the working tree status"
+msgid "Stash the changes in a dirty working directory away"
 msgstr ""
 
 #: command-list.h:184
-msgid "Remove unnecessary whitespace"
+msgid "Show the working tree status"
 msgstr ""
 
 #: command-list.h:185
-msgid "Initialize, update or inspect submodules"
+msgid "Remove unnecessary whitespace"
 msgstr ""
 
 #: command-list.h:186
-msgid "Bidirectional operation between a Subversion repository and Git"
+msgid "Initialize, update or inspect submodules"
 msgstr ""
 
 #: command-list.h:187
-msgid "Switch branches"
+msgid "Bidirectional operation between a Subversion repository and Git"
 msgstr ""
 
 #: command-list.h:188
-msgid "Read, modify and delete symbolic refs"
+msgid "Switch branches"
 msgstr ""
 
 #: command-list.h:189
-msgid "Create, list, delete or verify a tag object signed with GPG"
+msgid "Read, modify and delete symbolic refs"
 msgstr ""
 
 #: command-list.h:190
-msgid "Creates a temporary file with a blob's contents"
+msgid "Create, list, delete or verify a tag object signed with GPG"
 msgstr ""
 
 #: command-list.h:191
-msgid "Unpack objects from a packed archive"
+msgid "Creates a temporary file with a blob's contents"
 msgstr ""
 
 #: command-list.h:192
-msgid "Register file contents in the working tree to the index"
+msgid "Unpack objects from a packed archive"
 msgstr ""
 
 #: command-list.h:193
-msgid "Update the object name stored in a ref safely"
+msgid "Register file contents in the working tree to the index"
 msgstr ""
 
 #: command-list.h:194
-msgid "Update auxiliary info file to help dumb servers"
+msgid "Update the object name stored in a ref safely"
 msgstr ""
 
 #: command-list.h:195
-msgid "Send archive back to git-archive"
+msgid "Update auxiliary info file to help dumb servers"
 msgstr ""
 
 #: command-list.h:196
-msgid "Send objects packed back to git-fetch-pack"
+msgid "Send archive back to git-archive"
 msgstr ""
 
 #: command-list.h:197
-msgid "Show a Git logical variable"
+msgid "Send objects packed back to git-fetch-pack"
 msgstr ""
 
 #: command-list.h:198
-msgid "Check the GPG signature of commits"
+msgid "Show a Git logical variable"
 msgstr ""
 
 #: command-list.h:199
-msgid "Validate packed Git archive files"
+msgid "Check the GPG signature of commits"
 msgstr ""
 
 #: command-list.h:200
-msgid "Check the GPG signature of tags"
+msgid "Validate packed Git archive files"
 msgstr ""
 
 #: command-list.h:201
-msgid "Display version information about Git"
+msgid "Check the GPG signature of tags"
 msgstr ""
 
 #: command-list.h:202
-msgid "Show logs with differences each commit introduces"
+msgid "Display version information about Git"
 msgstr ""
 
 #: command-list.h:203
-msgid "Manage multiple working trees"
+msgid "Show logs with differences each commit introduces"
 msgstr ""
 
 #: command-list.h:204
-msgid "Create a tree object from the current index"
+msgid "Manage multiple working trees"
 msgstr ""
 
 #: command-list.h:205
-msgid "Defining attributes per path"
+msgid "Create a tree object from the current index"
 msgstr ""
 
 #: command-list.h:206
-msgid "Git command-line interface and conventions"
+msgid "Defining attributes per path"
 msgstr ""
 
 #: command-list.h:207
-msgid "A Git core tutorial for developers"
+msgid "Git command-line interface and conventions"
 msgstr ""
 
 #: command-list.h:208
-msgid "Providing usernames and passwords to Git"
+msgid "A Git core tutorial for developers"
 msgstr ""
 
 #: command-list.h:209
-msgid "Git for CVS users"
+msgid "Providing usernames and passwords to Git"
 msgstr ""
 
 #: command-list.h:210
-msgid "Tweaking diff output"
+msgid "Git for CVS users"
 msgstr ""
 
 #: command-list.h:211
-msgid "A useful minimum set of commands for Everyday Git"
+msgid "Tweaking diff output"
 msgstr ""
 
 #: command-list.h:212
-msgid "Frequently asked questions about using Git"
+msgid "A useful minimum set of commands for Everyday Git"
 msgstr ""
 
 #: command-list.h:213
-msgid "The bundle file format"
+msgid "Frequently asked questions about using Git"
 msgstr ""
 
 #: command-list.h:214
-msgid "Chunk-based file formats"
+msgid "The bundle file format"
 msgstr ""
 
 #: command-list.h:215
-msgid "Git commit-graph format"
+msgid "Chunk-based file formats"
 msgstr ""
 
 #: command-list.h:216
-msgid "Git index format"
+msgid "Git commit-graph format"
 msgstr ""
 
 #: command-list.h:217
-msgid "Git pack format"
+msgid "Git index format"
 msgstr ""
 
 #: command-list.h:218
-msgid "Git cryptographic signature formats"
+msgid "Git pack format"
 msgstr ""
 
 #: command-list.h:219
-msgid "A Git Glossary"
+msgid "Git cryptographic signature formats"
 msgstr ""
 
 #: command-list.h:220
-msgid "Hooks used by Git"
+msgid "A Git Glossary"
 msgstr ""
 
 #: command-list.h:221
-msgid "Specifies intentionally untracked files to ignore"
+msgid "Hooks used by Git"
 msgstr ""
 
 #: command-list.h:222
-msgid "The Git repository browser"
+msgid "Specifies intentionally untracked files to ignore"
 msgstr ""
 
 #: command-list.h:223
-msgid "Map author/committer names and/or E-Mail addresses"
+msgid "The Git repository browser"
 msgstr ""
 
 #: command-list.h:224
-msgid "Defining submodule properties"
+msgid "Map author/committer names and/or E-Mail addresses"
 msgstr ""
 
 #: command-list.h:225
-msgid "Git namespaces"
+msgid "Defining submodule properties"
 msgstr ""
 
 #: command-list.h:226
-msgid "Protocol v0 and v1 capabilities"
+msgid "Git namespaces"
 msgstr ""
 
 #: command-list.h:227
-msgid "Things common to various protocols"
+msgid "Protocol v0 and v1 capabilities"
 msgstr ""
 
 #: command-list.h:228
-msgid "Git HTTP-based protocols"
+msgid "Things common to various protocols"
 msgstr ""
 
 #: command-list.h:229
-msgid "How packs are transferred over-the-wire"
+msgid "Git HTTP-based protocols"
 msgstr ""
 
 #: command-list.h:230
-msgid "Git Wire Protocol, Version 2"
+msgid "How packs are transferred over-the-wire"
 msgstr ""
 
 #: command-list.h:231
-msgid "Helper programs to interact with remote repositories"
+msgid "Git Wire Protocol, Version 2"
 msgstr ""
 
 #: command-list.h:232
-msgid "Git Repository Layout"
+msgid "Helper programs to interact with remote repositories"
 msgstr ""
 
 #: command-list.h:233
-msgid "Specifying revisions and ranges for Git"
+msgid "Git Repository Layout"
 msgstr ""
 
 #: command-list.h:234
-msgid "Mounting one repository inside another"
+msgid "Specifying revisions and ranges for Git"
 msgstr ""
 
 #: command-list.h:235
-msgid "A tutorial introduction to Git"
+msgid "Mounting one repository inside another"
 msgstr ""
 
 #: command-list.h:236
-msgid "A tutorial introduction to Git: part two"
+msgid "A tutorial introduction to Git"
 msgstr ""
 
 #: command-list.h:237
-msgid "Git web interface (web frontend to Git repositories)"
+msgid "A tutorial introduction to Git: part two"
 msgstr ""
 
 #: command-list.h:238
-msgid "An overview of recommended workflows with Git"
+msgid "Git web interface (web frontend to Git repositories)"
 msgstr ""
 
 #: command-list.h:239
+msgid "An overview of recommended workflows with Git"
+msgstr ""
+
+#: command-list.h:240
 msgid "A tool for managing large Git repositories"
 msgstr ""
 
@@ -18519,11 +18544,11 @@ msgstr ""
 msgid "missing value for '%s'"
 msgstr ""
 
-#: connect.c:70
+#: connect.c:71
 msgid "the remote end hung up upon initial contact"
 msgstr ""
 
-#: connect.c:72
+#: connect.c:73
 msgid ""
 "Could not read from remote repository.\n"
 "\n"
@@ -18531,112 +18556,112 @@ msgid ""
 "and the repository exists."
 msgstr ""
 
-#: connect.c:94
+#: connect.c:95
 #, c-format
 msgid "server doesn't support '%s'"
 msgstr ""
 
-#: connect.c:129
+#: connect.c:130
 #, c-format
 msgid "server doesn't support feature '%s'"
 msgstr ""
 
-#: connect.c:140
+#: connect.c:141
 msgid "expected flush after capabilities"
 msgstr ""
 
-#: connect.c:277
+#: connect.c:278
 #, c-format
 msgid "ignoring capabilities after first line '%s'"
 msgstr ""
 
-#: connect.c:298
+#: connect.c:299
 msgid "protocol error: unexpected capabilities^{}"
 msgstr ""
 
-#: connect.c:320
+#: connect.c:321
 #, c-format
 msgid "protocol error: expected shallow sha-1, got '%s'"
 msgstr ""
 
-#: connect.c:322
+#: connect.c:323
 msgid "repository on the other end cannot be shallow"
 msgstr ""
 
-#: connect.c:361
+#: connect.c:362
 msgid "invalid packet"
 msgstr ""
 
-#: connect.c:381
+#: connect.c:382
 #, c-format
 msgid "protocol error: unexpected '%s'"
 msgstr ""
 
-#: connect.c:498
+#: connect.c:500
 #, c-format
 msgid "unknown object format '%s' specified by server"
 msgstr ""
 
-#: connect.c:531
+#: connect.c:540
 #, c-format
 msgid "error on bundle-uri response line %d: %s"
 msgstr ""
 
-#: connect.c:536
+#: connect.c:545
 msgid "expected flush after bundle-uri listing"
 msgstr ""
 
-#: connect.c:544 connect.c:598
+#: connect.c:553 connect.c:607
 msgid "expected response end packet after ref listing"
 msgstr ""
 
-#: connect.c:591
+#: connect.c:600
 #, c-format
 msgid "invalid ls-refs response: %s"
 msgstr ""
 
-#: connect.c:595
+#: connect.c:604
 msgid "expected flush after ref listing"
 msgstr ""
 
-#: connect.c:716
+#: connect.c:725
 #, c-format
 msgid "mismatched algorithms: client %s; server %s"
 msgstr ""
 
-#: connect.c:720
+#: connect.c:729
 #, c-format
 msgid "the server does not support algorithm '%s'"
 msgstr ""
 
-#: connect.c:768
+#: connect.c:777
 #, c-format
 msgid "protocol '%s' is not supported"
 msgstr ""
 
-#: connect.c:819
+#: connect.c:828
 msgid "unable to set SO_KEEPALIVE on socket"
 msgstr ""
 
-#: connect.c:859 connect.c:922
+#: connect.c:868 connect.c:931
 #, c-format
 msgid "Looking up %s ... "
 msgstr ""
 
-#: connect.c:863
+#: connect.c:872
 #, c-format
 msgid "unable to look up %s (port %s) (%s)"
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Looking up %s ... "
-#: connect.c:867 connect.c:938
+#: connect.c:876 connect.c:947
 #, c-format
 msgid ""
 "done.\n"
 "Connecting to %s (port %s) ... "
 msgstr ""
 
-#: connect.c:889 connect.c:966
+#: connect.c:898 connect.c:975
 #, c-format
 msgid ""
 "unable to connect to %s:\n"
@@ -18644,61 +18669,61 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Connecting to %s (port %s) ... "
-#: connect.c:895 connect.c:972
+#: connect.c:904 connect.c:981
 msgid "done."
 msgstr ""
 
-#: connect.c:926
+#: connect.c:935
 #, c-format
 msgid "unable to look up %s (%s)"
 msgstr ""
 
-#: connect.c:932
+#: connect.c:941
 #, c-format
 msgid "unknown port %s"
 msgstr ""
 
-#: connect.c:1069 connect.c:1401
+#: connect.c:1078 connect.c:1410
 #, c-format
 msgid "strange hostname '%s' blocked"
 msgstr ""
 
-#: connect.c:1071
+#: connect.c:1080
 #, c-format
 msgid "strange port '%s' blocked"
 msgstr ""
 
-#: connect.c:1081
+#: connect.c:1090
 #, c-format
 msgid "cannot start proxy %s"
 msgstr ""
 
-#: connect.c:1152
+#: connect.c:1161
 msgid "no path specified; see 'git help pull' for valid url syntax"
 msgstr ""
 
-#: connect.c:1292
+#: connect.c:1301
 msgid "newline is forbidden in git:// hosts and repo paths"
 msgstr ""
 
-#: connect.c:1349
+#: connect.c:1358
 msgid "ssh variant 'simple' does not support -4"
 msgstr ""
 
-#: connect.c:1361
+#: connect.c:1370
 msgid "ssh variant 'simple' does not support -6"
 msgstr ""
 
-#: connect.c:1378
+#: connect.c:1387
 msgid "ssh variant 'simple' does not support setting port"
 msgstr ""
 
-#: connect.c:1493
+#: connect.c:1502
 #, c-format
 msgid "strange pathname '%s' blocked"
 msgstr ""
 
-#: connect.c:1542
+#: connect.c:1551
 msgid "unable to fork"
 msgstr ""
 
@@ -18976,7 +19001,7 @@ msgstr ""
 msgid "could not archive missing directory '%s'"
 msgstr ""
 
-#: diagnose.c:145 dir.c:2541
+#: diagnose.c:145 dir.c:2537
 #, c-format
 msgid "could not open directory '%s'"
 msgstr ""
@@ -19659,36 +19684,36 @@ msgstr ""
 msgid "disabling cone pattern matching"
 msgstr ""
 
-#: dir.c:1282
+#: dir.c:1278
 #, c-format
 msgid "cannot use %s as an exclude file"
 msgstr ""
 
-#: dir.c:2844
+#: dir.c:2840
 msgid "failed to get kernel name and information"
 msgstr ""
 
-#: dir.c:2981
+#: dir.c:2977
 msgid "untracked cache is disabled on this system or location"
 msgstr ""
 
-#: dir.c:3269 dir.c:3307
+#: dir.c:3265 dir.c:3303
 msgid ""
 "No directory name could be guessed.\n"
 "Please specify a directory on the command line"
 msgstr ""
 
-#: dir.c:4024
+#: dir.c:4020
 #, c-format
 msgid "index file corrupt in repo %s"
 msgstr ""
 
-#: dir.c:4071 dir.c:4076
+#: dir.c:4067 dir.c:4072
 #, c-format
 msgid "could not create directories for %s"
 msgstr ""
 
-#: dir.c:4105
+#: dir.c:4101
 #, c-format
 msgid "could not migrate git directory from '%s' to '%s'"
 msgstr ""
@@ -20033,7 +20058,7 @@ msgid ""
 "sockets support"
 msgstr ""
 
-#: git.c:40
+#: git.c:39
 msgid ""
 "git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n"
 "           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n"
@@ -20045,7 +20070,7 @@ msgid ""
 "           <command> [<args>]"
 msgstr ""
 
-#: git.c:48
+#: git.c:47
 msgid ""
 "'git help -a' and 'git help -g' list available subcommands and some\n"
 "concept guides. See 'git help <command>' or 'git help <concept>'\n"
@@ -20053,72 +20078,72 @@ msgid ""
 "See 'git help git' for an overview of the system."
 msgstr ""
 
-#: git.c:111 help.c:403
+#: git.c:110 help.c:403
 #, c-format
 msgid "unsupported command listing type '%s'"
 msgstr ""
 
-#: git.c:212 git.c:240 git.c:310
+#: git.c:211 git.c:239 git.c:309
 #, c-format
 msgid "no directory given for '%s' option\n"
 msgstr ""
 
-#: git.c:226
+#: git.c:225
 #, c-format
 msgid "no namespace given for --namespace\n"
 msgstr ""
 
-#: git.c:262
+#: git.c:261
 #, c-format
 msgid "-c expects a configuration string\n"
 msgstr ""
 
-#: git.c:270
+#: git.c:269
 #, c-format
 msgid "no config key given for --config-env\n"
 msgstr ""
 
-#: git.c:336
+#: git.c:335
 #, c-format
 msgid "no attribute source given for --attr-source\n"
 msgstr ""
 
-#: git.c:354
+#: git.c:353
 #, c-format
 msgid "unknown option: %s\n"
 msgstr ""
 
-#: git.c:401
+#: git.c:400
 #, c-format
 msgid "while expanding alias '%s': '%s'"
 msgstr ""
 
-#: git.c:410
+#: git.c:409
 #, c-format
 msgid ""
 "alias '%s' changes environment variables.\n"
 "You can use '!git' in the alias to do this"
 msgstr ""
 
-#: git.c:417
+#: git.c:416
 #, c-format
 msgid "empty alias for %s"
 msgstr ""
 
-#: git.c:420
+#: git.c:419
 #, c-format
 msgid "recursive alias: %s"
 msgstr ""
 
-#: git.c:496
+#: git.c:495
 msgid "write failure on standard output"
 msgstr ""
 
-#: git.c:498
+#: git.c:497
 msgid "unknown write failure on standard output"
 msgstr ""
 
-#: git.c:500
+#: git.c:499
 msgid "close failed on standard output"
 msgstr ""
 
@@ -20639,7 +20664,7 @@ msgstr ""
 msgid "quoted CRLF detected"
 msgstr ""
 
-#: mem-pool.c:128 strbuf.c:282 strbuf.c:418 wrapper.c:676
+#: mem-pool.c:128 strbuf.c:289 strbuf.c:425 wrapper.c:676
 #, c-format
 msgid "unable to format message: %s"
 msgstr ""
@@ -22462,12 +22487,12 @@ msgstr ""
 msgid "failed to parse %s"
 msgstr ""
 
-#: path-walk.c:84
+#: path-walk.c:120
 #, c-format
 msgid "failed to walk children of tree %s: not found"
 msgstr ""
 
-#: path-walk.c:441
+#: path-walk.c:497
 msgid "failed to setup revision walk"
 msgstr ""
 
@@ -22594,21 +22619,21 @@ msgstr ""
 msgid "read error"
 msgstr ""
 
-#: pkt-line.c:368 pkt-line.c:369
+#: pkt-line.c:370 pkt-line.c:371
 msgid "the remote end hung up unexpectedly"
 msgstr ""
 
-#: pkt-line.c:429 pkt-line.c:431
+#: pkt-line.c:431 pkt-line.c:433
 #, c-format
 msgid "protocol error: bad line length character: %.4s"
 msgstr ""
 
-#: pkt-line.c:446 pkt-line.c:448 pkt-line.c:454 pkt-line.c:456
+#: pkt-line.c:448 pkt-line.c:450 pkt-line.c:456 pkt-line.c:458
 #, c-format
 msgid "protocol error: bad line length %d"
 msgstr ""
 
-#: pkt-line.c:508 sideband.c:173
+#: pkt-line.c:510 sideband.c:173
 #, c-format
 msgid "remote error: %s"
 msgstr ""
@@ -22626,30 +22651,50 @@ msgstr ""
 msgid "unable to parse --pretty format"
 msgstr ""
 
-#: promisor-remote.c:34
+#: promisor-remote.c:35
 msgid "lazy fetching disabled; some objects may not be available"
 msgstr ""
 
-#: promisor-remote.c:50
+#: promisor-remote.c:51
 msgid "promisor-remote: unable to fork off fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:57 promisor-remote.c:59
+#: promisor-remote.c:58 promisor-remote.c:60
 msgid "promisor-remote: could not write to fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:63
+#: promisor-remote.c:64
 msgid "promisor-remote: could not close stdin to fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:73
+#: promisor-remote.c:74
 #, c-format
 msgid "promisor remote name cannot begin with '/': %s"
 msgstr ""
 
-#: promisor-remote.c:287
+#: promisor-remote.c:300
 #, c-format
 msgid "could not fetch %s from promisor remote"
+msgstr ""
+
+#: promisor-remote.c:416
+#, c-format
+msgid "known remote named '%s' but with url '%s' instead of '%s'"
+msgstr ""
+
+#: promisor-remote.c:442
+#, c-format
+msgid "unknown '%s' value for '%s' config option"
+msgstr ""
+
+#: promisor-remote.c:472
+#, c-format
+msgid "unknown element '%s' from remote info"
+msgstr ""
+
+#: promisor-remote.c:530
+#, c-format
+msgid "accepted promisor remote '%s' not found"
 msgstr ""
 
 #: protocol-caps.c:105
@@ -25576,61 +25621,61 @@ msgid "cannot use split index with a sparse index"
 msgstr ""
 
 #. TRANSLATORS: The first %s is a command like "ls-tree".
-#: strbuf.c:465
+#: strbuf.c:472
 #, c-format
 msgid "bad %s format: element '%s' does not start with '('"
 msgstr ""
 
 #. TRANSLATORS: The first %s is a command like "ls-tree".
-#: strbuf.c:471
+#: strbuf.c:478
 #, c-format
 msgid "bad %s format: element '%s' does not end in ')'"
 msgstr ""
 
 #. TRANSLATORS: %s is a command like "ls-tree".
-#: strbuf.c:475
+#: strbuf.c:482
 #, c-format
 msgid "bad %s format: %%%.*s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte
-#: strbuf.c:844
+#: strbuf.c:851
 #, c-format
 msgid "%u.%2.2u GiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte/second
-#: strbuf.c:846
+#: strbuf.c:853
 #, c-format
 msgid "%u.%2.2u GiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte
-#: strbuf.c:854
+#: strbuf.c:861
 #, c-format
 msgid "%u.%2.2u MiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte/second
-#: strbuf.c:856
+#: strbuf.c:863
 #, c-format
 msgid "%u.%2.2u MiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte
-#: strbuf.c:863
+#: strbuf.c:870
 #, c-format
 msgid "%u.%2.2u KiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte/second
-#: strbuf.c:865
+#: strbuf.c:872
 #, c-format
 msgid "%u.%2.2u KiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 byte
-#: strbuf.c:871
+#: strbuf.c:878
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
@@ -25638,7 +25683,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: IEC 80000-13:2008 byte/second
-#: strbuf.c:873
+#: strbuf.c:880
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
@@ -25880,28 +25925,32 @@ msgstr ""
 msgid "number of entries in the cache tree to invalidate (default 0)"
 msgstr ""
 
-#: t/helper/test-path-walk.c:16
+#: t/helper/test-path-walk.c:18
 msgid "test-tool path-walk <options> -- <revision-options>"
 msgstr ""
 
-#: t/helper/test-path-walk.c:86
+#: t/helper/test-path-walk.c:76
 msgid "toggle inclusion of blob objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:88
+#: t/helper/test-path-walk.c:78
 msgid "toggle inclusion of commit objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:90
+#: t/helper/test-path-walk.c:80
 msgid "toggle inclusion of tag objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:92
+#: t/helper/test-path-walk.c:82
 msgid "toggle inclusion of tree objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:94
+#: t/helper/test-path-walk.c:84
 msgid "toggle pruning of uninteresting paths"
+msgstr ""
+
+#: t/helper/test-path-walk.c:86
+msgid "read a pattern list over stdin"
 msgstr ""
 
 #: t/helper/test-reach.c:168
@@ -26533,7 +26582,7 @@ msgstr ""
 msgid "worktree and untracked commit have duplicate entries: %s"
 msgstr ""
 
-#: upload-pack.c:1698
+#: upload-pack.c:1701
 msgid "expected flush after fetch arguments"
 msgstr ""
 
