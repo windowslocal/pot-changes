@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-07 13:13+0000\n"
+"POT-Creation-Date: 2024-12-09 02:22+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -2734,15 +2734,15 @@ msgstr ""
 msgid "git backfill [--batch-size=<n>] [--[no-]sparse]"
 msgstr ""
 
-#: builtin/backfill.c:96
+#: builtin/backfill.c:98
 msgid "problem loading sparse-checkout"
 msgstr ""
 
-#: builtin/backfill.c:129
+#: builtin/backfill.c:137
 msgid "Minimun number of objects to request at a time"
 msgstr ""
 
-#: builtin/backfill.c:131
+#: builtin/backfill.c:139
 msgid "Restrict the missing objects to the current sparse-checkout"
 msgstr ""
 
@@ -18544,11 +18544,11 @@ msgstr ""
 msgid "missing value for '%s'"
 msgstr ""
 
-#: connect.c:71
+#: connect.c:70
 msgid "the remote end hung up upon initial contact"
 msgstr ""
 
-#: connect.c:73
+#: connect.c:72
 msgid ""
 "Could not read from remote repository.\n"
 "\n"
@@ -18556,112 +18556,112 @@ msgid ""
 "and the repository exists."
 msgstr ""
 
-#: connect.c:95
+#: connect.c:94
 #, c-format
 msgid "server doesn't support '%s'"
 msgstr ""
 
-#: connect.c:130
+#: connect.c:129
 #, c-format
 msgid "server doesn't support feature '%s'"
 msgstr ""
 
-#: connect.c:141
+#: connect.c:140
 msgid "expected flush after capabilities"
 msgstr ""
 
-#: connect.c:278
+#: connect.c:277
 #, c-format
 msgid "ignoring capabilities after first line '%s'"
 msgstr ""
 
-#: connect.c:299
+#: connect.c:298
 msgid "protocol error: unexpected capabilities^{}"
 msgstr ""
 
-#: connect.c:321
+#: connect.c:320
 #, c-format
 msgid "protocol error: expected shallow sha-1, got '%s'"
 msgstr ""
 
-#: connect.c:323
+#: connect.c:322
 msgid "repository on the other end cannot be shallow"
 msgstr ""
 
-#: connect.c:362
+#: connect.c:361
 msgid "invalid packet"
 msgstr ""
 
-#: connect.c:382
+#: connect.c:381
 #, c-format
 msgid "protocol error: unexpected '%s'"
 msgstr ""
 
-#: connect.c:500
+#: connect.c:498
 #, c-format
 msgid "unknown object format '%s' specified by server"
 msgstr ""
 
-#: connect.c:540
+#: connect.c:531
 #, c-format
 msgid "error on bundle-uri response line %d: %s"
 msgstr ""
 
-#: connect.c:545
+#: connect.c:536
 msgid "expected flush after bundle-uri listing"
 msgstr ""
 
-#: connect.c:553 connect.c:607
+#: connect.c:544 connect.c:598
 msgid "expected response end packet after ref listing"
 msgstr ""
 
-#: connect.c:600
+#: connect.c:591
 #, c-format
 msgid "invalid ls-refs response: %s"
 msgstr ""
 
-#: connect.c:604
+#: connect.c:595
 msgid "expected flush after ref listing"
 msgstr ""
 
-#: connect.c:725
+#: connect.c:716
 #, c-format
 msgid "mismatched algorithms: client %s; server %s"
 msgstr ""
 
-#: connect.c:729
+#: connect.c:720
 #, c-format
 msgid "the server does not support algorithm '%s'"
 msgstr ""
 
-#: connect.c:777
+#: connect.c:768
 #, c-format
 msgid "protocol '%s' is not supported"
 msgstr ""
 
-#: connect.c:828
+#: connect.c:819
 msgid "unable to set SO_KEEPALIVE on socket"
 msgstr ""
 
-#: connect.c:868 connect.c:931
+#: connect.c:859 connect.c:922
 #, c-format
 msgid "Looking up %s ... "
 msgstr ""
 
-#: connect.c:872
+#: connect.c:863
 #, c-format
 msgid "unable to look up %s (port %s) (%s)"
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Looking up %s ... "
-#: connect.c:876 connect.c:947
+#: connect.c:867 connect.c:938
 #, c-format
 msgid ""
 "done.\n"
 "Connecting to %s (port %s) ... "
 msgstr ""
 
-#: connect.c:898 connect.c:975
+#: connect.c:889 connect.c:966
 #, c-format
 msgid ""
 "unable to connect to %s:\n"
@@ -18669,61 +18669,61 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Connecting to %s (port %s) ... "
-#: connect.c:904 connect.c:981
+#: connect.c:895 connect.c:972
 msgid "done."
 msgstr ""
 
-#: connect.c:935
+#: connect.c:926
 #, c-format
 msgid "unable to look up %s (%s)"
 msgstr ""
 
-#: connect.c:941
+#: connect.c:932
 #, c-format
 msgid "unknown port %s"
 msgstr ""
 
-#: connect.c:1078 connect.c:1410
+#: connect.c:1069 connect.c:1401
 #, c-format
 msgid "strange hostname '%s' blocked"
 msgstr ""
 
-#: connect.c:1080
+#: connect.c:1071
 #, c-format
 msgid "strange port '%s' blocked"
 msgstr ""
 
-#: connect.c:1090
+#: connect.c:1081
 #, c-format
 msgid "cannot start proxy %s"
 msgstr ""
 
-#: connect.c:1161
+#: connect.c:1152
 msgid "no path specified; see 'git help pull' for valid url syntax"
 msgstr ""
 
-#: connect.c:1301
+#: connect.c:1292
 msgid "newline is forbidden in git:// hosts and repo paths"
 msgstr ""
 
-#: connect.c:1358
+#: connect.c:1349
 msgid "ssh variant 'simple' does not support -4"
 msgstr ""
 
-#: connect.c:1370
+#: connect.c:1361
 msgid "ssh variant 'simple' does not support -6"
 msgstr ""
 
-#: connect.c:1387
+#: connect.c:1378
 msgid "ssh variant 'simple' does not support setting port"
 msgstr ""
 
-#: connect.c:1502
+#: connect.c:1493
 #, c-format
 msgid "strange pathname '%s' blocked"
 msgstr ""
 
-#: connect.c:1551
+#: connect.c:1542
 msgid "unable to fork"
 msgstr ""
 
@@ -20664,7 +20664,7 @@ msgstr ""
 msgid "quoted CRLF detected"
 msgstr ""
 
-#: mem-pool.c:128 strbuf.c:289 strbuf.c:425 wrapper.c:676
+#: mem-pool.c:128 strbuf.c:282 strbuf.c:418 wrapper.c:676
 #, c-format
 msgid "unable to format message: %s"
 msgstr ""
@@ -22651,50 +22651,30 @@ msgstr ""
 msgid "unable to parse --pretty format"
 msgstr ""
 
-#: promisor-remote.c:35
+#: promisor-remote.c:34
 msgid "lazy fetching disabled; some objects may not be available"
 msgstr ""
 
-#: promisor-remote.c:51
+#: promisor-remote.c:50
 msgid "promisor-remote: unable to fork off fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:58 promisor-remote.c:60
+#: promisor-remote.c:57 promisor-remote.c:59
 msgid "promisor-remote: could not write to fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:64
+#: promisor-remote.c:63
 msgid "promisor-remote: could not close stdin to fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:74
+#: promisor-remote.c:73
 #, c-format
 msgid "promisor remote name cannot begin with '/': %s"
 msgstr ""
 
-#: promisor-remote.c:300
+#: promisor-remote.c:287
 #, c-format
 msgid "could not fetch %s from promisor remote"
-msgstr ""
-
-#: promisor-remote.c:416
-#, c-format
-msgid "known remote named '%s' but with url '%s' instead of '%s'"
-msgstr ""
-
-#: promisor-remote.c:442
-#, c-format
-msgid "unknown '%s' value for '%s' config option"
-msgstr ""
-
-#: promisor-remote.c:472
-#, c-format
-msgid "unknown element '%s' from remote info"
-msgstr ""
-
-#: promisor-remote.c:530
-#, c-format
-msgid "accepted promisor remote '%s' not found"
 msgstr ""
 
 #: protocol-caps.c:105
@@ -25621,61 +25601,61 @@ msgid "cannot use split index with a sparse index"
 msgstr ""
 
 #. TRANSLATORS: The first %s is a command like "ls-tree".
-#: strbuf.c:472
+#: strbuf.c:465
 #, c-format
 msgid "bad %s format: element '%s' does not start with '('"
 msgstr ""
 
 #. TRANSLATORS: The first %s is a command like "ls-tree".
-#: strbuf.c:478
+#: strbuf.c:471
 #, c-format
 msgid "bad %s format: element '%s' does not end in ')'"
 msgstr ""
 
 #. TRANSLATORS: %s is a command like "ls-tree".
-#: strbuf.c:482
+#: strbuf.c:475
 #, c-format
 msgid "bad %s format: %%%.*s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte
-#: strbuf.c:851
+#: strbuf.c:844
 #, c-format
 msgid "%u.%2.2u GiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte/second
-#: strbuf.c:853
+#: strbuf.c:846
 #, c-format
 msgid "%u.%2.2u GiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte
-#: strbuf.c:861
+#: strbuf.c:854
 #, c-format
 msgid "%u.%2.2u MiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte/second
-#: strbuf.c:863
+#: strbuf.c:856
 #, c-format
 msgid "%u.%2.2u MiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte
-#: strbuf.c:870
+#: strbuf.c:863
 #, c-format
 msgid "%u.%2.2u KiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte/second
-#: strbuf.c:872
+#: strbuf.c:865
 #, c-format
 msgid "%u.%2.2u KiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 byte
-#: strbuf.c:878
+#: strbuf.c:871
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
@@ -25683,7 +25663,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: IEC 80000-13:2008 byte/second
-#: strbuf.c:880
+#: strbuf.c:873
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
@@ -26582,7 +26562,7 @@ msgstr ""
 msgid "worktree and untracked commit have duplicate entries: %s"
 msgstr ""
 
-#: upload-pack.c:1701
+#: upload-pack.c:1698
 msgid "expected flush after fetch arguments"
 msgstr ""
 
