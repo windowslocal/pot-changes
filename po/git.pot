@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-09 02:22+0000\n"
+"POT-Creation-Date: 2024-12-09 05:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -18544,11 +18544,11 @@ msgstr ""
 msgid "missing value for '%s'"
 msgstr ""
 
-#: connect.c:70
+#: connect.c:71
 msgid "the remote end hung up upon initial contact"
 msgstr ""
 
-#: connect.c:72
+#: connect.c:73
 msgid ""
 "Could not read from remote repository.\n"
 "\n"
@@ -18556,112 +18556,112 @@ msgid ""
 "and the repository exists."
 msgstr ""
 
-#: connect.c:94
+#: connect.c:95
 #, c-format
 msgid "server doesn't support '%s'"
 msgstr ""
 
-#: connect.c:129
+#: connect.c:130
 #, c-format
 msgid "server doesn't support feature '%s'"
 msgstr ""
 
-#: connect.c:140
+#: connect.c:141
 msgid "expected flush after capabilities"
 msgstr ""
 
-#: connect.c:277
+#: connect.c:278
 #, c-format
 msgid "ignoring capabilities after first line '%s'"
 msgstr ""
 
-#: connect.c:298
+#: connect.c:299
 msgid "protocol error: unexpected capabilities^{}"
 msgstr ""
 
-#: connect.c:320
+#: connect.c:321
 #, c-format
 msgid "protocol error: expected shallow sha-1, got '%s'"
 msgstr ""
 
-#: connect.c:322
+#: connect.c:323
 msgid "repository on the other end cannot be shallow"
 msgstr ""
 
-#: connect.c:361
+#: connect.c:362
 msgid "invalid packet"
 msgstr ""
 
-#: connect.c:381
+#: connect.c:382
 #, c-format
 msgid "protocol error: unexpected '%s'"
 msgstr ""
 
-#: connect.c:498
+#: connect.c:500
 #, c-format
 msgid "unknown object format '%s' specified by server"
 msgstr ""
 
-#: connect.c:531
+#: connect.c:540
 #, c-format
 msgid "error on bundle-uri response line %d: %s"
 msgstr ""
 
-#: connect.c:536
+#: connect.c:545
 msgid "expected flush after bundle-uri listing"
 msgstr ""
 
-#: connect.c:544 connect.c:598
+#: connect.c:553 connect.c:607
 msgid "expected response end packet after ref listing"
 msgstr ""
 
-#: connect.c:591
+#: connect.c:600
 #, c-format
 msgid "invalid ls-refs response: %s"
 msgstr ""
 
-#: connect.c:595
+#: connect.c:604
 msgid "expected flush after ref listing"
 msgstr ""
 
-#: connect.c:716
+#: connect.c:725
 #, c-format
 msgid "mismatched algorithms: client %s; server %s"
 msgstr ""
 
-#: connect.c:720
+#: connect.c:729
 #, c-format
 msgid "the server does not support algorithm '%s'"
 msgstr ""
 
-#: connect.c:768
+#: connect.c:777
 #, c-format
 msgid "protocol '%s' is not supported"
 msgstr ""
 
-#: connect.c:819
+#: connect.c:828
 msgid "unable to set SO_KEEPALIVE on socket"
 msgstr ""
 
-#: connect.c:859 connect.c:922
+#: connect.c:868 connect.c:931
 #, c-format
 msgid "Looking up %s ... "
 msgstr ""
 
-#: connect.c:863
+#: connect.c:872
 #, c-format
 msgid "unable to look up %s (port %s) (%s)"
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Looking up %s ... "
-#: connect.c:867 connect.c:938
+#: connect.c:876 connect.c:947
 #, c-format
 msgid ""
 "done.\n"
 "Connecting to %s (port %s) ... "
 msgstr ""
 
-#: connect.c:889 connect.c:966
+#: connect.c:898 connect.c:975
 #, c-format
 msgid ""
 "unable to connect to %s:\n"
@@ -18669,61 +18669,61 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Connecting to %s (port %s) ... "
-#: connect.c:895 connect.c:972
+#: connect.c:904 connect.c:981
 msgid "done."
 msgstr ""
 
-#: connect.c:926
+#: connect.c:935
 #, c-format
 msgid "unable to look up %s (%s)"
 msgstr ""
 
-#: connect.c:932
+#: connect.c:941
 #, c-format
 msgid "unknown port %s"
 msgstr ""
 
-#: connect.c:1069 connect.c:1401
+#: connect.c:1078 connect.c:1410
 #, c-format
 msgid "strange hostname '%s' blocked"
 msgstr ""
 
-#: connect.c:1071
+#: connect.c:1080
 #, c-format
 msgid "strange port '%s' blocked"
 msgstr ""
 
-#: connect.c:1081
+#: connect.c:1090
 #, c-format
 msgid "cannot start proxy %s"
 msgstr ""
 
-#: connect.c:1152
+#: connect.c:1161
 msgid "no path specified; see 'git help pull' for valid url syntax"
 msgstr ""
 
-#: connect.c:1292
+#: connect.c:1301
 msgid "newline is forbidden in git:// hosts and repo paths"
 msgstr ""
 
-#: connect.c:1349
+#: connect.c:1358
 msgid "ssh variant 'simple' does not support -4"
 msgstr ""
 
-#: connect.c:1361
+#: connect.c:1370
 msgid "ssh variant 'simple' does not support -6"
 msgstr ""
 
-#: connect.c:1378
+#: connect.c:1387
 msgid "ssh variant 'simple' does not support setting port"
 msgstr ""
 
-#: connect.c:1493
+#: connect.c:1502
 #, c-format
 msgid "strange pathname '%s' blocked"
 msgstr ""
 
-#: connect.c:1542
+#: connect.c:1551
 msgid "unable to fork"
 msgstr ""
 
@@ -20664,7 +20664,7 @@ msgstr ""
 msgid "quoted CRLF detected"
 msgstr ""
 
-#: mem-pool.c:128 strbuf.c:282 strbuf.c:418 wrapper.c:676
+#: mem-pool.c:128 strbuf.c:289 strbuf.c:425 wrapper.c:676
 #, c-format
 msgid "unable to format message: %s"
 msgstr ""
@@ -22651,30 +22651,50 @@ msgstr ""
 msgid "unable to parse --pretty format"
 msgstr ""
 
-#: promisor-remote.c:34
+#: promisor-remote.c:35
 msgid "lazy fetching disabled; some objects may not be available"
 msgstr ""
 
-#: promisor-remote.c:50
+#: promisor-remote.c:51
 msgid "promisor-remote: unable to fork off fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:57 promisor-remote.c:59
+#: promisor-remote.c:58 promisor-remote.c:60
 msgid "promisor-remote: could not write to fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:63
+#: promisor-remote.c:64
 msgid "promisor-remote: could not close stdin to fetch subprocess"
 msgstr ""
 
-#: promisor-remote.c:73
+#: promisor-remote.c:74
 #, c-format
 msgid "promisor remote name cannot begin with '/': %s"
 msgstr ""
 
-#: promisor-remote.c:287
+#: promisor-remote.c:300
 #, c-format
 msgid "could not fetch %s from promisor remote"
+msgstr ""
+
+#: promisor-remote.c:416
+#, c-format
+msgid "known remote named '%s' but with url '%s' instead of '%s'"
+msgstr ""
+
+#: promisor-remote.c:442
+#, c-format
+msgid "unknown '%s' value for '%s' config option"
+msgstr ""
+
+#: promisor-remote.c:472
+#, c-format
+msgid "unknown element '%s' from remote info"
+msgstr ""
+
+#: promisor-remote.c:530
+#, c-format
+msgid "accepted promisor remote '%s' not found"
 msgstr ""
 
 #: protocol-caps.c:105
@@ -25601,61 +25621,61 @@ msgid "cannot use split index with a sparse index"
 msgstr ""
 
 #. TRANSLATORS: The first %s is a command like "ls-tree".
-#: strbuf.c:465
+#: strbuf.c:472
 #, c-format
 msgid "bad %s format: element '%s' does not start with '('"
 msgstr ""
 
 #. TRANSLATORS: The first %s is a command like "ls-tree".
-#: strbuf.c:471
+#: strbuf.c:478
 #, c-format
 msgid "bad %s format: element '%s' does not end in ')'"
 msgstr ""
 
 #. TRANSLATORS: %s is a command like "ls-tree".
-#: strbuf.c:475
+#: strbuf.c:482
 #, c-format
 msgid "bad %s format: %%%.*s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte
-#: strbuf.c:844
+#: strbuf.c:851
 #, c-format
 msgid "%u.%2.2u GiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 gibibyte/second
-#: strbuf.c:846
+#: strbuf.c:853
 #, c-format
 msgid "%u.%2.2u GiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte
-#: strbuf.c:854
+#: strbuf.c:861
 #, c-format
 msgid "%u.%2.2u MiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 mebibyte/second
-#: strbuf.c:856
+#: strbuf.c:863
 #, c-format
 msgid "%u.%2.2u MiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte
-#: strbuf.c:863
+#: strbuf.c:870
 #, c-format
 msgid "%u.%2.2u KiB"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 kibibyte/second
-#: strbuf.c:865
+#: strbuf.c:872
 #, c-format
 msgid "%u.%2.2u KiB/s"
 msgstr ""
 
 #. TRANSLATORS: IEC 80000-13:2008 byte
-#: strbuf.c:871
+#: strbuf.c:878
 #, c-format
 msgid "%u byte"
 msgid_plural "%u bytes"
@@ -25663,7 +25683,7 @@ msgstr[0] ""
 msgstr[1] ""
 
 #. TRANSLATORS: IEC 80000-13:2008 byte/second
-#: strbuf.c:873
+#: strbuf.c:880
 #, c-format
 msgid "%u byte/s"
 msgid_plural "%u bytes/s"
@@ -26562,7 +26582,7 @@ msgstr ""
 msgid "worktree and untracked commit have duplicate entries: %s"
 msgstr ""
 
-#: upload-pack.c:1698
+#: upload-pack.c:1701
 msgid "expected flush after fetch arguments"
 msgstr ""
 
