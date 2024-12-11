@@ -1,0 +1,83 @@
+
+
+#################### Wed, 11 Dec 2024 06:57:55 +0000 ####################
+
+--- po/git.pot.old	2024-12-11 06:57:55.174724980 +0000
++++ po/git.pot.new	2024-12-11 06:57:55.253724992 +0000
+@@ -67,7 +67,7 @@
+ #, c-format
+ msgid ""
+ "\n"
+-"Disable this message with \"git config advice.%s false\""
++"Disable this message with \"git config set advice.%s false\""
+ msgstr ""
+ 
+ msgid ""
+@@ -4008,7 +4008,7 @@
+ "\n"
+ "where \"$br\" is somehow empty and a 40-hex ref is created. Please\n"
+ "examine these refs and maybe delete them. Turn this message off by\n"
+-"running \"git config advice.objectNameWarning false\""
++"running \"git config set advice.objectNameWarning false\""
+ msgstr ""
+ 
+ msgid "Git pack format"
+@@ -5394,6 +5394,15 @@
+ msgid "Run '%s' instead [y/N]? "
+ msgstr ""
+ 
++#, c-format
++msgid ""
++"Run 'git remote set-head %s %s' to follow the change, or set\n"
++"'remote.%s.followRemoteHEAD' configuration option to a different value\n"
++"if you do not want to see this message. Specifically running\n"
++"'git config set remote.%s.followRemoteHEAD %s' will disable the warning\n"
++"until the remote changes HEAD to something else."
++msgstr ""
++
+ msgid "Run a Git command on a list of repositories"
+ msgstr ""
+ 
+@@ -5764,7 +5773,7 @@
+ "to convert the grafts into replace refs.\n"
+ "\n"
+ "Turn this message off by running\n"
+-"\"git config advice.graftFileDeprecated false\""
++"\"git config set advice.graftFileDeprecated false\""
+ msgstr ""
+ 
+ msgid "Switch branches"
+@@ -5830,7 +5839,7 @@
+ #, c-format
+ msgid ""
+ "The '%s' hook was ignored because it's not set as executable.\n"
+-"You can disable this warning with `git config advice.ignoredHook false`."
++"You can disable this warning with `git config set advice.ignoredHook false`."
+ msgstr ""
+ 
+ msgid "The --edit-todo action can only be used during interactive rebase."
+@@ -20262,6 +20271,10 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "unrecognized followRemoteHEAD value '%s' ignored"
++msgstr ""
++
++#, c-format
+ msgid "unrecognized header: %s%s (%d)"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
