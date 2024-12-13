@@ -1,0 +1,70 @@
+
+
+#################### Fri, 13 Dec 2024 23:57:36 +0000 ####################
+
+--- po/git.pot.old	2024-12-13 23:57:36.606890056 +0000
++++ po/git.pot.new	2024-12-13 23:57:36.683891251 +0000
+@@ -2101,6 +2101,9 @@
+ msgid "..."
+ msgstr ""
+ 
++msgid ".git file absolute/relative path mismatch"
++msgstr ""
++
+ msgid ".git file broken"
+ msgstr ""
+ 
+@@ -13410,6 +13413,9 @@
+ msgid "gitdir"
+ msgstr ""
+ 
++msgid "gitdir absolute/relative path mismatch"
++msgstr ""
++
+ msgid "gitdir file does not exist"
+ msgstr ""
+ 
+@@ -19750,6 +19756,9 @@
+ msgid "unable to set SO_KEEPALIVE on socket"
+ msgstr ""
+ 
++msgid "unable to set extensions.relativeWorktrees setting"
++msgstr ""
++
+ #, c-format
+ msgid "unable to set permission to '%s'"
+ msgstr ""
+@@ -19837,6 +19846,9 @@
+ msgid "unable to upgrade repository format to support partial clone"
+ msgstr ""
+ 
++msgid "unable to upgrade repository format to support relative worktrees"
++msgstr ""
++
+ #, c-format
+ msgid "unable to verify %s on good revision"
+ msgstr ""
+@@ -20609,6 +20621,9 @@
+ msgid "use per-worktree config file"
+ msgstr ""
+ 
++msgid "use relative paths for worktrees"
++msgstr ""
++
+ msgid "use repository config file"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
