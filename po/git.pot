@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-13 23:57+0000\n"
+"POT-Creation-Date: 2024-12-16 17:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -684,7 +684,7 @@ msgstr ""
 #, c-format
 msgid ""
 "\n"
-"Disable this message with \"git config advice.%s false\""
+"Disable this message with \"git config set advice.%s false\""
 msgstr ""
 
 #: advice.c:111
@@ -818,7 +818,7 @@ msgstr ""
 #: builtin/notes.c:598 builtin/notes.c:610 builtin/notes.c:696
 #: builtin/notes.c:773 builtin/notes.c:927 builtin/notes.c:1085
 #: builtin/notes.c:1109 builtin/prune-packed.c:29 builtin/receive-pack.c:2527
-#: builtin/refs.c:40 builtin/tag.c:648 t/helper/test-pkt-line.c:89
+#: builtin/refs.c:40 builtin/tag.c:637 t/helper/test-pkt-line.c:89
 msgid "too many arguments"
 msgstr ""
 
@@ -838,10 +838,10 @@ msgstr ""
 #: builtin/checkout.c:1802 builtin/checkout.c:1912 builtin/checkout.c:1915
 #: builtin/clean.c:965 builtin/clone.c:1024 builtin/clone.c:1029
 #: builtin/commit.c:361 builtin/commit.c:364 builtin/commit.c:1241
-#: builtin/commit.c:1297 builtin/commit.c:1314 builtin/describe.c:622
+#: builtin/commit.c:1297 builtin/commit.c:1314 builtin/describe.c:624
 #: builtin/diff-tree.c:167 builtin/difftool.c:752 builtin/fast-export.c:1273
 #: builtin/fetch.c:2293 builtin/fetch.c:2320 builtin/fetch.c:2334
-#: builtin/fetch.c:2339 builtin/help.c:621 builtin/index-pack.c:1984
+#: builtin/fetch.c:2339 builtin/help.c:621 builtin/index-pack.c:2023
 #: builtin/init-db.c:116 builtin/log.c:2246 builtin/log.c:2248
 #: builtin/ls-files.c:747 builtin/merge-base.c:177 builtin/merge-base.c:183
 #: builtin/merge-tree.c:598 builtin/merge.c:1428 builtin/merge.c:1430
@@ -852,7 +852,7 @@ msgstr ""
 #: builtin/rev-parse.c:951 builtin/rev-parse.c:962 builtin/show-branch.c:732
 #: builtin/show-branch.c:737 builtin/stash.c:1816 builtin/stash.c:1819
 #: builtin/submodule--helper.c:1221 builtin/submodule--helper.c:3110
-#: builtin/tag.c:582 builtin/tag.c:629 builtin/worktree.c:732
+#: builtin/tag.c:571 builtin/tag.c:618 builtin/worktree.c:732
 #: builtin/worktree.c:735 builtin/worktree.c:812 builtin/worktree.c:815
 #: builtin/worktree.c:818 builtin/worktree.c:1066 parse-options.c:286
 #: parse-options.c:1332 range-diff.c:576 revision.c:2482 revision.c:2487
@@ -1531,7 +1531,7 @@ msgid "git archive --remote <repo> [--exec <cmd>] --list"
 msgstr ""
 
 #: archive.c:222 archive.c:359 builtin/gc.c:622 builtin/notes.c:297
-#: builtin/tag.c:635
+#: builtin/tag.c:624
 #, c-format
 msgid "cannot read '%s'"
 msgstr ""
@@ -1678,7 +1678,7 @@ msgstr ""
 
 #: archive.c:683 builtin/add.c:420 builtin/add.c:452 builtin/checkout.c:1921
 #: builtin/clone.c:1258 builtin/clone.c:1261 builtin/commit.c:373
-#: builtin/fast-export.c:1258 builtin/index-pack.c:1978 builtin/log.c:2420
+#: builtin/fast-export.c:1258 builtin/index-pack.c:2017 builtin/log.c:2420
 #: builtin/reset.c:395 builtin/reset.c:456 builtin/rm.c:291
 #: builtin/stash.c:1828 builtin/worktree.c:824 builtin/worktree.c:1068
 #: fetch-pack.c:348 http-fetch.c:157 http-fetch.c:166 revision.c:3167
@@ -2594,7 +2594,7 @@ msgstr ""
 #: builtin/pull.c:145 builtin/pull.c:207 builtin/pull.c:224
 #: builtin/rebase.c:1134 builtin/repack.c:1219 builtin/repack.c:1223
 #: builtin/repack.c:1225 builtin/show-branch.c:668 builtin/show-ref.c:314
-#: builtin/tag.c:490 parse-options.h:217 parse-options.h:278
+#: builtin/tag.c:479 parse-options.h:217 parse-options.h:278
 #: parse-options.h:528
 msgid "n"
 msgstr ""
@@ -2605,7 +2605,7 @@ msgstr ""
 #: builtin/init-db.c:107 builtin/ls-files.c:637 builtin/ls-tree.c:368
 #: builtin/refs.c:27 builtin/replace.c:572 builtin/submodule--helper.c:1877
 #: builtin/submodule--helper.c:2821 builtin/submodule--helper.c:3456
-#: builtin/tag.c:528 builtin/verify-tag.c:34
+#: builtin/tag.c:517 builtin/verify-tag.c:34
 msgid "format"
 msgstr ""
 
@@ -2659,7 +2659,7 @@ msgstr ""
 
 #: builtin/am.c:2418 builtin/commit-tree.c:114 builtin/commit.c:1686
 #: builtin/merge.c:289 builtin/pull.c:182 builtin/rebase.c:1190
-#: builtin/revert.c:134 builtin/tag.c:507
+#: builtin/revert.c:134 builtin/tag.c:496
 msgid "key-id"
 msgstr ""
 
@@ -3480,7 +3480,7 @@ msgstr ""
 msgid "move/rename a branch, even if target exists"
 msgstr ""
 
-#: builtin/branch.c:759 builtin/for-each-ref.c:43 builtin/tag.c:521
+#: builtin/branch.c:759 builtin/for-each-ref.c:43 builtin/tag.c:510
 msgid "do not output a newline after empty formatted refs"
 msgstr ""
 
@@ -3526,7 +3526,7 @@ msgstr ""
 
 #: builtin/branch.c:772 builtin/for-each-ref.c:52 builtin/notes.c:492
 #: builtin/notes.c:497 builtin/notes.c:671 builtin/notes.c:674
-#: builtin/tag.c:524
+#: builtin/tag.c:513
 msgid "object"
 msgstr ""
 
@@ -3534,7 +3534,7 @@ msgstr ""
 msgid "print only branches of the object"
 msgstr ""
 
-#: builtin/branch.c:774 builtin/for-each-ref.c:58 builtin/tag.c:531
+#: builtin/branch.c:774 builtin/for-each-ref.c:58 builtin/tag.c:520
 msgid "sorting and filtering are case insensitive"
 msgstr ""
 
@@ -3543,7 +3543,7 @@ msgid "recurse through submodules"
 msgstr ""
 
 #: builtin/branch.c:776 builtin/for-each-ref.c:47 builtin/ls-files.c:638
-#: builtin/ls-tree.c:369 builtin/tag.c:529 builtin/verify-tag.c:34
+#: builtin/ls-tree.c:369 builtin/tag.c:518 builtin/verify-tag.c:34
 msgid "format to use for the output"
 msgstr ""
 
@@ -4789,7 +4789,7 @@ msgid "remove whole directories"
 msgstr ""
 
 #: builtin/clean.c:941 builtin/config.c:878 builtin/config.c:932
-#: builtin/config.c:989 builtin/describe.c:594 builtin/describe.c:596
+#: builtin/config.c:989 builtin/describe.c:596 builtin/describe.c:598
 #: builtin/grep.c:998 builtin/log.c:275 builtin/log.c:277
 #: builtin/ls-files.c:610 builtin/name-rev.c:573 builtin/name-rev.c:575
 #: builtin/pack-refs.c:35 builtin/pack-refs.c:37 builtin/show-ref.c:321
@@ -5403,7 +5403,7 @@ msgstr ""
 
 #: builtin/commit-tree.c:108 builtin/commit.c:1670 builtin/merge.c:271
 #: builtin/notes.c:486 builtin/notes.c:665 builtin/stash.c:1785
-#: builtin/tag.c:499
+#: builtin/tag.c:488
 msgid "message"
 msgstr ""
 
@@ -5820,7 +5820,7 @@ msgstr ""
 msgid "Commit message options"
 msgstr ""
 
-#: builtin/commit.c:1667 builtin/merge.c:275 builtin/tag.c:501
+#: builtin/commit.c:1667 builtin/merge.c:275 builtin/tag.c:490
 msgid "read message from file"
 msgstr ""
 
@@ -5873,11 +5873,11 @@ msgstr ""
 msgid "the commit is authored by me now (used with -C/-c/--amend)"
 msgstr ""
 
-#: builtin/commit.c:1680 builtin/interpret-trailers.c:218 builtin/tag.c:502
+#: builtin/commit.c:1680 builtin/interpret-trailers.c:218 builtin/tag.c:491
 msgid "trailer"
 msgstr ""
 
-#: builtin/commit.c:1680 builtin/tag.c:503
+#: builtin/commit.c:1680 builtin/tag.c:492
 msgid "add custom trailer(s)"
 msgstr ""
 
@@ -6506,113 +6506,111 @@ msgstr ""
 msgid "No exact match on refs or tags, searching to describe\n"
 msgstr ""
 
-#: builtin/describe.c:409
+#: builtin/describe.c:412
 #, c-format
 msgid "finished search at %s\n"
 msgstr ""
 
-#: builtin/describe.c:436
+#: builtin/describe.c:439
 #, c-format
 msgid ""
 "No annotated tags can describe '%s'.\n"
 "However, there were unannotated tags: try --tags."
 msgstr ""
 
-#: builtin/describe.c:440
+#: builtin/describe.c:443
 #, c-format
 msgid ""
 "No tags can describe '%s'.\n"
 "Try --always, or create some tags."
 msgstr ""
 
-#: builtin/describe.c:470
+#: builtin/describe.c:473
 #, c-format
 msgid "traversed %lu commits\n"
 msgstr ""
 
-#: builtin/describe.c:473
+#: builtin/describe.c:476
 #, c-format
-msgid ""
-"more than %i tags found; listed %i most recent\n"
-"gave up search at %s\n"
+msgid "found %i tags; gave up search at %s\n"
 msgstr ""
 
-#: builtin/describe.c:543
+#: builtin/describe.c:545
 #, c-format
 msgid "describe %s\n"
 msgstr ""
 
-#: builtin/describe.c:546
+#: builtin/describe.c:548
 #, c-format
 msgid "Not a valid object name %s"
 msgstr ""
 
-#: builtin/describe.c:554
+#: builtin/describe.c:556
 #, c-format
 msgid "%s is neither a commit nor blob"
 msgstr ""
 
-#: builtin/describe.c:582
+#: builtin/describe.c:584
 msgid "find the tag that comes after the commit"
 msgstr ""
 
-#: builtin/describe.c:583
+#: builtin/describe.c:585
 msgid "debug search strategy on stderr"
 msgstr ""
 
-#: builtin/describe.c:584
+#: builtin/describe.c:586
 msgid "use any ref"
 msgstr ""
 
-#: builtin/describe.c:585
+#: builtin/describe.c:587
 msgid "use any tag, even unannotated"
 msgstr ""
 
-#: builtin/describe.c:586
+#: builtin/describe.c:588
 msgid "always use long format"
 msgstr ""
 
-#: builtin/describe.c:587
+#: builtin/describe.c:589
 msgid "only follow first parent"
 msgstr ""
 
-#: builtin/describe.c:590
+#: builtin/describe.c:592
 msgid "only output exact matches"
 msgstr ""
 
-#: builtin/describe.c:593
+#: builtin/describe.c:595
 msgid "consider <n> most recent tags (default: 10)"
 msgstr ""
 
-#: builtin/describe.c:595
+#: builtin/describe.c:597
 msgid "only consider tags matching <pattern>"
 msgstr ""
 
-#: builtin/describe.c:597
+#: builtin/describe.c:599
 msgid "do not consider tags matching <pattern>"
 msgstr ""
 
-#: builtin/describe.c:599 builtin/name-rev.c:587
+#: builtin/describe.c:601 builtin/name-rev.c:587
 msgid "show abbreviated commit object as fallback"
 msgstr ""
 
-#: builtin/describe.c:600 builtin/describe.c:603
+#: builtin/describe.c:602 builtin/describe.c:605
 msgid "mark"
 msgstr ""
 
-#: builtin/describe.c:601
+#: builtin/describe.c:603
 msgid "append <mark> on dirty working tree (default: \"-dirty\")"
 msgstr ""
 
-#: builtin/describe.c:604
+#: builtin/describe.c:606
 msgid "append <mark> on broken working tree (default: \"-broken\")"
 msgstr ""
 
-#: builtin/describe.c:668
+#: builtin/describe.c:670
 msgid "No names found, cannot describe anything."
 msgstr ""
 
-#: builtin/describe.c:731 builtin/describe.c:733
+#: builtin/describe.c:733 builtin/describe.c:735
 #, c-format
 msgid "option '%s' and commit-ishes cannot be used together"
 msgstr ""
@@ -7387,7 +7385,7 @@ msgstr ""
 msgid "show only <n> matched refs"
 msgstr ""
 
-#: builtin/for-each-ref.c:48 builtin/tag.c:530
+#: builtin/for-each-ref.c:48 builtin/tag.c:519
 msgid "respect format colors"
 msgstr ""
 
@@ -7611,7 +7609,7 @@ msgstr ""
 msgid "Checking %s link"
 msgstr ""
 
-#: builtin/fsck.c:729 builtin/index-pack.c:925
+#: builtin/fsck.c:729 builtin/index-pack.c:949
 #, c-format
 msgid "invalid %s"
 msgstr ""
@@ -8200,7 +8198,7 @@ msgstr ""
 #. variable for tweaking threads, currently
 #. grep.threads
 #.
-#: builtin/grep.c:311 builtin/index-pack.c:1649 builtin/index-pack.c:1915
+#: builtin/grep.c:311 builtin/index-pack.c:1673 builtin/index-pack.c:1954
 #: builtin/pack-objects.c:3295
 #, c-format
 msgid "no threads support, ignoring %s"
@@ -8434,7 +8432,7 @@ msgstr ""
 msgid "no threads support, ignoring --threads"
 msgstr ""
 
-#: builtin/grep.c:1189 builtin/index-pack.c:1646 builtin/pack-objects.c:3292
+#: builtin/grep.c:1189 builtin/index-pack.c:1670 builtin/pack-objects.c:3292
 #, c-format
 msgid "invalid number of threads specified (%d)"
 msgstr ""
@@ -8722,202 +8720,202 @@ msgid "serious inflate inconsistency"
 msgstr ""
 
 #: builtin/index-pack.c:777 builtin/index-pack.c:783 builtin/index-pack.c:807
-#: builtin/index-pack.c:885 builtin/index-pack.c:895
+#: builtin/index-pack.c:909 builtin/index-pack.c:919
 #, c-format
 msgid "SHA1 COLLISION FOUND WITH %s !"
 msgstr ""
 
-#: builtin/index-pack.c:883
+#: builtin/index-pack.c:907
 #, c-format
 msgid "cannot read existing object info %s"
 msgstr ""
 
-#: builtin/index-pack.c:892
+#: builtin/index-pack.c:916
 #, c-format
 msgid "cannot read existing object %s"
 msgstr ""
 
-#: builtin/index-pack.c:906
+#: builtin/index-pack.c:930
 #, c-format
 msgid "invalid blob object %s"
 msgstr ""
 
-#: builtin/index-pack.c:909 builtin/index-pack.c:928
+#: builtin/index-pack.c:933 builtin/index-pack.c:952
 msgid "fsck error in packed object"
 msgstr ""
 
-#: builtin/index-pack.c:930
+#: builtin/index-pack.c:954
 #, c-format
 msgid "Not all child objects of %s are reachable"
 msgstr ""
 
-#: builtin/index-pack.c:993 builtin/index-pack.c:1040
+#: builtin/index-pack.c:1017 builtin/index-pack.c:1064
 msgid "failed to apply delta"
 msgstr ""
 
-#: builtin/index-pack.c:1227
+#: builtin/index-pack.c:1251
 msgid "Receiving objects"
 msgstr ""
 
-#: builtin/index-pack.c:1227
+#: builtin/index-pack.c:1251
 msgid "Indexing objects"
 msgstr ""
 
-#: builtin/index-pack.c:1263
+#: builtin/index-pack.c:1287
 msgid "pack is corrupted (SHA1 mismatch)"
 msgstr ""
 
-#: builtin/index-pack.c:1268
+#: builtin/index-pack.c:1292
 msgid "cannot fstat packfile"
 msgstr ""
 
-#: builtin/index-pack.c:1271
+#: builtin/index-pack.c:1295
 msgid "pack has junk at the end"
 msgstr ""
 
-#: builtin/index-pack.c:1283
+#: builtin/index-pack.c:1307
 msgid "confusion beyond insanity in parse_pack_objects()"
 msgstr ""
 
-#: builtin/index-pack.c:1306
+#: builtin/index-pack.c:1330
 msgid "Resolving deltas"
 msgstr ""
 
-#: builtin/index-pack.c:1318 builtin/pack-objects.c:3036
+#: builtin/index-pack.c:1342 builtin/pack-objects.c:3036
 #, c-format
 msgid "unable to create thread: %s"
 msgstr ""
 
-#: builtin/index-pack.c:1352
+#: builtin/index-pack.c:1376
 msgid "confusion beyond insanity"
 msgstr ""
 
-#: builtin/index-pack.c:1358
+#: builtin/index-pack.c:1382
 #, c-format
 msgid "completed with %d local object"
 msgid_plural "completed with %d local objects"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1370
+#: builtin/index-pack.c:1394
 #, c-format
 msgid "Unexpected tail checksum for %s (disk corruption?)"
 msgstr ""
 
-#: builtin/index-pack.c:1374
+#: builtin/index-pack.c:1398
 #, c-format
 msgid "pack has %d unresolved delta"
 msgid_plural "pack has %d unresolved deltas"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1398
+#: builtin/index-pack.c:1422
 #, c-format
 msgid "unable to deflate appended object (%d)"
 msgstr ""
 
-#: builtin/index-pack.c:1494
+#: builtin/index-pack.c:1518
 #, c-format
 msgid "local object %s is corrupt"
 msgstr ""
 
-#: builtin/index-pack.c:1516
+#: builtin/index-pack.c:1540
 #, c-format
 msgid "packfile name '%s' does not end with '.%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1540
+#: builtin/index-pack.c:1564
 #, c-format
 msgid "cannot write %s file '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1548
+#: builtin/index-pack.c:1572
 #, c-format
 msgid "cannot close written %s file '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1565
+#: builtin/index-pack.c:1589
 #, c-format
 msgid "unable to rename temporary '*.%s' file to '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1588
+#: builtin/index-pack.c:1612
 msgid "error while closing pack file"
 msgstr ""
 
-#: builtin/index-pack.c:1640 builtin/pack-objects.c:3303
+#: builtin/index-pack.c:1664 builtin/pack-objects.c:3303
 #, c-format
 msgid "bad pack.indexVersion=%<PRIu32>"
 msgstr ""
 
-#: builtin/index-pack.c:1715
+#: builtin/index-pack.c:1739
 #, c-format
 msgid "Cannot open existing pack file '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1717
+#: builtin/index-pack.c:1741
 #, c-format
 msgid "Cannot open existing pack idx file for '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1765
+#: builtin/index-pack.c:1789
 #, c-format
 msgid "non delta: %d object"
 msgid_plural "non delta: %d objects"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1772
+#: builtin/index-pack.c:1796
 #, c-format
 msgid "chain length = %d: %lu object"
 msgid_plural "chain length = %d: %lu objects"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1802
+#: builtin/index-pack.c:1838
 msgid "could not start pack-objects to repack local links"
 msgstr ""
 
-#: builtin/index-pack.c:1808
+#: builtin/index-pack.c:1843
 msgid "failed to feed local object to pack-objects"
 msgstr ""
 
-#: builtin/index-pack.c:1817
+#: builtin/index-pack.c:1856
 msgid "index-pack: Expecting full hex object ID lines only from pack-objects."
 msgstr ""
 
-#: builtin/index-pack.c:1828
+#: builtin/index-pack.c:1867
 msgid "could not finish pack-objects to repack local links"
 msgstr ""
 
-#: builtin/index-pack.c:1871
+#: builtin/index-pack.c:1910
 msgid "Cannot come back to cwd"
 msgstr ""
 
-#: builtin/index-pack.c:1926 builtin/index-pack.c:1929
-#: builtin/index-pack.c:1949 builtin/index-pack.c:1953
+#: builtin/index-pack.c:1965 builtin/index-pack.c:1968
+#: builtin/index-pack.c:1988 builtin/index-pack.c:1992
 #, c-format
 msgid "bad %s"
 msgstr ""
 
-#: builtin/index-pack.c:1959 builtin/init-db.c:168 setup.c:2469 setup.c:2518
+#: builtin/index-pack.c:1998 builtin/init-db.c:168 setup.c:2469 setup.c:2518
 #, c-format
 msgid "unknown hash algorithm '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1980
+#: builtin/index-pack.c:2019
 msgid "--promisor cannot be used with a pack name"
 msgstr ""
 
-#: builtin/index-pack.c:1982
+#: builtin/index-pack.c:2021
 msgid "--stdin requires a git repository"
 msgstr ""
 
-#: builtin/index-pack.c:2008
+#: builtin/index-pack.c:2047
 msgid "--verify with no packfile name given"
 msgstr ""
 
-#: builtin/index-pack.c:2074 builtin/unpack-objects.c:679
+#: builtin/index-pack.c:2113 builtin/unpack-objects.c:679
 msgid "fsck error in pack objects"
 msgstr ""
 
@@ -10709,7 +10707,7 @@ msgstr ""
 msgid "the note contents have been left in %s"
 msgstr ""
 
-#: builtin/notes.c:299 builtin/tag.c:638
+#: builtin/notes.c:299 builtin/tag.c:627
 #, c-format
 msgid "could not open or read '%s'"
 msgstr ""
@@ -10935,7 +10933,7 @@ msgid ""
 "abort'.\n"
 msgstr ""
 
-#: builtin/notes.c:1017 builtin/tag.c:651
+#: builtin/notes.c:1017 builtin/tag.c:640
 #, c-format
 msgid "Failed to resolve '%s' as a valid ref."
 msgstr ""
@@ -15677,112 +15675,112 @@ msgstr ""
 msgid "no tag message?"
 msgstr ""
 
-#: builtin/tag.c:376 builtin/tag.c:693
+#: builtin/tag.c:376 builtin/tag.c:682
 #, c-format
 msgid "The tag message has been left in %s\n"
 msgstr ""
 
-#: builtin/tag.c:489
+#: builtin/tag.c:478
 msgid "list tag names"
 msgstr ""
 
-#: builtin/tag.c:491
+#: builtin/tag.c:480
 msgid "print <n> lines of each tag message"
 msgstr ""
 
-#: builtin/tag.c:493
+#: builtin/tag.c:482
 msgid "delete tags"
 msgstr ""
 
-#: builtin/tag.c:494
+#: builtin/tag.c:483
 msgid "verify tags"
 msgstr ""
 
-#: builtin/tag.c:496
+#: builtin/tag.c:485
 msgid "Tag creation options"
 msgstr ""
 
-#: builtin/tag.c:498
+#: builtin/tag.c:487
 msgid "annotated tag, needs a message"
 msgstr ""
 
-#: builtin/tag.c:500
+#: builtin/tag.c:489
 msgid "tag message"
 msgstr ""
 
-#: builtin/tag.c:504
+#: builtin/tag.c:493
 msgid "force edit of tag message"
 msgstr ""
 
-#: builtin/tag.c:505
+#: builtin/tag.c:494
 msgid "annotated and GPG-signed tag"
 msgstr ""
 
-#: builtin/tag.c:508
+#: builtin/tag.c:497
 msgid "use another key to sign the tag"
 msgstr ""
 
-#: builtin/tag.c:509
+#: builtin/tag.c:498
 msgid "replace the tag if exists"
 msgstr ""
 
-#: builtin/tag.c:510 builtin/update-ref.c:732
+#: builtin/tag.c:499 builtin/update-ref.c:732
 msgid "create a reflog"
 msgstr ""
 
-#: builtin/tag.c:512
+#: builtin/tag.c:501
 msgid "Tag listing options"
 msgstr ""
 
-#: builtin/tag.c:513
+#: builtin/tag.c:502
 msgid "show tag list in columns"
 msgstr ""
 
-#: builtin/tag.c:514 builtin/tag.c:516
+#: builtin/tag.c:503 builtin/tag.c:505
 msgid "print only tags that contain the commit"
 msgstr ""
 
-#: builtin/tag.c:515 builtin/tag.c:517
+#: builtin/tag.c:504 builtin/tag.c:506
 msgid "print only tags that don't contain the commit"
 msgstr ""
 
-#: builtin/tag.c:518
+#: builtin/tag.c:507
 msgid "print only tags that are merged"
 msgstr ""
 
-#: builtin/tag.c:519
+#: builtin/tag.c:508
 msgid "print only tags that are not merged"
 msgstr ""
 
-#: builtin/tag.c:525
+#: builtin/tag.c:514
 msgid "print only tags of the object"
 msgstr ""
 
-#: builtin/tag.c:594
+#: builtin/tag.c:583
 msgid "could not start 'git column'"
 msgstr ""
 
-#: builtin/tag.c:615
+#: builtin/tag.c:604
 #, c-format
 msgid "the '%s' option is only allowed in list mode"
 msgstr ""
 
-#: builtin/tag.c:654
+#: builtin/tag.c:643
 #, c-format
 msgid "'%s' is not a valid tag name."
 msgstr ""
 
-#: builtin/tag.c:659
+#: builtin/tag.c:648
 #, c-format
 msgid "tag '%s' already exists"
 msgstr ""
 
-#: builtin/tag.c:671 sequencer.c:702
+#: builtin/tag.c:660 sequencer.c:702
 #, c-format
 msgid "Invalid cleanup mode %s"
 msgstr ""
 
-#: builtin/tag.c:703
+#: builtin/tag.c:692
 #, c-format
 msgid "Updated tag '%s' (was %s)\n"
 msgstr ""
@@ -17807,7 +17805,7 @@ msgid ""
 "to convert the grafts into replace refs.\n"
 "\n"
 "Turn this message off by running\n"
-"\"git config advice.graftFileDeprecated false\""
+"\"git config set advice.graftFileDeprecated false\""
 msgstr ""
 
 #: commit.c:580
@@ -20351,7 +20349,7 @@ msgstr[1] ""
 #, c-format
 msgid ""
 "The '%s' hook was ignored because it's not set as executable.\n"
-"You can disable this warning with `git config advice.ignoredHook false`."
+"You can disable this warning with `git config set advice.ignoredHook false`."
 msgstr ""
 
 #: http-fetch.c:134 http-fetch.c:149
@@ -21829,7 +21827,7 @@ msgid ""
 "\n"
 "where \"$br\" is somehow empty and a 40-hex ref is created. Please\n"
 "examine these refs and maybe delete them. Turn this message off by\n"
-"running \"git config advice.objectNameWarning false\""
+"running \"git config set advice.objectNameWarning false\""
 msgstr ""
 
 #: object-name.c:1068
@@ -21842,57 +21840,57 @@ msgstr ""
 msgid "log for '%.*s' only has %d entries"
 msgstr ""
 
-#: object-name.c:1891
+#: object-name.c:1855
 #, c-format
 msgid "path '%s' exists on disk, but not in '%.*s'"
 msgstr ""
 
-#: object-name.c:1897
+#: object-name.c:1861
 #, c-format
 msgid ""
 "path '%s' exists, but not '%s'\n"
 "hint: Did you mean '%.*s:%s' aka '%.*s:./%s'?"
 msgstr ""
 
-#: object-name.c:1906
+#: object-name.c:1870
 #, c-format
 msgid "path '%s' does not exist in '%.*s'"
 msgstr ""
 
-#: object-name.c:1935
+#: object-name.c:1899
 #, c-format
 msgid ""
 "path '%s' is in the index, but not at stage %d\n"
 "hint: Did you mean ':%d:%s'?"
 msgstr ""
 
-#: object-name.c:1952
+#: object-name.c:1916
 #, c-format
 msgid ""
 "path '%s' is in the index, but not '%s'\n"
 "hint: Did you mean ':%d:%s' aka ':%d:./%s'?"
 msgstr ""
 
-#: object-name.c:1960
+#: object-name.c:1924
 #, c-format
 msgid "path '%s' exists on disk, but not in the index"
 msgstr ""
 
-#: object-name.c:1962
+#: object-name.c:1926
 #, c-format
 msgid "path '%s' does not exist (neither on disk nor in the index)"
 msgstr ""
 
-#: object-name.c:1975
+#: object-name.c:1939
 msgid "relative path syntax can't be used outside working tree"
 msgstr ""
 
-#: object-name.c:2014
+#: object-name.c:1978
 #, c-format
 msgid "<object>:<path> required, only <object> '%s' given"
 msgstr ""
 
-#: object-name.c:2133
+#: object-name.c:2097
 #, c-format
 msgid "invalid object name '%.*s'."
 msgstr ""
@@ -23210,7 +23208,7 @@ msgstr ""
 msgid "ignoring ref with broken name %s"
 msgstr ""
 
-#: ref-filter.c:2855 refs.c:739
+#: ref-filter.c:2855 refs.c:786
 #, c-format
 msgid "ignoring broken ref %s"
 msgstr ""
@@ -23282,89 +23280,89 @@ msgstr ""
 msgid "invalid branch name: %s = %s"
 msgstr ""
 
-#: refs.c:737
+#: refs.c:784
 #, c-format
 msgid "ignoring dangling symref %s"
 msgstr ""
 
-#: refs.c:1033
+#: refs.c:1080
 #, c-format
 msgid "log for ref %s has gap after %s"
 msgstr ""
 
-#: refs.c:1039
+#: refs.c:1086
 #, c-format
 msgid "log for ref %s unexpectedly ended on %s"
 msgstr ""
 
-#: refs.c:1109
+#: refs.c:1156
 #, c-format
 msgid "log for %s is empty"
 msgstr ""
 
-#: refs.c:1211
+#: refs.c:1258
 msgid "refusing to force and skip creation of reflog"
 msgstr ""
 
-#: refs.c:1219
+#: refs.c:1266
 #, c-format
 msgid "refusing to update ref with bad name '%s'"
 msgstr ""
 
-#: refs.c:1226
+#: refs.c:1273
 #, c-format
 msgid "refusing to update pseudoref '%s'"
 msgstr ""
 
-#: refs.c:1325
+#: refs.c:1372
 #, c-format
 msgid "update_ref failed for ref '%s': %s"
 msgstr ""
 
-#: refs.c:2156
+#: refs.c:2203
 #, c-format
 msgid "multiple updates for ref '%s' not allowed"
 msgstr ""
 
-#: refs.c:2254
+#: refs.c:2301
 msgid "ref updates forbidden inside quarantine environment"
 msgstr ""
 
-#: refs.c:2265
+#: refs.c:2312
 msgid "ref updates aborted by hook"
 msgstr ""
 
-#: refs.c:2373 refs.c:2407
+#: refs.c:2420 refs.c:2454
 #, c-format
 msgid "'%s' exists; cannot create '%s'"
 msgstr ""
 
-#: refs.c:2379 refs.c:2419
+#: refs.c:2426 refs.c:2466
 #, c-format
 msgid "cannot process '%s' and '%s' at the same time"
 msgstr ""
 
-#: refs.c:2544 refs.c:2554
+#: refs.c:2591 refs.c:2601
 #, c-format
 msgid "could not delete reference %s: %s"
 msgstr ""
 
-#: refs.c:2557
+#: refs.c:2604
 #, c-format
 msgid "could not delete references: %s"
 msgstr ""
 
-#: refs.c:2872
+#: refs.c:2919
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
 
-#: refs.c:2907
+#: refs.c:2954
 #, c-format
 msgid "could not remove temporary migration directory '%s'"
 msgstr ""
 
-#: refs.c:2931
+#: refs.c:2978
 #, c-format
 msgid "migrated refs can be found at '%s'"
 msgstr ""
