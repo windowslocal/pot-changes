@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-13 23:57+0000\n"
+"POT-Creation-Date: 2024-12-16 01:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -5066,7 +5066,7 @@ msgstr ""
 msgid "failed to copy file to '%s'"
 msgstr ""
 
-#: builtin/clone.c:427 refs/files-backend.c:3811
+#: builtin/clone.c:427 refs/files-backend.c:3770
 #, c-format
 msgid "failed to iterate over '%s'"
 msgstr ""
@@ -23314,7 +23314,7 @@ msgstr ""
 msgid "ignoring ref with broken name %s"
 msgstr ""
 
-#: ref-filter.c:2856 refs.c:788
+#: ref-filter.c:2856 refs.c:787
 #, c-format
 msgid "ignoring broken ref %s"
 msgstr ""
@@ -23356,12 +23356,12 @@ msgstr ""
 msgid "no reflog for '%s'"
 msgstr ""
 
-#: refs.c:380
+#: refs.c:379
 #, c-format
 msgid "%s does not point to a valid object!"
 msgstr ""
 
-#: refs.c:640
+#: refs.c:639
 #, c-format
 msgid ""
 "Using '%s' as the name for the initial branch. This default branch name\n"
@@ -23376,115 +23376,120 @@ msgid ""
 "\tgit branch -m <name>\n"
 msgstr ""
 
-#: refs.c:662
+#: refs.c:661
 #, c-format
 msgid "could not retrieve `%s`"
 msgstr ""
 
-#: refs.c:672
+#: refs.c:671
 #, c-format
 msgid "invalid branch name: %s = %s"
 msgstr ""
 
-#: refs.c:786
+#: refs.c:785
 #, c-format
 msgid "ignoring dangling symref %s"
 msgstr ""
 
-#: refs.c:1082
+#: refs.c:1081
 #, c-format
 msgid "log for ref %s has gap after %s"
 msgstr ""
 
-#: refs.c:1088
+#: refs.c:1087
 #, c-format
 msgid "log for ref %s unexpectedly ended on %s"
 msgstr ""
 
-#: refs.c:1158
+#: refs.c:1157
 #, c-format
 msgid "log for %s is empty"
 msgstr ""
 
-#: refs.c:1263 refs.c:1269
-#, c-format
-msgid "refusing to update %s '%s'"
-msgstr ""
-
-#: refs.c:1289
+#: refs.c:1259
 msgid "refusing to force and skip creation of reflog"
 msgstr ""
 
-#: refs.c:1421
+#: refs.c:1267
+#, c-format
+msgid "refusing to update ref with bad name '%s'"
+msgstr ""
+
+#: refs.c:1274
+#, c-format
+msgid "refusing to update pseudoref '%s'"
+msgstr ""
+
+#: refs.c:1373
 #, c-format
 msgid "update_ref failed for ref '%s': %s"
 msgstr ""
 
-#: refs.c:2286
+#: refs.c:2238
 #, c-format
 msgid "multiple updates for ref '%s' not allowed"
 msgstr ""
 
-#: refs.c:2384
+#: refs.c:2336
 msgid "ref updates forbidden inside quarantine environment"
 msgstr ""
 
-#: refs.c:2395
+#: refs.c:2347
 msgid "ref updates aborted by hook"
 msgstr ""
 
-#: refs.c:2503 refs.c:2537
+#: refs.c:2455 refs.c:2489
 #, c-format
 msgid "'%s' exists; cannot create '%s'"
 msgstr ""
 
-#: refs.c:2509 refs.c:2549
+#: refs.c:2461 refs.c:2501
 #, c-format
 msgid "cannot process '%s' and '%s' at the same time"
 msgstr ""
 
-#: refs.c:2674 refs.c:2684
+#: refs.c:2626 refs.c:2636
 #, c-format
 msgid "could not delete reference %s: %s"
 msgstr ""
 
-#: refs.c:2687
+#: refs.c:2639
 #, c-format
 msgid "could not delete references: %s"
 msgstr ""
 
-#: refs.c:3036
+#: refs.c:2954
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
 
-#: refs.c:3071
+#: refs.c:2989
 #, c-format
 msgid "could not remove temporary migration directory '%s'"
 msgstr ""
 
-#: refs.c:3095
+#: refs.c:3013
 #, c-format
 msgid "migrated refs can be found at '%s'"
 msgstr ""
 
-#: refs/files-backend.c:2673 refs/reftable-backend.c:1324
+#: refs/files-backend.c:2644 refs/reftable-backend.c:1321
 #, c-format
 msgid ""
 "cannot lock ref '%s': expected symref with target '%s': but is a regular ref"
 msgstr ""
 
-#: refs/files-backend.c:3691
+#: refs/files-backend.c:3650
 #, c-format
 msgid "cannot read ref file '%s'"
 msgstr ""
 
-#: refs/files-backend.c:3778
+#: refs/files-backend.c:3737
 #, c-format
 msgid "cannot open directory %s"
 msgstr ""
 
-#: refs/files-backend.c:3830
+#: refs/files-backend.c:3789
 msgid "Checking references consistency"
 msgstr ""
 
@@ -23493,75 +23498,75 @@ msgstr ""
 msgid "refname is dangerous: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1163
+#: refs/reftable-backend.c:1162
 #, c-format
 msgid "trying to write ref '%s' with nonexistent object %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1170
+#: refs/reftable-backend.c:1169
 #, c-format
 msgid "trying to write non-commit object %s to branch '%s'"
 msgstr ""
 
-#: refs/reftable-backend.c:1196
+#: refs/reftable-backend.c:1195
 #, c-format
 msgid ""
 "multiple updates for 'HEAD' (including one via its referent '%s') are not "
 "allowed"
 msgstr ""
 
-#: refs/reftable-backend.c:1247
+#: refs/reftable-backend.c:1245
 #, c-format
 msgid "cannot lock ref '%s': unable to resolve reference '%s'"
 msgstr ""
 
-#: refs/reftable-backend.c:1265
+#: refs/reftable-backend.c:1263
 #, c-format
 msgid "cannot lock ref '%s': error reading reference"
 msgstr ""
 
-#: refs/reftable-backend.c:1305
+#: refs/reftable-backend.c:1302
 #, c-format
 msgid ""
 "multiple updates for '%s' (including one via symref '%s') are not allowed"
 msgstr ""
 
-#: refs/reftable-backend.c:1340
+#: refs/reftable-backend.c:1337
 #, c-format
 msgid "cannot lock ref '%s': reference already exists"
 msgstr ""
 
-#: refs/reftable-backend.c:1346
+#: refs/reftable-backend.c:1343
 #, c-format
 msgid "cannot lock ref '%s': reference is missing but expected %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1351
+#: refs/reftable-backend.c:1348
 #, c-format
 msgid "cannot lock ref '%s': is at %s but expected %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1389
+#: refs/reftable-backend.c:1386
 #, c-format
 msgid "reftable: transaction prepare: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1651
+#: refs/reftable-backend.c:1614
 #, c-format
 msgid "reftable: transaction failure: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1678
+#: refs/reftable-backend.c:1641
 #, c-format
 msgid "unable to compact stack: %s"
 msgstr ""
 
-#: refs/reftable-backend.c:1728
+#: refs/reftable-backend.c:1691
 #, c-format
 msgid "refname %s not found"
 msgstr ""
 
-#: refs/reftable-backend.c:1732
+#: refs/reftable-backend.c:1695
 #, c-format
 msgid "refname %s is a symbolic ref, copying it is not supported"
 msgstr ""
