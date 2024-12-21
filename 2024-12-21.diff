@@ -1,0 +1,31 @@
+
+
+#################### Sat, 21 Dec 2024 19:57:26 +0000 ####################
+
+--- po/git.pot.old	2024-12-21 19:57:26.831063857 +0000
++++ po/git.pot.new	2024-12-21 19:57:26.907064704 +0000
+@@ -16613,10 +16613,6 @@
+ msgid "preferred pack '%s' is expired"
+ msgstr ""
+ 
+-#, c-format
+-msgid "preferred pack (%s) is invalid"
+-msgstr ""
+-
+ msgid "preferred-pack"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
