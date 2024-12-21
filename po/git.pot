@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2024-12-19 21:57+0000\n"
+"POT-Creation-Date: 2024-12-21 07:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -2734,15 +2734,15 @@ msgstr ""
 msgid "git backfill [--batch-size=<n>] [--[no-]sparse]"
 msgstr ""
 
-#: builtin/backfill.c:98
+#: builtin/backfill.c:97
 msgid "problem loading sparse-checkout"
 msgstr ""
 
-#: builtin/backfill.c:137
-msgid "Minimun number of objects to request at a time"
+#: builtin/backfill.c:133
+msgid "Minimum number of objects to request at a time"
 msgstr ""
 
-#: builtin/backfill.c:139
+#: builtin/backfill.c:135
 msgid "Restrict the missing objects to the current sparse-checkout"
 msgstr ""
 
@@ -22478,12 +22478,22 @@ msgstr ""
 msgid "failed to parse %s"
 msgstr ""
 
-#: path-walk.c:120
+#: path-walk.c:119
 #, c-format
 msgid "failed to walk children of tree %s: not found"
 msgstr ""
 
-#: path-walk.c:497
+#: path-walk.c:157
+#, c-format
+msgid "failed to find object %s"
+msgstr ""
+
+#: path-walk.c:355
+#, c-format
+msgid "failed to find tag %s"
+msgstr ""
+
+#: path-walk.c:505
 msgid "failed to setup revision walk"
 msgstr ""
 
@@ -23397,64 +23407,79 @@ msgstr ""
 msgid "log for %s is empty"
 msgstr ""
 
-#: refs.c:1260 refs.c:1266
+#: refs.c:1261
 #, c-format
-msgid "refusing to update %s '%s'"
+msgid "refusing to update reflog for pseudoref '%s'"
 msgstr ""
 
-#: refs.c:1286
+#: refs.c:1263
+#, c-format
+msgid "refusing to update pseudoref '%s'"
+msgstr ""
+
+#: refs.c:1271
+#, c-format
+msgid "refusing to update reflog with bad name '%s'"
+msgstr ""
+
+#: refs.c:1273
+#, c-format
+msgid "refusing to update ref with bad name '%s'"
+msgstr ""
+
+#: refs.c:1294
 msgid "refusing to force and skip creation of reflog"
 msgstr ""
 
-#: refs.c:1418
+#: refs.c:1426
 #, c-format
 msgid "update_ref failed for ref '%s': %s"
 msgstr ""
 
-#: refs.c:2283
+#: refs.c:2291
 #, c-format
 msgid "multiple updates for ref '%s' not allowed"
 msgstr ""
 
-#: refs.c:2381
+#: refs.c:2389
 msgid "ref updates forbidden inside quarantine environment"
 msgstr ""
 
-#: refs.c:2392
+#: refs.c:2400
 msgid "ref updates aborted by hook"
 msgstr ""
 
-#: refs.c:2500 refs.c:2534
+#: refs.c:2508 refs.c:2542
 #, c-format
 msgid "'%s' exists; cannot create '%s'"
 msgstr ""
 
-#: refs.c:2506 refs.c:2546
+#: refs.c:2514 refs.c:2554
 #, c-format
 msgid "cannot process '%s' and '%s' at the same time"
 msgstr ""
 
-#: refs.c:2671 refs.c:2681
+#: refs.c:2679 refs.c:2689
 #, c-format
 msgid "could not delete reference %s: %s"
 msgstr ""
 
-#: refs.c:2684
+#: refs.c:2692
 #, c-format
 msgid "could not delete references: %s"
 msgstr ""
 
-#: refs.c:3033
+#: refs.c:3041
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
 
-#: refs.c:3068
+#: refs.c:3076
 #, c-format
 msgid "could not remove temporary migration directory '%s'"
 msgstr ""
 
-#: refs.c:3092
+#: refs.c:3100
 #, c-format
 msgid "migrated refs can be found at '%s'"
 msgstr ""
