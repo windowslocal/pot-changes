@@ -1,0 +1,41 @@
+
+
+#################### Sun, 22 Dec 2024 22:57:26 +0000 ####################
+
+--- po/git.pot.old	2024-12-22 22:57:26.433859389 +0000
++++ po/git.pot.new	2024-12-22 22:57:26.510859914 +0000
+@@ -17291,7 +17291,19 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "refusing to update %s '%s'"
++msgid "refusing to update pseudoref '%s'"
++msgstr ""
++
++#, c-format
++msgid "refusing to update ref with bad name '%s'"
++msgstr ""
++
++#, c-format
++msgid "refusing to update reflog for pseudoref '%s'"
++msgstr ""
++
++#, c-format
++msgid "refusing to update reflog with bad name '%s'"
+ msgstr ""
+ 
+ msgid "refusing to work with credential missing host field"
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
