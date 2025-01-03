@@ -1,0 +1,29 @@
+
+
+#################### Fri, 03 Jan 2025 18:57:27 +0000 ####################
+
+--- po/git.pot.old	2025-01-03 18:57:27.505775708 +0000
++++ po/git.pot.new	2025-01-03 18:57:27.582776976 +0000
+@@ -12736,7 +12736,7 @@
+ msgstr ""
+ 
+ msgid ""
+-"git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]\n"
++"git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]\n"
+ "           [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>]\n"
+ "           [-F <file> | -m <msg>] [--reset-author] [--allow-empty]\n"
+ "           [--allow-empty-message] [--no-verify] [-e] [--author=<author>]\n"
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"

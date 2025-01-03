@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-02 01:20+0000\n"
+"POT-Creation-Date: 2025-01-03 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -1761,7 +1761,7 @@ msgstr ""
 #: bisect.c:165 builtin/cat-file.c:239 builtin/cat-file.c:503
 #: builtin/index-pack.c:783 builtin/notes.c:727 builtin/pack-objects.c:338
 #: builtin/pack-objects.c:399 builtin/pack-objects.c:507 combine-diff.c:344
-#: object-file.c:1998 object-file.c:2004 rerere.c:988
+#: object-file.c:2001 object-file.c:2007 rerere.c:988
 #, c-format
 msgid "unable to read %s"
 msgstr ""
@@ -5461,7 +5461,7 @@ msgstr ""
 
 #: builtin/commit.c:47
 msgid ""
-"git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]\n"
+"git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]\n"
 "           [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|"
 "reword):]<commit>]\n"
 "           [-F <file> | -m <msg>] [--reset-author] [--allow-empty]\n"
@@ -7086,7 +7086,7 @@ msgstr ""
 msgid "option \"%s\" is ignored for %s"
 msgstr ""
 
-#: builtin/fetch.c:1488 object-file.c:2839
+#: builtin/fetch.c:1488 object-file.c:2850
 #, c-format
 msgid "%s is not a valid object"
 msgstr ""
@@ -11071,7 +11071,7 @@ msgstr ""
 msgid "failed to stat %s"
 msgstr ""
 
-#: builtin/pack-objects.c:1387 object-file.c:2327
+#: builtin/pack-objects.c:1387 object-file.c:2338
 #, c-format
 msgid "failed utime() on %s"
 msgstr ""
@@ -21645,12 +21645,12 @@ msgstr ""
 msgid "object file %s is empty"
 msgstr ""
 
-#: object-file.c:1429 object-file.c:3055
+#: object-file.c:1429 object-file.c:3066
 #, c-format
 msgid "corrupt loose object '%s'"
 msgstr ""
 
-#: object-file.c:1431 object-file.c:3059
+#: object-file.c:1431 object-file.c:3070
 #, c-format
 msgid "garbage at end of loose object '%s'"
 msgstr ""
@@ -21699,143 +21699,143 @@ msgstr ""
 msgid "missing mapping of %s to %s"
 msgstr ""
 
-#: object-file.c:1982 object-file.c:1989 object-file.c:2868
+#: object-file.c:1983 object-file.c:1990 object-file.c:2879
 #, c-format
 msgid "unable to open %s"
 msgstr ""
 
-#: object-file.c:2009
+#: object-file.c:2012
 #, c-format
 msgid "files '%s' and '%s' differ in contents"
 msgstr ""
 
-#: object-file.c:2072
+#: object-file.c:2079
 #, c-format
 msgid "unable to write file %s"
 msgstr ""
 
-#: object-file.c:2082
+#: object-file.c:2093
 #, c-format
 msgid "unable to set permission to '%s'"
 msgstr ""
 
-#: object-file.c:2119
+#: object-file.c:2130
 msgid "error when closing loose object file"
 msgstr ""
 
-#: object-file.c:2195
+#: object-file.c:2206
 #, c-format
 msgid "insufficient permission for adding an object to repository database %s"
 msgstr ""
 
-#: object-file.c:2200
+#: object-file.c:2211
 msgid "unable to create temporary file"
 msgstr ""
 
-#: object-file.c:2243
+#: object-file.c:2254
 msgid "unable to write loose object file"
 msgstr ""
 
-#: object-file.c:2309
+#: object-file.c:2320
 #, c-format
 msgid "unable to deflate new object %s (%d)"
 msgstr ""
 
-#: object-file.c:2313
+#: object-file.c:2324
 #, c-format
 msgid "deflateEnd on object %s failed (%d)"
 msgstr ""
 
-#: object-file.c:2316
+#: object-file.c:2327
 #, c-format
 msgid "confused by unstable object source data for %s"
 msgstr ""
 
-#: object-file.c:2415
+#: object-file.c:2426
 #, c-format
 msgid "write stream object %ld != %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:2426
+#: object-file.c:2437
 #, c-format
 msgid "unable to stream deflate new object (%d)"
 msgstr ""
 
-#: object-file.c:2429
+#: object-file.c:2440
 #, c-format
 msgid "deflateEnd on stream object failed (%d)"
 msgstr ""
 
-#: object-file.c:2446
+#: object-file.c:2457
 #, c-format
 msgid "unable to create directory %s"
 msgstr ""
 
-#: object-file.c:2568
+#: object-file.c:2579
 #, c-format
 msgid "cannot read object for %s"
 msgstr ""
 
-#: object-file.c:2571
+#: object-file.c:2582
 #, c-format
 msgid "cannot map object %s to %s"
 msgstr ""
 
-#: object-file.c:2621
+#: object-file.c:2632
 #, c-format
 msgid "object fails fsck: %s"
 msgstr ""
 
-#: object-file.c:2654
+#: object-file.c:2665
 msgid "refusing to create malformed object"
 msgstr ""
 
-#: object-file.c:2723
+#: object-file.c:2734
 #, c-format
 msgid "read error while indexing %s"
 msgstr ""
 
-#: object-file.c:2726
+#: object-file.c:2737
 #, c-format
 msgid "short read while indexing %s"
 msgstr ""
 
-#: object-file.c:2799 object-file.c:2809
+#: object-file.c:2810 object-file.c:2820
 #, c-format
 msgid "%s: failed to insert into database"
 msgstr ""
 
-#: object-file.c:2815
+#: object-file.c:2826
 #, c-format
 msgid "%s: unsupported file type"
 msgstr ""
 
-#: object-file.c:2841
+#: object-file.c:2852
 #, c-format
 msgid "%s is not a valid '%s' object"
 msgstr ""
 
-#: object-file.c:3066
+#: object-file.c:3077
 #, c-format
 msgid "hash mismatch for %s (expected %s)"
 msgstr ""
 
-#: object-file.c:3092
+#: object-file.c:3103
 #, c-format
 msgid "unable to mmap %s"
 msgstr ""
 
-#: object-file.c:3098
+#: object-file.c:3109
 #, c-format
 msgid "unable to unpack header of %s"
 msgstr ""
 
-#: object-file.c:3104
+#: object-file.c:3115
 #, c-format
 msgid "unable to parse header of %s"
 msgstr ""
 
-#: object-file.c:3115
+#: object-file.c:3126
 #, c-format
 msgid "unable to unpack contents of %s"
 msgstr ""
