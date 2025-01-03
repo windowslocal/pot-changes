@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-03 18:57+0000\n"
+"POT-Creation-Date: 2025-01-03 22:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -1240,7 +1240,7 @@ msgstr ""
 msgid "unable to add cache entry for %s"
 msgstr ""
 
-#: apply.c:4411 builtin/bisect.c:615 builtin/gc.c:2625 builtin/gc.c:2687
+#: apply.c:4411 builtin/bisect.c:615 builtin/gc.c:2671 builtin/gc.c:2733
 #, c-format
 msgid "failed to write to '%s'"
 msgstr ""
@@ -1610,7 +1610,7 @@ msgstr ""
 #: archive.c:652 archive.c:658 builtin/blame.c:910 builtin/blame.c:914
 #: builtin/blame.c:915 builtin/commit-tree.c:111 builtin/config.c:71
 #: builtin/fast-export.c:1212 builtin/fast-export.c:1214
-#: builtin/fast-export.c:1218 builtin/gc.c:1677 builtin/gc.c:1743
+#: builtin/fast-export.c:1218 builtin/gc.c:1723 builtin/gc.c:1789
 #: builtin/grep.c:999 builtin/hash-object.c:116 builtin/ls-files.c:616
 #: builtin/ls-files.c:619 builtin/notes.c:489 builtin/notes.c:668
 #: builtin/read-tree.c:123 parse-options.h:332
@@ -6088,7 +6088,7 @@ msgstr ""
 msgid "use per-worktree config file"
 msgstr ""
 
-#: builtin/config.c:71 builtin/gc.c:1677 builtin/gc.c:1743
+#: builtin/config.c:71 builtin/gc.c:1723 builtin/gc.c:1789
 msgid "use given config file"
 msgstr ""
 
@@ -6241,7 +6241,7 @@ msgstr ""
 msgid "--worktree can only be used inside a git repository"
 msgstr ""
 
-#: builtin/config.c:772 builtin/gc.c:1717 builtin/gc.c:1786
+#: builtin/config.c:772 builtin/gc.c:1763 builtin/gc.c:1832
 msgid "$HOME not set"
 msgstr ""
 
@@ -7537,7 +7537,7 @@ msgstr ""
 msgid "could not create lost-found"
 msgstr ""
 
-#: builtin/fsck.c:342 builtin/gc.c:2143 builtin/rebase.c:229
+#: builtin/fsck.c:342 builtin/gc.c:2189 builtin/rebase.c:229
 #: rebase-interactive.c:127 rerere.c:482 rerere.c:690 sequencer.c:4230
 #: sequencer.c:6546
 #, c-format
@@ -7992,195 +7992,196 @@ msgstr ""
 msgid "unrecognized --schedule argument '%s'"
 msgstr ""
 
-#: builtin/gc.c:937
-msgid "failed to prune remotes"
+#: builtin/gc.c:931
+#, c-format
+msgid "failed to %s the following remotes: "
 msgstr ""
 
-#: builtin/gc.c:1055
+#: builtin/gc.c:1088
 msgid "failed to write commit-graph"
 msgstr ""
 
-#: builtin/gc.c:1086
-msgid "failed to prefetch remotes"
+#: builtin/gc.c:1127
+msgid "failed to prefetch some remotes"
 msgstr ""
 
-#: builtin/gc.c:1210
+#: builtin/gc.c:1256
 msgid "failed to start 'git pack-objects' process"
 msgstr ""
 
-#: builtin/gc.c:1227
+#: builtin/gc.c:1273
 msgid "failed to finish 'git pack-objects' process"
 msgstr ""
 
-#: builtin/gc.c:1279
+#: builtin/gc.c:1325
 msgid "failed to write multi-pack-index"
 msgstr ""
 
-#: builtin/gc.c:1295
+#: builtin/gc.c:1341
 msgid "'git multi-pack-index expire' failed"
 msgstr ""
 
-#: builtin/gc.c:1354
+#: builtin/gc.c:1400
 msgid "'git multi-pack-index repack' failed"
 msgstr ""
 
-#: builtin/gc.c:1364
+#: builtin/gc.c:1410
 msgid ""
 "skipping incremental-repack task because core.multiPackIndex is disabled"
 msgstr ""
 
-#: builtin/gc.c:1475
+#: builtin/gc.c:1521
 #, c-format
 msgid "lock file '%s' exists, skipping maintenance"
 msgstr ""
 
-#: builtin/gc.c:1512
+#: builtin/gc.c:1558
 #, c-format
 msgid "task '%s' failed"
 msgstr ""
 
-#: builtin/gc.c:1595
+#: builtin/gc.c:1641
 #, c-format
 msgid "'%s' is not a valid task"
 msgstr ""
 
-#: builtin/gc.c:1600
+#: builtin/gc.c:1646
 #, c-format
 msgid "task '%s' cannot be selected multiple times"
 msgstr ""
 
-#: builtin/gc.c:1617
+#: builtin/gc.c:1663
 msgid "run tasks based on the state of the repository"
 msgstr ""
 
-#: builtin/gc.c:1619
+#: builtin/gc.c:1665
 msgid "perform maintenance in the background"
 msgstr ""
 
-#: builtin/gc.c:1620
+#: builtin/gc.c:1666
 msgid "frequency"
 msgstr ""
 
-#: builtin/gc.c:1621
+#: builtin/gc.c:1667
 msgid "run tasks based on frequency"
 msgstr ""
 
-#: builtin/gc.c:1624
+#: builtin/gc.c:1670
 msgid "do not report progress or other information over stderr"
 msgstr ""
 
-#: builtin/gc.c:1625
+#: builtin/gc.c:1671
 msgid "task"
 msgstr ""
 
-#: builtin/gc.c:1626
+#: builtin/gc.c:1672
 msgid "run a specific task"
 msgstr ""
 
-#: builtin/gc.c:1643
+#: builtin/gc.c:1689
 msgid "use at most one of --auto and --schedule=<frequency>"
 msgstr ""
 
-#: builtin/gc.c:1724
+#: builtin/gc.c:1770
 #, c-format
 msgid "unable to add '%s' value of '%s'"
 msgstr ""
 
-#: builtin/gc.c:1745
+#: builtin/gc.c:1791
 msgid "return success even if repository was not registered"
 msgstr ""
 
-#: builtin/gc.c:1794
+#: builtin/gc.c:1840
 #, c-format
 msgid "unable to unset '%s' value of '%s'"
 msgstr ""
 
-#: builtin/gc.c:1797
+#: builtin/gc.c:1843
 #, c-format
 msgid "repository '%s' is not registered"
 msgstr ""
 
-#: builtin/gc.c:1975
+#: builtin/gc.c:2021
 #, c-format
 msgid "failed to expand path '%s'"
 msgstr ""
 
-#: builtin/gc.c:2002 builtin/gc.c:2041
+#: builtin/gc.c:2048 builtin/gc.c:2087
 msgid "failed to start launchctl"
 msgstr ""
 
-#: builtin/gc.c:2121 builtin/gc.c:2587 builtin/gc.c:2660
+#: builtin/gc.c:2167 builtin/gc.c:2633 builtin/gc.c:2706
 #, c-format
 msgid "failed to create directories for '%s'"
 msgstr ""
 
-#: builtin/gc.c:2148
+#: builtin/gc.c:2194
 #, c-format
 msgid "failed to bootstrap service %s"
 msgstr ""
 
-#: builtin/gc.c:2239
+#: builtin/gc.c:2285
 msgid "failed to create temp xml file"
 msgstr ""
 
-#: builtin/gc.c:2333
+#: builtin/gc.c:2379
 msgid "failed to start schtasks"
 msgstr ""
 
-#: builtin/gc.c:2427
+#: builtin/gc.c:2473
 msgid "failed to run 'crontab -l'; your system might not support 'cron'"
 msgstr ""
 
-#: builtin/gc.c:2436
+#: builtin/gc.c:2482
 msgid "failed to create crontab temporary file"
 msgstr ""
 
-#: builtin/gc.c:2441
+#: builtin/gc.c:2487
 msgid "failed to open temporary file"
 msgstr ""
 
-#: builtin/gc.c:2491
+#: builtin/gc.c:2537
 msgid "failed to run 'crontab'; your system might not support 'cron'"
 msgstr ""
 
-#: builtin/gc.c:2496
+#: builtin/gc.c:2542
 msgid "'crontab' died"
 msgstr ""
 
-#: builtin/gc.c:2548 builtin/gc.c:2561 builtin/gc.c:2771 builtin/worktree.c:159
+#: builtin/gc.c:2594 builtin/gc.c:2607 builtin/gc.c:2817 builtin/worktree.c:159
 #: builtin/worktree.c:1319
 #, c-format
 msgid "failed to delete '%s'"
 msgstr ""
 
-#: builtin/gc.c:2630 builtin/gc.c:2692 rerere.c:495
+#: builtin/gc.c:2676 builtin/gc.c:2738 rerere.c:495
 #, c-format
 msgid "failed to flush '%s'"
 msgstr ""
 
-#: builtin/gc.c:2736
+#: builtin/gc.c:2782
 msgid "failed to start systemctl"
 msgstr ""
 
-#: builtin/gc.c:2749
+#: builtin/gc.c:2795
 msgid "failed to run systemctl"
 msgstr ""
 
-#: builtin/gc.c:2888
+#: builtin/gc.c:2934
 #, c-format
 msgid "unrecognized --scheduler argument '%s'"
 msgstr ""
 
-#: builtin/gc.c:2913
+#: builtin/gc.c:2959
 msgid "neither systemd timers nor crontab are available"
 msgstr ""
 
-#: builtin/gc.c:2928
+#: builtin/gc.c:2974
 #, c-format
 msgid "%s scheduler is not available"
 msgstr ""
 
-#: builtin/gc.c:2942
+#: builtin/gc.c:2988
 #, c-format
 msgid ""
 "unable to create '%s.lock': %s.\n"
@@ -8191,31 +8192,31 @@ msgid ""
 "crashed in this repository earlier: remove the file manually to continue."
 msgstr ""
 
-#: builtin/gc.c:2949
+#: builtin/gc.c:2995
 msgid "cannot acquire lock for scheduled background maintenance"
 msgstr ""
 
-#: builtin/gc.c:2973
+#: builtin/gc.c:3019
 msgid "git maintenance start [--scheduler=<scheduler>]"
 msgstr ""
 
-#: builtin/gc.c:2983
+#: builtin/gc.c:3029
 msgid "scheduler"
 msgstr ""
 
-#: builtin/gc.c:2984
+#: builtin/gc.c:3030
 msgid "scheduler to trigger git maintenance run"
 msgstr ""
 
-#: builtin/gc.c:2999
+#: builtin/gc.c:3045
 msgid "failed to set up maintenance schedule"
 msgstr ""
 
-#: builtin/gc.c:3002
+#: builtin/gc.c:3048
 msgid "failed to add repo to global config"
 msgstr ""
 
-#: builtin/gc.c:3025
+#: builtin/gc.c:3071
 msgid "git maintenance <subcommand> [<options>]"
 msgstr ""
 
