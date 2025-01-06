@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-03 22:57+0000\n"
+"POT-Creation-Date: 2025-01-06 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -209,7 +209,7 @@ msgid "unstaged"
 msgstr ""
 
 #: add-interactive.c:1171 apply.c:5075 apply.c:5078 builtin/am.c:2367
-#: builtin/am.c:2370 builtin/bugreport.c:124 builtin/clone.c:147
+#: builtin/am.c:2370 builtin/bugreport.c:115 builtin/clone.c:147
 #: builtin/diagnose.c:30 builtin/fetch.c:2326 builtin/hook.c:32
 #: builtin/merge.c:277 builtin/pull.c:198 builtin/submodule--helper.c:1864
 #: builtin/submodule--helper.c:1867
@@ -2599,7 +2599,7 @@ msgstr ""
 msgid "n"
 msgstr ""
 
-#: builtin/am.c:2379 builtin/branch.c:778 builtin/bugreport.c:126
+#: builtin/am.c:2379 builtin/branch.c:778 builtin/bugreport.c:117
 #: builtin/cat-file.c:1065 builtin/cat-file.c:1069 builtin/cat-file.c:1076
 #: builtin/clone.c:163 builtin/diagnose.c:32 builtin/for-each-ref.c:47
 #: builtin/init-db.c:107 builtin/ls-files.c:640 builtin/ls-tree.c:368
@@ -3658,31 +3658,26 @@ msgstr ""
 msgid "git version:\n"
 msgstr ""
 
-#: builtin/bugreport.c:28
-#, c-format
-msgid "uname() failed with error '%s' (%d)\n"
-msgstr ""
-
-#: builtin/bugreport.c:38
+#: builtin/bugreport.c:29
 msgid "compiler info: "
 msgstr ""
 
-#: builtin/bugreport.c:41
+#: builtin/bugreport.c:32
 msgid "libc info: "
 msgstr ""
 
-#: builtin/bugreport.c:55
+#: builtin/bugreport.c:46
 msgid "not run from a git repository - no hooks to show\n"
 msgstr ""
 
-#: builtin/bugreport.c:68
+#: builtin/bugreport.c:59
 msgid ""
 "git bugreport [(-o | --output-directory) <path>]\n"
 "              [(-s | --suffix) <format> | --no-suffix]\n"
 "              [--diagnose[=<mode>]]"
 msgstr ""
 
-#: builtin/bugreport.c:77
+#: builtin/bugreport.c:68
 msgid ""
 "Thank you for filling out a Git bug report!\n"
 "Please answer the following questions to help us understand your issue.\n"
@@ -3701,54 +3696,54 @@ msgid ""
 "You can delete any lines you don't wish to share.\n"
 msgstr ""
 
-#: builtin/bugreport.c:121 builtin/commit.c:1544 builtin/commit.c:1548
+#: builtin/bugreport.c:112 builtin/commit.c:1544 builtin/commit.c:1548
 #: builtin/commit.c:1715 builtin/fast-export.c:1203 builtin/fast-export.c:1206
 #: builtin/fast-export.c:1209 builtin/rebase.c:1204 parse-options.h:595
 msgid "mode"
 msgstr ""
 
-#: builtin/bugreport.c:122
+#: builtin/bugreport.c:113
 msgid ""
 "create an additional zip archive of detailed diagnostics (default 'stats')"
 msgstr ""
 
-#: builtin/bugreport.c:125
+#: builtin/bugreport.c:116
 msgid "specify a destination for the bugreport file(s)"
 msgstr ""
 
-#: builtin/bugreport.c:127
+#: builtin/bugreport.c:118
 msgid "specify a strftime format suffix for the filename(s)"
 msgstr ""
 
-#: builtin/bugreport.c:135
+#: builtin/bugreport.c:126
 #, c-format
 msgid "unknown argument `%s'"
 msgstr ""
 
-#: builtin/bugreport.c:158 builtin/diagnose.c:58
+#: builtin/bugreport.c:149 builtin/diagnose.c:58
 #, c-format
 msgid "could not create leading directories for '%s'"
 msgstr ""
 
-#: builtin/bugreport.c:171 builtin/diagnose.c:64
+#: builtin/bugreport.c:162 builtin/diagnose.c:64
 #, c-format
 msgid "unable to create diagnostics archive %s"
 msgstr ""
 
-#: builtin/bugreport.c:179
+#: builtin/bugreport.c:170
 msgid "System Info"
 msgstr ""
 
-#: builtin/bugreport.c:182
+#: builtin/bugreport.c:173
 msgid "Enabled Hooks"
 msgstr ""
 
-#: builtin/bugreport.c:189
+#: builtin/bugreport.c:180
 #, c-format
 msgid "unable to write to %s"
 msgstr ""
 
-#: builtin/bugreport.c:199
+#: builtin/bugreport.c:190
 #, c-format
 msgid "Created new report at '%s'.\n"
 msgstr ""
@@ -7086,7 +7081,7 @@ msgstr ""
 msgid "option \"%s\" is ignored for %s"
 msgstr ""
 
-#: builtin/fetch.c:1488 object-file.c:2850
+#: builtin/fetch.c:1488 object-file.c:2855
 #, c-format
 msgid "%s is not a valid object"
 msgstr ""
@@ -7102,8 +7097,8 @@ msgid ""
 "Run 'git remote set-head %s %s' to follow the change, or set\n"
 "'remote.%s.followRemoteHEAD' configuration option to a different value\n"
 "if you do not want to see this message. Specifically running\n"
-"'git config set remote.%s.followRemoteHEAD %s' will disable the warning\n"
-"until the remote changes HEAD to something else."
+"'git config set remote.%s.followRemoteHEAD warn-if-not-branch-%s'\n"
+"will disable the warning until the remote changes HEAD to something else."
 msgstr ""
 
 #: builtin/fetch.c:1892
@@ -11072,7 +11067,7 @@ msgstr ""
 msgid "failed to stat %s"
 msgstr ""
 
-#: builtin/pack-objects.c:1387 object-file.c:2338
+#: builtin/pack-objects.c:1387 object-file.c:2343
 #, c-format
 msgid "failed utime() on %s"
 msgstr ""
@@ -18602,71 +18597,71 @@ msgstr ""
 msgid "protocol error: unexpected '%s'"
 msgstr ""
 
-#: connect.c:498
+#: connect.c:501
 #, c-format
 msgid "unknown object format '%s' specified by server"
 msgstr ""
 
-#: connect.c:531
+#: connect.c:534
 #, c-format
 msgid "error on bundle-uri response line %d: %s"
 msgstr ""
 
-#: connect.c:536
+#: connect.c:539
 msgid "expected flush after bundle-uri listing"
 msgstr ""
 
-#: connect.c:544 connect.c:598
+#: connect.c:547 connect.c:601
 msgid "expected response end packet after ref listing"
 msgstr ""
 
-#: connect.c:591
+#: connect.c:594
 #, c-format
 msgid "invalid ls-refs response: %s"
 msgstr ""
 
-#: connect.c:595
+#: connect.c:598
 msgid "expected flush after ref listing"
 msgstr ""
 
-#: connect.c:716
+#: connect.c:719
 #, c-format
 msgid "mismatched algorithms: client %s; server %s"
 msgstr ""
 
-#: connect.c:720
+#: connect.c:723
 #, c-format
 msgid "the server does not support algorithm '%s'"
 msgstr ""
 
-#: connect.c:768
+#: connect.c:771
 #, c-format
 msgid "protocol '%s' is not supported"
 msgstr ""
 
-#: connect.c:819
+#: connect.c:822
 msgid "unable to set SO_KEEPALIVE on socket"
 msgstr ""
 
-#: connect.c:859 connect.c:922
+#: connect.c:862 connect.c:925
 #, c-format
 msgid "Looking up %s ... "
 msgstr ""
 
-#: connect.c:863
+#: connect.c:866
 #, c-format
 msgid "unable to look up %s (port %s) (%s)"
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Looking up %s ... "
-#: connect.c:867 connect.c:938
+#: connect.c:870 connect.c:941
 #, c-format
 msgid ""
 "done.\n"
 "Connecting to %s (port %s) ... "
 msgstr ""
 
-#: connect.c:889 connect.c:966
+#: connect.c:892 connect.c:969
 #, c-format
 msgid ""
 "unable to connect to %s:\n"
@@ -18674,61 +18669,61 @@ msgid ""
 msgstr ""
 
 #. TRANSLATORS: this is the end of "Connecting to %s (port %s) ... "
-#: connect.c:895 connect.c:972
+#: connect.c:898 connect.c:975
 msgid "done."
 msgstr ""
 
-#: connect.c:926
+#: connect.c:929
 #, c-format
 msgid "unable to look up %s (%s)"
 msgstr ""
 
-#: connect.c:932
+#: connect.c:935
 #, c-format
 msgid "unknown port %s"
 msgstr ""
 
-#: connect.c:1069 connect.c:1401
+#: connect.c:1072 connect.c:1404
 #, c-format
 msgid "strange hostname '%s' blocked"
 msgstr ""
 
-#: connect.c:1071
+#: connect.c:1074
 #, c-format
 msgid "strange port '%s' blocked"
 msgstr ""
 
-#: connect.c:1081
+#: connect.c:1084
 #, c-format
 msgid "cannot start proxy %s"
 msgstr ""
 
-#: connect.c:1152
+#: connect.c:1155
 msgid "no path specified; see 'git help pull' for valid url syntax"
 msgstr ""
 
-#: connect.c:1292
+#: connect.c:1295
 msgid "newline is forbidden in git:// hosts and repo paths"
 msgstr ""
 
-#: connect.c:1349
+#: connect.c:1352
 msgid "ssh variant 'simple' does not support -4"
 msgstr ""
 
-#: connect.c:1361
+#: connect.c:1364
 msgid "ssh variant 'simple' does not support -6"
 msgstr ""
 
-#: connect.c:1378
+#: connect.c:1381
 msgid "ssh variant 'simple' does not support setting port"
 msgstr ""
 
-#: connect.c:1493
+#: connect.c:1496
 #, c-format
 msgid "strange pathname '%s' blocked"
 msgstr ""
 
-#: connect.c:1542
+#: connect.c:1545
 msgid "unable to fork"
 msgstr ""
 
@@ -21646,12 +21641,12 @@ msgstr ""
 msgid "object file %s is empty"
 msgstr ""
 
-#: object-file.c:1429 object-file.c:3066
+#: object-file.c:1429 object-file.c:3071
 #, c-format
 msgid "corrupt loose object '%s'"
 msgstr ""
 
-#: object-file.c:1431 object-file.c:3070
+#: object-file.c:1431 object-file.c:3075
 #, c-format
 msgid "garbage at end of loose object '%s'"
 msgstr ""
@@ -21700,7 +21695,7 @@ msgstr ""
 msgid "missing mapping of %s to %s"
 msgstr ""
 
-#: object-file.c:1983 object-file.c:1990 object-file.c:2879
+#: object-file.c:1983 object-file.c:1990 object-file.c:2884
 #, c-format
 msgid "unable to open %s"
 msgstr ""
@@ -21710,133 +21705,138 @@ msgstr ""
 msgid "files '%s' and '%s' differ in contents"
 msgstr ""
 
-#: object-file.c:2079
+#: object-file.c:2080
 #, c-format
 msgid "unable to write file %s"
 msgstr ""
 
-#: object-file.c:2093
+#: object-file.c:2086
+#, c-format
+msgid "unable to write repeatedly vanishing file %s"
+msgstr ""
+
+#: object-file.c:2098
 #, c-format
 msgid "unable to set permission to '%s'"
 msgstr ""
 
-#: object-file.c:2130
+#: object-file.c:2135
 msgid "error when closing loose object file"
 msgstr ""
 
-#: object-file.c:2206
+#: object-file.c:2211
 #, c-format
 msgid "insufficient permission for adding an object to repository database %s"
 msgstr ""
 
-#: object-file.c:2211
+#: object-file.c:2216
 msgid "unable to create temporary file"
 msgstr ""
 
-#: object-file.c:2254
+#: object-file.c:2259
 msgid "unable to write loose object file"
 msgstr ""
 
-#: object-file.c:2320
+#: object-file.c:2325
 #, c-format
 msgid "unable to deflate new object %s (%d)"
 msgstr ""
 
-#: object-file.c:2324
+#: object-file.c:2329
 #, c-format
 msgid "deflateEnd on object %s failed (%d)"
 msgstr ""
 
-#: object-file.c:2327
+#: object-file.c:2332
 #, c-format
 msgid "confused by unstable object source data for %s"
 msgstr ""
 
-#: object-file.c:2426
+#: object-file.c:2431
 #, c-format
 msgid "write stream object %ld != %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:2437
+#: object-file.c:2442
 #, c-format
 msgid "unable to stream deflate new object (%d)"
 msgstr ""
 
-#: object-file.c:2440
+#: object-file.c:2445
 #, c-format
 msgid "deflateEnd on stream object failed (%d)"
 msgstr ""
 
-#: object-file.c:2457
+#: object-file.c:2462
 #, c-format
 msgid "unable to create directory %s"
 msgstr ""
 
-#: object-file.c:2579
+#: object-file.c:2584
 #, c-format
 msgid "cannot read object for %s"
 msgstr ""
 
-#: object-file.c:2582
+#: object-file.c:2587
 #, c-format
 msgid "cannot map object %s to %s"
 msgstr ""
 
-#: object-file.c:2632
+#: object-file.c:2637
 #, c-format
 msgid "object fails fsck: %s"
 msgstr ""
 
-#: object-file.c:2665
+#: object-file.c:2670
 msgid "refusing to create malformed object"
 msgstr ""
 
-#: object-file.c:2734
+#: object-file.c:2739
 #, c-format
 msgid "read error while indexing %s"
 msgstr ""
 
-#: object-file.c:2737
+#: object-file.c:2742
 #, c-format
 msgid "short read while indexing %s"
 msgstr ""
 
-#: object-file.c:2810 object-file.c:2820
+#: object-file.c:2815 object-file.c:2825
 #, c-format
 msgid "%s: failed to insert into database"
 msgstr ""
 
-#: object-file.c:2826
+#: object-file.c:2831
 #, c-format
 msgid "%s: unsupported file type"
 msgstr ""
 
-#: object-file.c:2852
+#: object-file.c:2857
 #, c-format
 msgid "%s is not a valid '%s' object"
 msgstr ""
 
-#: object-file.c:3077
+#: object-file.c:3082
 #, c-format
 msgid "hash mismatch for %s (expected %s)"
 msgstr ""
 
-#: object-file.c:3103
+#: object-file.c:3108
 #, c-format
 msgid "unable to mmap %s"
 msgstr ""
 
-#: object-file.c:3109
+#: object-file.c:3114
 #, c-format
 msgid "unable to unpack header of %s"
 msgstr ""
 
-#: object-file.c:3115
+#: object-file.c:3120
 #, c-format
 msgid "unable to parse header of %s"
 msgstr ""
 
-#: object-file.c:3126
+#: object-file.c:3131
 #, c-format
 msgid "unable to unpack contents of %s"
 msgstr ""
@@ -26683,6 +26683,16 @@ msgstr ""
 
 #: usage.c:93
 msgid "warning: "
+msgstr ""
+
+#: version.c:62
+#, c-format
+msgid "uname() failed with error '%s' (%d)\n"
+msgstr ""
+
+#: version.c:97
+#, c-format
+msgid "malformed osVersion.command config option: %s"
 msgstr ""
 
 #: walker.c:176
