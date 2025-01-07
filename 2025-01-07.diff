@@ -1,0 +1,31 @@
+
+
+#################### Tue, 07 Jan 2025 20:57:26 +0000 ####################
+
+--- po/git.pot.old	2025-01-07 20:57:26.413619718 +0000
++++ po/git.pot.new	2025-01-07 20:57:26.491620743 +0000
+@@ -5399,8 +5399,8 @@
+ "Run 'git remote set-head %s %s' to follow the change, or set\n"
+ "'remote.%s.followRemoteHEAD' configuration option to a different value\n"
+ "if you do not want to see this message. Specifically running\n"
+-"'git config set remote.%s.followRemoteHEAD %s' will disable the warning\n"
+-"until the remote changes HEAD to something else."
++"'git config set remote.%s.followRemoteHEAD warn-if-not-branch-%s'\n"
++"will disable the warning until the remote changes HEAD to something else."
+ msgstr ""
+ 
+ msgid "Run a Git command on a list of repositories"
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
