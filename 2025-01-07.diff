@@ -1,0 +1,30 @@
+
+
+#################### Tue, 07 Jan 2025 20:57:25 +0000 ####################
+
+--- po/git.pot.old	2025-01-07 20:57:25.598703689 +0000
++++ po/git.pot.new	2025-01-07 20:57:25.679702572 +0000
+@@ -3018,6 +3018,9 @@
+ msgid "Checking patch %s..."
+ msgstr ""
+ 
++msgid "Checking ref database"
++msgstr ""
++
+ msgid "Checking references consistency"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
