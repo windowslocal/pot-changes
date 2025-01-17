@@ -1,0 +1,91 @@
+
+
+#################### Fri, 17 Jan 2025 19:57:34 +0000 ####################
+
+--- po/git.pot.old	2025-01-17 19:57:34.757141057 +0000
++++ po/git.pot.new	2025-01-17 19:57:34.834141275 +0000
+@@ -497,6 +497,20 @@
+ msgid " ... and %d more.\n"
+ msgstr ""
+ 
++#. TRANSLATORS: The "<%s>" part of this string stands for a
++#. value given to a command line option, and "<>" is there
++#. as a convention to signal that it is a placeholder
++#. (i.e. the user should substitute it with the real value).
++#. If your language uses a different convention, you can
++#. change "<%s>" part to match yours, e.g. it might use
++#. "|%s|" instead, or if the alphabet is different enough it
++#. may use "%s" without any placeholder signal.  Most
++#. translations leave this message as is.
++#.
++#, c-format
++msgid " <%s>"
++msgstr ""
++
+ msgid " ???"
+ msgstr ""
+ 
+@@ -7167,6 +7181,38 @@
+ msgid "[(amend|reword):]commit"
+ msgstr ""
+ 
++#. TRANSLATORS: The "<%s>" part of this string
++#. stands for an optional value given to a command
++#. line option in the short form, and "<>" is there
++#. as a convention to signal that it is a
++#. placeholder (i.e. the user should substitute it
++#. with the real value).  If your language uses a
++#. different convention, you can change "<%s>" part
++#. to match yours, e.g. it might use "|%s|" instead,
++#. or if the alphabet is different enough it may use
++#. "%s" without any placeholder signal.  Most
++#. translations leave this message as is.
++#.
++#, c-format
++msgid "[<%s>]"
++msgstr ""
++
++#. TRANSLATORS: The "<%s>" part of this string
++#. stands for an optional value given to a command
++#. line option in the long form, and "<>" is there
++#. as a convention to signal that it is a
++#. placeholder (i.e. the user should substitute it
++#. with the real value).  If your language uses a
++#. different convention, you can change "<%s>" part
++#. to match yours, e.g. it might use "|%s|" instead,
++#. or if the alphabet is different enough it may use
++#. "%s" without any placeholder signal.  Most
++#. translations leave this message as is.
++#.
++#, c-format
++msgid "[=<%s>]"
++msgstr ""
++
+ #, c-format
+ msgid "[GLE %ld] could not convert path to UTF-8: '%.*ls'"
+ msgstr ""
+@@ -19920,6 +19966,10 @@
+ msgid "unable to write parameters to config file"
+ msgstr ""
+ 
++#, c-format
++msgid "unable to write repeatedly vanishing file %s"
++msgstr ""
++
+ msgid "unable to write request to remote"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
