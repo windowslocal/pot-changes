@@ -40,3 +40,54 @@
  msgid "malformed response in ref list: %s"
  msgstr ""
  
+
+
+#################### Wed, 22 Jan 2025 22:57:22 +0000 ####################
+
+--- po/git.pot.old	2025-01-22 22:57:22.901421304 +0000
++++ po/git.pot.new	2025-01-22 22:57:22.979421986 +0000
+@@ -5172,24 +5172,6 @@
+ msgid "ReadDirectoryChangedW failed on '%s' [GLE %ld]"
+ msgstr ""
+ 
+-#, c-format
+-msgid ""
+-"Reading remote from \"branches/%s\", which is nominated\n"
+-"for removal. If you still use the \"branches/\" directory\n"
+-"it is recommended to migrate to config-based remotes. If\n"
+-"you cannot, please let us know you still use it by sending\n"
+-"an e-mail to <git@vger.kernel.org>."
+-msgstr ""
+-
+-#, c-format
+-msgid ""
+-"Reading remote from \"remotes/%s\", which is nominated\n"
+-"for removal. If you still use the \"remotes/\" directory\n"
+-"it is recommended to migrate to config-based remotes. If\n"
+-"you cannot, please let us know you still use it by sending\n"
+-"an e-mail to <git@vger.kernel.org>."
+-msgstr ""
+-
+ msgid "Reads tree information into the index"
+ msgstr ""
+ 
+@@ -17204,6 +17186,19 @@
+ msgid "reading patches from stdin/tty..."
+ msgstr ""
+ 
++#, c-format
++msgid ""
++"reading remote from \"%s/%s\", which is nominated for removal.\n"
++"\n"
++"If you still use the \"remotes/\" directory it is recommended to\n"
++"migrate to config-based remotes:\n"
++"\n"
++"\tgit remote rename %s %s\n"
++"\n"
++"If you cannot, please let us know why you still need to use it by\n"
++"sending an e-mail to <git@vger.kernel.org>."
++msgstr ""
++
+ msgid "reason"
+ msgstr ""
+ 
