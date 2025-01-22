@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-21 17:57+0000\n"
+"POT-Creation-Date: 2025-01-22 22:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -22477,6 +22477,25 @@ msgstr ""
 msgid "failed to parse %s"
 msgstr ""
 
+#: path-walk.c:118
+#, c-format
+msgid "failed to walk children of tree %s: not found"
+msgstr ""
+
+#: path-walk.c:156
+#, c-format
+msgid "failed to find object %s"
+msgstr ""
+
+#: path-walk.c:337
+#, c-format
+msgid "failed to find tag %s"
+msgstr ""
+
+#: path-walk.c:487
+msgid "failed to setup revision walk"
+msgstr ""
+
 #: path.c:828
 #, c-format
 msgid "Could not make %s writable by group"
@@ -25894,6 +25913,30 @@ msgstr ""
 
 #: t/helper/test-cache-tree.c:31
 msgid "number of entries in the cache tree to invalidate (default 0)"
+msgstr ""
+
+#: t/helper/test-path-walk.c:16
+msgid "test-tool path-walk <options> -- <revision-options>"
+msgstr ""
+
+#: t/helper/test-path-walk.c:74
+msgid "toggle inclusion of blob objects"
+msgstr ""
+
+#: t/helper/test-path-walk.c:76
+msgid "toggle inclusion of commit objects"
+msgstr ""
+
+#: t/helper/test-path-walk.c:78
+msgid "toggle inclusion of tag objects"
+msgstr ""
+
+#: t/helper/test-path-walk.c:80
+msgid "toggle inclusion of tree objects"
+msgstr ""
+
+#: t/helper/test-path-walk.c:82
+msgid "toggle pruning of uninteresting paths"
 msgstr ""
 
 #: t/helper/test-reach.c:168

@@ -1,0 +1,88 @@
+
+
+#################### Wed, 22 Jan 2025 22:57:28 +0000 ####################
+
+--- po/git.pot.old	2025-01-22 22:57:28.052977329 +0000
++++ po/git.pot.new	2025-01-22 22:57:28.129977804 +0000
+@@ -11661,6 +11661,14 @@
+ msgstr ""
+ 
+ #, c-format
++msgid "failed to find object %s"
++msgstr ""
++
++#, c-format
++msgid "failed to find tag %s"
++msgstr ""
++
++#, c-format
+ msgid "failed to find tree of %s"
+ msgstr ""
+ 
+@@ -11930,6 +11938,9 @@
+ msgid "failed to set up maintenance schedule"
+ msgstr ""
+ 
++msgid "failed to setup revision walk"
++msgstr ""
++
+ msgid "failed to sign the push certificate"
+ msgstr ""
+ 
+@@ -12007,6 +12018,10 @@
+ msgid "failed to update remote for submodule '%s'"
+ msgstr ""
+ 
++#, c-format
++msgid "failed to walk children of tree %s: not found"
++msgstr ""
++
+ msgid "failed to write archive"
+ msgstr ""
+ 
+@@ -19003,6 +19018,9 @@
+ msgid "test-tool cache-tree <options> (control|prime|update)"
+ msgstr ""
+ 
++msgid "test-tool path-walk <options> -- <revision-options>"
++msgstr ""
++
+ msgid "test-tool serve-v2 [<options>]"
+ msgstr ""
+ 
+@@ -19184,6 +19202,21 @@
+ "\tgit config --global --unset --fixed-value scalar.repo \"%s\""
+ msgstr ""
+ 
++msgid "toggle inclusion of blob objects"
++msgstr ""
++
++msgid "toggle inclusion of commit objects"
++msgstr ""
++
++msgid "toggle inclusion of tag objects"
++msgstr ""
++
++msgid "toggle inclusion of tree objects"
++msgstr ""
++
++msgid "toggle pruning of uninteresting paths"
++msgstr ""
++
+ msgid "toggle the use of a sparse index"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
