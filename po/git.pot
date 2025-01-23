@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-22 22:57+0000\n"
+"POT-Creation-Date: 2025-01-23 21:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -3358,12 +3358,12 @@ msgstr ""
 msgid "invalid branch name: '%s'"
 msgstr ""
 
-#: builtin/branch.c:612 builtin/branch.c:910 builtin/branch.c:959
+#: builtin/branch.c:612 builtin/branch.c:909 builtin/branch.c:958
 #, c-format
 msgid "no commit on branch '%s' yet"
 msgstr ""
 
-#: builtin/branch.c:614 builtin/branch.c:911
+#: builtin/branch.c:614 builtin/branch.c:910
 #, c-format
 msgid "no branch named '%s'"
 msgstr ""
@@ -3565,74 +3565,74 @@ msgstr ""
 msgid "--recurse-submodules can only be used to create branches"
 msgstr ""
 
-#: builtin/branch.c:859 builtin/branch.c:926
+#: builtin/branch.c:859 builtin/branch.c:925
 msgid "branch name required"
 msgstr ""
 
-#: builtin/branch.c:898
+#: builtin/branch.c:897
 msgid "cannot give description to detached HEAD"
 msgstr ""
 
-#: builtin/branch.c:904
+#: builtin/branch.c:903
 msgid "cannot edit description of more than one branch"
 msgstr ""
 
-#: builtin/branch.c:928
+#: builtin/branch.c:927
 msgid "cannot copy the current branch while not on any"
 msgstr ""
 
-#: builtin/branch.c:929
+#: builtin/branch.c:928
 msgid "cannot rename the current branch while not on any"
 msgstr ""
 
-#: builtin/branch.c:935
+#: builtin/branch.c:934
 msgid "too many branches for a copy operation"
 msgstr ""
 
-#: builtin/branch.c:936
+#: builtin/branch.c:935
 msgid "too many arguments for a rename operation"
 msgstr ""
 
-#: builtin/branch.c:947
+#: builtin/branch.c:946
 msgid "too many arguments to set new upstream"
 msgstr ""
 
-#: builtin/branch.c:951
+#: builtin/branch.c:950
 #, c-format
 msgid ""
 "could not set upstream of HEAD to %s when it does not point to any branch"
 msgstr ""
 
-#: builtin/branch.c:954 builtin/branch.c:983
+#: builtin/branch.c:953 builtin/branch.c:982
 #, c-format
 msgid "no such branch '%s'"
 msgstr ""
 
-#: builtin/branch.c:960
+#: builtin/branch.c:959
 #, c-format
 msgid "branch '%s' does not exist"
 msgstr ""
 
-#: builtin/branch.c:977
+#: builtin/branch.c:976
 msgid "too many arguments to unset upstream"
 msgstr ""
 
-#: builtin/branch.c:981
+#: builtin/branch.c:980
 msgid "could not unset upstream of HEAD when it does not point to any branch"
 msgstr ""
 
-#: builtin/branch.c:987
+#: builtin/branch.c:986
 #, c-format
 msgid "branch '%s' has no upstream information"
 msgstr ""
 
-#: builtin/branch.c:1001
+#: builtin/branch.c:1000
 msgid ""
 "the -a, and -r, options to 'git branch' do not take a branch name.\n"
 "Did you mean to use: -a|-r --list <pattern>?"
 msgstr ""
 
-#: builtin/branch.c:1005
+#: builtin/branch.c:1004
 msgid ""
 "the '--set-upstream' option is no longer supported. Please use '--track' or "
 "'--set-upstream-to' instead"
@@ -4794,7 +4794,7 @@ msgstr ""
 #: builtin/grep.c:1001 builtin/log.c:276 builtin/log.c:278
 #: builtin/ls-files.c:613 builtin/name-rev.c:575 builtin/name-rev.c:577
 #: builtin/pack-refs.c:36 builtin/pack-refs.c:38 builtin/show-ref.c:321
-#: ref-filter.h:138
+#: ref-filter.h:130
 msgid "pattern"
 msgstr ""
 
@@ -5036,7 +5036,7 @@ msgstr ""
 msgid "failed to copy file to '%s'"
 msgstr ""
 
-#: builtin/clone.c:427 refs/files-backend.c:3811
+#: builtin/clone.c:427 refs/files-backend.c:3808
 #, c-format
 msgid "failed to iterate over '%s'"
 msgstr ""
@@ -5431,7 +5431,7 @@ msgstr ""
 
 #: builtin/commit.c:47
 msgid ""
-"git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]\n"
+"git commit [-a | --interactive | --patch] [-s] [-v] [-u[<mode>]] [--amend]\n"
 "           [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|"
 "reword):]<commit>]\n"
 "           [-F <file> | -m <msg>] [--reset-author] [--allow-empty]\n"
@@ -5842,7 +5842,7 @@ msgid "override date for commit"
 msgstr ""
 
 #: builtin/commit.c:1674 builtin/commit.c:1675 builtin/commit.c:1681
-#: parse-options.h:589 ref-filter.h:126
+#: parse-options.h:589 ref-filter.h:118
 msgid "commit"
 msgstr ""
 
@@ -22482,17 +22482,17 @@ msgstr ""
 msgid "failed to walk children of tree %s: not found"
 msgstr ""
 
-#: path-walk.c:156
+#: path-walk.c:155
 #, c-format
 msgid "failed to find object %s"
 msgstr ""
 
-#: path-walk.c:337
+#: path-walk.c:336
 #, c-format
 msgid "failed to find tag %s"
 msgstr ""
 
-#: path-walk.c:487
+#: path-walk.c:486
 msgid "failed to setup revision walk"
 msgstr ""
 
@@ -23100,249 +23100,249 @@ msgstr ""
 msgid "ahead %d, behind %d"
 msgstr ""
 
-#: ref-filter.c:262
+#: ref-filter.c:266
 #, c-format
 msgid "%%(%.*s) does not take arguments"
 msgstr ""
 
-#: ref-filter.c:270
+#: ref-filter.c:274
 #, c-format
 msgid "unrecognized %%(%.*s) argument: %s"
 msgstr ""
 
-#: ref-filter.c:383
+#: ref-filter.c:387
 #, c-format
 msgid "expected format: %%(color:<color>)"
 msgstr ""
 
-#: ref-filter.c:385
+#: ref-filter.c:389
 #, c-format
 msgid "unrecognized color: %%(color:%s)"
 msgstr ""
 
-#: ref-filter.c:407
+#: ref-filter.c:411
 #, c-format
 msgid "Integer value expected refname:lstrip=%s"
 msgstr ""
 
-#: ref-filter.c:411
+#: ref-filter.c:415
 #, c-format
 msgid "Integer value expected refname:rstrip=%s"
 msgstr ""
 
-#: ref-filter.c:594
+#: ref-filter.c:598
 #, c-format
 msgid "expected %%(trailers:key=<value>)"
 msgstr ""
 
-#: ref-filter.c:596
+#: ref-filter.c:600
 #, c-format
 msgid "unknown %%(trailers) argument: %s"
 msgstr ""
 
-#: ref-filter.c:630
+#: ref-filter.c:634
 #, c-format
 msgid "positive value expected contents:lines=%s"
 msgstr ""
 
-#: ref-filter.c:656
+#: ref-filter.c:660
 #, c-format
 msgid "argument expected for %s"
 msgstr ""
 
-#: ref-filter.c:660
+#: ref-filter.c:664
 #, c-format
 msgid "positive value expected %s=%s"
 msgstr ""
 
-#: ref-filter.c:664
+#: ref-filter.c:668
 #, c-format
 msgid "cannot fully parse %s=%s"
 msgstr ""
 
-#: ref-filter.c:674 ref-filter.c:684
+#: ref-filter.c:678 ref-filter.c:688
 #, c-format
 msgid "value expected %s="
 msgstr ""
 
-#: ref-filter.c:742
+#: ref-filter.c:746
 #, c-format
 msgid "positive value expected '%s' in %%(%s)"
 msgstr ""
 
-#: ref-filter.c:826
+#: ref-filter.c:830
 #, c-format
 msgid "expected format: %%(align:<width>,<position>)"
 msgstr ""
 
-#: ref-filter.c:838
+#: ref-filter.c:842
 #, c-format
 msgid "unrecognized position:%s"
 msgstr ""
 
-#: ref-filter.c:845
+#: ref-filter.c:849
 #, c-format
 msgid "unrecognized width:%s"
 msgstr ""
 
-#: ref-filter.c:854
+#: ref-filter.c:858
 #, c-format
 msgid "unrecognized %%(%s) argument: %s"
 msgstr ""
 
-#: ref-filter.c:862
+#: ref-filter.c:866
 #, c-format
 msgid "positive width expected with the %%(align) atom"
 msgstr ""
 
-#: ref-filter.c:901
+#: ref-filter.c:903
 #, c-format
 msgid "expected format: %%(ahead-behind:<committish>)"
 msgstr ""
 
-#: ref-filter.c:918
+#: ref-filter.c:917
 #, c-format
 msgid "expected format: %%(is-base:<committish>)"
 msgstr ""
 
-#: ref-filter.c:1045
+#: ref-filter.c:1044
 #, c-format
 msgid "malformed field name: %.*s"
 msgstr ""
 
-#: ref-filter.c:1072
+#: ref-filter.c:1071
 #, c-format
 msgid "unknown field name: %.*s"
 msgstr ""
 
-#: ref-filter.c:1076
+#: ref-filter.c:1075
 #, c-format
 msgid ""
 "not a git repository, but the field '%.*s' requires access to object data"
 msgstr ""
 
-#: ref-filter.c:1211 ref-filter.c:1277 ref-filter.c:1314 ref-filter.c:1316
+#: ref-filter.c:1210 ref-filter.c:1276 ref-filter.c:1313 ref-filter.c:1315
 #, c-format
 msgid "format: %%(%s) atom used without a %%(%s) atom"
 msgstr ""
 
-#: ref-filter.c:1279
+#: ref-filter.c:1278
 #, c-format
 msgid "format: %%(then) atom used more than once"
 msgstr ""
 
-#: ref-filter.c:1281
+#: ref-filter.c:1280
 #, c-format
 msgid "format: %%(then) atom used after %%(else)"
 msgstr ""
 
-#: ref-filter.c:1318
+#: ref-filter.c:1317
 #, c-format
 msgid "format: %%(else) atom used more than once"
 msgstr ""
 
-#: ref-filter.c:1334
+#: ref-filter.c:1333
 #, c-format
 msgid "format: %%(end) atom used without corresponding atom"
 msgstr ""
 
-#: ref-filter.c:1396
+#: ref-filter.c:1395
 #, c-format
 msgid "malformed format string %s"
 msgstr ""
 
-#: ref-filter.c:1402
+#: ref-filter.c:1401
 #, c-format
 msgid "this command reject atom %%(%.*s)"
 msgstr ""
 
-#: ref-filter.c:1409
+#: ref-filter.c:1408
 #, c-format
 msgid "--format=%.*s cannot be used with --python, --shell, --tcl"
 msgstr ""
 
-#: ref-filter.c:1950
+#: ref-filter.c:1949
 msgid "failed to run 'describe'"
 msgstr ""
 
-#: ref-filter.c:2258
+#: ref-filter.c:2257
 #, c-format
 msgid "(no branch, rebasing %s)"
 msgstr ""
 
-#: ref-filter.c:2261
+#: ref-filter.c:2260
 #, c-format
 msgid "(no branch, rebasing detached HEAD %s)"
 msgstr ""
 
-#: ref-filter.c:2264
+#: ref-filter.c:2263
 #, c-format
 msgid "(no branch, bisect started on %s)"
 msgstr ""
 
-#: ref-filter.c:2268
+#: ref-filter.c:2267
 #, c-format
 msgid "(HEAD detached at %s)"
 msgstr ""
 
-#: ref-filter.c:2271
+#: ref-filter.c:2270
 #, c-format
 msgid "(HEAD detached from %s)"
 msgstr ""
 
-#: ref-filter.c:2274
+#: ref-filter.c:2273
 msgid "(no branch)"
 msgstr ""
 
-#: ref-filter.c:2308 ref-filter.c:2556
+#: ref-filter.c:2307 ref-filter.c:2555
 #, c-format
 msgid "missing object %s for %s"
 msgstr ""
 
-#: ref-filter.c:2318
+#: ref-filter.c:2317
 #, c-format
 msgid "parse_object_buffer failed on %s for %s"
 msgstr ""
 
-#: ref-filter.c:2769
+#: ref-filter.c:2768
 #, c-format
 msgid "malformed object at '%s'"
 msgstr ""
 
-#: ref-filter.c:2851
+#: ref-filter.c:2850
 #, c-format
 msgid "ignoring ref with broken name %s"
 msgstr ""
 
-#: ref-filter.c:2856 refs.c:788
+#: ref-filter.c:2855 refs.c:788
 #, c-format
 msgid "ignoring broken ref %s"
 msgstr ""
 
-#: ref-filter.c:3490
+#: ref-filter.c:3512
 #, c-format
 msgid "format: %%(end) atom missing"
 msgstr ""
 
-#: ref-filter.c:3610
+#: ref-filter.c:3632
 #, c-format
 msgid "malformed object name %s"
 msgstr ""
 
-#: ref-filter.c:3615
+#: ref-filter.c:3637
 #, c-format
 msgid "option `%s' must point to a commit"
 msgstr ""
 
-#: ref-filter.h:135
+#: ref-filter.h:127
 msgid "key"
 msgstr ""
 
-#: ref-filter.h:135
+#: ref-filter.h:127
 msgid "field name to sort on"
 msgstr ""
 
-#: ref-filter.h:138
+#: ref-filter.h:130
 msgid "exclude refs which match pattern"
 msgstr ""
 
@@ -23483,23 +23483,23 @@ msgstr ""
 msgid "migrated refs can be found at '%s'"
 msgstr ""
 
-#: refs/files-backend.c:2673 refs/reftable-backend.c:1325
+#: refs/files-backend.c:2670 refs/reftable-backend.c:1325
 #, c-format
 msgid ""
 "cannot lock ref '%s': expected symref with target '%s': but is a regular ref"
 msgstr ""
 
-#: refs/files-backend.c:3691
+#: refs/files-backend.c:3688
 #, c-format
 msgid "cannot read ref file '%s'"
 msgstr ""
 
-#: refs/files-backend.c:3778
+#: refs/files-backend.c:3775
 #, c-format
 msgid "cannot open directory %s"
 msgstr ""
 
-#: refs/files-backend.c:3830
+#: refs/files-backend.c:3827
 msgid "Checking references consistency"
 msgstr ""
 
