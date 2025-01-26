@@ -1,0 +1,17 @@
+
+
+#################### Sun, 26 Jan 2025 06:57:27 +0000 ####################
+
+--- po/git.pot.old	2025-01-26 06:57:27.535647281 +0000
++++ po/git.pot.new	2025-01-26 06:57:27.614647390 +0000
+@@ -14905,10 +14905,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "malformed osVersion.command config option: %s"
+-msgstr ""
+-
+-#, c-format
+ msgid "malformed response in ref list: %s"
+ msgstr ""
+ 
