@@ -1,0 +1,26 @@
+
+
+#################### Tue, 28 Jan 2025 23:57:34 +0000 ####################
+
+--- po/git.pot.old	2025-01-28 23:57:33.987233363 +0000
++++ po/git.pot.new	2025-01-28 23:57:34.064232568 +0000
+@@ -17136,6 +17136,19 @@
+ msgid "reading patches from stdin/tty..."
+ msgstr ""
+ 
++#, c-format
++msgid ""
++"reading remote from \"%s/%s\", which is nominated for removal.\n"
++"\n"
++"If you still use the \"remotes/\" directory it is recommended to\n"
++"migrate to config-based remotes:\n"
++"\n"
++"\tgit remote rename %s %s\n"
++"\n"
++"If you cannot, please let us know why you still need to use it by\n"
++"sending an e-mail to <git@vger.kernel.org>."
++msgstr ""
++
+ msgid "reason"
+ msgstr ""
+ 
