@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-27 22:57+0000\n"
+"POT-Creation-Date: 2025-01-30 23:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -68,7 +68,7 @@ msgstr[1] ""
 msgid "note: %s is untracked now.\n"
 msgstr ""
 
-#: add-interactive.c:752 apply.c:4162 builtin/checkout.c:327
+#: add-interactive.c:752 apply.c:4165 builtin/checkout.c:327
 #: builtin/reset.c:186
 #, c-format
 msgid "make_cache_entry failed for path '%s'"
@@ -208,7 +208,7 @@ msgstr ""
 msgid "unstaged"
 msgstr ""
 
-#: add-interactive.c:1171 apply.c:5075 apply.c:5078 builtin/am.c:2367
+#: add-interactive.c:1171 apply.c:5078 apply.c:5081 builtin/am.c:2367
 #: builtin/am.c:2370 builtin/bugreport.c:115 builtin/clone.c:147
 #: builtin/diagnose.c:30 builtin/fetch.c:2325 builtin/hook.c:32
 #: builtin/merge.c:277 builtin/pull.c:198 builtin/submodule--helper.c:1864
@@ -937,538 +937,538 @@ msgstr[1] ""
 msgid "git diff header lacks filename information (line %d)"
 msgstr ""
 
-#: apply.c:1508
+#: apply.c:1511
 #, c-format
 msgid "recount: unexpected line: %.*s"
 msgstr ""
 
-#: apply.c:1577
+#: apply.c:1580
 #, c-format
 msgid "patch fragment without header at line %d: %.*s"
 msgstr ""
 
-#: apply.c:1780
+#: apply.c:1783
 msgid "new file depends on old contents"
 msgstr ""
 
-#: apply.c:1782
+#: apply.c:1785
 msgid "deleted file still has contents"
 msgstr ""
 
-#: apply.c:1816
+#: apply.c:1819
 #, c-format
 msgid "corrupt patch at line %d"
 msgstr ""
 
-#: apply.c:1853
+#: apply.c:1856
 #, c-format
 msgid "new file %s depends on old contents"
 msgstr ""
 
-#: apply.c:1855
+#: apply.c:1858
 #, c-format
 msgid "deleted file %s still has contents"
 msgstr ""
 
-#: apply.c:1858
+#: apply.c:1861
 #, c-format
 msgid "** warning: file %s becomes empty but is not deleted"
 msgstr ""
 
-#: apply.c:2006
+#: apply.c:2009
 #, c-format
 msgid "corrupt binary patch at line %d: %.*s"
 msgstr ""
 
-#: apply.c:2043
+#: apply.c:2046
 #, c-format
 msgid "unrecognized binary patch at line %d"
 msgstr ""
 
-#: apply.c:2205
+#: apply.c:2208
 #, c-format
 msgid "patch with only garbage at line %d"
 msgstr ""
 
-#: apply.c:2292
+#: apply.c:2295
 #, c-format
 msgid "unable to read symlink %s"
 msgstr ""
 
-#: apply.c:2296
+#: apply.c:2299
 #, c-format
 msgid "unable to open or read %s"
 msgstr ""
 
-#: apply.c:2965
+#: apply.c:2968
 #, c-format
 msgid "invalid start of line: '%c'"
 msgstr ""
 
-#: apply.c:3082
+#: apply.c:3085
 #, c-format
 msgid "Hunk #%d succeeded at %d (offset %d line)."
 msgid_plural "Hunk #%d succeeded at %d (offset %d lines)."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:3094
+#: apply.c:3097
 #, c-format
 msgid "Context reduced to (%ld/%ld) to apply fragment at %d"
 msgstr ""
 
-#: apply.c:3100
+#: apply.c:3103
 #, c-format
 msgid ""
 "while searching for:\n"
 "%.*s"
 msgstr ""
 
-#: apply.c:3122
+#: apply.c:3125
 #, c-format
 msgid "missing binary patch data for '%s'"
 msgstr ""
 
-#: apply.c:3130
+#: apply.c:3133
 #, c-format
 msgid "cannot reverse-apply a binary patch without the reverse hunk to '%s'"
 msgstr ""
 
-#: apply.c:3175
+#: apply.c:3178
 #, c-format
 msgid "cannot apply binary patch to '%s' without full index line"
 msgstr ""
 
-#: apply.c:3186
+#: apply.c:3189
 #, c-format
 msgid ""
 "the patch applies to '%s' (%s), which does not match the current contents."
 msgstr ""
 
-#: apply.c:3194
+#: apply.c:3197
 #, c-format
 msgid "the patch applies to an empty '%s' but it is not empty"
 msgstr ""
 
-#: apply.c:3213
+#: apply.c:3216
 #, c-format
 msgid "the necessary postimage %s for '%s' cannot be read"
 msgstr ""
 
-#: apply.c:3225
+#: apply.c:3228
 #, c-format
 msgid "binary patch does not apply to '%s'"
 msgstr ""
 
-#: apply.c:3232
+#: apply.c:3235
 #, c-format
 msgid "binary patch to '%s' creates incorrect result (expecting %s, got %s)"
 msgstr ""
 
-#: apply.c:3253
+#: apply.c:3256
 #, c-format
 msgid "patch failed: %s:%ld"
 msgstr ""
 
-#: apply.c:3377 builtin/mv.c:535
+#: apply.c:3380 builtin/mv.c:535
 #, c-format
 msgid "cannot checkout %s"
 msgstr ""
 
-#: apply.c:3429 apply.c:3440 apply.c:3486 midx.c:117 pack-mtimes.c:42
+#: apply.c:3432 apply.c:3443 apply.c:3489 midx.c:117 pack-mtimes.c:42
 #: pack-revindex.c:225 setup.c:335
 #, c-format
 msgid "failed to read %s"
 msgstr ""
 
-#: apply.c:3437
+#: apply.c:3440
 #, c-format
 msgid "reading from '%s' beyond a symbolic link"
 msgstr ""
 
-#: apply.c:3466 apply.c:3741
+#: apply.c:3469 apply.c:3744
 #, c-format
 msgid "path %s has been renamed/deleted"
 msgstr ""
 
-#: apply.c:3578 apply.c:3756
+#: apply.c:3581 apply.c:3759
 #, c-format
 msgid "%s: does not exist in index"
 msgstr ""
 
-#: apply.c:3587 apply.c:3764 apply.c:3989
+#: apply.c:3590 apply.c:3767 apply.c:3992
 #, c-format
 msgid "%s: does not match index"
 msgstr ""
 
-#: apply.c:3624
+#: apply.c:3627
 msgid "repository lacks the necessary blob to perform 3-way merge."
 msgstr ""
 
-#: apply.c:3627
+#: apply.c:3630
 #, c-format
 msgid "Performing three-way merge...\n"
 msgstr ""
 
-#: apply.c:3643 apply.c:3647
+#: apply.c:3646 apply.c:3650
 #, c-format
 msgid "cannot read the current contents of '%s'"
 msgstr ""
 
-#: apply.c:3659
+#: apply.c:3662
 #, c-format
 msgid "Failed to perform three-way merge...\n"
 msgstr ""
 
-#: apply.c:3673
+#: apply.c:3676
 #, c-format
 msgid "Applied patch to '%s' with conflicts.\n"
 msgstr ""
 
-#: apply.c:3678
+#: apply.c:3681
 #, c-format
 msgid "Applied patch to '%s' cleanly.\n"
 msgstr ""
 
-#: apply.c:3695
+#: apply.c:3698
 #, c-format
 msgid "Falling back to direct application...\n"
 msgstr ""
 
-#: apply.c:3708
+#: apply.c:3711
 msgid "removal patch leaves file contents"
 msgstr ""
 
-#: apply.c:3790
+#: apply.c:3793
 #, c-format
 msgid "%s: wrong type"
 msgstr ""
 
-#: apply.c:3792
+#: apply.c:3795
 #, c-format
 msgid "%s has type %o, expected %o"
 msgstr ""
 
-#: apply.c:3929 apply.c:3931 read-cache.c:844 read-cache.c:873
+#: apply.c:3932 apply.c:3934 read-cache.c:844 read-cache.c:873
 #: read-cache.c:1306
 #, c-format
 msgid "invalid path '%s'"
 msgstr ""
 
-#: apply.c:3987
+#: apply.c:3990
 #, c-format
 msgid "%s: already exists in index"
 msgstr ""
 
-#: apply.c:3991
+#: apply.c:3994
 #, c-format
 msgid "%s: already exists in working directory"
 msgstr ""
 
-#: apply.c:4011
+#: apply.c:4014
 #, c-format
 msgid "new mode (%o) of %s does not match old mode (%o)"
 msgstr ""
 
-#: apply.c:4016
+#: apply.c:4019
 #, c-format
 msgid "new mode (%o) of %s does not match old mode (%o) of %s"
 msgstr ""
 
-#: apply.c:4036 apply.c:4466
+#: apply.c:4039 apply.c:4469
 #, c-format
 msgid "affected file '%s' is beyond a symbolic link"
 msgstr ""
 
-#: apply.c:4040
+#: apply.c:4043
 #, c-format
 msgid "%s: patch does not apply"
 msgstr ""
 
-#: apply.c:4055
+#: apply.c:4058
 #, c-format
 msgid "Checking patch %s..."
 msgstr ""
 
-#: apply.c:4147
+#: apply.c:4150
 #, c-format
 msgid "sha1 information is lacking or useless for submodule %s"
 msgstr ""
 
-#: apply.c:4154
+#: apply.c:4157
 #, c-format
 msgid "mode change for %s, which is not in current HEAD"
 msgstr ""
 
-#: apply.c:4157
+#: apply.c:4160
 #, c-format
 msgid "sha1 information is lacking or useless (%s)."
 msgstr ""
 
-#: apply.c:4166
+#: apply.c:4169
 #, c-format
 msgid "could not add %s to temporary index"
 msgstr ""
 
-#: apply.c:4176
+#: apply.c:4179
 #, c-format
 msgid "could not write temporary index to %s"
 msgstr ""
 
-#: apply.c:4314
+#: apply.c:4317
 #, c-format
 msgid "unable to remove %s from index"
 msgstr ""
 
-#: apply.c:4348
+#: apply.c:4351
 #, c-format
 msgid "corrupt patch for submodule %s"
 msgstr ""
 
-#: apply.c:4354
+#: apply.c:4357
 #, c-format
 msgid "unable to stat newly created file '%s'"
 msgstr ""
 
-#: apply.c:4362
+#: apply.c:4365
 #, c-format
 msgid "unable to create backing store for newly created file %s"
 msgstr ""
 
-#: apply.c:4368 apply.c:4543
+#: apply.c:4371 apply.c:4546
 #, c-format
 msgid "unable to add cache entry for %s"
 msgstr ""
 
-#: apply.c:4411 builtin/bisect.c:615 builtin/gc.c:2676 builtin/gc.c:2738
+#: apply.c:4414 builtin/bisect.c:615 builtin/gc.c:2676 builtin/gc.c:2738
 #, c-format
 msgid "failed to write to '%s'"
 msgstr ""
 
-#: apply.c:4415
+#: apply.c:4418
 #, c-format
 msgid "closing file '%s'"
 msgstr ""
 
-#: apply.c:4513
+#: apply.c:4516
 #, c-format
 msgid "unable to write file '%s' mode %o"
 msgstr ""
 
-#: apply.c:4613
+#: apply.c:4616
 #, c-format
 msgid "Applied patch %s cleanly."
 msgstr ""
 
-#: apply.c:4621
+#: apply.c:4624
 msgid "internal error"
 msgstr ""
 
-#: apply.c:4624
+#: apply.c:4627
 #, c-format
 msgid "Applying patch %%s with %d reject..."
 msgid_plural "Applying patch %%s with %d rejects..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:4637 apply.c:4646 apply.c:4652
+#: apply.c:4640 apply.c:4649 apply.c:4655
 #, c-format
 msgid "cannot open %s"
 msgstr ""
 
-#: apply.c:4641 rerere.c:1082
+#: apply.c:4644 rerere.c:1082
 #, c-format
 msgid "cannot unlink '%s'"
 msgstr ""
 
-#: apply.c:4669
+#: apply.c:4672
 #, c-format
 msgid "Hunk #%d applied cleanly."
 msgstr ""
 
-#: apply.c:4673
+#: apply.c:4676
 #, c-format
 msgid "Rejected hunk #%d."
 msgstr ""
 
-#: apply.c:4804
+#: apply.c:4807
 #, c-format
 msgid "Skipped patch '%s'."
 msgstr ""
 
-#: apply.c:4813
+#: apply.c:4816
 msgid "No valid patches in input (allow with \"--allow-empty\")"
 msgstr ""
 
-#: apply.c:4834 t/helper/test-cache-tree.c:41
+#: apply.c:4837 t/helper/test-cache-tree.c:41
 msgid "unable to read index file"
 msgstr ""
 
-#: apply.c:4991
+#: apply.c:4994
 #, c-format
 msgid "can't open patch '%s': %s"
 msgstr ""
 
-#: apply.c:5018
+#: apply.c:5021
 #, c-format
 msgid "squelched %d whitespace error"
 msgid_plural "squelched %d whitespace errors"
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:5024 apply.c:5039
+#: apply.c:5027 apply.c:5042
 #, c-format
 msgid "%d line adds whitespace errors."
 msgid_plural "%d lines add whitespace errors."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:5032
+#: apply.c:5035
 #, c-format
 msgid "%d line applied after fixing whitespace errors."
 msgid_plural "%d lines applied after fixing whitespace errors."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:5048 builtin/mv.c:576 builtin/rm.c:446
+#: apply.c:5051 builtin/mv.c:576 builtin/rm.c:446
 msgid "Unable to write new index file"
 msgstr ""
 
-#: apply.c:5076
+#: apply.c:5079
 msgid "don't apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5079
+#: apply.c:5082
 msgid "apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5081 builtin/am.c:2376
+#: apply.c:5084 builtin/am.c:2376
 msgid "num"
 msgstr ""
 
-#: apply.c:5082
+#: apply.c:5085
 msgid "remove <num> leading slashes from traditional diff paths"
 msgstr ""
 
-#: apply.c:5085
+#: apply.c:5088
 msgid "ignore additions made by the patch"
 msgstr ""
 
-#: apply.c:5087
+#: apply.c:5090
 msgid "instead of applying the patch, output diffstat for the input"
 msgstr ""
 
-#: apply.c:5091
+#: apply.c:5094
 msgid "show number of added and deleted lines in decimal notation"
 msgstr ""
 
-#: apply.c:5093
+#: apply.c:5096
 msgid "instead of applying the patch, output a summary for the input"
 msgstr ""
 
-#: apply.c:5095
+#: apply.c:5098
 msgid "instead of applying the patch, see if the patch is applicable"
 msgstr ""
 
-#: apply.c:5097
+#: apply.c:5100
 msgid "make sure the patch is applicable to the current index"
 msgstr ""
 
-#: apply.c:5099
+#: apply.c:5102
 msgid "mark new files with `git add --intent-to-add`"
 msgstr ""
 
-#: apply.c:5101
+#: apply.c:5104
 msgid "apply a patch without touching the working tree"
 msgstr ""
 
-#: apply.c:5103
+#: apply.c:5106
 msgid "accept a patch that touches outside the working area"
 msgstr ""
 
-#: apply.c:5106
+#: apply.c:5109
 msgid "also apply the patch (use with --stat/--summary/--check)"
 msgstr ""
 
-#: apply.c:5108
+#: apply.c:5111
 msgid "attempt three-way merge, fall back on normal patch if that fails"
 msgstr ""
 
-#: apply.c:5110 builtin/merge-file.c:76
+#: apply.c:5113 builtin/merge-file.c:76
 msgid "for conflicts, use our version"
 msgstr ""
 
-#: apply.c:5113 builtin/merge-file.c:78
+#: apply.c:5116 builtin/merge-file.c:78
 msgid "for conflicts, use their version"
 msgstr ""
 
-#: apply.c:5116 builtin/merge-file.c:80
+#: apply.c:5119 builtin/merge-file.c:80
 msgid "for conflicts, use a union version"
 msgstr ""
 
-#: apply.c:5119
+#: apply.c:5122
 msgid "build a temporary index based on embedded index information"
 msgstr ""
 
-#: apply.c:5122 builtin/checkout-index.c:240
+#: apply.c:5125 builtin/checkout-index.c:240
 msgid "paths are separated with NUL character"
 msgstr ""
 
-#: apply.c:5124
+#: apply.c:5127
 msgid "ensure at least <n> lines of context match"
 msgstr ""
 
-#: apply.c:5125 builtin/am.c:2352 builtin/am.c:2355
+#: apply.c:5128 builtin/am.c:2352 builtin/am.c:2355
 #: builtin/interpret-trailers.c:207 builtin/interpret-trailers.c:209
 #: builtin/pack-objects.c:4480 builtin/rebase.c:1142
 msgid "action"
 msgstr ""
 
-#: apply.c:5126
+#: apply.c:5129
 msgid "detect new or modified lines that have whitespace errors"
 msgstr ""
 
-#: apply.c:5129 apply.c:5132
+#: apply.c:5132 apply.c:5135
 msgid "ignore changes in whitespace when finding context"
 msgstr ""
 
-#: apply.c:5135
+#: apply.c:5138
 msgid "apply the patch in reverse"
 msgstr ""
 
-#: apply.c:5137
+#: apply.c:5140
 msgid "don't expect at least one line of context"
 msgstr ""
 
-#: apply.c:5139
+#: apply.c:5142
 msgid "leave the rejected hunks in corresponding *.rej files"
 msgstr ""
 
-#: apply.c:5141
+#: apply.c:5144
 msgid "allow overlapping hunks"
 msgstr ""
 
-#: apply.c:5144
+#: apply.c:5147
 msgid "tolerate incorrectly detected missing new-line at the end of file"
 msgstr ""
 
-#: apply.c:5147
+#: apply.c:5150
 msgid "do not trust the line counts in the hunk headers"
 msgstr ""
 
-#: apply.c:5149 builtin/am.c:2364
+#: apply.c:5152 builtin/am.c:2364
 msgid "root"
 msgstr ""
 
-#: apply.c:5150
+#: apply.c:5153
 msgid "prepend <root> to all filenames"
 msgstr ""
 
-#: apply.c:5153
+#: apply.c:5156
 msgid "don't return error for empty patches"
 msgstr ""
 
-#: apply.c:5160
+#: apply.c:5163
 msgid "--ours, --theirs, and --union require --3way"
 msgstr ""
 
@@ -2119,7 +2119,7 @@ msgid "dry run"
 msgstr ""
 
 #: builtin/add.c:252 builtin/check-ignore.c:23 builtin/commit.c:1526
-#: builtin/count-objects.c:103 builtin/fsck.c:944 builtin/log.c:2655
+#: builtin/count-objects.c:103 builtin/fsck.c:917 builtin/log.c:2655
 #: builtin/mv.c:192 builtin/read-tree.c:128 builtin/refs.c:78
 msgid "be verbose"
 msgstr ""
@@ -2517,7 +2517,7 @@ msgid ""
 "Not rewinding to ORIG_HEAD"
 msgstr ""
 
-#: builtin/am.c:2247 builtin/bisect.c:184 builtin/tag.c:363 worktree.c:271
+#: builtin/am.c:2247 builtin/bisect.c:184 builtin/tag.c:363 worktree.c:266
 #, c-format
 msgid "failed to read '%s'"
 msgstr ""
@@ -5065,7 +5065,7 @@ msgstr ""
 msgid "failed to copy file to '%s'"
 msgstr ""
 
-#: builtin/clone.c:427 refs/files-backend.c:3838
+#: builtin/clone.c:427 refs/files-backend.c:3808
 #, c-format
 msgid "failed to iterate over '%s'"
 msgstr ""
@@ -5124,13 +5124,13 @@ msgstr ""
 msgid "Too many arguments."
 msgstr ""
 
-#: builtin/clone.c:1008 scalar.c:459
+#: builtin/clone.c:1008 scalar.c:460
 msgid "You must specify a repository to clone."
 msgstr ""
 
 #: builtin/clone.c:1019 builtin/init-db.c:174 builtin/refs.c:46
 #: builtin/submodule--helper.c:1908 builtin/submodule--helper.c:2870
-#: builtin/submodule--helper.c:3487 setup.c:2480 setup.c:2536
+#: builtin/submodule--helper.c:3487 setup.c:2480 setup.c:2538
 #, c-format
 msgid "unknown ref storage format '%s'"
 msgstr ""
@@ -7693,11 +7693,7 @@ msgstr ""
 msgid "invalid rev-index for pack '%s'"
 msgstr ""
 
-#: builtin/fsck.c:915 builtin/fsck.c:918
-msgid "Checking ref database"
-msgstr ""
-
-#: builtin/fsck.c:936
+#: builtin/fsck.c:909
 msgid ""
 "git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
 "         [--[no-]full] [--strict] [--verbose] [--lost-found]\n"
@@ -7705,64 +7701,64 @@ msgid ""
 "         [--[no-]name-objects] [<object>...]"
 msgstr ""
 
-#: builtin/fsck.c:945
+#: builtin/fsck.c:918
 msgid "show unreachable objects"
 msgstr ""
 
-#: builtin/fsck.c:946
+#: builtin/fsck.c:919
 msgid "show dangling objects"
 msgstr ""
 
-#: builtin/fsck.c:947
+#: builtin/fsck.c:920
 msgid "report tags"
 msgstr ""
 
-#: builtin/fsck.c:948
+#: builtin/fsck.c:921
 msgid "report root nodes"
 msgstr ""
 
-#: builtin/fsck.c:949
+#: builtin/fsck.c:922
 msgid "make index objects head nodes"
 msgstr ""
 
-#: builtin/fsck.c:950
+#: builtin/fsck.c:923
 msgid "make reflogs head nodes (default)"
 msgstr ""
 
-#: builtin/fsck.c:951
+#: builtin/fsck.c:924
 msgid "also consider packs and alternate objects"
 msgstr ""
 
-#: builtin/fsck.c:952
+#: builtin/fsck.c:925
 msgid "check only connectivity"
 msgstr ""
 
-#: builtin/fsck.c:953 builtin/mktag.c:82
+#: builtin/fsck.c:926 builtin/mktag.c:82
 msgid "enable more strict checking"
 msgstr ""
 
-#: builtin/fsck.c:955
+#: builtin/fsck.c:928
 msgid "write dangling objects in .git/lost-found"
 msgstr ""
 
-#: builtin/fsck.c:956 builtin/prune.c:164
+#: builtin/fsck.c:929 builtin/prune.c:164
 msgid "show progress"
 msgstr ""
 
-#: builtin/fsck.c:957
+#: builtin/fsck.c:930
 msgid "show verbose names for reachable objects"
 msgstr ""
 
-#: builtin/fsck.c:1025 builtin/index-pack.c:286
+#: builtin/fsck.c:996 builtin/index-pack.c:286
 msgid "Checking objects"
 msgstr ""
 
-#: builtin/fsck.c:1053
+#: builtin/fsck.c:1024
 #, c-format
 msgid "%s: object missing"
 msgstr ""
 
-#: builtin/fsck.c:1064
+#: builtin/fsck.c:1035
 #, c-format
 msgid "invalid parameter: expected sha1, got '%s'"
 msgstr ""
@@ -11671,7 +11667,7 @@ msgstr ""
 msgid "<remote>"
 msgstr ""
 
-#: builtin/pull.c:466 builtin/pull.c:481 builtin/pull.c:486 scalar.c:415
+#: builtin/pull.c:466 builtin/pull.c:481 builtin/pull.c:486 scalar.c:416
 msgid "<branch>"
 msgstr ""
 
@@ -23570,23 +23566,23 @@ msgstr ""
 msgid "migrated refs can be found at '%s'"
 msgstr ""
 
-#: refs/files-backend.c:2671 refs/reftable-backend.c:1326
+#: refs/files-backend.c:2670 refs/reftable-backend.c:1326
 #, c-format
 msgid ""
 "cannot lock ref '%s': expected symref with target '%s': but is a regular ref"
 msgstr ""
 
-#: refs/files-backend.c:3717
+#: refs/files-backend.c:3688
 #, c-format
 msgid "cannot read ref file '%s'"
 msgstr ""
 
-#: refs/files-backend.c:3805
+#: refs/files-backend.c:3775
 #, c-format
 msgid "cannot open directory %s"
 msgstr ""
 
-#: refs/files-backend.c:3857
+#: refs/files-backend.c:3827
 msgid "Checking references consistency"
 msgstr ""
 
@@ -24262,12 +24258,12 @@ msgstr ""
 msgid "cannot create async thread: %s"
 msgstr ""
 
-#: scalar.c:42 worktree.c:361
+#: scalar.c:42 worktree.c:356
 #, c-format
 msgid "'%s' does not exist"
 msgstr ""
 
-#: scalar.c:44 scalar.c:56 scalar.c:384 scalar.c:484 scalar.c:687
+#: scalar.c:44 scalar.c:56 scalar.c:384 scalar.c:485 scalar.c:689
 #, c-format
 msgid "could not switch to '%s'"
 msgstr ""
@@ -24338,175 +24334,175 @@ msgstr ""
 msgid "failed to delete enlistment directory"
 msgstr ""
 
-#: scalar.c:416
+#: scalar.c:417
 msgid "branch to checkout after clone"
 msgstr ""
 
-#: scalar.c:418
+#: scalar.c:419
 msgid "when cloning, create full working directory"
 msgstr ""
 
-#: scalar.c:420
+#: scalar.c:421
 msgid "only download metadata for the branch that will be checked out"
 msgstr ""
 
-#: scalar.c:423
+#: scalar.c:424
 msgid "create repository within 'src' directory"
 msgstr ""
 
-#: scalar.c:425
+#: scalar.c:426
 msgid "specify if tags should be fetched during clone"
 msgstr ""
 
-#: scalar.c:429
+#: scalar.c:430
 msgid ""
 "scalar clone [--single-branch] [--branch <main-branch>] [--full-clone]\n"
 "\t[--[no-]src] [--[no-]tags] <url> [<enlistment>]"
 msgstr ""
 
-#: scalar.c:455
+#: scalar.c:456
 #, c-format
 msgid "cannot deduce worktree name from '%s'"
 msgstr ""
 
-#: scalar.c:464
+#: scalar.c:465
 #, c-format
 msgid "directory '%s' exists already"
 msgstr ""
 
-#: scalar.c:494
+#: scalar.c:495
 #, c-format
 msgid "failed to get default branch for '%s'"
 msgstr ""
 
-#: scalar.c:505
+#: scalar.c:506
 #, c-format
 msgid "could not configure remote in '%s'"
 msgstr ""
 
-#: scalar.c:510
+#: scalar.c:511
 #, c-format
 msgid "could not disable tags in '%s'"
 msgstr ""
 
-#: scalar.c:519
+#: scalar.c:520
 #, c-format
 msgid "could not configure '%s'"
 msgstr ""
 
-#: scalar.c:526
+#: scalar.c:527
 msgid "partial clone failed; attempting full clone"
 msgstr ""
 
-#: scalar.c:530
+#: scalar.c:531
 msgid "could not configure for full clone"
 msgstr ""
 
-#: scalar.c:567
+#: scalar.c:569
 msgid "scalar diagnose [<enlistment>]"
 msgstr ""
 
-#: scalar.c:589
+#: scalar.c:591
 msgid "`scalar list` does not take arguments"
 msgstr ""
 
-#: scalar.c:602
+#: scalar.c:604
 msgid "scalar register [<enlistment>]"
 msgstr ""
 
-#: scalar.c:649
+#: scalar.c:651
 msgid "reconfigure all registered enlistments"
 msgstr ""
 
-#: scalar.c:653
+#: scalar.c:655
 msgid "scalar reconfigure [--all | <enlistment>]"
 msgstr ""
 
-#: scalar.c:670
+#: scalar.c:672
 msgid "--all or <enlistment>, but not both"
 msgstr ""
 
-#: scalar.c:693
+#: scalar.c:695
 #, c-format
 msgid "could not remove stale scalar.repo '%s'"
 msgstr ""
 
-#: scalar.c:696
+#: scalar.c:698
 #, c-format
 msgid "removed stale scalar.repo '%s'"
 msgstr ""
 
-#: scalar.c:706
+#: scalar.c:708
 #, c-format
 msgid "repository at '%s' has different owner"
 msgstr ""
 
-#: scalar.c:711
+#: scalar.c:713
 #, c-format
 msgid "repository at '%s' has a format issue"
 msgstr ""
 
-#: scalar.c:719
+#: scalar.c:721
 #, c-format
 msgid "repository not found in '%s'"
 msgstr ""
 
-#: scalar.c:743
+#: scalar.c:745
 #, c-format
 msgid ""
 "to unregister this repository from Scalar, run\n"
 "\tgit config --global --unset --fixed-value scalar.repo \"%s\""
 msgstr ""
 
-#: scalar.c:775
+#: scalar.c:777
 msgid ""
 "scalar run <task> [<enlistment>]\n"
 "Tasks:\n"
 msgstr ""
 
-#: scalar.c:793
+#: scalar.c:795
 #, c-format
 msgid "no such task: '%s'"
 msgstr ""
 
-#: scalar.c:825
+#: scalar.c:827
 msgid "scalar unregister [<enlistment>]"
 msgstr ""
 
-#: scalar.c:872
+#: scalar.c:874
 msgid "scalar delete <enlistment>"
 msgstr ""
 
-#: scalar.c:887
+#: scalar.c:889
 msgid "refusing to delete current working directory"
 msgstr ""
 
-#: scalar.c:921
+#: scalar.c:923
 msgid "include Git version"
 msgstr ""
 
-#: scalar.c:923
+#: scalar.c:925
 msgid "include Git's build options"
 msgstr ""
 
-#: scalar.c:927
+#: scalar.c:929
 msgid "scalar verbose [-v | --verbose] [--build-options]"
 msgstr ""
 
-#: scalar.c:970
+#: scalar.c:972
 msgid "-C requires a <directory>"
 msgstr ""
 
-#: scalar.c:972
+#: scalar.c:974
 #, c-format
 msgid "could not change to '%s'"
 msgstr ""
 
-#: scalar.c:978
+#: scalar.c:980
 msgid "-c requires a <key>=<value> argument"
 msgstr ""
 
-#: scalar.c:996
+#: scalar.c:998
 msgid ""
 "scalar [-C <directory>] [-c <key>=<value>] <command> [<options>]\n"
 "\n"
@@ -25672,32 +25668,32 @@ msgstr ""
 msgid "attempt to reinitialize repository with different hash"
 msgstr ""
 
-#: setup.c:2530
+#: setup.c:2532
 msgid ""
 "attempt to reinitialize repository with different reference storage format"
 msgstr ""
 
-#: setup.c:2559 setup.c:2562
+#: setup.c:2563 setup.c:2566
 #, c-format
 msgid "%s already exists"
 msgstr ""
 
-#: setup.c:2627
+#: setup.c:2631
 #, c-format
 msgid "Reinitialized existing shared Git repository in %s%s\n"
 msgstr ""
 
-#: setup.c:2628
+#: setup.c:2632
 #, c-format
 msgid "Reinitialized existing Git repository in %s%s\n"
 msgstr ""
 
-#: setup.c:2632
+#: setup.c:2636
 #, c-format
 msgid "Initialized empty shared Git repository in %s%s\n"
 msgstr ""
 
-#: setup.c:2633
+#: setup.c:2637
 #, c-format
 msgid "Initialized empty Git repository in %s%s\n"
 msgstr ""
@@ -26740,119 +26736,119 @@ msgstr ""
 msgid "Fetching objects"
 msgstr ""
 
-#: worktree.c:338
+#: worktree.c:333
 #, c-format
 msgid "'%s' at main working tree is not the repository directory"
 msgstr ""
 
-#: worktree.c:349
+#: worktree.c:344
 #, c-format
 msgid "'%s' file does not contain absolute path to the working tree location"
 msgstr ""
 
-#: worktree.c:367
+#: worktree.c:362
 #, c-format
 msgid "'%s' is not a .git file, error code %d"
 msgstr ""
 
-#: worktree.c:376
+#: worktree.c:371
 #, c-format
 msgid "'%s' does not point back to '%s'"
 msgstr ""
 
-#: worktree.c:598
+#: worktree.c:593
 msgid "not a directory"
 msgstr ""
 
-#: worktree.c:617
+#: worktree.c:612
 msgid ".git is not a file"
 msgstr ""
 
-#: worktree.c:619
+#: worktree.c:614
 msgid ".git file broken"
 msgstr ""
 
-#: worktree.c:621
+#: worktree.c:616
 msgid ".git file incorrect"
 msgstr ""
 
-#: worktree.c:623
+#: worktree.c:618
 msgid ".git file absolute/relative path mismatch"
 msgstr ""
 
-#: worktree.c:777
+#: worktree.c:772
 msgid "not a valid path"
 msgstr ""
 
-#: worktree.c:794
+#: worktree.c:789
 msgid "unable to locate repository; .git is not a file"
 msgstr ""
 
-#: worktree.c:807
+#: worktree.c:802
 msgid "unable to locate repository; .git file does not reference a repository"
 msgstr ""
 
-#: worktree.c:811
+#: worktree.c:806
 msgid "unable to locate repository; .git file broken"
 msgstr ""
 
-#: worktree.c:838
+#: worktree.c:833
 msgid "gitdir unreadable"
 msgstr ""
 
-#: worktree.c:840
+#: worktree.c:835
 msgid "gitdir absolute/relative path mismatch"
 msgstr ""
 
-#: worktree.c:848
+#: worktree.c:843
 msgid "gitdir incorrect"
 msgstr ""
 
-#: worktree.c:881
+#: worktree.c:876
 msgid "not a valid directory"
 msgstr ""
 
-#: worktree.c:890
+#: worktree.c:885
 msgid "gitdir file does not exist"
 msgstr ""
 
-#: worktree.c:896 worktree.c:907
+#: worktree.c:891 worktree.c:902
 #, c-format
 msgid "unable to read gitdir file (%s)"
 msgstr ""
 
-#: worktree.c:913
+#: worktree.c:908
 #, c-format
 msgid "short read (expected %<PRIuMAX> bytes, read %<PRIuMAX>)"
 msgstr ""
 
-#: worktree.c:921
+#: worktree.c:916
 msgid "invalid gitdir file"
 msgstr ""
 
-#: worktree.c:936
+#: worktree.c:931
 msgid "gitdir file points to non-existent location"
 msgstr ""
 
-#: worktree.c:955
+#: worktree.c:950
 #, c-format
 msgid "unable to set %s in '%s'"
 msgstr ""
 
-#: worktree.c:957
+#: worktree.c:952
 #, c-format
 msgid "unable to unset %s in '%s'"
 msgstr ""
 
-#: worktree.c:977
+#: worktree.c:972
 msgid "failed to set extensions.worktreeConfig setting"
 msgstr ""
 
-#: worktree.c:1039
+#: worktree.c:1034
 msgid "unable to upgrade repository format to support relative worktrees"
 msgstr ""
 
-#: worktree.c:1041
+#: worktree.c:1036
 msgid "unable to set extensions.relativeWorktrees setting"
 msgstr ""
 

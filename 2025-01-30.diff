@@ -1,0 +1,16 @@
+
+
+#################### Thu, 30 Jan 2025 23:57:29 +0000 ####################
+
+--- po/git.pot.old	2025-01-30 23:57:29.490253172 +0000
++++ po/git.pot.new	2025-01-30 23:57:29.566252916 +0000
+@@ -3018,9 +3018,6 @@
+ msgid "Checking patch %s..."
+ msgstr ""
+ 
+-msgid "Checking ref database"
+-msgstr ""
+-
+ msgid "Checking references consistency"
+ msgstr ""
+ 
