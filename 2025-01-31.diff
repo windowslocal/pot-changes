@@ -568,3 +568,54 @@ ERROR: fail to execute "git-po-helper check-pot"
  msgid "use the stable patch-id algorithm"
  msgstr ""
  
+
+
+#################### Fri, 31 Jan 2025 19:57:34 +0000 ####################
+
+--- po/git.pot.old	2025-01-31 19:57:34.752592701 +0000
++++ po/git.pot.new	2025-01-31 19:57:34.833593658 +0000
+@@ -3221,10 +3221,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "Could not find remote branch %s to clone."
+-msgstr ""
+-
+-#, c-format
+ msgid "Could not find section in .gitmodules where path=%s"
+ msgstr ""
+ 
+@@ -5297,6 +5293,10 @@
+ msgid "Remote branch %s not found in upstream %s"
+ msgstr ""
+ 
++#, c-format
++msgid "Remote revision %s not found in upstream %s"
++msgstr ""
++
+ #. TRANSLATORS: Make sure to keep [y/N] as is
+ #, c-format
+ msgid "Remove %s [y/N]? "
+@@ -9071,6 +9071,12 @@
+ msgid "clone only one branch, HEAD or --branch"
+ msgstr ""
+ 
++msgid "clone single revision <rev> and check out"
++msgstr ""
++
++msgid "clone tags, and make later fetches not to follow them"
++msgstr ""
++
+ msgid "close failed on standard output"
+ msgstr ""
+ 
+@@ -10928,9 +10934,6 @@
+ msgid "don't checkout new files"
+ msgstr ""
+ 
+-msgid "don't clone any tags, and make later fetches not to follow them"
+-msgstr ""
+-
+ msgid "don't clone shallow repository"
+ msgstr ""
+ 
