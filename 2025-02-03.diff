@@ -1,0 +1,40 @@
+
+
+#################### Mon, 03 Feb 2025 20:57:34 +0000 ####################
+
+--- po/git.pot.old	2025-02-03 20:57:34.512557012 +0000
++++ po/git.pot.new	2025-02-03 20:57:34.590556797 +0000
+@@ -17136,6 +17136,19 @@
+ msgid "reading patches from stdin/tty..."
+ msgstr ""
+ 
++#, c-format
++msgid ""
++"reading remote from \"%s/%s\", which is nominated for removal.\n"
++"\n"
++"If you still use the \"remotes/\" directory it is recommended to\n"
++"migrate to config-based remotes:\n"
++"\n"
++"\tgit remote rename %s %s\n"
++"\n"
++"If you cannot, please let us know why you still need to use it by\n"
++"sending an e-mail to <git@vger.kernel.org>."
++msgstr ""
++
+ msgid "reason"
+ msgstr ""
+ 
+
+
+-------------------- git-po-helper check-pot --------------------
+
+level=error msg="config variable 'partialClone' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"--filter can only be used with the remote configured in extensions.partialclone\""
+level=error msg="config variable 'http.proactiveAuth' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"Unknown value for http.proactiveauth\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"refusing to read cookies from http.cookiefile '-'\""
+level=error msg="config variable 'http.cookieFile' in manpage does not match string in pot file:"
+level=error msg="    >> msgid   \"ignoring http.savecookies for empty http.cookiefile\""
+
+ERROR: fail to execute "git-po-helper check-pot"
