@@ -1,0 +1,25 @@
+
+
+#################### Tue, 04 Feb 2025 20:57:41 +0000 ####################
+
+--- po/git.pot.old	2025-02-04 20:57:41.583376605 +0000
++++ po/git.pot.new	2025-02-04 20:57:41.663376079 +0000
+@@ -3018,6 +3018,9 @@
+ msgid "Checking patch %s..."
+ msgstr ""
+ 
++msgid "Checking ref database"
++msgstr ""
++
+ msgid "Checking references consistency"
+ msgstr ""
+ 
+@@ -12606,7 +12609,7 @@
+ msgid "git archive: protocol error"
+ msgstr ""
+ 
+-msgid "git backfill [--batch-size=<n>] [--[no-]sparse]"
++msgid "git backfill [--min-batch-size=<n>] [--[no-]sparse]"
+ msgstr ""
+ 
+ msgid "git bisect (good|bad) [<rev>...]"

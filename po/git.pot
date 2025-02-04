@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-31 19:57+0000\n"
+"POT-Creation-Date: 2025-02-04 20:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -1761,7 +1761,8 @@ msgstr ""
 #: bisect.c:165 builtin/cat-file.c:238 builtin/cat-file.c:502
 #: builtin/index-pack.c:785 builtin/notes.c:727 builtin/pack-objects.c:342
 #: builtin/pack-objects.c:403 builtin/pack-objects.c:511 combine-diff.c:330
-#: object-file.c:2018 object-file.c:2024 rerere.c:988
+#: object-file.c:2018 object-file.c:2024 refs/packed-backend.c:2071
+#: rerere.c:988
 #, c-format
 msgid "unable to read %s"
 msgstr ""
@@ -2119,7 +2120,7 @@ msgid "dry run"
 msgstr ""
 
 #: builtin/add.c:252 builtin/check-ignore.c:23 builtin/commit.c:1526
-#: builtin/count-objects.c:103 builtin/fsck.c:917 builtin/log.c:2655
+#: builtin/count-objects.c:103 builtin/fsck.c:945 builtin/log.c:2655
 #: builtin/mv.c:192 builtin/read-tree.c:128 builtin/refs.c:78
 msgid "be verbose"
 msgstr ""
@@ -2517,7 +2518,7 @@ msgid ""
 "Not rewinding to ORIG_HEAD"
 msgstr ""
 
-#: builtin/am.c:2247 builtin/bisect.c:184 builtin/tag.c:363 worktree.c:283
+#: builtin/am.c:2247 builtin/bisect.c:184 builtin/tag.c:363 worktree.c:288
 #, c-format
 msgid "failed to read '%s'"
 msgstr ""
@@ -2731,18 +2732,18 @@ msgid "git archive: expected a flush"
 msgstr ""
 
 #: builtin/backfill.c:29
-msgid "git backfill [--batch-size=<n>] [--[no-]sparse]"
+msgid "git backfill [--min-batch-size=<n>] [--[no-]sparse]"
 msgstr ""
 
-#: builtin/backfill.c:97
+#: builtin/backfill.c:91
 msgid "problem loading sparse-checkout"
 msgstr ""
 
-#: builtin/backfill.c:133
+#: builtin/backfill.c:127
 msgid "Minimum number of objects to request at a time"
 msgstr ""
 
-#: builtin/backfill.c:135
+#: builtin/backfill.c:129
 msgid "Restrict the missing objects to the current sparse-checkout"
 msgstr ""
 
@@ -7697,7 +7698,11 @@ msgstr ""
 msgid "invalid rev-index for pack '%s'"
 msgstr ""
 
-#: builtin/fsck.c:909
+#: builtin/fsck.c:915 builtin/fsck.c:919
+msgid "Checking ref database"
+msgstr ""
+
+#: builtin/fsck.c:937
 msgid ""
 "git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
 "         [--[no-]full] [--strict] [--verbose] [--lost-found]\n"
@@ -7705,64 +7710,64 @@ msgid ""
 "         [--[no-]name-objects] [<object>...]"
 msgstr ""
 
-#: builtin/fsck.c:918
+#: builtin/fsck.c:946
 msgid "show unreachable objects"
 msgstr ""
 
-#: builtin/fsck.c:919
+#: builtin/fsck.c:947
 msgid "show dangling objects"
 msgstr ""
 
-#: builtin/fsck.c:920
+#: builtin/fsck.c:948
 msgid "report tags"
 msgstr ""
 
-#: builtin/fsck.c:921
+#: builtin/fsck.c:949
 msgid "report root nodes"
 msgstr ""
 
-#: builtin/fsck.c:922
+#: builtin/fsck.c:950
 msgid "make index objects head nodes"
 msgstr ""
 
-#: builtin/fsck.c:923
+#: builtin/fsck.c:951
 msgid "make reflogs head nodes (default)"
 msgstr ""
 
-#: builtin/fsck.c:924
+#: builtin/fsck.c:952
 msgid "also consider packs and alternate objects"
 msgstr ""
 
-#: builtin/fsck.c:925
+#: builtin/fsck.c:953
 msgid "check only connectivity"
 msgstr ""
 
-#: builtin/fsck.c:926 builtin/mktag.c:82
+#: builtin/fsck.c:954 builtin/mktag.c:82
 msgid "enable more strict checking"
 msgstr ""
 
-#: builtin/fsck.c:928
+#: builtin/fsck.c:956
 msgid "write dangling objects in .git/lost-found"
 msgstr ""
 
-#: builtin/fsck.c:929 builtin/prune.c:164
+#: builtin/fsck.c:957 builtin/prune.c:164
 msgid "show progress"
 msgstr ""
 
-#: builtin/fsck.c:930
+#: builtin/fsck.c:958
 msgid "show verbose names for reachable objects"
 msgstr ""
 
-#: builtin/fsck.c:996 builtin/index-pack.c:286
+#: builtin/fsck.c:1026 builtin/index-pack.c:286
 msgid "Checking objects"
 msgstr ""
 
-#: builtin/fsck.c:1024
+#: builtin/fsck.c:1054
 #, c-format
 msgid "%s: object missing"
 msgstr ""
 
-#: builtin/fsck.c:1035
+#: builtin/fsck.c:1065
 #, c-format
 msgid "invalid parameter: expected sha1, got '%s'"
 msgstr ""
@@ -13491,26 +13496,26 @@ msgstr ""
 msgid "cannot delete packs in a precious-objects repo"
 msgstr ""
 
-#: builtin/repack.c:1395
+#: builtin/repack.c:1398
 #, c-format
 msgid "option '%s' can only be used along with '%s'"
 msgstr ""
 
-#: builtin/repack.c:1425
+#: builtin/repack.c:1428
 msgid "Nothing new to pack."
 msgstr ""
 
-#: builtin/repack.c:1522
+#: builtin/repack.c:1525
 #, c-format
 msgid "renaming pack to '%s' failed"
 msgstr ""
 
-#: builtin/repack.c:1524
+#: builtin/repack.c:1527
 #, c-format
 msgid "pack-objects did not write a '%s' file for pack %s-%s"
 msgstr ""
 
-#: builtin/repack.c:1527 sequencer.c:4404
+#: builtin/repack.c:1530 sequencer.c:4404
 #, c-format
 msgid "could not unlink: %s"
 msgstr ""
@@ -20388,43 +20393,43 @@ msgstr ""
 msgid "See 'git help <command>' to read about a specific subcommand"
 msgstr ""
 
-#: help.c:631
+#: help.c:634
 #, c-format
 msgid ""
 "'%s' appears to be a git command, but we were not\n"
 "able to execute it. Maybe git-%s is broken?"
 msgstr ""
 
-#: help.c:651 help.c:751
+#: help.c:654 help.c:755
 #, c-format
 msgid "git: '%s' is not a git command. See 'git --help'."
 msgstr ""
 
-#: help.c:699
+#: help.c:702
 msgid "Uh oh. Your system reports no Git commands at all."
 msgstr ""
 
-#: help.c:720
+#: help.c:724
 #, c-format
 msgid "WARNING: You called a Git command named '%s', which does not exist."
 msgstr ""
 
-#: help.c:725
+#: help.c:729
 #, c-format
 msgid "Continuing under the assumption that you meant '%s'."
 msgstr ""
 
-#: help.c:731
+#: help.c:735
 #, c-format
 msgid "Run '%s' instead [y/N]? "
 msgstr ""
 
-#: help.c:739
+#: help.c:743
 #, c-format
 msgid "Continuing in %0.1f seconds, assuming that you meant '%s'."
 msgstr ""
 
-#: help.c:755
+#: help.c:759
 msgid ""
 "\n"
 "The most similar command is"
@@ -20434,16 +20439,16 @@ msgid_plural ""
 msgstr[0] ""
 msgstr[1] ""
 
-#: help.c:807
+#: help.c:811
 msgid "git version [--build-options]"
 msgstr ""
 
-#: help.c:864
+#: help.c:868
 #, c-format
 msgid "%s: %s - %s"
 msgstr ""
 
-#: help.c:868
+#: help.c:872
 msgid ""
 "\n"
 "Did you mean this?"
@@ -21708,6 +21713,7 @@ msgid "missing mapping of %s to %s"
 msgstr ""
 
 #: object-file.c:2000 object-file.c:2007 object-file.c:2899
+#: refs/packed-backend.c:2066
 #, c-format
 msgid "unable to open %s"
 msgstr ""
@@ -23673,12 +23679,12 @@ msgstr ""
 msgid "invalid refspec '%s'"
 msgstr ""
 
-#: refspec.c:291
+#: refspec.c:281
 #, c-format
 msgid "key '%s' of pattern had no '*'"
 msgstr ""
 
-#: refspec.c:301
+#: refspec.c:291
 #, c-format
 msgid "value '%s' of pattern has no '*'"
 msgstr ""
@@ -24262,7 +24268,7 @@ msgstr ""
 msgid "cannot create async thread: %s"
 msgstr ""
 
-#: scalar.c:42 worktree.c:373
+#: scalar.c:42 worktree.c:378
 #, c-format
 msgid "'%s' does not exist"
 msgstr ""
@@ -26740,119 +26746,119 @@ msgstr ""
 msgid "Fetching objects"
 msgstr ""
 
-#: worktree.c:350
+#: worktree.c:355
 #, c-format
 msgid "'%s' at main working tree is not the repository directory"
 msgstr ""
 
-#: worktree.c:361
+#: worktree.c:366
 #, c-format
 msgid "'%s' file does not contain absolute path to the working tree location"
 msgstr ""
 
-#: worktree.c:379
+#: worktree.c:384
 #, c-format
 msgid "'%s' is not a .git file, error code %d"
 msgstr ""
 
-#: worktree.c:388
+#: worktree.c:393
 #, c-format
 msgid "'%s' does not point back to '%s'"
 msgstr ""
 
-#: worktree.c:610
+#: worktree.c:615
 msgid "not a directory"
 msgstr ""
 
-#: worktree.c:629
+#: worktree.c:634
 msgid ".git is not a file"
 msgstr ""
 
-#: worktree.c:631
+#: worktree.c:636
 msgid ".git file broken"
 msgstr ""
 
-#: worktree.c:633
+#: worktree.c:638
 msgid ".git file incorrect"
 msgstr ""
 
-#: worktree.c:635
+#: worktree.c:640
 msgid ".git file absolute/relative path mismatch"
 msgstr ""
 
-#: worktree.c:789
+#: worktree.c:794
 msgid "not a valid path"
 msgstr ""
 
-#: worktree.c:806
+#: worktree.c:811
 msgid "unable to locate repository; .git is not a file"
 msgstr ""
 
-#: worktree.c:819
+#: worktree.c:824
 msgid "unable to locate repository; .git file does not reference a repository"
 msgstr ""
 
-#: worktree.c:823
+#: worktree.c:828
 msgid "unable to locate repository; .git file broken"
 msgstr ""
 
-#: worktree.c:850
+#: worktree.c:855
 msgid "gitdir unreadable"
 msgstr ""
 
-#: worktree.c:852
+#: worktree.c:857
 msgid "gitdir absolute/relative path mismatch"
 msgstr ""
 
-#: worktree.c:860
+#: worktree.c:865
 msgid "gitdir incorrect"
 msgstr ""
 
-#: worktree.c:893
+#: worktree.c:898
 msgid "not a valid directory"
 msgstr ""
 
-#: worktree.c:902
+#: worktree.c:907
 msgid "gitdir file does not exist"
 msgstr ""
 
-#: worktree.c:908 worktree.c:919
+#: worktree.c:913 worktree.c:924
 #, c-format
 msgid "unable to read gitdir file (%s)"
 msgstr ""
 
-#: worktree.c:925
+#: worktree.c:930
 #, c-format
 msgid "short read (expected %<PRIuMAX> bytes, read %<PRIuMAX>)"
 msgstr ""
 
-#: worktree.c:933
+#: worktree.c:938
 msgid "invalid gitdir file"
 msgstr ""
 
-#: worktree.c:948
+#: worktree.c:953
 msgid "gitdir file points to non-existent location"
 msgstr ""
 
-#: worktree.c:967
+#: worktree.c:972
 #, c-format
 msgid "unable to set %s in '%s'"
 msgstr ""
 
-#: worktree.c:969
+#: worktree.c:974
 #, c-format
 msgid "unable to unset %s in '%s'"
 msgstr ""
 
-#: worktree.c:989
+#: worktree.c:994
 msgid "failed to set extensions.worktreeConfig setting"
 msgstr ""
 
-#: worktree.c:1051
+#: worktree.c:1056
 msgid "unable to upgrade repository format to support relative worktrees"
 msgstr ""
 
-#: worktree.c:1053
+#: worktree.c:1058
 msgid "unable to set extensions.relativeWorktrees setting"
 msgstr ""
 
