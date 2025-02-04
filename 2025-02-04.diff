@@ -23,3 +23,19 @@
  msgstr ""
  
  msgid "git bisect (good|bad) [<rev>...]"
+
+
+#################### Tue, 04 Feb 2025 23:57:37 +0000 ####################
+
+--- po/git.pot.old	2025-02-04 23:57:37.853504353 +0000
++++ po/git.pot.new	2025-02-04 23:57:37.935504096 +0000
+@@ -1979,9 +1979,6 @@
+ msgid "--non-matching is only valid with --verbose"
+ msgstr ""
+ 
+-msgid "--onto and --advance are incompatible"
+-msgstr ""
+-
+ msgid "--open-files-in-pager only works on the worktree"
+ msgstr ""
+ 
