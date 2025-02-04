@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-01-28 23:57+0000\n"
+"POT-Creation-Date: 2025-02-04 20:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -68,7 +68,7 @@ msgstr[1] ""
 msgid "note: %s is untracked now.\n"
 msgstr ""
 
-#: add-interactive.c:752 apply.c:4162 builtin/checkout.c:327
+#: add-interactive.c:752 apply.c:4165 builtin/checkout.c:327
 #: builtin/reset.c:186
 #, c-format
 msgid "make_cache_entry failed for path '%s'"
@@ -208,7 +208,7 @@ msgstr ""
 msgid "unstaged"
 msgstr ""
 
-#: add-interactive.c:1171 apply.c:5075 apply.c:5078 builtin/am.c:2367
+#: add-interactive.c:1171 apply.c:5078 apply.c:5081 builtin/am.c:2367
 #: builtin/am.c:2370 builtin/bugreport.c:124 builtin/clone.c:147
 #: builtin/diagnose.c:30 builtin/fetch.c:2326 builtin/hook.c:32
 #: builtin/merge.c:277 builtin/pull.c:198 builtin/submodule--helper.c:1864
@@ -832,7 +832,7 @@ msgstr ""
 msgid "unrecognized whitespace ignore option '%s'"
 msgstr ""
 
-#: apply.c:157 archive.c:688 builtin/add.c:398 builtin/add.c:400
+#: apply.c:157 archive.c:689 builtin/add.c:398 builtin/add.c:400
 #: builtin/add.c:406 builtin/add.c:418 builtin/branch.c:844
 #: builtin/checkout-index.c:280 builtin/checkout.c:489 builtin/checkout.c:492
 #: builtin/checkout.c:1804 builtin/checkout.c:1914 builtin/checkout.c:1917
@@ -841,13 +841,13 @@ msgstr ""
 #: builtin/commit.c:1300 builtin/commit.c:1317 builtin/describe.c:626
 #: builtin/diff-tree.c:167 builtin/difftool.c:755 builtin/fast-export.c:1276
 #: builtin/fetch.c:2437 builtin/fetch.c:2464 builtin/fetch.c:2478
-#: builtin/fetch.c:2483 builtin/help.c:621 builtin/index-pack.c:2019
+#: builtin/fetch.c:2483 builtin/help.c:621 builtin/index-pack.c:2018
 #: builtin/init-db.c:116 builtin/log.c:2252 builtin/log.c:2254
 #: builtin/ls-files.c:750 builtin/merge-base.c:177 builtin/merge-base.c:183
 #: builtin/merge-tree.c:598 builtin/merge.c:1431 builtin/merge.c:1433
-#: builtin/pack-objects.c:4522 builtin/pack-objects.c:4562
+#: builtin/pack-objects.c:4570 builtin/pack-objects.c:4610
 #: builtin/rebase.c:1287 builtin/rebase.c:1289 builtin/rebase.c:1298
-#: builtin/repack.c:1312 builtin/replay.c:327 builtin/reset.c:388
+#: builtin/repack.c:1319 builtin/replay.c:327 builtin/reset.c:388
 #: builtin/reset.c:425 builtin/rev-list.c:587 builtin/rev-parse.c:949
 #: builtin/rev-parse.c:956 builtin/rev-parse.c:967 builtin/show-branch.c:734
 #: builtin/show-branch.c:739 builtin/stash.c:1815 builtin/stash.c:1818
@@ -937,538 +937,538 @@ msgstr[1] ""
 msgid "git diff header lacks filename information (line %d)"
 msgstr ""
 
-#: apply.c:1508
+#: apply.c:1511
 #, c-format
 msgid "recount: unexpected line: %.*s"
 msgstr ""
 
-#: apply.c:1577
+#: apply.c:1580
 #, c-format
 msgid "patch fragment without header at line %d: %.*s"
 msgstr ""
 
-#: apply.c:1780
+#: apply.c:1783
 msgid "new file depends on old contents"
 msgstr ""
 
-#: apply.c:1782
+#: apply.c:1785
 msgid "deleted file still has contents"
 msgstr ""
 
-#: apply.c:1816
+#: apply.c:1819
 #, c-format
 msgid "corrupt patch at line %d"
 msgstr ""
 
-#: apply.c:1853
+#: apply.c:1856
 #, c-format
 msgid "new file %s depends on old contents"
 msgstr ""
 
-#: apply.c:1855
+#: apply.c:1858
 #, c-format
 msgid "deleted file %s still has contents"
 msgstr ""
 
-#: apply.c:1858
+#: apply.c:1861
 #, c-format
 msgid "** warning: file %s becomes empty but is not deleted"
 msgstr ""
 
-#: apply.c:2006
+#: apply.c:2009
 #, c-format
 msgid "corrupt binary patch at line %d: %.*s"
 msgstr ""
 
-#: apply.c:2043
+#: apply.c:2046
 #, c-format
 msgid "unrecognized binary patch at line %d"
 msgstr ""
 
-#: apply.c:2205
+#: apply.c:2208
 #, c-format
 msgid "patch with only garbage at line %d"
 msgstr ""
 
-#: apply.c:2292
+#: apply.c:2295
 #, c-format
 msgid "unable to read symlink %s"
 msgstr ""
 
-#: apply.c:2296
+#: apply.c:2299
 #, c-format
 msgid "unable to open or read %s"
 msgstr ""
 
-#: apply.c:2965
+#: apply.c:2968
 #, c-format
 msgid "invalid start of line: '%c'"
 msgstr ""
 
-#: apply.c:3082
+#: apply.c:3085
 #, c-format
 msgid "Hunk #%d succeeded at %d (offset %d line)."
 msgid_plural "Hunk #%d succeeded at %d (offset %d lines)."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:3094
+#: apply.c:3097
 #, c-format
 msgid "Context reduced to (%ld/%ld) to apply fragment at %d"
 msgstr ""
 
-#: apply.c:3100
+#: apply.c:3103
 #, c-format
 msgid ""
 "while searching for:\n"
 "%.*s"
 msgstr ""
 
-#: apply.c:3122
+#: apply.c:3125
 #, c-format
 msgid "missing binary patch data for '%s'"
 msgstr ""
 
-#: apply.c:3130
+#: apply.c:3133
 #, c-format
 msgid "cannot reverse-apply a binary patch without the reverse hunk to '%s'"
 msgstr ""
 
-#: apply.c:3175
+#: apply.c:3178
 #, c-format
 msgid "cannot apply binary patch to '%s' without full index line"
 msgstr ""
 
-#: apply.c:3186
+#: apply.c:3189
 #, c-format
 msgid ""
 "the patch applies to '%s' (%s), which does not match the current contents."
 msgstr ""
 
-#: apply.c:3194
+#: apply.c:3197
 #, c-format
 msgid "the patch applies to an empty '%s' but it is not empty"
 msgstr ""
 
-#: apply.c:3213
+#: apply.c:3216
 #, c-format
 msgid "the necessary postimage %s for '%s' cannot be read"
 msgstr ""
 
-#: apply.c:3225
+#: apply.c:3228
 #, c-format
 msgid "binary patch does not apply to '%s'"
 msgstr ""
 
-#: apply.c:3232
+#: apply.c:3235
 #, c-format
 msgid "binary patch to '%s' creates incorrect result (expecting %s, got %s)"
 msgstr ""
 
-#: apply.c:3253
+#: apply.c:3256
 #, c-format
 msgid "patch failed: %s:%ld"
 msgstr ""
 
-#: apply.c:3377 builtin/mv.c:535
+#: apply.c:3380 builtin/mv.c:535
 #, c-format
 msgid "cannot checkout %s"
 msgstr ""
 
-#: apply.c:3429 apply.c:3440 apply.c:3486 midx.c:117 pack-mtimes.c:42
+#: apply.c:3432 apply.c:3443 apply.c:3489 midx.c:117 pack-mtimes.c:42
 #: pack-revindex.c:225 setup.c:335
 #, c-format
 msgid "failed to read %s"
 msgstr ""
 
-#: apply.c:3437
+#: apply.c:3440
 #, c-format
 msgid "reading from '%s' beyond a symbolic link"
 msgstr ""
 
-#: apply.c:3466 apply.c:3741
+#: apply.c:3469 apply.c:3744
 #, c-format
 msgid "path %s has been renamed/deleted"
 msgstr ""
 
-#: apply.c:3578 apply.c:3756
+#: apply.c:3581 apply.c:3759
 #, c-format
 msgid "%s: does not exist in index"
 msgstr ""
 
-#: apply.c:3587 apply.c:3764 apply.c:3989
+#: apply.c:3590 apply.c:3767 apply.c:3992
 #, c-format
 msgid "%s: does not match index"
 msgstr ""
 
-#: apply.c:3624
+#: apply.c:3627
 msgid "repository lacks the necessary blob to perform 3-way merge."
 msgstr ""
 
-#: apply.c:3627
+#: apply.c:3630
 #, c-format
 msgid "Performing three-way merge...\n"
 msgstr ""
 
-#: apply.c:3643 apply.c:3647
+#: apply.c:3646 apply.c:3650
 #, c-format
 msgid "cannot read the current contents of '%s'"
 msgstr ""
 
-#: apply.c:3659
+#: apply.c:3662
 #, c-format
 msgid "Failed to perform three-way merge...\n"
 msgstr ""
 
-#: apply.c:3673
+#: apply.c:3676
 #, c-format
 msgid "Applied patch to '%s' with conflicts.\n"
 msgstr ""
 
-#: apply.c:3678
+#: apply.c:3681
 #, c-format
 msgid "Applied patch to '%s' cleanly.\n"
 msgstr ""
 
-#: apply.c:3695
+#: apply.c:3698
 #, c-format
 msgid "Falling back to direct application...\n"
 msgstr ""
 
-#: apply.c:3708
+#: apply.c:3711
 msgid "removal patch leaves file contents"
 msgstr ""
 
-#: apply.c:3790
+#: apply.c:3793
 #, c-format
 msgid "%s: wrong type"
 msgstr ""
 
-#: apply.c:3792
+#: apply.c:3795
 #, c-format
 msgid "%s has type %o, expected %o"
 msgstr ""
 
-#: apply.c:3929 apply.c:3931 read-cache.c:844 read-cache.c:873
+#: apply.c:3932 apply.c:3934 read-cache.c:844 read-cache.c:873
 #: read-cache.c:1306
 #, c-format
 msgid "invalid path '%s'"
 msgstr ""
 
-#: apply.c:3987
+#: apply.c:3990
 #, c-format
 msgid "%s: already exists in index"
 msgstr ""
 
-#: apply.c:3991
+#: apply.c:3994
 #, c-format
 msgid "%s: already exists in working directory"
 msgstr ""
 
-#: apply.c:4011
+#: apply.c:4014
 #, c-format
 msgid "new mode (%o) of %s does not match old mode (%o)"
 msgstr ""
 
-#: apply.c:4016
+#: apply.c:4019
 #, c-format
 msgid "new mode (%o) of %s does not match old mode (%o) of %s"
 msgstr ""
 
-#: apply.c:4036 apply.c:4466
+#: apply.c:4039 apply.c:4469
 #, c-format
 msgid "affected file '%s' is beyond a symbolic link"
 msgstr ""
 
-#: apply.c:4040
+#: apply.c:4043
 #, c-format
 msgid "%s: patch does not apply"
 msgstr ""
 
-#: apply.c:4055
+#: apply.c:4058
 #, c-format
 msgid "Checking patch %s..."
 msgstr ""
 
-#: apply.c:4147
+#: apply.c:4150
 #, c-format
 msgid "sha1 information is lacking or useless for submodule %s"
 msgstr ""
 
-#: apply.c:4154
+#: apply.c:4157
 #, c-format
 msgid "mode change for %s, which is not in current HEAD"
 msgstr ""
 
-#: apply.c:4157
+#: apply.c:4160
 #, c-format
 msgid "sha1 information is lacking or useless (%s)."
 msgstr ""
 
-#: apply.c:4166
+#: apply.c:4169
 #, c-format
 msgid "could not add %s to temporary index"
 msgstr ""
 
-#: apply.c:4176
+#: apply.c:4179
 #, c-format
 msgid "could not write temporary index to %s"
 msgstr ""
 
-#: apply.c:4314
+#: apply.c:4317
 #, c-format
 msgid "unable to remove %s from index"
 msgstr ""
 
-#: apply.c:4348
+#: apply.c:4351
 #, c-format
 msgid "corrupt patch for submodule %s"
 msgstr ""
 
-#: apply.c:4354
+#: apply.c:4357
 #, c-format
 msgid "unable to stat newly created file '%s'"
 msgstr ""
 
-#: apply.c:4362
+#: apply.c:4365
 #, c-format
 msgid "unable to create backing store for newly created file %s"
 msgstr ""
 
-#: apply.c:4368 apply.c:4543
+#: apply.c:4371 apply.c:4546
 #, c-format
 msgid "unable to add cache entry for %s"
 msgstr ""
 
-#: apply.c:4411 builtin/bisect.c:615 builtin/gc.c:2593 builtin/gc.c:2655
+#: apply.c:4414 builtin/bisect.c:615 builtin/gc.c:2593 builtin/gc.c:2655
 #, c-format
 msgid "failed to write to '%s'"
 msgstr ""
 
-#: apply.c:4415
+#: apply.c:4418
 #, c-format
 msgid "closing file '%s'"
 msgstr ""
 
-#: apply.c:4513
+#: apply.c:4516
 #, c-format
 msgid "unable to write file '%s' mode %o"
 msgstr ""
 
-#: apply.c:4613
+#: apply.c:4616
 #, c-format
 msgid "Applied patch %s cleanly."
 msgstr ""
 
-#: apply.c:4621
+#: apply.c:4624
 msgid "internal error"
 msgstr ""
 
-#: apply.c:4624
+#: apply.c:4627
 #, c-format
 msgid "Applying patch %%s with %d reject..."
 msgid_plural "Applying patch %%s with %d rejects..."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:4637 apply.c:4646 apply.c:4652
+#: apply.c:4640 apply.c:4649 apply.c:4655
 #, c-format
 msgid "cannot open %s"
 msgstr ""
 
-#: apply.c:4641 rerere.c:1082
+#: apply.c:4644 rerere.c:1082
 #, c-format
 msgid "cannot unlink '%s'"
 msgstr ""
 
-#: apply.c:4669
+#: apply.c:4672
 #, c-format
 msgid "Hunk #%d applied cleanly."
 msgstr ""
 
-#: apply.c:4673
+#: apply.c:4676
 #, c-format
 msgid "Rejected hunk #%d."
 msgstr ""
 
-#: apply.c:4804
+#: apply.c:4807
 #, c-format
 msgid "Skipped patch '%s'."
 msgstr ""
 
-#: apply.c:4813
+#: apply.c:4816
 msgid "No valid patches in input (allow with \"--allow-empty\")"
 msgstr ""
 
-#: apply.c:4834 t/helper/test-cache-tree.c:41
+#: apply.c:4837 t/helper/test-cache-tree.c:41
 msgid "unable to read index file"
 msgstr ""
 
-#: apply.c:4991
+#: apply.c:4994
 #, c-format
 msgid "can't open patch '%s': %s"
 msgstr ""
 
-#: apply.c:5018
+#: apply.c:5021
 #, c-format
 msgid "squelched %d whitespace error"
 msgid_plural "squelched %d whitespace errors"
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:5024 apply.c:5039
+#: apply.c:5027 apply.c:5042
 #, c-format
 msgid "%d line adds whitespace errors."
 msgid_plural "%d lines add whitespace errors."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:5032
+#: apply.c:5035
 #, c-format
 msgid "%d line applied after fixing whitespace errors."
 msgid_plural "%d lines applied after fixing whitespace errors."
 msgstr[0] ""
 msgstr[1] ""
 
-#: apply.c:5048 builtin/mv.c:576 builtin/rm.c:446
+#: apply.c:5051 builtin/mv.c:576 builtin/rm.c:446
 msgid "Unable to write new index file"
 msgstr ""
 
-#: apply.c:5076
+#: apply.c:5079
 msgid "don't apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5079
+#: apply.c:5082
 msgid "apply changes matching the given path"
 msgstr ""
 
-#: apply.c:5081 builtin/am.c:2376
+#: apply.c:5084 builtin/am.c:2376
 msgid "num"
 msgstr ""
 
-#: apply.c:5082
+#: apply.c:5085
 msgid "remove <num> leading slashes from traditional diff paths"
 msgstr ""
 
-#: apply.c:5085
+#: apply.c:5088
 msgid "ignore additions made by the patch"
 msgstr ""
 
-#: apply.c:5087
+#: apply.c:5090
 msgid "instead of applying the patch, output diffstat for the input"
 msgstr ""
 
-#: apply.c:5091
+#: apply.c:5094
 msgid "show number of added and deleted lines in decimal notation"
 msgstr ""
 
-#: apply.c:5093
+#: apply.c:5096
 msgid "instead of applying the patch, output a summary for the input"
 msgstr ""
 
-#: apply.c:5095
+#: apply.c:5098
 msgid "instead of applying the patch, see if the patch is applicable"
 msgstr ""
 
-#: apply.c:5097
+#: apply.c:5100
 msgid "make sure the patch is applicable to the current index"
 msgstr ""
 
-#: apply.c:5099
+#: apply.c:5102
 msgid "mark new files with `git add --intent-to-add`"
 msgstr ""
 
-#: apply.c:5101
+#: apply.c:5104
 msgid "apply a patch without touching the working tree"
 msgstr ""
 
-#: apply.c:5103
+#: apply.c:5106
 msgid "accept a patch that touches outside the working area"
 msgstr ""
 
-#: apply.c:5106
+#: apply.c:5109
 msgid "also apply the patch (use with --stat/--summary/--check)"
 msgstr ""
 
-#: apply.c:5108
+#: apply.c:5111
 msgid "attempt three-way merge, fall back on normal patch if that fails"
 msgstr ""
 
-#: apply.c:5110 builtin/merge-file.c:76
+#: apply.c:5113 builtin/merge-file.c:76
 msgid "for conflicts, use our version"
 msgstr ""
 
-#: apply.c:5113 builtin/merge-file.c:78
+#: apply.c:5116 builtin/merge-file.c:78
 msgid "for conflicts, use their version"
 msgstr ""
 
-#: apply.c:5116 builtin/merge-file.c:80
+#: apply.c:5119 builtin/merge-file.c:80
 msgid "for conflicts, use a union version"
 msgstr ""
 
-#: apply.c:5119
+#: apply.c:5122
 msgid "build a temporary index based on embedded index information"
 msgstr ""
 
-#: apply.c:5122 builtin/checkout-index.c:240
+#: apply.c:5125 builtin/checkout-index.c:240
 msgid "paths are separated with NUL character"
 msgstr ""
 
-#: apply.c:5124
+#: apply.c:5127
 msgid "ensure at least <n> lines of context match"
 msgstr ""
 
-#: apply.c:5125 builtin/am.c:2352 builtin/am.c:2355
+#: apply.c:5128 builtin/am.c:2352 builtin/am.c:2355
 #: builtin/interpret-trailers.c:207 builtin/interpret-trailers.c:209
-#: builtin/pack-objects.c:4433 builtin/rebase.c:1142
+#: builtin/pack-objects.c:4479 builtin/rebase.c:1142
 msgid "action"
 msgstr ""
 
-#: apply.c:5126
+#: apply.c:5129
 msgid "detect new or modified lines that have whitespace errors"
 msgstr ""
 
-#: apply.c:5129 apply.c:5132
+#: apply.c:5132 apply.c:5135
 msgid "ignore changes in whitespace when finding context"
 msgstr ""
 
-#: apply.c:5135
+#: apply.c:5138
 msgid "apply the patch in reverse"
 msgstr ""
 
-#: apply.c:5137
+#: apply.c:5140
 msgid "don't expect at least one line of context"
 msgstr ""
 
-#: apply.c:5139
+#: apply.c:5142
 msgid "leave the rejected hunks in corresponding *.rej files"
 msgstr ""
 
-#: apply.c:5141
+#: apply.c:5144
 msgid "allow overlapping hunks"
 msgstr ""
 
-#: apply.c:5144
+#: apply.c:5147
 msgid "tolerate incorrectly detected missing new-line at the end of file"
 msgstr ""
 
-#: apply.c:5147
+#: apply.c:5150
 msgid "do not trust the line counts in the hunk headers"
 msgstr ""
 
-#: apply.c:5149 builtin/am.c:2364
+#: apply.c:5152 builtin/am.c:2364
 msgid "root"
 msgstr ""
 
-#: apply.c:5150
+#: apply.c:5153
 msgid "prepend <root> to all filenames"
 msgstr ""
 
-#: apply.c:5153
+#: apply.c:5156
 msgid "don't return error for empty patches"
 msgstr ""
 
-#: apply.c:5160
+#: apply.c:5163
 msgid "--ours, --theirs, and --union require --3way"
 msgstr ""
 
@@ -1482,22 +1482,22 @@ msgstr ""
 msgid "unsupported file mode: 0%o (SHA1: %s)"
 msgstr ""
 
-#: archive-tar.c:460 archive-zip.c:478 builtin/pack-objects.c:379
-#: builtin/pack-objects.c:382
+#: archive-tar.c:460 archive-zip.c:478 builtin/pack-objects.c:416
+#: builtin/pack-objects.c:419
 #, c-format
 msgid "deflate error (%d)"
 msgstr ""
 
-#: archive-tar.c:513
+#: archive-tar.c:509
 #, c-format
 msgid "unable to start '%s' filter"
 msgstr ""
 
-#: archive-tar.c:516
+#: archive-tar.c:512
 msgid "unable to redirect descriptor"
 msgstr ""
 
-#: archive-tar.c:523
+#: archive-tar.c:519
 #, c-format
 msgid "'%s' filter reported error"
 msgstr ""
@@ -1517,97 +1517,97 @@ msgstr ""
 msgid "timestamp too large for this system: %<PRIuMAX>"
 msgstr ""
 
-#: archive.c:27
+#: archive.c:28
 msgid "git archive [<options>] <tree-ish> [<path>...]"
 msgstr ""
 
-#: archive.c:29
+#: archive.c:30
 msgid ""
 "git archive --remote <repo> [--exec <cmd>] [<options>] <tree-ish> [<path>...]"
 msgstr ""
 
-#: archive.c:30
+#: archive.c:31
 msgid "git archive --remote <repo> [--exec <cmd>] --list"
 msgstr ""
 
-#: archive.c:223 archive.c:360 builtin/gc.c:625 builtin/notes.c:297
+#: archive.c:224 archive.c:361 builtin/gc.c:625 builtin/notes.c:297
 #: builtin/tag.c:627
 #, c-format
 msgid "cannot read '%s'"
 msgstr ""
 
-#: archive.c:455
+#: archive.c:456
 #, c-format
 msgid "pathspec '%s' matches files outside the current directory"
 msgstr ""
 
-#: archive.c:478 builtin/add.c:140 builtin/add.c:547 builtin/rm.c:350
+#: archive.c:479 builtin/add.c:140 builtin/add.c:547 builtin/rm.c:350
 #, c-format
 msgid "pathspec '%s' did not match any files"
 msgstr ""
 
-#: archive.c:501
+#: archive.c:502
 #, c-format
 msgid "no such ref: %.*s"
 msgstr ""
 
-#: archive.c:508
+#: archive.c:509
 #, c-format
 msgid "not a valid object name: %s"
 msgstr ""
 
-#: archive.c:523 t/helper/test-cache-tree.c:46
+#: archive.c:524 t/helper/test-cache-tree.c:46
 #, c-format
 msgid "not a tree object: %s"
 msgstr ""
 
-#: archive.c:540
+#: archive.c:541
 #, c-format
 msgid "failed to unpack tree object %s"
 msgstr ""
 
-#: archive.c:585
+#: archive.c:586
 #, c-format
 msgid "File not found: %s"
 msgstr ""
 
-#: archive.c:587
+#: archive.c:588
 #, c-format
 msgid "Not a regular file: %s"
 msgstr ""
 
-#: archive.c:596
+#: archive.c:597
 #, c-format
 msgid "unclosed quote: '%s'"
 msgstr ""
 
-#: archive.c:599
+#: archive.c:600
 #, c-format
 msgid "missing colon: '%s'"
 msgstr ""
 
-#: archive.c:602
+#: archive.c:603
 #, c-format
 msgid "empty file name: '%s'"
 msgstr ""
 
-#: archive.c:649
+#: archive.c:650
 msgid "fmt"
 msgstr ""
 
-#: archive.c:649
+#: archive.c:650
 msgid "archive format"
 msgstr ""
 
-#: archive.c:650 builtin/log.c:2079 parse-options.h:550
+#: archive.c:651 builtin/log.c:2079 parse-options.h:550
 msgid "prefix"
 msgstr ""
 
-#: archive.c:651
+#: archive.c:652
 msgid "prepend prefix to each pathname in the archive"
 msgstr ""
 
-#: archive.c:652 archive.c:658 builtin/blame.c:911 builtin/blame.c:915
+#: archive.c:653 archive.c:659 builtin/blame.c:911 builtin/blame.c:915
 #: builtin/blame.c:916 builtin/commit-tree.c:111 builtin/config.c:71
 #: builtin/fast-export.c:1212 builtin/fast-export.c:1214
 #: builtin/fast-export.c:1218 builtin/gc.c:1645 builtin/gc.c:1711
@@ -1617,68 +1617,68 @@ msgstr ""
 msgid "file"
 msgstr ""
 
-#: archive.c:653 archive.c:656
+#: archive.c:654 archive.c:657
 msgid "add untracked file to archive"
 msgstr ""
 
-#: archive.c:656
+#: archive.c:657
 msgid "path:content"
 msgstr ""
 
-#: archive.c:659 builtin/archive.c:88
+#: archive.c:660 builtin/archive.c:88
 msgid "write the archive to this file"
 msgstr ""
 
-#: archive.c:661
+#: archive.c:662
 msgid "read .gitattributes in working directory"
 msgstr ""
 
-#: archive.c:662
+#: archive.c:663
 msgid "report archived files on stderr"
 msgstr ""
 
-#: archive.c:663 builtin/clone.c:151 builtin/fetch.c:2357
-#: builtin/pack-objects.c:4402 builtin/pack-objects.c:4406 builtin/pull.c:219
+#: archive.c:664 builtin/clone.c:151 builtin/fetch.c:2357
+#: builtin/pack-objects.c:4448 builtin/pack-objects.c:4452 builtin/pull.c:219
 msgid "time"
 msgstr ""
 
-#: archive.c:664
+#: archive.c:665
 msgid "set modification time of archive entries"
 msgstr ""
 
-#: archive.c:667
+#: archive.c:668
 msgid "set compression level"
 msgstr ""
 
-#: archive.c:670
+#: archive.c:671
 msgid "list supported archive formats"
 msgstr ""
 
-#: archive.c:672 builtin/archive.c:89 builtin/clone.c:137 builtin/clone.c:140
+#: archive.c:673 builtin/archive.c:89 builtin/clone.c:137 builtin/clone.c:140
 #: builtin/submodule--helper.c:1876 builtin/submodule--helper.c:2820
 msgid "repo"
 msgstr ""
 
-#: archive.c:673 builtin/archive.c:90
+#: archive.c:674 builtin/archive.c:90
 msgid "retrieve the archive from remote repository <repo>"
 msgstr ""
 
-#: archive.c:674 builtin/archive.c:91 builtin/difftool.c:730
+#: archive.c:675 builtin/archive.c:91 builtin/difftool.c:730
 #: builtin/notes.c:587
 msgid "command"
 msgstr ""
 
-#: archive.c:675 builtin/archive.c:92
+#: archive.c:676 builtin/archive.c:92
 msgid "path to the remote git-upload-archive command"
 msgstr ""
 
-#: archive.c:682
+#: archive.c:683
 msgid "Unexpected option --remote"
 msgstr ""
 
-#: archive.c:684 builtin/add.c:421 builtin/add.c:453 builtin/checkout.c:1923
+#: archive.c:685 builtin/add.c:421 builtin/add.c:453 builtin/checkout.c:1923
 #: builtin/clone.c:1261 builtin/clone.c:1264 builtin/commit.c:376
-#: builtin/fast-export.c:1261 builtin/index-pack.c:2013 builtin/log.c:2426
+#: builtin/fast-export.c:1261 builtin/index-pack.c:2012 builtin/log.c:2426
 #: builtin/reset.c:397 builtin/reset.c:458 builtin/rm.c:294
 #: builtin/stash.c:1827 builtin/worktree.c:826 builtin/worktree.c:1070
 #: fetch-pack.c:349 http-fetch.c:157 http-fetch.c:166 revision.c:3168
@@ -1686,21 +1686,21 @@ msgstr ""
 msgid "the option '%s' requires '%s'"
 msgstr ""
 
-#: archive.c:686
+#: archive.c:687
 msgid "Unexpected option --output"
 msgstr ""
 
-#: archive.c:695 t/unit-tests/unit-test.c:48
+#: archive.c:696 t/unit-tests/unit-test.c:48
 #, c-format
 msgid "extra command line parameter '%s'"
 msgstr ""
 
-#: archive.c:712
+#: archive.c:713
 #, c-format
 msgid "Unknown archive format '%s'"
 msgstr ""
 
-#: archive.c:721
+#: archive.c:722
 #, c-format
 msgid "Argument not supported for format '%s': -%d"
 msgstr ""
@@ -1759,9 +1759,9 @@ msgid "unable to stat '%s'"
 msgstr ""
 
 #: bisect.c:165 builtin/cat-file.c:233 builtin/cat-file.c:497
-#: builtin/index-pack.c:785 builtin/notes.c:727 builtin/pack-objects.c:305
-#: builtin/pack-objects.c:366 builtin/pack-objects.c:474 combine-diff.c:330
-#: object-file.c:2012 object-file.c:2018 rerere.c:988
+#: builtin/index-pack.c:785 builtin/notes.c:727 builtin/pack-objects.c:342
+#: builtin/pack-objects.c:403 builtin/pack-objects.c:511 combine-diff.c:330
+#: object-file.c:2018 object-file.c:2024 rerere.c:988
 #, c-format
 msgid "unable to read %s"
 msgstr ""
@@ -1887,8 +1887,8 @@ msgstr ""
 #: blame.c:2836 builtin/bisect.c:589 builtin/bisect.c:1114
 #: builtin/commit.c:1138 builtin/log.c:515 builtin/log.c:1282
 #: builtin/log.c:1917 builtin/log.c:2380 builtin/log.c:2704 builtin/merge.c:422
-#: builtin/pack-objects.c:3541 builtin/pack-objects.c:3701
-#: builtin/pack-objects.c:4196 builtin/pack-objects.c:4211
+#: builtin/pack-objects.c:3578 builtin/pack-objects.c:3738
+#: builtin/pack-objects.c:4242 builtin/pack-objects.c:4257
 #: builtin/shortlog.c:273 midx-write.c:819 pack-bitmap.c:1151
 #: pack-bitmap.c:2568 remote.c:2333 sequencer.c:2547 sequencer.c:5542
 #: submodule.c:930
@@ -2257,9 +2257,9 @@ msgid "bad action '%s' for '%s'"
 msgstr ""
 
 #: builtin/am.c:217 builtin/am.c:2280 builtin/am.c:2302 builtin/blame.c:748
-#: builtin/blame.c:768 builtin/fetch.c:172 builtin/pack-objects.c:3890
+#: builtin/blame.c:768 builtin/fetch.c:172 builtin/pack-objects.c:3927
 #: builtin/pull.c:48 builtin/pull.c:50 builtin/pull.c:325 builtin/revert.c:67
-#: config.c:1415 diff-merges.c:94 gpg-interface.c:746 gpg-interface.c:761
+#: config.c:1416 diff-merges.c:94 gpg-interface.c:746 gpg-interface.c:761
 #: ls-refs.c:38 parallel-checkout.c:50 sequencer.c:3108 setup.c:653 setup.c:665
 #: setup.c:683
 #, c-format
@@ -2547,7 +2547,7 @@ msgid "allow fall back on 3way merging if needed"
 msgstr ""
 
 #: builtin/am.c:2335 builtin/init-db.c:100 builtin/prune-packed.c:20
-#: builtin/repack.c:1210 builtin/stash.c:1035
+#: builtin/repack.c:1217 builtin/stash.c:1035
 msgid "be quiet"
 msgstr ""
 
@@ -2592,8 +2592,8 @@ msgstr ""
 #: builtin/am.c:2373 builtin/commit.c:1557 builtin/fmt-merge-msg.c:23
 #: builtin/fmt-merge-msg.c:26 builtin/grep.c:983 builtin/merge.c:253
 #: builtin/pull.c:146 builtin/pull.c:208 builtin/pull.c:225
-#: builtin/rebase.c:1137 builtin/repack.c:1221 builtin/repack.c:1225
-#: builtin/repack.c:1227 builtin/show-branch.c:670 builtin/show-ref.c:314
+#: builtin/rebase.c:1137 builtin/repack.c:1228 builtin/repack.c:1232
+#: builtin/repack.c:1234 builtin/show-branch.c:670 builtin/show-ref.c:314
 #: builtin/tag.c:482 parse-options.h:217 parse-options.h:278
 #: parse-options.h:544
 msgid "n"
@@ -3759,11 +3759,11 @@ msgstr ""
 msgid "need a <file> argument"
 msgstr ""
 
-#: builtin/bundle.c:77 builtin/pack-objects.c:4344
+#: builtin/bundle.c:77 builtin/pack-objects.c:4390
 msgid "do not show progress meter"
 msgstr ""
 
-#: builtin/bundle.c:80 builtin/bundle.c:204 builtin/pack-objects.c:4347
+#: builtin/bundle.c:80 builtin/bundle.c:204 builtin/pack-objects.c:4393
 msgid "show progress meter"
 msgstr ""
 
@@ -4878,7 +4878,7 @@ msgstr ""
 
 #: builtin/clone.c:143 builtin/column.c:32 builtin/fmt-merge-msg.c:32
 #: builtin/init-db.c:103 builtin/merge-file.c:88 builtin/merge.c:280
-#: builtin/pack-objects.c:4417 builtin/repack.c:1234
+#: builtin/pack-objects.c:4463 builtin/repack.c:1241
 #: builtin/submodule--helper.c:3459 t/helper/test-simple-ipc.c:596
 #: t/helper/test-simple-ipc.c:598
 msgid "name"
@@ -5095,13 +5095,13 @@ msgstr ""
 msgid "Too many arguments."
 msgstr ""
 
-#: builtin/clone.c:1008 scalar.c:459
+#: builtin/clone.c:1008 scalar.c:460
 msgid "You must specify a repository to clone."
 msgstr ""
 
 #: builtin/clone.c:1019 builtin/init-db.c:174 builtin/refs.c:46
 #: builtin/submodule--helper.c:1908 builtin/submodule--helper.c:2870
-#: builtin/submodule--helper.c:3487 setup.c:2480 setup.c:2536
+#: builtin/submodule--helper.c:3487 setup.c:2480 setup.c:2538
 #, c-format
 msgid "unknown ref storage format '%s'"
 msgstr ""
@@ -5274,7 +5274,7 @@ msgid ""
 msgstr ""
 
 #: builtin/commit-graph.c:55 builtin/fetch.c:2369 builtin/log.c:2083
-#: builtin/repack.c:1240 builtin/repack.c:1242
+#: builtin/repack.c:1247 builtin/repack.c:1249
 msgid "dir"
 msgstr ""
 
@@ -6154,7 +6154,7 @@ msgstr ""
 msgid "invalid key pattern: %s"
 msgstr ""
 
-#: builtin/config.c:420 config.c:3259
+#: builtin/config.c:420 config.c:3260
 #, c-format
 msgid "invalid pattern: %s"
 msgstr ""
@@ -7061,7 +7061,7 @@ msgstr ""
 msgid "option \"%s\" is ignored for %s"
 msgstr ""
 
-#: builtin/fetch.c:1488 object-file.c:2866
+#: builtin/fetch.c:1488 object-file.c:2870
 #, c-format
 msgid "%s is not a valid object"
 msgstr ""
@@ -7893,7 +7893,7 @@ msgstr ""
 msgid "pack unreferenced objects separately"
 msgstr ""
 
-#: builtin/gc.c:699 builtin/repack.c:1201
+#: builtin/gc.c:699 builtin/repack.c:1206
 msgid "with --cruft, limit the size of new cruft packs"
 msgstr ""
 
@@ -8209,8 +8209,8 @@ msgstr ""
 #. variable for tweaking threads, currently
 #. grep.threads
 #.
-#: builtin/grep.c:314 builtin/index-pack.c:1678 builtin/index-pack.c:1958
-#: builtin/pack-objects.c:3302
+#: builtin/grep.c:314 builtin/index-pack.c:1677 builtin/index-pack.c:1957
+#: builtin/pack-objects.c:3339
 #, c-format
 msgid "no threads support, ignoring %s"
 msgstr ""
@@ -8439,11 +8439,11 @@ msgstr ""
 msgid "invalid option combination, ignoring --threads"
 msgstr ""
 
-#: builtin/grep.c:1189 builtin/pack-objects.c:4548
+#: builtin/grep.c:1189 builtin/pack-objects.c:4596
 msgid "no threads support, ignoring --threads"
 msgstr ""
 
-#: builtin/grep.c:1192 builtin/index-pack.c:1675 builtin/pack-objects.c:3299
+#: builtin/grep.c:1192 builtin/index-pack.c:1674 builtin/pack-objects.c:3336
 #, c-format
 msgid "invalid number of threads specified (%d)"
 msgstr ""
@@ -8674,7 +8674,7 @@ msgstr ""
 msgid "used more bytes than were available"
 msgstr ""
 
-#: builtin/index-pack.c:349 builtin/pack-objects.c:772
+#: builtin/index-pack.c:349 builtin/pack-objects.c:809
 msgid "pack too large for current definition of off_t"
 msgstr ""
 
@@ -8772,165 +8772,165 @@ msgstr ""
 msgid "Indexing objects"
 msgstr ""
 
-#: builtin/index-pack.c:1293
+#: builtin/index-pack.c:1292
 msgid "pack is corrupted (SHA1 mismatch)"
 msgstr ""
 
-#: builtin/index-pack.c:1298
+#: builtin/index-pack.c:1297
 msgid "cannot fstat packfile"
 msgstr ""
 
-#: builtin/index-pack.c:1301
+#: builtin/index-pack.c:1300
 msgid "pack has junk at the end"
 msgstr ""
 
-#: builtin/index-pack.c:1313
+#: builtin/index-pack.c:1312
 msgid "confusion beyond insanity in parse_pack_objects()"
 msgstr ""
 
-#: builtin/index-pack.c:1337
+#: builtin/index-pack.c:1336
 msgid "Resolving deltas"
 msgstr ""
 
-#: builtin/index-pack.c:1348 builtin/pack-objects.c:3042
+#: builtin/index-pack.c:1347 builtin/pack-objects.c:3079
 #, c-format
 msgid "unable to create thread: %s"
 msgstr ""
 
-#: builtin/index-pack.c:1381
+#: builtin/index-pack.c:1380
 msgid "confusion beyond insanity"
 msgstr ""
 
-#: builtin/index-pack.c:1387
+#: builtin/index-pack.c:1386
 #, c-format
 msgid "completed with %d local object"
 msgid_plural "completed with %d local objects"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1399
+#: builtin/index-pack.c:1398
 #, c-format
 msgid "Unexpected tail checksum for %s (disk corruption?)"
 msgstr ""
 
-#: builtin/index-pack.c:1403
+#: builtin/index-pack.c:1402
 #, c-format
 msgid "pack has %d unresolved delta"
 msgid_plural "pack has %d unresolved deltas"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1427
+#: builtin/index-pack.c:1426
 #, c-format
 msgid "unable to deflate appended object (%d)"
 msgstr ""
 
-#: builtin/index-pack.c:1523
+#: builtin/index-pack.c:1522
 #, c-format
 msgid "local object %s is corrupt"
 msgstr ""
 
-#: builtin/index-pack.c:1545
+#: builtin/index-pack.c:1544
 #, c-format
 msgid "packfile name '%s' does not end with '.%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1569
+#: builtin/index-pack.c:1568
 #, c-format
 msgid "cannot write %s file '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1577
+#: builtin/index-pack.c:1576
 #, c-format
 msgid "cannot close written %s file '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1594
+#: builtin/index-pack.c:1593
 #, c-format
 msgid "unable to rename temporary '*.%s' file to '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1617
+#: builtin/index-pack.c:1616
 msgid "error while closing pack file"
 msgstr ""
 
-#: builtin/index-pack.c:1669 builtin/pack-objects.c:3310
+#: builtin/index-pack.c:1668 builtin/pack-objects.c:3347
 #, c-format
 msgid "bad pack.indexVersion=%<PRIu32>"
 msgstr ""
 
-#: builtin/index-pack.c:1744
+#: builtin/index-pack.c:1743
 #, c-format
 msgid "Cannot open existing pack file '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1746
+#: builtin/index-pack.c:1745
 #, c-format
 msgid "Cannot open existing pack idx file for '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:1794
+#: builtin/index-pack.c:1793
 #, c-format
 msgid "non delta: %d object"
 msgid_plural "non delta: %d objects"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1801
+#: builtin/index-pack.c:1800
 #, c-format
 msgid "chain length = %d: %lu object"
 msgid_plural "chain length = %d: %lu objects"
 msgstr[0] ""
 msgstr[1] ""
 
-#: builtin/index-pack.c:1843
+#: builtin/index-pack.c:1842
 msgid "could not start pack-objects to repack local links"
 msgstr ""
 
-#: builtin/index-pack.c:1848
+#: builtin/index-pack.c:1847
 msgid "failed to feed local object to pack-objects"
 msgstr ""
 
-#: builtin/index-pack.c:1861
+#: builtin/index-pack.c:1860
 msgid "index-pack: Expecting full hex object ID lines only from pack-objects."
 msgstr ""
 
-#: builtin/index-pack.c:1872
+#: builtin/index-pack.c:1871
 msgid "could not finish pack-objects to repack local links"
 msgstr ""
 
-#: builtin/index-pack.c:1914
+#: builtin/index-pack.c:1913
 msgid "Cannot come back to cwd"
 msgstr ""
 
-#: builtin/index-pack.c:1965 builtin/unpack-objects.c:655
+#: builtin/index-pack.c:1964 builtin/unpack-objects.c:655
 #, c-format
 msgid "bad --pack_header: %s"
 msgstr ""
 
-#: builtin/index-pack.c:1984 builtin/index-pack.c:1988
+#: builtin/index-pack.c:1983 builtin/index-pack.c:1987
 #, c-format
 msgid "bad %s"
 msgstr ""
 
-#: builtin/index-pack.c:1994 builtin/init-db.c:168 setup.c:2470 setup.c:2519
+#: builtin/index-pack.c:1993 builtin/init-db.c:168 setup.c:2470 setup.c:2519
 #, c-format
 msgid "unknown hash algorithm '%s'"
 msgstr ""
 
-#: builtin/index-pack.c:2015
+#: builtin/index-pack.c:2014
 msgid "--promisor cannot be used with a pack name"
 msgstr ""
 
-#: builtin/index-pack.c:2017
+#: builtin/index-pack.c:2016
 msgid "--stdin requires a git repository"
 msgstr ""
 
-#: builtin/index-pack.c:2043
+#: builtin/index-pack.c:2042
 msgid "--verify with no packfile name given"
 msgstr ""
 
-#: builtin/index-pack.c:2110 builtin/unpack-objects.c:677
+#: builtin/index-pack.c:2109 builtin/unpack-objects.c:676
 msgid "fsck error in pack objects"
 msgstr ""
 
@@ -10996,456 +10996,469 @@ msgid ""
 "git pack-objects [<options>] <base-name> [< <ref-list> | < <object-list>]"
 msgstr ""
 
-#: builtin/pack-objects.c:588
+#: builtin/pack-objects.c:281
+#, c-format
+msgid "invalid --name-hash-version option: %d"
+msgstr ""
+
+#: builtin/pack-objects.c:283
+msgid "currently, --write-bitmap-index requires --name-hash-version=1"
+msgstr ""
+
+#: builtin/pack-objects.c:625
 #, c-format
 msgid ""
 "write_reuse_object: could not locate %s, expected at offset %<PRIuMAX> in "
 "pack %s"
 msgstr ""
 
-#: builtin/pack-objects.c:596
+#: builtin/pack-objects.c:633
 #, c-format
 msgid "bad packed object CRC for %s"
 msgstr ""
 
-#: builtin/pack-objects.c:607
+#: builtin/pack-objects.c:644
 #, c-format
 msgid "corrupt packed object for %s"
 msgstr ""
 
-#: builtin/pack-objects.c:738
+#: builtin/pack-objects.c:775
 #, c-format
 msgid "recursive delta detected for object %s"
 msgstr ""
 
-#: builtin/pack-objects.c:960
+#: builtin/pack-objects.c:997
 #, c-format
 msgid "ordered %u objects, expected %<PRIu32>"
 msgstr ""
 
-#: builtin/pack-objects.c:1058
+#: builtin/pack-objects.c:1095
 #, c-format
 msgid "expected object at offset %<PRIuMAX> in pack %s"
 msgstr ""
 
-#: builtin/pack-objects.c:1254
+#: builtin/pack-objects.c:1291
 msgid "disabling bitmap writing, packs are split due to pack.packSizeLimit"
 msgstr ""
 
-#: builtin/pack-objects.c:1268
+#: builtin/pack-objects.c:1305
 msgid "Writing objects"
 msgstr ""
 
-#: builtin/pack-objects.c:1347 builtin/update-index.c:111
+#: builtin/pack-objects.c:1384 builtin/update-index.c:111
 #, c-format
 msgid "failed to stat %s"
 msgstr ""
 
-#: builtin/pack-objects.c:1355 object-file.c:2354
+#: builtin/pack-objects.c:1392 object-file.c:2358
 #, c-format
 msgid "failed utime() on %s"
 msgstr ""
 
-#: builtin/pack-objects.c:1390
+#: builtin/pack-objects.c:1427
 msgid "failed to write bitmap index"
 msgstr ""
 
-#: builtin/pack-objects.c:1418
+#: builtin/pack-objects.c:1455
 #, c-format
 msgid "wrote %<PRIu32> objects while expecting %<PRIu32>"
 msgstr ""
 
-#: builtin/pack-objects.c:1668 builtin/repack.c:1288
+#: builtin/pack-objects.c:1705 builtin/repack.c:1295
 msgid "disabling bitmap writing, as some objects are not being packed"
 msgstr ""
 
-#: builtin/pack-objects.c:2116
+#: builtin/pack-objects.c:2153
 #, c-format
 msgid "delta base offset overflow in pack for %s"
 msgstr ""
 
-#: builtin/pack-objects.c:2125
+#: builtin/pack-objects.c:2162
 #, c-format
 msgid "delta base offset out of bound for %s"
 msgstr ""
 
-#: builtin/pack-objects.c:2407
+#: builtin/pack-objects.c:2444
 msgid "Counting objects"
 msgstr ""
 
-#: builtin/pack-objects.c:2557 pack-bitmap.c:1728 pack-bitmap.c:1735
+#: builtin/pack-objects.c:2594 pack-bitmap.c:1728 pack-bitmap.c:1735
 #, c-format
 msgid "unable to get size of %s"
 msgstr ""
 
-#: builtin/pack-objects.c:2572
+#: builtin/pack-objects.c:2609
 #, c-format
 msgid "unable to parse object header of %s"
 msgstr ""
 
-#: builtin/pack-objects.c:2644 builtin/pack-objects.c:2662
-#: builtin/pack-objects.c:2672
+#: builtin/pack-objects.c:2681 builtin/pack-objects.c:2699
+#: builtin/pack-objects.c:2709
 #, c-format
 msgid "object %s cannot be read"
 msgstr ""
 
-#: builtin/pack-objects.c:2647 builtin/pack-objects.c:2676
+#: builtin/pack-objects.c:2684 builtin/pack-objects.c:2713
 #, c-format
 msgid "object %s inconsistent object length (%<PRIuMAX> vs %<PRIuMAX>)"
 msgstr ""
 
-#: builtin/pack-objects.c:2686
+#: builtin/pack-objects.c:2723
 msgid "suboptimal pack - out of memory"
 msgstr ""
 
-#: builtin/pack-objects.c:3001
+#: builtin/pack-objects.c:3038
 #, c-format
 msgid "Delta compression using up to %d threads"
 msgstr ""
 
-#: builtin/pack-objects.c:3140
+#: builtin/pack-objects.c:3177
 #, c-format
 msgid "unable to pack objects reachable from tag %s"
 msgstr ""
 
-#: builtin/pack-objects.c:3208 commit-graph.c:1506
+#: builtin/pack-objects.c:3245 commit-graph.c:1506
 #, c-format
 msgid "unable to get type of object %s"
 msgstr ""
 
-#: builtin/pack-objects.c:3228
+#: builtin/pack-objects.c:3265
 msgid "Compressing objects"
 msgstr ""
 
-#: builtin/pack-objects.c:3234
+#: builtin/pack-objects.c:3271
 msgid "inconsistency with delta count"
 msgstr ""
 
-#: builtin/pack-objects.c:3288
+#: builtin/pack-objects.c:3325
 #, c-format
 msgid "invalid pack.allowPackReuse value: '%s'"
 msgstr ""
 
-#: builtin/pack-objects.c:3338
+#: builtin/pack-objects.c:3375
 #, c-format
 msgid ""
 "value of uploadpack.blobpackfileuri must be of the form '<object-hash> <pack-"
 "hash> <uri>' (got '%s')"
 msgstr ""
 
-#: builtin/pack-objects.c:3341
+#: builtin/pack-objects.c:3378
 #, c-format
 msgid ""
 "object already configured in another uploadpack.blobpackfileuri (got '%s')"
 msgstr ""
 
-#: builtin/pack-objects.c:3378
+#: builtin/pack-objects.c:3415
 #, c-format
 msgid "could not get type of object %s in pack %s"
 msgstr ""
 
-#: builtin/pack-objects.c:3508 builtin/pack-objects.c:3521
-#: builtin/pack-objects.c:3645
+#: builtin/pack-objects.c:3545 builtin/pack-objects.c:3558
+#: builtin/pack-objects.c:3682
 #, c-format
 msgid "could not find pack '%s'"
 msgstr ""
 
-#: builtin/pack-objects.c:3510
+#: builtin/pack-objects.c:3547
 #, c-format
 msgid "packfile %s cannot be accessed"
 msgstr ""
 
-#: builtin/pack-objects.c:3657 builtin/pack-objects.c:3684
+#: builtin/pack-objects.c:3694 builtin/pack-objects.c:3721
 msgid "Enumerating cruft objects"
 msgstr ""
 
-#: builtin/pack-objects.c:3690
+#: builtin/pack-objects.c:3727
 msgid "unable to add cruft objects"
 msgstr ""
 
-#: builtin/pack-objects.c:3704
+#: builtin/pack-objects.c:3741
 msgid "Traversing cruft objects"
 msgstr ""
 
-#: builtin/pack-objects.c:3789
+#: builtin/pack-objects.c:3826
 #, c-format
 msgid ""
 "expected edge object ID, got garbage:\n"
 " %s"
 msgstr ""
 
-#: builtin/pack-objects.c:3795
+#: builtin/pack-objects.c:3832
 #, c-format
 msgid ""
 "expected object ID, got garbage:\n"
 " %s"
 msgstr ""
 
-#: builtin/pack-objects.c:3910 reachable.c:294
+#: builtin/pack-objects.c:3947 reachable.c:294
 msgid "could not load cruft pack .mtimes"
 msgstr ""
 
-#: builtin/pack-objects.c:3934 builtin/pack-objects.c:4033
+#: builtin/pack-objects.c:3971 builtin/pack-objects.c:4070
 msgid "cannot open pack index"
 msgstr ""
 
-#: builtin/pack-objects.c:3943
+#: builtin/pack-objects.c:3980
 #, c-format
 msgid "loose object at %s could not be examined"
 msgstr ""
 
-#: builtin/pack-objects.c:4041
+#: builtin/pack-objects.c:4078
 msgid "unable to force loose object"
 msgstr ""
 
-#: builtin/pack-objects.c:4178
+#: builtin/pack-objects.c:4224
 #, c-format
 msgid "not a rev '%s'"
 msgstr ""
 
-#: builtin/pack-objects.c:4181 builtin/rev-parse.c:1160
+#: builtin/pack-objects.c:4227 builtin/rev-parse.c:1160
 #, c-format
 msgid "bad revision '%s'"
 msgstr ""
 
-#: builtin/pack-objects.c:4209
+#: builtin/pack-objects.c:4255
 msgid "unable to add recent objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4277
+#: builtin/pack-objects.c:4323
 #, c-format
 msgid "unsupported index version %s"
 msgstr ""
 
-#: builtin/pack-objects.c:4281
+#: builtin/pack-objects.c:4327
 #, c-format
 msgid "bad index version '%s'"
 msgstr ""
 
-#: builtin/pack-objects.c:4349
+#: builtin/pack-objects.c:4395
 msgid "show progress meter during object writing phase"
 msgstr ""
 
-#: builtin/pack-objects.c:4352
+#: builtin/pack-objects.c:4398
 msgid "similar to --all-progress when progress meter is shown"
 msgstr ""
 
-#: builtin/pack-objects.c:4353
+#: builtin/pack-objects.c:4399
 msgid "<version>[,<offset>]"
 msgstr ""
 
-#: builtin/pack-objects.c:4354
+#: builtin/pack-objects.c:4400
 msgid "write the pack index file in the specified idx format version"
 msgstr ""
 
-#: builtin/pack-objects.c:4357
+#: builtin/pack-objects.c:4403
 msgid "maximum size of each output pack file"
 msgstr ""
 
-#: builtin/pack-objects.c:4359
+#: builtin/pack-objects.c:4405
 msgid "ignore borrowed objects from alternate object store"
 msgstr ""
 
-#: builtin/pack-objects.c:4361
+#: builtin/pack-objects.c:4407
 msgid "ignore packed objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4363
+#: builtin/pack-objects.c:4409
 msgid "limit pack window by objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4365
+#: builtin/pack-objects.c:4411
 msgid "limit pack window by memory in addition to object limit"
 msgstr ""
 
-#: builtin/pack-objects.c:4367
+#: builtin/pack-objects.c:4413
 msgid "maximum length of delta chain allowed in the resulting pack"
 msgstr ""
 
-#: builtin/pack-objects.c:4369
+#: builtin/pack-objects.c:4415
 msgid "reuse existing deltas"
 msgstr ""
 
-#: builtin/pack-objects.c:4371
+#: builtin/pack-objects.c:4417
 msgid "reuse existing objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4373
+#: builtin/pack-objects.c:4419
 msgid "use OFS_DELTA objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4375
+#: builtin/pack-objects.c:4421
 msgid "use threads when searching for best delta matches"
 msgstr ""
 
-#: builtin/pack-objects.c:4377
+#: builtin/pack-objects.c:4423
 msgid "do not create an empty pack output"
 msgstr ""
 
-#: builtin/pack-objects.c:4379
+#: builtin/pack-objects.c:4425
 msgid "read revision arguments from standard input"
 msgstr ""
 
-#: builtin/pack-objects.c:4381
+#: builtin/pack-objects.c:4427
 msgid "limit the objects to those that are not yet packed"
 msgstr ""
 
-#: builtin/pack-objects.c:4384
+#: builtin/pack-objects.c:4430
 msgid "include objects reachable from any reference"
 msgstr ""
 
-#: builtin/pack-objects.c:4387
+#: builtin/pack-objects.c:4433
 msgid "include objects referred by reflog entries"
 msgstr ""
 
-#: builtin/pack-objects.c:4390
+#: builtin/pack-objects.c:4436
 msgid "include objects referred to by the index"
 msgstr ""
 
-#: builtin/pack-objects.c:4393
+#: builtin/pack-objects.c:4439
 msgid "read packs from stdin"
 msgstr ""
 
-#: builtin/pack-objects.c:4395
+#: builtin/pack-objects.c:4441
 msgid "output pack to stdout"
 msgstr ""
 
-#: builtin/pack-objects.c:4397
+#: builtin/pack-objects.c:4443
 msgid "include tag objects that refer to objects to be packed"
 msgstr ""
 
-#: builtin/pack-objects.c:4399
+#: builtin/pack-objects.c:4445
 msgid "keep unreachable objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4401
+#: builtin/pack-objects.c:4447
 msgid "pack loose unreachable objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4403
+#: builtin/pack-objects.c:4449
 msgid "unpack unreachable objects newer than <time>"
 msgstr ""
 
-#: builtin/pack-objects.c:4405
+#: builtin/pack-objects.c:4451
 msgid "create a cruft pack"
 msgstr ""
 
-#: builtin/pack-objects.c:4407
+#: builtin/pack-objects.c:4453
 msgid "expire cruft objects older than <time>"
 msgstr ""
 
-#: builtin/pack-objects.c:4410
+#: builtin/pack-objects.c:4456
 msgid "use the sparse reachability algorithm"
 msgstr ""
 
-#: builtin/pack-objects.c:4412
+#: builtin/pack-objects.c:4458
 msgid "create thin packs"
 msgstr ""
 
-#: builtin/pack-objects.c:4414
+#: builtin/pack-objects.c:4460
 msgid "create packs suitable for shallow fetches"
 msgstr ""
 
-#: builtin/pack-objects.c:4416
+#: builtin/pack-objects.c:4462
 msgid "ignore packs that have companion .keep file"
 msgstr ""
 
-#: builtin/pack-objects.c:4418
+#: builtin/pack-objects.c:4464
 msgid "ignore this pack"
 msgstr ""
 
-#: builtin/pack-objects.c:4420
+#: builtin/pack-objects.c:4466
 msgid "pack compression level"
 msgstr ""
 
-#: builtin/pack-objects.c:4422
+#: builtin/pack-objects.c:4468
 msgid "do not hide commits by grafts"
 msgstr ""
 
-#: builtin/pack-objects.c:4424
+#: builtin/pack-objects.c:4470
 msgid "use a bitmap index if available to speed up counting objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4426
+#: builtin/pack-objects.c:4472
 msgid "write a bitmap index together with the pack index"
 msgstr ""
 
-#: builtin/pack-objects.c:4430
+#: builtin/pack-objects.c:4476
 msgid "write a bitmap index if possible"
 msgstr ""
 
-#: builtin/pack-objects.c:4434
+#: builtin/pack-objects.c:4480
 msgid "handling for missing objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4437
+#: builtin/pack-objects.c:4483
 msgid "do not pack objects in promisor packfiles"
 msgstr ""
 
-#: builtin/pack-objects.c:4440
+#: builtin/pack-objects.c:4486
 msgid "implies --missing=allow-any"
 msgstr ""
 
-#: builtin/pack-objects.c:4442
+#: builtin/pack-objects.c:4488
 msgid "respect islands during delta compression"
 msgstr ""
 
-#: builtin/pack-objects.c:4444
+#: builtin/pack-objects.c:4490
 msgid "protocol"
 msgstr ""
 
-#: builtin/pack-objects.c:4445
+#: builtin/pack-objects.c:4491
 msgid "exclude any configured uploadpack.blobpackfileuri with this protocol"
 msgstr ""
 
-#: builtin/pack-objects.c:4483
+#: builtin/pack-objects.c:4493
+msgid "use the specified name-hash function to group similar objects"
+msgstr ""
+
+#: builtin/pack-objects.c:4531
 #, c-format
 msgid "delta chain depth %d is too deep, forcing %d"
 msgstr ""
 
-#: builtin/pack-objects.c:4488
+#: builtin/pack-objects.c:4536
 #, c-format
 msgid "pack.deltaCacheLimit is too high, forcing %d"
 msgstr ""
 
-#: builtin/pack-objects.c:4542 config.c:1824
+#: builtin/pack-objects.c:4590 config.c:1825
 #, c-format
 msgid "bad pack compression level %d"
 msgstr ""
 
-#: builtin/pack-objects.c:4552
+#: builtin/pack-objects.c:4600
 msgid "--max-pack-size cannot be used to build a pack for transfer"
 msgstr ""
 
-#: builtin/pack-objects.c:4554
+#: builtin/pack-objects.c:4602
 msgid "minimum pack size limit is 1 MiB"
 msgstr ""
 
-#: builtin/pack-objects.c:4559
+#: builtin/pack-objects.c:4607
 msgid "--thin cannot be used to build an indexable pack"
 msgstr ""
 
-#: builtin/pack-objects.c:4567
+#: builtin/pack-objects.c:4615
 msgid "cannot use --filter with --stdin-packs"
 msgstr ""
 
-#: builtin/pack-objects.c:4570
+#: builtin/pack-objects.c:4618
 msgid "cannot use internal rev list with --stdin-packs"
 msgstr ""
 
-#: builtin/pack-objects.c:4574
+#: builtin/pack-objects.c:4622
 msgid "cannot use internal rev list with --cruft"
 msgstr ""
 
-#: builtin/pack-objects.c:4576
+#: builtin/pack-objects.c:4624
 msgid "cannot use --stdin-packs with --cruft"
 msgstr ""
 
-#: builtin/pack-objects.c:4637
+#: builtin/pack-objects.c:4690
 msgid "Enumerating objects"
 msgstr ""
 
-#: builtin/pack-objects.c:4685
+#: builtin/pack-objects.c:4738
 #, c-format
 msgid ""
 "Total %<PRIu32> (delta %<PRIu32>), reused %<PRIu32> (delta %<PRIu32>), pack-"
@@ -11621,7 +11634,7 @@ msgstr ""
 msgid "<remote>"
 msgstr ""
 
-#: builtin/pull.c:466 builtin/pull.c:481 builtin/pull.c:486 scalar.c:415
+#: builtin/pull.c:466 builtin/pull.c:481 builtin/pull.c:486 scalar.c:416
 msgid "<branch>"
 msgstr ""
 
@@ -12892,7 +12905,7 @@ msgstr ""
 msgid "could not set '%s'"
 msgstr ""
 
-#: builtin/remote.c:699 builtin/remote.c:936 builtin/remote.c:944 config.c:3440
+#: builtin/remote.c:699 builtin/remote.c:936 builtin/remote.c:944 config.c:3441
 #, c-format
 msgid "could not unset '%s'"
 msgstr ""
@@ -13270,193 +13283,201 @@ msgid "be verbose; must be placed before a subcommand"
 msgstr ""
 
 #: builtin/repack.c:44
-msgid "git repack [<options>]"
+msgid ""
+"git repack [-a] [-A] [-d] [-f] [-F] [-l] [-n] [-q] [-b] [-m]\n"
+"[--window=<n>] [--depth=<n>] [--threads=<n>] [--keep-pack=<pack-name>]\n"
+"[--write-midx] [--name-hash-version=<n>]"
 msgstr ""
 
-#: builtin/repack.c:49
+#: builtin/repack.c:51
 msgid ""
 "Incremental repacks are incompatible with bitmap indexes.  Use\n"
 "--no-write-bitmap-index or disable the pack.writeBitmaps configuration."
 msgstr ""
 
-#: builtin/repack.c:334
+#: builtin/repack.c:339
 msgid "could not start pack-objects to repack promisor objects"
 msgstr ""
 
-#: builtin/repack.c:339
+#: builtin/repack.c:344
 msgid "failed to feed promisor objects to pack-objects"
 msgstr ""
 
-#: builtin/repack.c:426 builtin/repack.c:952
+#: builtin/repack.c:431 builtin/repack.c:957
 msgid "repack: Expecting full hex object ID lines only from pack-objects."
 msgstr ""
 
-#: builtin/repack.c:451
+#: builtin/repack.c:456
 msgid "could not finish pack-objects to repack promisor objects"
 msgstr ""
 
-#: builtin/repack.c:466
+#: builtin/repack.c:471
 #, c-format
 msgid "cannot open index for %s"
 msgstr ""
 
-#: builtin/repack.c:556
+#: builtin/repack.c:561
 #, c-format
 msgid "pack %s too large to consider in geometric progression"
 msgstr ""
 
-#: builtin/repack.c:590 builtin/repack.c:598 builtin/repack.c:604
+#: builtin/repack.c:595 builtin/repack.c:603 builtin/repack.c:609
 #, c-format
 msgid "pack %s too large to roll up"
 msgstr ""
 
-#: builtin/repack.c:724
+#: builtin/repack.c:729
 #, c-format
 msgid "could not open tempfile %s for writing"
 msgstr ""
 
-#: builtin/repack.c:745
+#: builtin/repack.c:750
 msgid "could not close refs snapshot tempfile"
 msgstr ""
 
-#: builtin/repack.c:932
+#: builtin/repack.c:937
 #, c-format
 msgid "could not remove stale bitmap: %s"
 msgstr ""
 
-#: builtin/repack.c:1152
+#: builtin/repack.c:1157
 #, c-format
 msgid "pack prefix %s does not begin with objdir %s"
 msgstr ""
 
-#: builtin/repack.c:1191
+#: builtin/repack.c:1196
 msgid "pack everything in a single pack"
 msgstr ""
 
-#: builtin/repack.c:1193
+#: builtin/repack.c:1198
 msgid "same as -a, and turn unreachable objects loose"
 msgstr ""
 
-#: builtin/repack.c:1196
+#: builtin/repack.c:1201
 msgid "same as -a, pack unreachable cruft objects separately"
 msgstr ""
 
-#: builtin/repack.c:1198 builtin/repack.c:1217
+#: builtin/repack.c:1203 builtin/repack.c:1224
 msgid "approxidate"
 msgstr ""
 
-#: builtin/repack.c:1199
+#: builtin/repack.c:1204
 msgid "with --cruft, expire objects older than this"
 msgstr ""
 
-#: builtin/repack.c:1203
+#: builtin/repack.c:1208
 msgid "remove redundant packs, and run git-prune-packed"
 msgstr ""
 
-#: builtin/repack.c:1205
+#: builtin/repack.c:1210
 msgid "pass --no-reuse-delta to git-pack-objects"
 msgstr ""
 
-#: builtin/repack.c:1207
+#: builtin/repack.c:1212
 msgid "pass --no-reuse-object to git-pack-objects"
 msgstr ""
 
-#: builtin/repack.c:1209
-msgid "do not run git-update-server-info"
-msgstr ""
-
-#: builtin/repack.c:1212
-msgid "pass --local to git-pack-objects"
-msgstr ""
-
 #: builtin/repack.c:1214
-msgid "write bitmap index"
+msgid ""
+"specify the name hash version to use for grouping similar objects by path"
 msgstr ""
 
 #: builtin/repack.c:1216
-msgid "pass --delta-islands to git-pack-objects"
+msgid "do not run git-update-server-info"
 msgstr ""
 
-#: builtin/repack.c:1218
-msgid "with -A, do not loosen objects older than this"
+#: builtin/repack.c:1219
+msgid "pass --local to git-pack-objects"
 msgstr ""
 
-#: builtin/repack.c:1220
-msgid "with -a, repack unreachable objects"
-msgstr ""
-
-#: builtin/repack.c:1222
-msgid "size of the window used for delta compression"
+#: builtin/repack.c:1221
+msgid "write bitmap index"
 msgstr ""
 
 #: builtin/repack.c:1223
-msgid "bytes"
+msgid "pass --delta-islands to git-pack-objects"
 msgstr ""
 
-#: builtin/repack.c:1224
-msgid "same as the above, but limit memory size instead of entries count"
+#: builtin/repack.c:1225
+msgid "with -A, do not loosen objects older than this"
 msgstr ""
 
-#: builtin/repack.c:1226
-msgid "limits the maximum delta depth"
+#: builtin/repack.c:1227
+msgid "with -a, repack unreachable objects"
 msgstr ""
 
-#: builtin/repack.c:1228
-msgid "limits the maximum number of threads"
+#: builtin/repack.c:1229
+msgid "size of the window used for delta compression"
 msgstr ""
 
 #: builtin/repack.c:1230
-msgid "maximum size of each packfile"
+msgid "bytes"
+msgstr ""
+
+#: builtin/repack.c:1231
+msgid "same as the above, but limit memory size instead of entries count"
 msgstr ""
 
 #: builtin/repack.c:1233
-msgid "repack objects in packs marked with .keep"
+msgid "limits the maximum delta depth"
 msgstr ""
 
 #: builtin/repack.c:1235
-msgid "do not repack this pack"
+msgid "limits the maximum number of threads"
 msgstr ""
 
 #: builtin/repack.c:1237
+msgid "maximum size of each packfile"
+msgstr ""
+
+#: builtin/repack.c:1240
+msgid "repack objects in packs marked with .keep"
+msgstr ""
+
+#: builtin/repack.c:1242
+msgid "do not repack this pack"
+msgstr ""
+
+#: builtin/repack.c:1244
 msgid "find a geometric progression with factor <N>"
 msgstr ""
 
-#: builtin/repack.c:1239
+#: builtin/repack.c:1246
 msgid "write a multi-pack index of the resulting packs"
 msgstr ""
 
-#: builtin/repack.c:1241
+#: builtin/repack.c:1248
 msgid "pack prefix to store a pack containing pruned objects"
 msgstr ""
 
-#: builtin/repack.c:1243
+#: builtin/repack.c:1250
 msgid "pack prefix to store a pack containing filtered out objects"
 msgstr ""
 
-#: builtin/repack.c:1260
+#: builtin/repack.c:1267
 msgid "cannot delete packs in a precious-objects repo"
 msgstr ""
 
-#: builtin/repack.c:1388
+#: builtin/repack.c:1398
 #, c-format
 msgid "option '%s' can only be used along with '%s'"
 msgstr ""
 
-#: builtin/repack.c:1418
+#: builtin/repack.c:1428
 msgid "Nothing new to pack."
 msgstr ""
 
-#: builtin/repack.c:1515
+#: builtin/repack.c:1525
 #, c-format
 msgid "renaming pack to '%s' failed"
 msgstr ""
 
-#: builtin/repack.c:1517
+#: builtin/repack.c:1527
 #, c-format
 msgid "pack-objects did not write a '%s' file for pack %s-%s"
 msgstr ""
 
-#: builtin/repack.c:1520 sequencer.c:4404
+#: builtin/repack.c:1530 sequencer.c:4404
 #, c-format
 msgid "could not unlink: %s"
 msgstr ""
@@ -16714,7 +16735,7 @@ msgstr ""
 msgid "cannot create '%s'"
 msgstr ""
 
-#: bundle.c:630
+#: bundle.c:632
 msgid "index-pack died"
 msgstr ""
 
@@ -18136,7 +18157,7 @@ msgstr ""
 msgid "cannot restore terminal settings"
 msgstr ""
 
-#: config.c:147
+#: config.c:148
 #, c-format
 msgid ""
 "exceeded maximum include depth (%d) while including\n"
@@ -18146,354 +18167,354 @@ msgid ""
 "This might be due to circular includes."
 msgstr ""
 
-#: config.c:165
+#: config.c:166
 #, c-format
 msgid "could not expand include path '%s'"
 msgstr ""
 
-#: config.c:176
+#: config.c:177
 msgid "relative config includes must come from files"
 msgstr ""
 
-#: config.c:227
+#: config.c:228
 msgid "relative config include conditionals must come from files"
 msgstr ""
 
-#: config.c:370
+#: config.c:371
 msgid ""
 "remote URLs cannot be configured in file directly or indirectly included by "
 "includeIf.hasconfig:remote.*.url"
 msgstr ""
 
-#: config.c:517
+#: config.c:518
 #, c-format
 msgid "invalid config format: %s"
 msgstr ""
 
-#: config.c:521
+#: config.c:522
 #, c-format
 msgid "missing environment variable name for configuration '%.*s'"
 msgstr ""
 
-#: config.c:526
+#: config.c:527
 #, c-format
 msgid "missing environment variable '%s' for configuration '%.*s'"
 msgstr ""
 
-#: config.c:562
+#: config.c:563
 #, c-format
 msgid "key does not contain a section: %s"
 msgstr ""
 
-#: config.c:567
+#: config.c:568
 #, c-format
 msgid "key does not contain variable name: %s"
 msgstr ""
 
-#: config.c:589 sequencer.c:3105
+#: config.c:590 sequencer.c:3105
 #, c-format
 msgid "invalid key: %s"
 msgstr ""
 
-#: config.c:594
+#: config.c:595
 #, c-format
 msgid "invalid key (newline): %s"
 msgstr ""
 
-#: config.c:618
+#: config.c:619
 msgid "empty config key"
 msgstr ""
 
-#: config.c:650 config.c:662
+#: config.c:651 config.c:663
 #, c-format
 msgid "bogus config parameter: %s"
 msgstr ""
 
-#: config.c:677 config.c:694 config.c:701 config.c:710
+#: config.c:678 config.c:695 config.c:702 config.c:711
 #, c-format
 msgid "bogus format in %s"
 msgstr ""
 
-#: config.c:740
+#: config.c:741
 #, c-format
 msgid "bogus count in %s"
 msgstr ""
 
-#: config.c:744
+#: config.c:745
 #, c-format
 msgid "too many entries in %s"
 msgstr ""
 
-#: config.c:754
+#: config.c:755
 #, c-format
 msgid "missing config key %s"
 msgstr ""
 
-#: config.c:762
+#: config.c:763
 #, c-format
 msgid "missing config value %s"
 msgstr ""
 
-#: config.c:1136
+#: config.c:1137
 #, c-format
 msgid "bad config line %d in blob %s"
 msgstr ""
 
-#: config.c:1140
+#: config.c:1141
 #, c-format
 msgid "bad config line %d in file %s"
 msgstr ""
 
-#: config.c:1144
+#: config.c:1145
 #, c-format
 msgid "bad config line %d in standard input"
 msgstr ""
 
-#: config.c:1148
+#: config.c:1149
 #, c-format
 msgid "bad config line %d in submodule-blob %s"
 msgstr ""
 
-#: config.c:1152
+#: config.c:1153
 #, c-format
 msgid "bad config line %d in command line %s"
 msgstr ""
 
-#: config.c:1156
+#: config.c:1157
 #, c-format
 msgid "bad config line %d in %s"
 msgstr ""
 
-#: config.c:1185
+#: config.c:1186
 msgid "out of range"
 msgstr ""
 
-#: config.c:1185
+#: config.c:1186
 msgid "invalid unit"
 msgstr ""
 
-#: config.c:1186
+#: config.c:1187
 #, c-format
 msgid "bad numeric config value '%s' for '%s': %s"
 msgstr ""
 
-#: config.c:1199
+#: config.c:1200
 #, c-format
 msgid "bad numeric config value '%s' for '%s' in blob %s: %s"
 msgstr ""
 
-#: config.c:1202
+#: config.c:1203
 #, c-format
 msgid "bad numeric config value '%s' for '%s' in file %s: %s"
 msgstr ""
 
-#: config.c:1205
+#: config.c:1206
 #, c-format
 msgid "bad numeric config value '%s' for '%s' in standard input: %s"
 msgstr ""
 
-#: config.c:1208
+#: config.c:1209
 #, c-format
 msgid "bad numeric config value '%s' for '%s' in submodule-blob %s: %s"
 msgstr ""
 
-#: config.c:1211
+#: config.c:1212
 #, c-format
 msgid "bad numeric config value '%s' for '%s' in command line %s: %s"
 msgstr ""
 
-#: config.c:1214
+#: config.c:1215
 #, c-format
 msgid "bad numeric config value '%s' for '%s' in %s: %s"
 msgstr ""
 
-#: config.c:1306
+#: config.c:1307
 #, c-format
 msgid "invalid value for variable %s"
 msgstr ""
 
-#: config.c:1327
+#: config.c:1328
 #, c-format
 msgid "ignoring unknown core.fsync component '%s'"
 msgstr ""
 
-#: config.c:1354
+#: config.c:1355
 #, c-format
 msgid "bad boolean config value '%s' for '%s'"
 msgstr ""
 
-#: config.c:1372
+#: config.c:1373
 #, c-format
 msgid "failed to expand user dir in: '%s'"
 msgstr ""
 
-#: config.c:1381
+#: config.c:1382
 #, c-format
 msgid "'%s' for '%s' is not a valid timestamp"
 msgstr ""
 
-#: config.c:1464
+#: config.c:1465
 #, c-format
 msgid "abbrev length out of range: %d"
 msgstr ""
 
-#: config.c:1478 config.c:1489
+#: config.c:1479 config.c:1490
 #, c-format
 msgid "bad zlib compression level %d"
 msgstr ""
 
-#: config.c:1553
+#: config.c:1554
 #, c-format
 msgid "%s cannot contain newline"
 msgstr ""
 
-#: config.c:1558
+#: config.c:1559
 #, c-format
 msgid "%s must have at least one character"
 msgstr ""
 
-#: config.c:1596
+#: config.c:1597
 #, c-format
 msgid "ignoring unknown core.fsyncMethod value '%s'"
 msgstr ""
 
-#: config.c:1602
+#: config.c:1603
 msgid "core.fsyncObjectFiles is deprecated; use core.fsync instead"
 msgstr ""
 
-#: config.c:1620
+#: config.c:1621
 #, c-format
 msgid "invalid mode for object creation: %s"
 msgstr ""
 
-#: config.c:1713
+#: config.c:1714
 #, c-format
 msgid "malformed value for %s"
 msgstr ""
 
-#: config.c:1739
+#: config.c:1740
 #, c-format
 msgid "malformed value for %s: %s"
 msgstr ""
 
-#: config.c:1740
+#: config.c:1741
 msgid "must be one of nothing, matching, simple, upstream or current"
 msgstr ""
 
-#: config.c:1956
+#: config.c:1957
 #, c-format
 msgid "unable to load config blob object '%s'"
 msgstr ""
 
-#: config.c:1959
+#: config.c:1960
 #, c-format
 msgid "reference '%s' does not point to a blob"
 msgstr ""
 
-#: config.c:1978
+#: config.c:1979
 #, c-format
 msgid "unable to resolve config blob '%s'"
 msgstr ""
 
-#: config.c:2088
+#: config.c:2089
 msgid "unable to parse command-line config"
 msgstr ""
 
-#: config.c:2509
+#: config.c:2510
 msgid "unknown error occurred while reading the configuration files"
 msgstr ""
 
-#: config.c:2658
+#: config.c:2659
 #, c-format
 msgid "Invalid %s: '%s'"
 msgstr ""
 
-#: config.c:2704
+#: config.c:2705
 #, c-format
 msgid "splitIndex.maxPercentChange value '%d' should be between 0 and 100"
 msgstr ""
 
-#: config.c:2736
+#: config.c:2737
 #, c-format
 msgid "unable to parse '%s' from command-line config"
 msgstr ""
 
-#: config.c:2738
+#: config.c:2739
 #, c-format
 msgid "bad config variable '%s' in file '%s' at line %d"
 msgstr ""
 
-#: config.c:2824
+#: config.c:2825
 #, c-format
 msgid "invalid section name '%s'"
 msgstr ""
 
-#: config.c:2857
+#: config.c:2858
 #, c-format
 msgid "%s has multiple values"
 msgstr ""
 
-#: config.c:2886
+#: config.c:2887
 #, c-format
 msgid "failed to write new configuration file %s"
 msgstr ""
 
-#: config.c:3110
+#: config.c:3111
 #, c-format
 msgid "no multi-line comment allowed: '%s'"
 msgstr ""
 
-#: config.c:3211 config.c:3554
+#: config.c:3212 config.c:3555
 #, c-format
 msgid "could not lock config file %s"
 msgstr ""
 
-#: config.c:3222
+#: config.c:3223
 #, c-format
 msgid "opening %s"
 msgstr ""
 
-#: config.c:3285
+#: config.c:3286
 #, c-format
 msgid "invalid config file %s"
 msgstr ""
 
-#: config.c:3298 config.c:3567
+#: config.c:3299 config.c:3568
 #, c-format
 msgid "fstat on %s failed"
 msgstr ""
 
-#: config.c:3309
+#: config.c:3310
 #, c-format
 msgid "unable to mmap '%s'%s"
 msgstr ""
 
-#: config.c:3319 config.c:3572
+#: config.c:3320 config.c:3573
 #, c-format
 msgid "chmod on %s failed"
 msgstr ""
 
-#: config.c:3404 config.c:3679
+#: config.c:3405 config.c:3680
 #, c-format
 msgid "could not write config file %s"
 msgstr ""
 
-#: config.c:3438
+#: config.c:3439
 #, c-format
 msgid "could not set '%s' to '%s'"
 msgstr ""
 
-#: config.c:3545
+#: config.c:3546
 #, c-format
 msgid "invalid section name: %s"
 msgstr ""
 
-#: config.c:3585
+#: config.c:3586
 #, c-format
 msgid "refusing to work with overly long line in '%s' on line %<PRIuMAX>"
 msgstr ""
 
-#: config.c:3724
+#: config.c:3725
 #, c-format
 msgid "missing value for '%s'"
 msgstr ""
@@ -19036,7 +19057,7 @@ msgstr ""
 msgid "Unknown value for 'diff.submodule' config variable: '%s'"
 msgstr ""
 
-#: diff.c:472 diff.c:512 merge-recursive.c:3958 transport.c:1072
+#: diff.c:472 diff.c:512 merge-recursive.c:3958 transport.c:1073
 #, c-format
 msgid "unknown value for config '%s': %s"
 msgstr ""
@@ -19687,7 +19708,7 @@ msgstr ""
 msgid "could not stat file '%s'"
 msgstr ""
 
-#: environment.c:183
+#: environment.c:184
 #, c-format
 msgid "bad git namespace path \"%s\""
 msgstr ""
@@ -21509,279 +21530,279 @@ msgstr ""
 msgid "Failed to convert object from %s to %s"
 msgstr ""
 
-#: object-file.c:545
+#: object-file.c:551
 #, c-format
 msgid "object directory %s does not exist; check .git/objects/info/alternates"
 msgstr ""
 
-#: object-file.c:605
+#: object-file.c:611
 #, c-format
 msgid "unable to normalize alternate object path: %s"
 msgstr ""
 
-#: object-file.c:680
+#: object-file.c:686
 #, c-format
 msgid "%s: ignoring alternate object stores, nesting too deep"
 msgstr ""
 
-#: object-file.c:727
+#: object-file.c:733
 msgid "unable to fdopen alternates lockfile"
 msgstr ""
 
-#: object-file.c:745
+#: object-file.c:751
 msgid "unable to read alternates file"
 msgstr ""
 
-#: object-file.c:752
+#: object-file.c:758
 msgid "unable to move new alternates file into place"
 msgstr ""
 
-#: object-file.c:830
+#: object-file.c:836
 #, c-format
 msgid "path '%s' does not exist"
 msgstr ""
 
-#: object-file.c:851
+#: object-file.c:857
 #, c-format
 msgid "reference repository '%s' as a linked checkout is not supported yet."
 msgstr ""
 
-#: object-file.c:857
+#: object-file.c:863
 #, c-format
 msgid "reference repository '%s' is not a local repository."
 msgstr ""
 
-#: object-file.c:863
+#: object-file.c:869
 #, c-format
 msgid "reference repository '%s' is shallow"
 msgstr ""
 
-#: object-file.c:871
+#: object-file.c:877
 #, c-format
 msgid "reference repository '%s' is grafted"
 msgstr ""
 
-#: object-file.c:902
+#: object-file.c:908
 #, c-format
 msgid "could not find object directory matching %s"
 msgstr ""
 
-#: object-file.c:952
+#: object-file.c:958
 #, c-format
 msgid "invalid line while parsing alternate refs: %s"
 msgstr ""
 
-#: object-file.c:1108
+#: object-file.c:1114
 #, c-format
 msgid "attempting to mmap %<PRIuMAX> over limit %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:1143
+#: object-file.c:1149
 #, c-format
 msgid "mmap failed%s"
 msgstr ""
 
-#: object-file.c:1317
+#: object-file.c:1323
 #, c-format
 msgid "object file %s is empty"
 msgstr ""
 
-#: object-file.c:1440 object-file.c:3082
+#: object-file.c:1446 object-file.c:3086
 #, c-format
 msgid "corrupt loose object '%s'"
 msgstr ""
 
-#: object-file.c:1442 object-file.c:3086
+#: object-file.c:1448 object-file.c:3090
 #, c-format
 msgid "garbage at end of loose object '%s'"
 msgstr ""
 
-#: object-file.c:1552
+#: object-file.c:1558
 #, c-format
 msgid "unable to open loose object %s"
 msgstr ""
 
-#: object-file.c:1571
+#: object-file.c:1577
 #, c-format
 msgid "unable to parse %s header"
 msgstr ""
 
-#: object-file.c:1573
+#: object-file.c:1579
 msgid "invalid object type"
 msgstr ""
 
-#: object-file.c:1584
+#: object-file.c:1590
 #, c-format
 msgid "unable to unpack %s header"
 msgstr ""
 
-#: object-file.c:1588
+#: object-file.c:1594
 #, c-format
 msgid "header for %s too long, exceeds %d bytes"
 msgstr ""
 
-#: object-file.c:1594
+#: object-file.c:1600
 #, c-format
 msgid "loose object %s (stored in %s) is corrupt"
 msgstr ""
 
-#: object-file.c:1709
+#: object-file.c:1715
 #, c-format
 msgid "replacement %s not found for %s"
 msgstr ""
 
-#: object-file.c:1712
+#: object-file.c:1718
 #, c-format
 msgid "packed object %s (stored in %s) is corrupt"
 msgstr ""
 
-#: object-file.c:1753 object-file.c:1814
+#: object-file.c:1759 object-file.c:1820
 #, c-format
 msgid "missing mapping of %s to %s"
 msgstr ""
 
-#: object-file.c:1994 object-file.c:2001 object-file.c:2895
+#: object-file.c:2000 object-file.c:2007 object-file.c:2899
 #, c-format
 msgid "unable to open %s"
 msgstr ""
 
-#: object-file.c:2023
+#: object-file.c:2029
 #, c-format
 msgid "files '%s' and '%s' differ in contents"
 msgstr ""
 
-#: object-file.c:2091
+#: object-file.c:2097
 #, c-format
 msgid "unable to write file %s"
 msgstr ""
 
-#: object-file.c:2097
+#: object-file.c:2103
 #, c-format
 msgid "unable to write repeatedly vanishing file %s"
 msgstr ""
 
-#: object-file.c:2109
+#: object-file.c:2115
 #, c-format
 msgid "unable to set permission to '%s'"
 msgstr ""
 
-#: object-file.c:2146
+#: object-file.c:2152
 msgid "error when closing loose object file"
 msgstr ""
 
-#: object-file.c:2222
+#: object-file.c:2228
 #, c-format
 msgid "insufficient permission for adding an object to repository database %s"
 msgstr ""
 
-#: object-file.c:2227
+#: object-file.c:2233
 msgid "unable to create temporary file"
 msgstr ""
 
-#: object-file.c:2270
+#: object-file.c:2275
 msgid "unable to write loose object file"
-msgstr ""
-
-#: object-file.c:2336
-#, c-format
-msgid "unable to deflate new object %s (%d)"
 msgstr ""
 
 #: object-file.c:2340
 #, c-format
+msgid "unable to deflate new object %s (%d)"
+msgstr ""
+
+#: object-file.c:2344
+#, c-format
 msgid "deflateEnd on object %s failed (%d)"
 msgstr ""
 
-#: object-file.c:2343
+#: object-file.c:2347
 #, c-format
 msgid "confused by unstable object source data for %s"
 msgstr ""
 
-#: object-file.c:2442
+#: object-file.c:2446
 #, c-format
 msgid "write stream object %ld != %<PRIuMAX>"
 msgstr ""
 
-#: object-file.c:2453
+#: object-file.c:2457
 #, c-format
 msgid "unable to stream deflate new object (%d)"
 msgstr ""
 
-#: object-file.c:2456
+#: object-file.c:2460
 #, c-format
 msgid "deflateEnd on stream object failed (%d)"
 msgstr ""
 
-#: object-file.c:2473
+#: object-file.c:2477
 #, c-format
 msgid "unable to create directory %s"
 msgstr ""
 
-#: object-file.c:2595
+#: object-file.c:2599
 #, c-format
 msgid "cannot read object for %s"
 msgstr ""
 
-#: object-file.c:2598
+#: object-file.c:2602
 #, c-format
 msgid "cannot map object %s to %s"
 msgstr ""
 
-#: object-file.c:2648
+#: object-file.c:2652
 #, c-format
 msgid "object fails fsck: %s"
 msgstr ""
 
-#: object-file.c:2681
+#: object-file.c:2685
 msgid "refusing to create malformed object"
 msgstr ""
 
-#: object-file.c:2750
+#: object-file.c:2754
 #, c-format
 msgid "read error while indexing %s"
 msgstr ""
 
-#: object-file.c:2753
+#: object-file.c:2757
 #, c-format
 msgid "short read while indexing %s"
 msgstr ""
 
-#: object-file.c:2826 object-file.c:2836
+#: object-file.c:2830 object-file.c:2840
 #, c-format
 msgid "%s: failed to insert into database"
 msgstr ""
 
-#: object-file.c:2842
+#: object-file.c:2846
 #, c-format
 msgid "%s: unsupported file type"
 msgstr ""
 
-#: object-file.c:2868
+#: object-file.c:2872
 #, c-format
 msgid "%s is not a valid '%s' object"
 msgstr ""
 
-#: object-file.c:3093
+#: object-file.c:3097
 #, c-format
 msgid "hash mismatch for %s (expected %s)"
 msgstr ""
 
-#: object-file.c:3119
+#: object-file.c:3123
 #, c-format
 msgid "unable to mmap %s"
 msgstr ""
 
-#: object-file.c:3125
+#: object-file.c:3129
 #, c-format
 msgid "unable to unpack header of %s"
 msgstr ""
 
-#: object-file.c:3131
+#: object-file.c:3135
 #, c-format
 msgid "unable to parse header of %s"
 msgstr ""
 
-#: object-file.c:3142
+#: object-file.c:3146
 #, c-format
 msgid "unable to unpack contents of %s"
 msgstr ""
@@ -22228,7 +22249,7 @@ msgstr ""
 msgid "failed to make %s readable"
 msgstr ""
 
-#: pack-write.c:607
+#: pack-write.c:608
 #, c-format
 msgid "could not write '%s' promisor file"
 msgstr ""
@@ -24180,7 +24201,7 @@ msgstr ""
 msgid "'%s' does not exist"
 msgstr ""
 
-#: scalar.c:44 scalar.c:56 scalar.c:384 scalar.c:484 scalar.c:687
+#: scalar.c:44 scalar.c:56 scalar.c:384 scalar.c:485 scalar.c:689
 #, c-format
 msgid "could not switch to '%s'"
 msgstr ""
@@ -24251,175 +24272,175 @@ msgstr ""
 msgid "failed to delete enlistment directory"
 msgstr ""
 
-#: scalar.c:416
+#: scalar.c:417
 msgid "branch to checkout after clone"
 msgstr ""
 
-#: scalar.c:418
+#: scalar.c:419
 msgid "when cloning, create full working directory"
 msgstr ""
 
-#: scalar.c:420
+#: scalar.c:421
 msgid "only download metadata for the branch that will be checked out"
 msgstr ""
 
-#: scalar.c:423
+#: scalar.c:424
 msgid "create repository within 'src' directory"
 msgstr ""
 
-#: scalar.c:425
+#: scalar.c:426
 msgid "specify if tags should be fetched during clone"
 msgstr ""
 
-#: scalar.c:429
+#: scalar.c:430
 msgid ""
 "scalar clone [--single-branch] [--branch <main-branch>] [--full-clone]\n"
 "\t[--[no-]src] [--[no-]tags] <url> [<enlistment>]"
 msgstr ""
 
-#: scalar.c:455
+#: scalar.c:456
 #, c-format
 msgid "cannot deduce worktree name from '%s'"
 msgstr ""
 
-#: scalar.c:464
+#: scalar.c:465
 #, c-format
 msgid "directory '%s' exists already"
 msgstr ""
 
-#: scalar.c:494
+#: scalar.c:495
 #, c-format
 msgid "failed to get default branch for '%s'"
 msgstr ""
 
-#: scalar.c:505
+#: scalar.c:506
 #, c-format
 msgid "could not configure remote in '%s'"
 msgstr ""
 
-#: scalar.c:510
+#: scalar.c:511
 #, c-format
 msgid "could not disable tags in '%s'"
 msgstr ""
 
-#: scalar.c:519
+#: scalar.c:520
 #, c-format
 msgid "could not configure '%s'"
 msgstr ""
 
-#: scalar.c:526
+#: scalar.c:527
 msgid "partial clone failed; attempting full clone"
 msgstr ""
 
-#: scalar.c:530
+#: scalar.c:531
 msgid "could not configure for full clone"
 msgstr ""
 
-#: scalar.c:567
+#: scalar.c:569
 msgid "scalar diagnose [<enlistment>]"
 msgstr ""
 
-#: scalar.c:589
+#: scalar.c:591
 msgid "`scalar list` does not take arguments"
 msgstr ""
 
-#: scalar.c:602
+#: scalar.c:604
 msgid "scalar register [<enlistment>]"
 msgstr ""
 
-#: scalar.c:649
+#: scalar.c:651
 msgid "reconfigure all registered enlistments"
 msgstr ""
 
-#: scalar.c:653
+#: scalar.c:655
 msgid "scalar reconfigure [--all | <enlistment>]"
 msgstr ""
 
-#: scalar.c:670
+#: scalar.c:672
 msgid "--all or <enlistment>, but not both"
 msgstr ""
 
-#: scalar.c:693
+#: scalar.c:695
 #, c-format
 msgid "could not remove stale scalar.repo '%s'"
 msgstr ""
 
-#: scalar.c:696
+#: scalar.c:698
 #, c-format
 msgid "removed stale scalar.repo '%s'"
 msgstr ""
 
-#: scalar.c:706
+#: scalar.c:708
 #, c-format
 msgid "repository at '%s' has different owner"
 msgstr ""
 
-#: scalar.c:711
+#: scalar.c:713
 #, c-format
 msgid "repository at '%s' has a format issue"
 msgstr ""
 
-#: scalar.c:719
+#: scalar.c:721
 #, c-format
 msgid "repository not found in '%s'"
 msgstr ""
 
-#: scalar.c:743
+#: scalar.c:745
 #, c-format
 msgid ""
 "to unregister this repository from Scalar, run\n"
 "\tgit config --global --unset --fixed-value scalar.repo \"%s\""
 msgstr ""
 
-#: scalar.c:775
+#: scalar.c:777
 msgid ""
 "scalar run <task> [<enlistment>]\n"
 "Tasks:\n"
 msgstr ""
 
-#: scalar.c:793
+#: scalar.c:795
 #, c-format
 msgid "no such task: '%s'"
 msgstr ""
 
-#: scalar.c:825
+#: scalar.c:827
 msgid "scalar unregister [<enlistment>]"
 msgstr ""
 
-#: scalar.c:872
+#: scalar.c:874
 msgid "scalar delete <enlistment>"
 msgstr ""
 
-#: scalar.c:887
+#: scalar.c:889
 msgid "refusing to delete current working directory"
 msgstr ""
 
-#: scalar.c:921
+#: scalar.c:923
 msgid "include Git version"
 msgstr ""
 
-#: scalar.c:923
+#: scalar.c:925
 msgid "include Git's build options"
 msgstr ""
 
-#: scalar.c:927
+#: scalar.c:929
 msgid "scalar verbose [-v | --verbose] [--build-options]"
 msgstr ""
 
-#: scalar.c:970
+#: scalar.c:972
 msgid "-C requires a <directory>"
 msgstr ""
 
-#: scalar.c:972
+#: scalar.c:974
 #, c-format
 msgid "could not change to '%s'"
 msgstr ""
 
-#: scalar.c:978
+#: scalar.c:980
 msgid "-c requires a <key>=<value> argument"
 msgstr ""
 
-#: scalar.c:996
+#: scalar.c:998
 msgid ""
 "scalar [-C <directory>] [-c <key>=<value>] <command> [<options>]\n"
 "\n"
@@ -25585,32 +25606,32 @@ msgstr ""
 msgid "attempt to reinitialize repository with different hash"
 msgstr ""
 
-#: setup.c:2530
+#: setup.c:2532
 msgid ""
 "attempt to reinitialize repository with different reference storage format"
 msgstr ""
 
-#: setup.c:2559 setup.c:2562
+#: setup.c:2563 setup.c:2566
 #, c-format
 msgid "%s already exists"
 msgstr ""
 
-#: setup.c:2627
+#: setup.c:2631
 #, c-format
 msgid "Reinitialized existing shared Git repository in %s%s\n"
 msgstr ""
 
-#: setup.c:2628
+#: setup.c:2632
 #, c-format
 msgid "Reinitialized existing Git repository in %s%s\n"
 msgstr ""
 
-#: setup.c:2632
+#: setup.c:2636
 #, c-format
 msgid "Initialized empty shared Git repository in %s%s\n"
 msgstr ""
 
-#: setup.c:2633
+#: setup.c:2637
 #, c-format
 msgid "Initialized empty Git repository in %s%s\n"
 msgstr ""
@@ -26149,7 +26170,7 @@ msgstr ""
 msgid "can't connect to subservice %s"
 msgstr ""
 
-#: transport-helper.c:717 transport.c:487
+#: transport-helper.c:717 transport.c:488
 msgid "--negotiate-only requires protocol v2"
 msgstr ""
 
@@ -26280,48 +26301,48 @@ msgstr ""
 msgid "could not read bundle '%s'"
 msgstr ""
 
-#: transport.c:265
+#: transport.c:266
 #, c-format
 msgid "transport: invalid depth option '%s'"
 msgstr ""
 
-#: transport.c:324
+#: transport.c:325
 msgid "see protocol.version in 'git help config' for more details"
 msgstr ""
 
-#: transport.c:325
+#: transport.c:326
 msgid "server options require protocol version 2 or later"
 msgstr ""
 
-#: transport.c:490
+#: transport.c:491
 msgid "server does not support wait-for-done"
 msgstr ""
 
-#: transport.c:855
+#: transport.c:856
 msgid "could not parse transport.color.* config"
 msgstr ""
 
-#: transport.c:931
+#: transport.c:932
 msgid "support for protocol v2 not implemented yet"
 msgstr ""
 
-#: transport.c:1149
+#: transport.c:1150
 #, c-format
 msgid "transport '%s' not allowed"
 msgstr ""
 
-#: transport.c:1201
+#: transport.c:1202
 msgid "git-over-rsync is no longer supported"
 msgstr ""
 
-#: transport.c:1304
+#: transport.c:1305
 #, c-format
 msgid ""
 "The following submodule paths contain changes that can\n"
 "not be found on any remote:\n"
 msgstr ""
 
-#: transport.c:1308
+#: transport.c:1309
 #, c-format
 msgid ""
 "\n"
@@ -26337,23 +26358,23 @@ msgid ""
 "\n"
 msgstr ""
 
-#: transport.c:1316
+#: transport.c:1317
 msgid "Aborting."
 msgstr ""
 
-#: transport.c:1467
+#: transport.c:1468
 msgid "failed to push all needed submodules"
 msgstr ""
 
-#: transport.c:1612
+#: transport.c:1613
 msgid "bundle-uri operation not supported by protocol"
 msgstr ""
 
-#: transport.c:1615
+#: transport.c:1616
 msgid "could not retrieve server-advertised bundle-uri list"
 msgstr ""
 
-#: transport.c:1638
+#: transport.c:1639
 msgid "operation not supported by protocol"
 msgstr ""
 
