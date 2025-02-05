@@ -1,0 +1,26 @@
+
+
+#################### Wed, 05 Feb 2025 23:57:39 +0000 ####################
+
+--- po/git.pot.old	2025-02-05 23:57:39.366257316 +0000
++++ po/git.pot.new	2025-02-05 23:57:39.444257239 +0000
+@@ -11522,10 +11522,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "failed to %s the following remotes: "
+-msgstr ""
+-
+-#, c-format
+ msgid "failed to add packfile '%s'"
+ msgstr ""
+ 
+@@ -11855,7 +11851,7 @@
+ msgid "failed to parse tree"
+ msgstr ""
+ 
+-msgid "failed to prefetch some remotes"
++msgid "failed to prefetch remotes"
+ msgstr ""
+ 
+ msgid "failed to push all needed submodules"
