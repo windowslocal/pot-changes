@@ -1,0 +1,56 @@
+
+
+#################### Thu, 06 Feb 2025 22:57:26 +0000 ####################
+
+--- po/git.pot.old	2025-02-06 22:57:26.125049280 +0000
++++ po/git.pot.new	2025-02-06 22:57:26.204049244 +0000
+@@ -8988,6 +8988,9 @@
+ msgid "check out all files in the index"
+ msgstr ""
+ 
++msgid "check reference database consistency"
++msgstr ""
++
+ #, c-format
+ msgid "checking out '%s' failed. Try 'git bisect start <valid-branch>'."
+ msgstr ""
+@@ -12902,7 +12905,7 @@
+ "git fsck [--tags] [--root] [--unreachable] [--cache] [--no-reflogs]\n"
+ "         [--[no-]full] [--strict] [--verbose] [--lost-found]\n"
+ "         [--[no-]dangling] [--[no-]progress] [--connectivity-only]\n"
+-"         [--[no-]name-objects] [<object>...]"
++"         [--[no-]name-objects] [--[no-]references] [<object>...]"
+ msgstr ""
+ 
+ msgid "git fsmonitor--daemon run [<options>]"
+@@ -14793,10 +14796,10 @@
+ msgid "look for differences that change the number of occurrences of the specified object"
+ msgstr ""
+ 
+-msgid "look for differences that change the number of occurrences of the specified regex"
++msgid "look for differences that change the number of occurrences of the specified string"
+ msgstr ""
+ 
+-msgid "look for differences that change the number of occurrences of the specified string"
++msgid "look for differences where a patch contains the specified regex"
+ msgstr ""
+ 
+ msgid "lookup config vars"
+@@ -18237,7 +18240,7 @@
+ msgid "show aliases in --all"
+ msgstr ""
+ 
+-msgid "show all changes in the changeset with -S or -G"
++msgid "show all changes in the changeset with -S/--patch-modifies or -G/--patch-grep"
+ msgstr ""
+ 
+ msgid "show author email instead of name (Default: off)"
+@@ -19379,7 +19382,7 @@
+ msgid "treat 'git add -N' entries as real in the index"
+ msgstr ""
+ 
+-msgid "treat <string> in -S as extended POSIX regular expression"
++msgid "treat <string> in -S/--patch-modifies as extended POSIX regular expression"
+ msgstr ""
+ 
+ msgid "treat all files as text"
