@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-02-07 19:58+0000\n"
+"POT-Creation-Date: 2025-02-10 19:58+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -839,7 +839,7 @@ msgstr ""
 #: builtin/clean.c:968 builtin/clone.c:1024 builtin/clone.c:1029
 #: builtin/commit.c:364 builtin/commit.c:367 builtin/commit.c:1244
 #: builtin/commit.c:1300 builtin/commit.c:1317 builtin/describe.c:626
-#: builtin/diff-tree.c:167 builtin/difftool.c:755 builtin/fast-export.c:1276
+#: builtin/diff-tree.c:167 builtin/difftool.c:772 builtin/fast-export.c:1276
 #: builtin/fetch.c:2436 builtin/fetch.c:2463 builtin/fetch.c:2477
 #: builtin/fetch.c:2482 builtin/help.c:621 builtin/index-pack.c:2018
 #: builtin/init-db.c:116 builtin/log.c:2252 builtin/log.c:2254
@@ -848,7 +848,7 @@ msgstr ""
 #: builtin/pack-objects.c:4570 builtin/pack-objects.c:4610
 #: builtin/rebase.c:1287 builtin/rebase.c:1289 builtin/rebase.c:1298
 #: builtin/repack.c:1319 builtin/replay.c:328 builtin/reset.c:388
-#: builtin/reset.c:425 builtin/rev-list.c:587 builtin/rev-parse.c:949
+#: builtin/reset.c:425 builtin/rev-list.c:644 builtin/rev-parse.c:949
 #: builtin/rev-parse.c:956 builtin/rev-parse.c:967 builtin/show-branch.c:734
 #: builtin/show-branch.c:739 builtin/stash.c:1815 builtin/stash.c:1818
 #: builtin/submodule--helper.c:1222 builtin/submodule--helper.c:3111
@@ -1663,7 +1663,7 @@ msgstr ""
 msgid "retrieve the archive from remote repository <repo>"
 msgstr ""
 
-#: archive.c:675 builtin/archive.c:91 builtin/difftool.c:730
+#: archive.c:675 builtin/archive.c:91 builtin/difftool.c:746
 #: builtin/notes.c:587
 msgid "command"
 msgstr ""
@@ -2728,6 +2728,22 @@ msgstr ""
 
 #: builtin/archive.c:64
 msgid "git archive: expected a flush"
+msgstr ""
+
+#: builtin/backfill.c:29
+msgid "git backfill [--min-batch-size=<n>] [--[no-]sparse]"
+msgstr ""
+
+#: builtin/backfill.c:91
+msgid "problem loading sparse-checkout"
+msgstr ""
+
+#: builtin/backfill.c:127
+msgid "Minimum number of objects to request at a time"
+msgstr ""
+
+#: builtin/backfill.c:129
+msgid "Restrict the missing objects to the current sparse-checkout"
 msgstr ""
 
 #: builtin/bisect.c:30
@@ -5130,7 +5146,7 @@ msgstr ""
 msgid "working tree '%s' already exists."
 msgstr ""
 
-#: builtin/clone.c:1092 builtin/clone.c:1113 builtin/difftool.c:271
+#: builtin/clone.c:1092 builtin/clone.c:1113 builtin/difftool.c:281
 #: builtin/log.c:2319 builtin/worktree.c:463 builtin/worktree.c:495
 #, c-format
 msgid "could not create leading directories of '%s'"
@@ -6685,110 +6701,110 @@ msgstr ""
 msgid "%s...%s: multiple merge bases, using %s"
 msgstr ""
 
-#: builtin/difftool.c:42
+#: builtin/difftool.c:38
 msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
 msgstr ""
 
-#: builtin/difftool.c:302
+#: builtin/difftool.c:314
 #, c-format
 msgid "could not read symlink %s"
 msgstr ""
 
-#: builtin/difftool.c:304
+#: builtin/difftool.c:316
 #, c-format
 msgid "could not read symlink file %s"
 msgstr ""
 
-#: builtin/difftool.c:313
+#: builtin/difftool.c:324
 #, c-format
 msgid "could not read object %s for symlink %s"
 msgstr ""
 
-#: builtin/difftool.c:437
+#: builtin/difftool.c:450
 msgid ""
 "combined diff formats ('-c' and '--cc') are not supported in\n"
 "directory diff mode ('-d' and '--dir-diff')."
 msgstr ""
 
-#: builtin/difftool.c:640
+#: builtin/difftool.c:652
 #, c-format
 msgid "both files modified: '%s' and '%s'."
 msgstr ""
 
-#: builtin/difftool.c:642
+#: builtin/difftool.c:654
 msgid "working tree file has been left."
 msgstr ""
 
-#: builtin/difftool.c:647 sequencer.c:2417 sequencer.c:3793 sequencer.c:3797
+#: builtin/difftool.c:659 sequencer.c:2417 sequencer.c:3793 sequencer.c:3797
 #, c-format
 msgid "could not copy '%s' to '%s'"
 msgstr ""
 
-#: builtin/difftool.c:653
+#: builtin/difftool.c:665
 #, c-format
 msgid "temporary files exist in '%s'."
 msgstr ""
 
-#: builtin/difftool.c:654
+#: builtin/difftool.c:666
 msgid "you may want to cleanup or recover these."
 msgstr ""
 
-#: builtin/difftool.c:659
+#: builtin/difftool.c:671
 #, c-format
 msgid "failed: %d"
 msgstr ""
 
-#: builtin/difftool.c:712
+#: builtin/difftool.c:728
 msgid "use `diff.guitool` instead of `diff.tool`"
 msgstr ""
 
-#: builtin/difftool.c:714
+#: builtin/difftool.c:730
 msgid "perform a full-directory diff"
 msgstr ""
 
-#: builtin/difftool.c:716
+#: builtin/difftool.c:732
 msgid "do not prompt before launching a diff tool"
 msgstr ""
 
-#: builtin/difftool.c:721
+#: builtin/difftool.c:737
 msgid "use symlinks in dir-diff mode"
 msgstr ""
 
-#: builtin/difftool.c:722
+#: builtin/difftool.c:738
 msgid "tool"
 msgstr ""
 
-#: builtin/difftool.c:723
+#: builtin/difftool.c:739
 msgid "use the specified diff tool"
 msgstr ""
 
-#: builtin/difftool.c:725
+#: builtin/difftool.c:741
 msgid "print a list of diff tools that may be used with `--tool`"
 msgstr ""
 
-#: builtin/difftool.c:728
+#: builtin/difftool.c:744
 msgid ""
 "make 'git-difftool' exit when an invoked diff tool returns a non-zero exit "
 "code"
 msgstr ""
 
-#: builtin/difftool.c:731
+#: builtin/difftool.c:747
 msgid "specify a custom command for viewing diffs"
 msgstr ""
 
-#: builtin/difftool.c:732
+#: builtin/difftool.c:748
 msgid "passed to `diff`"
 msgstr ""
 
-#: builtin/difftool.c:748
+#: builtin/difftool.c:765
 msgid "difftool requires worktree or --no-index"
 msgstr ""
 
-#: builtin/difftool.c:775
+#: builtin/difftool.c:792
 msgid "no <tool> given for --tool=<tool>"
 msgstr ""
 
-#: builtin/difftool.c:782
+#: builtin/difftool.c:799
 msgid "no <cmd> given for --extcmd=<cmd>"
 msgstr ""
 
@@ -13942,21 +13958,21 @@ msgstr ""
 msgid "Could not write new index file."
 msgstr ""
 
-#: builtin/rev-list.c:100
+#: builtin/rev-list.c:109
 #, c-format
 msgid "unable to get disk usage of %s"
 msgstr ""
 
-#: builtin/rev-list.c:683
+#: builtin/rev-list.c:740
 #, c-format
 msgid "invalid value for '%s': '%s', the only allowed format is '%s'"
 msgstr ""
 
-#: builtin/rev-list.c:723
+#: builtin/rev-list.c:780
 msgid "rev-list does not support display of notes"
 msgstr ""
 
-#: builtin/rev-list.c:728
+#: builtin/rev-list.c:785
 #, c-format
 msgid "marked counting and '%s' cannot be used together"
 msgstr ""
@@ -16821,722 +16837,726 @@ msgid "Create an archive of files from a named tree"
 msgstr ""
 
 #: command-list.h:60
-msgid "Use binary search to find the commit that introduced a bug"
+msgid "Download missing objects in a partial clone"
 msgstr ""
 
 #: command-list.h:61
-msgid "Show what revision and author last modified each line of a file"
+msgid "Use binary search to find the commit that introduced a bug"
 msgstr ""
 
 #: command-list.h:62
-msgid "List, create, or delete branches"
+msgid "Show what revision and author last modified each line of a file"
 msgstr ""
 
 #: command-list.h:63
-msgid "Collect information for user to file a bug report"
+msgid "List, create, or delete branches"
 msgstr ""
 
 #: command-list.h:64
-msgid "Move objects and refs by archive"
+msgid "Collect information for user to file a bug report"
 msgstr ""
 
 #: command-list.h:65
-msgid "Provide contents or details of repository objects"
+msgid "Move objects and refs by archive"
 msgstr ""
 
 #: command-list.h:66
-msgid "Display gitattributes information"
+msgid "Provide contents or details of repository objects"
 msgstr ""
 
 #: command-list.h:67
-msgid "Debug gitignore / exclude files"
+msgid "Display gitattributes information"
 msgstr ""
 
 #: command-list.h:68
-msgid "Show canonical names and email addresses of contacts"
+msgid "Debug gitignore / exclude files"
 msgstr ""
 
 #: command-list.h:69
-msgid "Ensures that a reference name is well formed"
+msgid "Show canonical names and email addresses of contacts"
 msgstr ""
 
 #: command-list.h:70
-msgid "Switch branches or restore working tree files"
+msgid "Ensures that a reference name is well formed"
 msgstr ""
 
 #: command-list.h:71
-msgid "Copy files from the index to the working tree"
+msgid "Switch branches or restore working tree files"
 msgstr ""
 
 #: command-list.h:72
-msgid "Find commits yet to be applied to upstream"
+msgid "Copy files from the index to the working tree"
 msgstr ""
 
 #: command-list.h:73
-msgid "Apply the changes introduced by some existing commits"
+msgid "Find commits yet to be applied to upstream"
 msgstr ""
 
 #: command-list.h:74
-msgid "Graphical alternative to git-commit"
+msgid "Apply the changes introduced by some existing commits"
 msgstr ""
 
 #: command-list.h:75
-msgid "Remove untracked files from the working tree"
+msgid "Graphical alternative to git-commit"
 msgstr ""
 
 #: command-list.h:76
-msgid "Clone a repository into a new directory"
+msgid "Remove untracked files from the working tree"
 msgstr ""
 
 #: command-list.h:77
-msgid "Display data in columns"
+msgid "Clone a repository into a new directory"
 msgstr ""
 
 #: command-list.h:78
-msgid "Record changes to the repository"
+msgid "Display data in columns"
 msgstr ""
 
 #: command-list.h:79
-msgid "Write and verify Git commit-graph files"
+msgid "Record changes to the repository"
 msgstr ""
 
 #: command-list.h:80
-msgid "Create a new commit object"
+msgid "Write and verify Git commit-graph files"
 msgstr ""
 
 #: command-list.h:81
-msgid "Get and set repository or global options"
+msgid "Create a new commit object"
 msgstr ""
 
 #: command-list.h:82
-msgid "Count unpacked number of objects and their disk consumption"
+msgid "Get and set repository or global options"
 msgstr ""
 
 #: command-list.h:83
-msgid "Retrieve and store user credentials"
+msgid "Count unpacked number of objects and their disk consumption"
 msgstr ""
 
 #: command-list.h:84
-msgid "Helper to temporarily store passwords in memory"
+msgid "Retrieve and store user credentials"
 msgstr ""
 
 #: command-list.h:85
-msgid "Helper to store credentials on disk"
+msgid "Helper to temporarily store passwords in memory"
 msgstr ""
 
 #: command-list.h:86
-msgid "Export a single commit to a CVS checkout"
+msgid "Helper to store credentials on disk"
 msgstr ""
 
 #: command-list.h:87
-msgid "Salvage your data out of another SCM people love to hate"
+msgid "Export a single commit to a CVS checkout"
 msgstr ""
 
 #: command-list.h:88
-msgid "A CVS server emulator for Git"
+msgid "Salvage your data out of another SCM people love to hate"
 msgstr ""
 
 #: command-list.h:89
-msgid "A really simple server for Git repositories"
+msgid "A CVS server emulator for Git"
 msgstr ""
 
 #: command-list.h:90
-msgid "Give an object a human readable name based on an available ref"
+msgid "A really simple server for Git repositories"
 msgstr ""
 
 #: command-list.h:91
-msgid "Generate a zip archive of diagnostic information"
+msgid "Give an object a human readable name based on an available ref"
 msgstr ""
 
 #: command-list.h:92
-msgid "Show changes between commits, commit and working tree, etc"
+msgid "Generate a zip archive of diagnostic information"
 msgstr ""
 
 #: command-list.h:93
-msgid "Compares files in the working tree and the index"
+msgid "Show changes between commits, commit and working tree, etc"
 msgstr ""
 
 #: command-list.h:94
-msgid "Compare a tree to the working tree or index"
+msgid "Compares files in the working tree and the index"
 msgstr ""
 
 #: command-list.h:95
-msgid "Compares the content and mode of blobs found via two tree objects"
+msgid "Compare a tree to the working tree or index"
 msgstr ""
 
 #: command-list.h:96
-msgid "Show changes using common diff tools"
+msgid "Compares the content and mode of blobs found via two tree objects"
 msgstr ""
 
 #: command-list.h:97
-msgid "Git data exporter"
+msgid "Show changes using common diff tools"
 msgstr ""
 
 #: command-list.h:98
-msgid "Backend for fast Git data importers"
+msgid "Git data exporter"
 msgstr ""
 
 #: command-list.h:99
-msgid "Download objects and refs from another repository"
+msgid "Backend for fast Git data importers"
 msgstr ""
 
 #: command-list.h:100
-msgid "Receive missing objects from another repository"
+msgid "Download objects and refs from another repository"
 msgstr ""
 
 #: command-list.h:101
-msgid "Rewrite branches"
+msgid "Receive missing objects from another repository"
 msgstr ""
 
 #: command-list.h:102
-msgid "Produce a merge commit message"
+msgid "Rewrite branches"
 msgstr ""
 
 #: command-list.h:103
-msgid "Output information on each ref"
+msgid "Produce a merge commit message"
 msgstr ""
 
 #: command-list.h:104
-msgid "Run a Git command on a list of repositories"
+msgid "Output information on each ref"
 msgstr ""
 
 #: command-list.h:105
-msgid "Prepare patches for e-mail submission"
+msgid "Run a Git command on a list of repositories"
 msgstr ""
 
 #: command-list.h:106
-msgid "Verifies the connectivity and validity of the objects in the database"
+msgid "Prepare patches for e-mail submission"
 msgstr ""
 
 #: command-list.h:107
-msgid "Cleanup unnecessary files and optimize the local repository"
+msgid "Verifies the connectivity and validity of the objects in the database"
 msgstr ""
 
 #: command-list.h:108
-msgid "Extract commit ID from an archive created using git-archive"
+msgid "Cleanup unnecessary files and optimize the local repository"
 msgstr ""
 
 #: command-list.h:109
-msgid "Print lines matching a pattern"
+msgid "Extract commit ID from an archive created using git-archive"
 msgstr ""
 
 #: command-list.h:110
-msgid "A portable graphical interface to Git"
+msgid "Print lines matching a pattern"
 msgstr ""
 
 #: command-list.h:111
-msgid "Compute object ID and optionally create an object from a file"
+msgid "A portable graphical interface to Git"
 msgstr ""
 
 #: command-list.h:112
-msgid "Display help information about Git"
+msgid "Compute object ID and optionally create an object from a file"
 msgstr ""
 
 #: command-list.h:113
-msgid "Run git hooks"
+msgid "Display help information about Git"
 msgstr ""
 
 #: command-list.h:114
-msgid "Server side implementation of Git over HTTP"
+msgid "Run git hooks"
 msgstr ""
 
 #: command-list.h:115
-msgid "Download from a remote Git repository via HTTP"
+msgid "Server side implementation of Git over HTTP"
 msgstr ""
 
 #: command-list.h:116
-msgid "Push objects over HTTP/DAV to another repository"
+msgid "Download from a remote Git repository via HTTP"
 msgstr ""
 
 #: command-list.h:117
-msgid "Send a collection of patches from stdin to an IMAP folder"
+msgid "Push objects over HTTP/DAV to another repository"
 msgstr ""
 
 #: command-list.h:118
-msgid "Build pack index file for an existing packed archive"
+msgid "Send a collection of patches from stdin to an IMAP folder"
 msgstr ""
 
 #: command-list.h:119
-msgid "Create an empty Git repository or reinitialize an existing one"
+msgid "Build pack index file for an existing packed archive"
 msgstr ""
 
 #: command-list.h:120
-msgid "Instantly browse your working repository in gitweb"
+msgid "Create an empty Git repository or reinitialize an existing one"
 msgstr ""
 
 #: command-list.h:121
-msgid "Add or parse structured information in commit messages"
+msgid "Instantly browse your working repository in gitweb"
 msgstr ""
 
 #: command-list.h:122
-msgid "Show commit logs"
+msgid "Add or parse structured information in commit messages"
 msgstr ""
 
 #: command-list.h:123
-msgid "Show information about files in the index and the working tree"
+msgid "Show commit logs"
 msgstr ""
 
 #: command-list.h:124
-msgid "List references in a remote repository"
+msgid "Show information about files in the index and the working tree"
 msgstr ""
 
 #: command-list.h:125
-msgid "List the contents of a tree object"
+msgid "List references in a remote repository"
 msgstr ""
 
 #: command-list.h:126
-msgid "Extracts patch and authorship from a single e-mail message"
+msgid "List the contents of a tree object"
 msgstr ""
 
 #: command-list.h:127
-msgid "Simple UNIX mbox splitter program"
+msgid "Extracts patch and authorship from a single e-mail message"
 msgstr ""
 
 #: command-list.h:128
-msgid "Run tasks to optimize Git repository data"
+msgid "Simple UNIX mbox splitter program"
 msgstr ""
 
 #: command-list.h:129
-msgid "Join two or more development histories together"
+msgid "Run tasks to optimize Git repository data"
 msgstr ""
 
 #: command-list.h:130
-msgid "Find as good common ancestors as possible for a merge"
+msgid "Join two or more development histories together"
 msgstr ""
 
 #: command-list.h:131
-msgid "Run a three-way file merge"
+msgid "Find as good common ancestors as possible for a merge"
 msgstr ""
 
 #: command-list.h:132
-msgid "Run a merge for files needing merging"
+msgid "Run a three-way file merge"
 msgstr ""
 
 #: command-list.h:133
-msgid "The standard helper program to use with git-merge-index"
+msgid "Run a merge for files needing merging"
 msgstr ""
 
 #: command-list.h:134
-msgid "Perform merge without touching index or working tree"
+msgid "The standard helper program to use with git-merge-index"
 msgstr ""
 
 #: command-list.h:135
-msgid "Run merge conflict resolution tools to resolve merge conflicts"
+msgid "Perform merge without touching index or working tree"
 msgstr ""
 
 #: command-list.h:136
-msgid "Creates a tag object with extra validation"
+msgid "Run merge conflict resolution tools to resolve merge conflicts"
 msgstr ""
 
 #: command-list.h:137
-msgid "Build a tree-object from ls-tree formatted text"
+msgid "Creates a tag object with extra validation"
 msgstr ""
 
 #: command-list.h:138
-msgid "Write and verify multi-pack-indexes"
+msgid "Build a tree-object from ls-tree formatted text"
 msgstr ""
 
 #: command-list.h:139
-msgid "Move or rename a file, a directory, or a symlink"
+msgid "Write and verify multi-pack-indexes"
 msgstr ""
 
 #: command-list.h:140
-msgid "Find symbolic names for given revs"
+msgid "Move or rename a file, a directory, or a symlink"
 msgstr ""
 
 #: command-list.h:141
-msgid "Add or inspect object notes"
+msgid "Find symbolic names for given revs"
 msgstr ""
 
 #: command-list.h:142
-msgid "Import from and submit to Perforce repositories"
+msgid "Add or inspect object notes"
 msgstr ""
 
 #: command-list.h:143
-msgid "Create a packed archive of objects"
+msgid "Import from and submit to Perforce repositories"
 msgstr ""
 
 #: command-list.h:144
-msgid "Find redundant pack files"
+msgid "Create a packed archive of objects"
 msgstr ""
 
 #: command-list.h:145
-msgid "Pack heads and tags for efficient repository access"
+msgid "Find redundant pack files"
 msgstr ""
 
 #: command-list.h:146
-msgid "Compute unique ID for a patch"
+msgid "Pack heads and tags for efficient repository access"
 msgstr ""
 
 #: command-list.h:147
-msgid "Prune all unreachable objects from the object database"
+msgid "Compute unique ID for a patch"
 msgstr ""
 
 #: command-list.h:148
-msgid "Remove extra objects that are already in pack files"
+msgid "Prune all unreachable objects from the object database"
 msgstr ""
 
 #: command-list.h:149
-msgid "Fetch from and integrate with another repository or a local branch"
+msgid "Remove extra objects that are already in pack files"
 msgstr ""
 
 #: command-list.h:150
-msgid "Update remote refs along with associated objects"
+msgid "Fetch from and integrate with another repository or a local branch"
 msgstr ""
 
 #: command-list.h:151
-msgid "Applies a quilt patchset onto the current branch"
+msgid "Update remote refs along with associated objects"
 msgstr ""
 
 #: command-list.h:152
-msgid "Compare two commit ranges (e.g. two versions of a branch)"
+msgid "Applies a quilt patchset onto the current branch"
 msgstr ""
 
 #: command-list.h:153
-msgid "Reads tree information into the index"
+msgid "Compare two commit ranges (e.g. two versions of a branch)"
 msgstr ""
 
 #: command-list.h:154
-msgid "Reapply commits on top of another base tip"
+msgid "Reads tree information into the index"
 msgstr ""
 
 #: command-list.h:155
-msgid "Receive what is pushed into the repository"
+msgid "Reapply commits on top of another base tip"
 msgstr ""
 
 #: command-list.h:156
-msgid "Manage reflog information"
+msgid "Receive what is pushed into the repository"
 msgstr ""
 
 #: command-list.h:157
-msgid "Low-level access to refs"
+msgid "Manage reflog information"
 msgstr ""
 
 #: command-list.h:158
-msgid "Manage set of tracked repositories"
+msgid "Low-level access to refs"
 msgstr ""
 
 #: command-list.h:159
-msgid "Pack unpacked objects in a repository"
+msgid "Manage set of tracked repositories"
 msgstr ""
 
 #: command-list.h:160
-msgid "Create, list, delete refs to replace objects"
+msgid "Pack unpacked objects in a repository"
 msgstr ""
 
 #: command-list.h:161
-msgid "EXPERIMENTAL: Replay commits on a new base, works with bare repos too"
+msgid "Create, list, delete refs to replace objects"
 msgstr ""
 
 #: command-list.h:162
-msgid "Generates a summary of pending changes"
+msgid "EXPERIMENTAL: Replay commits on a new base, works with bare repos too"
 msgstr ""
 
 #: command-list.h:163
-msgid "Reuse recorded resolution of conflicted merges"
+msgid "Generates a summary of pending changes"
 msgstr ""
 
 #: command-list.h:164
-msgid "Reset current HEAD to the specified state"
+msgid "Reuse recorded resolution of conflicted merges"
 msgstr ""
 
 #: command-list.h:165
-msgid "Restore working tree files"
+msgid "Reset current HEAD to the specified state"
 msgstr ""
 
 #: command-list.h:166
-msgid "Lists commit objects in reverse chronological order"
+msgid "Restore working tree files"
 msgstr ""
 
 #: command-list.h:167
-msgid "Pick out and massage parameters"
+msgid "Lists commit objects in reverse chronological order"
 msgstr ""
 
 #: command-list.h:168
-msgid "Revert some existing commits"
+msgid "Pick out and massage parameters"
 msgstr ""
 
 #: command-list.h:169
-msgid "Remove files from the working tree and from the index"
+msgid "Revert some existing commits"
 msgstr ""
 
 #: command-list.h:170
-msgid "Send a collection of patches as emails"
+msgid "Remove files from the working tree and from the index"
 msgstr ""
 
 #: command-list.h:171
-msgid "Push objects over Git protocol to another repository"
+msgid "Send a collection of patches as emails"
 msgstr ""
 
 #: command-list.h:172
-msgid "Git's i18n setup code for shell scripts"
+msgid "Push objects over Git protocol to another repository"
 msgstr ""
 
 #: command-list.h:173
-msgid "Common Git shell script setup code"
+msgid "Git's i18n setup code for shell scripts"
 msgstr ""
 
 #: command-list.h:174
-msgid "Restricted login shell for Git-only SSH access"
+msgid "Common Git shell script setup code"
 msgstr ""
 
 #: command-list.h:175
-msgid "Summarize 'git log' output"
+msgid "Restricted login shell for Git-only SSH access"
 msgstr ""
 
 #: command-list.h:176
-msgid "Show various types of objects"
+msgid "Summarize 'git log' output"
 msgstr ""
 
 #: command-list.h:177
-msgid "Show branches and their commits"
+msgid "Show various types of objects"
 msgstr ""
 
 #: command-list.h:178
-msgid "Show packed archive index"
+msgid "Show branches and their commits"
 msgstr ""
 
 #: command-list.h:179
-msgid "List references in a local repository"
+msgid "Show packed archive index"
 msgstr ""
 
 #: command-list.h:180
-msgid "Reduce your working tree to a subset of tracked files"
+msgid "List references in a local repository"
 msgstr ""
 
 #: command-list.h:181
-msgid "Add file contents to the staging area"
+msgid "Reduce your working tree to a subset of tracked files"
 msgstr ""
 
 #: command-list.h:182
-msgid "Stash the changes in a dirty working directory away"
+msgid "Add file contents to the staging area"
 msgstr ""
 
 #: command-list.h:183
-msgid "Show the working tree status"
+msgid "Stash the changes in a dirty working directory away"
 msgstr ""
 
 #: command-list.h:184
-msgid "Remove unnecessary whitespace"
+msgid "Show the working tree status"
 msgstr ""
 
 #: command-list.h:185
-msgid "Initialize, update or inspect submodules"
+msgid "Remove unnecessary whitespace"
 msgstr ""
 
 #: command-list.h:186
-msgid "Bidirectional operation between a Subversion repository and Git"
+msgid "Initialize, update or inspect submodules"
 msgstr ""
 
 #: command-list.h:187
-msgid "Switch branches"
+msgid "Bidirectional operation between a Subversion repository and Git"
 msgstr ""
 
 #: command-list.h:188
-msgid "Read, modify and delete symbolic refs"
+msgid "Switch branches"
 msgstr ""
 
 #: command-list.h:189
-msgid "Create, list, delete or verify a tag object signed with GPG"
+msgid "Read, modify and delete symbolic refs"
 msgstr ""
 
 #: command-list.h:190
-msgid "Creates a temporary file with a blob's contents"
+msgid "Create, list, delete or verify a tag object signed with GPG"
 msgstr ""
 
 #: command-list.h:191
-msgid "Unpack objects from a packed archive"
+msgid "Creates a temporary file with a blob's contents"
 msgstr ""
 
 #: command-list.h:192
-msgid "Register file contents in the working tree to the index"
+msgid "Unpack objects from a packed archive"
 msgstr ""
 
 #: command-list.h:193
-msgid "Update the object name stored in a ref safely"
+msgid "Register file contents in the working tree to the index"
 msgstr ""
 
 #: command-list.h:194
-msgid "Update auxiliary info file to help dumb servers"
+msgid "Update the object name stored in a ref safely"
 msgstr ""
 
 #: command-list.h:195
-msgid "Send archive back to git-archive"
+msgid "Update auxiliary info file to help dumb servers"
 msgstr ""
 
 #: command-list.h:196
-msgid "Send objects packed back to git-fetch-pack"
+msgid "Send archive back to git-archive"
 msgstr ""
 
 #: command-list.h:197
-msgid "Show a Git logical variable"
+msgid "Send objects packed back to git-fetch-pack"
 msgstr ""
 
 #: command-list.h:198
-msgid "Check the GPG signature of commits"
+msgid "Show a Git logical variable"
 msgstr ""
 
 #: command-list.h:199
-msgid "Validate packed Git archive files"
+msgid "Check the GPG signature of commits"
 msgstr ""
 
 #: command-list.h:200
-msgid "Check the GPG signature of tags"
+msgid "Validate packed Git archive files"
 msgstr ""
 
 #: command-list.h:201
-msgid "Display version information about Git"
+msgid "Check the GPG signature of tags"
 msgstr ""
 
 #: command-list.h:202
-msgid "Show logs with differences each commit introduces"
+msgid "Display version information about Git"
 msgstr ""
 
 #: command-list.h:203
-msgid "Manage multiple working trees"
+msgid "Show logs with differences each commit introduces"
 msgstr ""
 
 #: command-list.h:204
-msgid "Create a tree object from the current index"
+msgid "Manage multiple working trees"
 msgstr ""
 
 #: command-list.h:205
-msgid "Defining attributes per path"
+msgid "Create a tree object from the current index"
 msgstr ""
 
 #: command-list.h:206
-msgid "Git command-line interface and conventions"
+msgid "Defining attributes per path"
 msgstr ""
 
 #: command-list.h:207
-msgid "A Git core tutorial for developers"
+msgid "Git command-line interface and conventions"
 msgstr ""
 
 #: command-list.h:208
-msgid "Providing usernames and passwords to Git"
+msgid "A Git core tutorial for developers"
 msgstr ""
 
 #: command-list.h:209
-msgid "Git for CVS users"
+msgid "Providing usernames and passwords to Git"
 msgstr ""
 
 #: command-list.h:210
-msgid "Tweaking diff output"
+msgid "Git for CVS users"
 msgstr ""
 
 #: command-list.h:211
-msgid "A useful minimum set of commands for Everyday Git"
+msgid "Tweaking diff output"
 msgstr ""
 
 #: command-list.h:212
-msgid "Frequently asked questions about using Git"
+msgid "A useful minimum set of commands for Everyday Git"
 msgstr ""
 
 #: command-list.h:213
-msgid "The bundle file format"
+msgid "Frequently asked questions about using Git"
 msgstr ""
 
 #: command-list.h:214
-msgid "Chunk-based file formats"
+msgid "The bundle file format"
 msgstr ""
 
 #: command-list.h:215
-msgid "Git commit-graph format"
+msgid "Chunk-based file formats"
 msgstr ""
 
 #: command-list.h:216
-msgid "Git index format"
+msgid "Git commit-graph format"
 msgstr ""
 
 #: command-list.h:217
-msgid "Git pack format"
+msgid "Git index format"
 msgstr ""
 
 #: command-list.h:218
-msgid "Git cryptographic signature formats"
+msgid "Git pack format"
 msgstr ""
 
 #: command-list.h:219
-msgid "A Git Glossary"
+msgid "Git cryptographic signature formats"
 msgstr ""
 
 #: command-list.h:220
-msgid "Hooks used by Git"
+msgid "A Git Glossary"
 msgstr ""
 
 #: command-list.h:221
-msgid "Specifies intentionally untracked files to ignore"
+msgid "Hooks used by Git"
 msgstr ""
 
 #: command-list.h:222
-msgid "The Git repository browser"
+msgid "Specifies intentionally untracked files to ignore"
 msgstr ""
 
 #: command-list.h:223
-msgid "Map author/committer names and/or E-Mail addresses"
+msgid "The Git repository browser"
 msgstr ""
 
 #: command-list.h:224
-msgid "Defining submodule properties"
+msgid "Map author/committer names and/or E-Mail addresses"
 msgstr ""
 
 #: command-list.h:225
-msgid "Git namespaces"
+msgid "Defining submodule properties"
 msgstr ""
 
 #: command-list.h:226
-msgid "Protocol v0 and v1 capabilities"
+msgid "Git namespaces"
 msgstr ""
 
 #: command-list.h:227
-msgid "Things common to various protocols"
+msgid "Protocol v0 and v1 capabilities"
 msgstr ""
 
 #: command-list.h:228
-msgid "Git HTTP-based protocols"
+msgid "Things common to various protocols"
 msgstr ""
 
 #: command-list.h:229
-msgid "How packs are transferred over-the-wire"
+msgid "Git HTTP-based protocols"
 msgstr ""
 
 #: command-list.h:230
-msgid "Git Wire Protocol, Version 2"
+msgid "How packs are transferred over-the-wire"
 msgstr ""
 
 #: command-list.h:231
-msgid "Helper programs to interact with remote repositories"
+msgid "Git Wire Protocol, Version 2"
 msgstr ""
 
 #: command-list.h:232
-msgid "Git Repository Layout"
+msgid "Helper programs to interact with remote repositories"
 msgstr ""
 
 #: command-list.h:233
-msgid "Specifying revisions and ranges for Git"
+msgid "Git Repository Layout"
 msgstr ""
 
 #: command-list.h:234
-msgid "Mounting one repository inside another"
+msgid "Specifying revisions and ranges for Git"
 msgstr ""
 
 #: command-list.h:235
-msgid "A tutorial introduction to Git"
+msgid "Mounting one repository inside another"
 msgstr ""
 
 #: command-list.h:236
-msgid "A tutorial introduction to Git: part two"
+msgid "A tutorial introduction to Git"
 msgstr ""
 
 #: command-list.h:237
-msgid "Git web interface (web frontend to Git repositories)"
+msgid "A tutorial introduction to Git: part two"
 msgstr ""
 
 #: command-list.h:238
-msgid "An overview of recommended workflows with Git"
+msgid "Git web interface (web frontend to Git repositories)"
 msgstr ""
 
 #: command-list.h:239
+msgid "An overview of recommended workflows with Git"
+msgstr ""
+
+#: command-list.h:240
 msgid "A tool for managing large Git repositories"
 msgstr ""
 
@@ -18966,7 +18986,7 @@ msgstr ""
 msgid "could not archive missing directory '%s'"
 msgstr ""
 
-#: diagnose.c:144 dir.c:2541
+#: diagnose.c:144 dir.c:2537
 #, c-format
 msgid "could not open directory '%s'"
 msgstr ""
@@ -19057,7 +19077,7 @@ msgstr ""
 msgid "Unknown value for 'diff.submodule' config variable: '%s'"
 msgstr ""
 
-#: diff.c:472 diff.c:512 merge-recursive.c:3958 transport.c:1073
+#: diff.c:472 diff.c:512 merge-recursive.c:3958 transport.c:1072
 #, c-format
 msgid "unknown value for config '%s': %s"
 msgstr ""
@@ -19649,36 +19669,36 @@ msgstr ""
 msgid "disabling cone pattern matching"
 msgstr ""
 
-#: dir.c:1282
+#: dir.c:1278
 #, c-format
 msgid "cannot use %s as an exclude file"
 msgstr ""
 
-#: dir.c:2844
+#: dir.c:2840
 msgid "failed to get kernel name and information"
 msgstr ""
 
-#: dir.c:2981
+#: dir.c:2977
 msgid "untracked cache is disabled on this system or location"
 msgstr ""
 
-#: dir.c:3269 dir.c:3307
+#: dir.c:3265 dir.c:3303
 msgid ""
 "No directory name could be guessed.\n"
 "Please specify a directory on the command line"
 msgstr ""
 
-#: dir.c:4024
+#: dir.c:4020
 #, c-format
 msgid "index file corrupt in repo %s"
 msgstr ""
 
-#: dir.c:4071 dir.c:4076
+#: dir.c:4067 dir.c:4072
 #, c-format
 msgid "could not create directories for %s"
 msgstr ""
 
-#: dir.c:4105
+#: dir.c:4101
 #, c-format
 msgid "could not migrate git directory from '%s' to '%s'"
 msgstr ""
@@ -20114,29 +20134,29 @@ msgstr ""
 msgid "close failed on standard output"
 msgstr ""
 
-#: git.c:860
+#: git.c:861
 #, c-format
 msgid "alias loop detected: expansion of '%s' does not terminate:%s"
 msgstr ""
 
-#: git.c:913
+#: git.c:914
 #, c-format
 msgid "cannot handle %s as a builtin"
 msgstr ""
 
-#: git.c:924
+#: git.c:925
 #, c-format
 msgid ""
 "usage: %s\n"
 "\n"
 msgstr ""
 
-#: git.c:953
+#: git.c:954
 #, c-format
 msgid "expansion of alias '%s' failed; '%s' is not a git command\n"
 msgstr ""
 
-#: git.c:970
+#: git.c:971
 #, c-format
 msgid "failed to run command '%s': %s\n"
 msgstr ""
@@ -22498,22 +22518,22 @@ msgstr ""
 msgid "failed to parse %s"
 msgstr ""
 
-#: path-walk.c:118
+#: path-walk.c:119
 #, c-format
 msgid "failed to walk children of tree %s: not found"
 msgstr ""
 
-#: path-walk.c:155
+#: path-walk.c:156
 #, c-format
 msgid "failed to find object %s"
 msgstr ""
 
-#: path-walk.c:336
+#: path-walk.c:354
 #, c-format
 msgid "failed to find tag %s"
 msgstr ""
 
-#: path-walk.c:486
+#: path-walk.c:504
 msgid "failed to setup revision walk"
 msgstr ""
 
@@ -25950,28 +25970,32 @@ msgstr ""
 msgid "number of entries in the cache tree to invalidate (default 0)"
 msgstr ""
 
-#: t/helper/test-path-walk.c:16
+#: t/helper/test-path-walk.c:18
 msgid "test-tool path-walk <options> -- <revision-options>"
 msgstr ""
 
-#: t/helper/test-path-walk.c:74
+#: t/helper/test-path-walk.c:76
 msgid "toggle inclusion of blob objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:76
+#: t/helper/test-path-walk.c:78
 msgid "toggle inclusion of commit objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:78
+#: t/helper/test-path-walk.c:80
 msgid "toggle inclusion of tag objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:80
+#: t/helper/test-path-walk.c:82
 msgid "toggle inclusion of tree objects"
 msgstr ""
 
-#: t/helper/test-path-walk.c:82
+#: t/helper/test-path-walk.c:84
 msgid "toggle pruning of uninteresting paths"
+msgstr ""
+
+#: t/helper/test-path-walk.c:86
+msgid "read a pattern list over stdin"
 msgstr ""
 
 #: t/helper/test-reach.c:168
@@ -26326,23 +26350,23 @@ msgstr ""
 msgid "support for protocol v2 not implemented yet"
 msgstr ""
 
-#: transport.c:1150
+#: transport.c:1149
 #, c-format
 msgid "transport '%s' not allowed"
 msgstr ""
 
-#: transport.c:1202
+#: transport.c:1201
 msgid "git-over-rsync is no longer supported"
 msgstr ""
 
-#: transport.c:1305
+#: transport.c:1304
 #, c-format
 msgid ""
 "The following submodule paths contain changes that can\n"
 "not be found on any remote:\n"
 msgstr ""
 
-#: transport.c:1309
+#: transport.c:1308
 #, c-format
 msgid ""
 "\n"
@@ -26358,23 +26382,23 @@ msgid ""
 "\n"
 msgstr ""
 
-#: transport.c:1317
+#: transport.c:1316
 msgid "Aborting."
 msgstr ""
 
-#: transport.c:1468
+#: transport.c:1467
 msgid "failed to push all needed submodules"
 msgstr ""
 
-#: transport.c:1613
+#: transport.c:1612
 msgid "bundle-uri operation not supported by protocol"
 msgstr ""
 
-#: transport.c:1616
+#: transport.c:1615
 msgid "could not retrieve server-advertised bundle-uri list"
 msgstr ""
 
-#: transport.c:1639
+#: transport.c:1638
 msgid "operation not supported by protocol"
 msgstr ""
 
