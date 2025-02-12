@@ -24,3 +24,19 @@
  msgid "git difftool [<options>] [<commit> [<commit>]] [--] [<path>...]"
  msgstr ""
  
+
+
+#################### Wed, 12 Feb 2025 23:57:34 +0000 ####################
+
+--- po/git.pot.old	2025-02-12 23:57:34.171792046 +0000
++++ po/git.pot.new	2025-02-12 23:57:34.249792263 +0000
+@@ -18585,6 +18585,9 @@
+ msgid "skip files matching pattern"
+ msgstr ""
+ 
++msgid "skip migrating reflogs"
++msgstr ""
++
+ msgid "skip move/rename errors"
+ msgstr ""
+ 

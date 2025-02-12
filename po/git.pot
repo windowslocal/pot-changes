@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-02-12 18:57+0000\n"
+"POT-Creation-Date: 2025-02-12 23:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -818,7 +818,7 @@ msgstr ""
 #: builtin/notes.c:598 builtin/notes.c:610 builtin/notes.c:696
 #: builtin/notes.c:773 builtin/notes.c:927 builtin/notes.c:1090
 #: builtin/notes.c:1114 builtin/prune-packed.c:29 builtin/receive-pack.c:2531
-#: builtin/refs.c:40 builtin/tag.c:640 t/helper/test-pkt-line.c:89
+#: builtin/refs.c:43 builtin/tag.c:640 t/helper/test-pkt-line.c:89
 msgid "too many arguments"
 msgstr ""
 
@@ -2121,7 +2121,7 @@ msgstr ""
 
 #: builtin/add.c:252 builtin/check-ignore.c:23 builtin/commit.c:1528
 #: builtin/count-objects.c:103 builtin/fsck.c:944 builtin/log.c:2655
-#: builtin/mv.c:192 builtin/read-tree.c:128 builtin/refs.c:78
+#: builtin/mv.c:192 builtin/read-tree.c:128 builtin/refs.c:81
 msgid "be verbose"
 msgstr ""
 
@@ -5128,7 +5128,7 @@ msgstr ""
 msgid "You must specify a repository to clone."
 msgstr ""
 
-#: builtin/clone.c:1014 builtin/init-db.c:174 builtin/refs.c:46
+#: builtin/clone.c:1014 builtin/init-db.c:174 builtin/refs.c:49
 #: builtin/submodule--helper.c:1908 builtin/submodule--helper.c:2870
 #: builtin/submodule--helper.c:3487 setup.c:2480 setup.c:2538
 #, c-format
@@ -12768,20 +12768,24 @@ msgstr ""
 msgid "perform a non-destructive dry-run"
 msgstr ""
 
-#: builtin/refs.c:42
+#: builtin/refs.c:34
+msgid "skip migrating reflogs"
+msgstr ""
+
+#: builtin/refs.c:45
 msgid "missing --ref-format=<format>"
 msgstr ""
 
-#: builtin/refs.c:51
+#: builtin/refs.c:54
 #, c-format
 msgid "repository already uses '%s' format"
 msgstr ""
 
-#: builtin/refs.c:79
+#: builtin/refs.c:82
 msgid "enable strict checking"
 msgstr ""
 
-#: builtin/refs.c:86
+#: builtin/refs.c:89
 msgid "'git refs verify' takes no arguments"
 msgstr ""
 
@@ -23564,17 +23568,17 @@ msgstr ""
 msgid "could not delete references: %s"
 msgstr ""
 
-#: refs.c:3056
+#: refs.c:3058
 #, c-format
 msgid "Finished dry-run migration of refs, the result can be found at '%s'\n"
 msgstr ""
 
-#: refs.c:3091
+#: refs.c:3093
 #, c-format
 msgid "could not remove temporary migration directory '%s'"
 msgstr ""
 
-#: refs.c:3115
+#: refs.c:3117
 #, c-format
 msgid "migrated refs can be found at '%s'"
 msgstr ""
