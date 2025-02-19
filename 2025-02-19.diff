@@ -1,0 +1,81 @@
+
+
+#################### Wed, 19 Feb 2025 18:57:28 +0000 ####################
+
+--- po/git.pot.old	2025-02-19 18:57:28.559541478 +0000
++++ po/git.pot.new	2025-02-19 18:57:28.637541634 +0000
+@@ -2095,6 +2095,9 @@
+ msgid "-C requires a <directory>"
+ msgstr ""
+ 
++msgid "-G requires a non-empty argument"
++msgstr ""
++
+ msgid "-L does not yet support diff formats besides -p and -s"
+ msgstr ""
+ 
+@@ -2104,6 +2107,9 @@
+ msgid "-NUM"
+ msgstr ""
+ 
++msgid "-S requires a non-empty argument"
++msgstr ""
++
+ #, c-format
+ msgid "-c expects a configuration string\n"
+ msgstr ""
+@@ -14605,10 +14611,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "key '%s' of pattern had no '*'"
+-msgstr ""
+-
+-#, c-format
+ msgid "key does not contain a section: %s"
+ msgstr ""
+ 
+@@ -14994,10 +14996,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "merging cannot continue; got unclean result of %d"
+-msgstr ""
+-
+-#, c-format
+ msgid "merging of trees %s and %s failed"
+ msgstr ""
+ 
+@@ -16620,6 +16618,10 @@
+ msgid "pattern"
+ msgstr ""
+ 
++#, c-format
++msgid "pattern '%s' has no '*'"
++msgstr ""
++
+ msgid "percentage by which creation is weighted"
+ msgstr ""
+ 
+@@ -17629,6 +17631,10 @@
+ msgid "replacement %s not found for %s"
+ msgstr ""
+ 
++#, c-format
++msgid "replacement '%s' has no '*'"
++msgstr ""
++
+ msgid "replay onto given commit"
+ msgstr ""
+ 
+@@ -20903,10 +20909,6 @@
+ msgstr ""
+ 
+ #, c-format
+-msgid "value '%s' of pattern has no '*'"
+-msgstr ""
+-
+-#, c-format
+ msgid "value expected %s="
+ msgstr ""
+ 
