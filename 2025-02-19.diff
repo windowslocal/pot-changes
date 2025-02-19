@@ -1,0 +1,66 @@
+
+
+#################### Wed, 19 Feb 2025 02:09:46 +0000 ####################
+
+--- po/git.pot.old	2025-02-19 02:09:46.293873903 +0000
++++ po/git.pot.new	2025-02-19 02:09:46.370875050 +0000
+@@ -3522,6 +3522,9 @@
+ msgid "Download from a remote Git repository via HTTP"
+ msgstr ""
+ 
++msgid "Download missing objects in a partial clone"
++msgstr ""
++
+ msgid "Download objects and refs from another repository"
+ msgstr ""
+ 
+@@ -4537,6 +4540,9 @@
+ "'%s'\n"
+ msgstr ""
+ 
++msgid "Minimum number of objects to request at a time"
++msgstr ""
++
+ #, c-format
+ msgid "Missing ')' at the end of pathspec magic in '%s'"
+ msgstr ""
+@@ -5364,6 +5370,9 @@
+ msgid "Restore working tree files"
+ msgstr ""
+ 
++msgid "Restrict the missing objects to the current sparse-checkout"
++msgstr ""
++
+ msgid "Restricted login shell for Git-only SSH access"
+ msgstr ""
+ 
+@@ -12581,6 +12590,9 @@
+ msgid "git archive: protocol error"
+ msgstr ""
+ 
++msgid "git backfill [--min-batch-size=<n>] [--[no-]sparse]"
++msgstr ""
++
+ msgid "git bisect (good|bad) [<rev>...]"
+ msgstr ""
+ 
+@@ -16842,6 +16854,9 @@
+ msgid "print tag contents"
+ msgstr ""
+ 
++msgid "problem loading sparse-checkout"
++msgstr ""
++
+ #, c-format
+ msgid ""
+ "problem with core.sharedRepository filemode value (0%.3o).\n"
+@@ -17046,6 +17061,9 @@
+ msgid "read .gitattributes in working directory"
+ msgstr ""
+ 
++msgid "read a pattern list over stdin"
++msgstr ""
++
+ msgid "read additional mailmap entries from blob"
+ msgstr ""
+ 
