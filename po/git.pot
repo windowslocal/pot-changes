@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-02-19 02:08+0000\n"
+"POT-Creation-Date: 2025-02-20 17:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -12764,7 +12764,7 @@ msgid "perform a non-destructive dry-run"
 msgstr ""
 
 #: builtin/refs.c:34
-msgid "skip migrating reflogs"
+msgid "drop reflogs entirely during the migration"
 msgstr ""
 
 #: builtin/refs.c:45
