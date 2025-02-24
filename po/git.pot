@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-02-20 17:57+0000\n"
+"POT-Creation-Date: 2025-02-24 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -839,7 +839,7 @@ msgstr ""
 #: builtin/clean.c:968 builtin/clone.c:1024 builtin/clone.c:1029
 #: builtin/commit.c:365 builtin/commit.c:368 builtin/commit.c:1246
 #: builtin/commit.c:1302 builtin/commit.c:1319 builtin/describe.c:626
-#: builtin/diff-tree.c:167 builtin/difftool.c:772 builtin/fast-export.c:1276
+#: builtin/diff-tree.c:167 builtin/difftool.c:772 builtin/fast-export.c:1365
 #: builtin/fetch.c:2436 builtin/fetch.c:2463 builtin/fetch.c:2477
 #: builtin/fetch.c:2482 builtin/help.c:621 builtin/index-pack.c:2018
 #: builtin/init-db.c:116 builtin/log.c:2252 builtin/log.c:2254
@@ -1609,8 +1609,8 @@ msgstr ""
 
 #: archive.c:653 archive.c:659 builtin/blame.c:911 builtin/blame.c:915
 #: builtin/blame.c:916 builtin/commit-tree.c:111 builtin/config.c:71
-#: builtin/fast-export.c:1212 builtin/fast-export.c:1214
-#: builtin/fast-export.c:1218 builtin/gc.c:1659 builtin/gc.c:1725
+#: builtin/fast-export.c:1297 builtin/fast-export.c:1299
+#: builtin/fast-export.c:1303 builtin/gc.c:1659 builtin/gc.c:1725
 #: builtin/grep.c:999 builtin/hash-object.c:116 builtin/ls-files.c:616
 #: builtin/ls-files.c:619 builtin/notes.c:489 builtin/notes.c:668
 #: builtin/read-tree.c:123 parse-options.h:332
@@ -1678,7 +1678,7 @@ msgstr ""
 
 #: archive.c:685 builtin/add.c:421 builtin/add.c:453 builtin/checkout.c:1923
 #: builtin/clone.c:1260 builtin/clone.c:1263 builtin/commit.c:377
-#: builtin/fast-export.c:1261 builtin/index-pack.c:2012 builtin/log.c:2426
+#: builtin/fast-export.c:1350 builtin/index-pack.c:2012 builtin/log.c:2426
 #: builtin/reset.c:397 builtin/reset.c:458 builtin/rm.c:294
 #: builtin/stash.c:1827 builtin/worktree.c:835 builtin/worktree.c:1079
 #: fetch-pack.c:349 http-fetch.c:157 http-fetch.c:166 revision.c:3173
@@ -1690,7 +1690,7 @@ msgstr ""
 msgid "Unexpected option --output"
 msgstr ""
 
-#: archive.c:696 t/unit-tests/unit-test.c:48
+#: archive.c:696 t/unit-tests/unit-test.c:50
 #, c-format
 msgid "extra command line parameter '%s'"
 msgstr ""
@@ -3698,8 +3698,9 @@ msgid ""
 msgstr ""
 
 #: builtin/bugreport.c:112 builtin/commit.c:1546 builtin/commit.c:1550
-#: builtin/commit.c:1717 builtin/fast-export.c:1203 builtin/fast-export.c:1206
-#: builtin/fast-export.c:1209 builtin/rebase.c:1204 parse-options.h:608
+#: builtin/commit.c:1717 builtin/fast-export.c:1285 builtin/fast-export.c:1288
+#: builtin/fast-export.c:1291 builtin/fast-export.c:1294 builtin/rebase.c:1204
+#: parse-options.h:608
 msgid "mode"
 msgstr ""
 
@@ -6825,115 +6826,119 @@ msgstr ""
 msgid "git fast-export [<rev-list-opts>]"
 msgstr ""
 
-#: builtin/fast-export.c:867
+#: builtin/fast-export.c:948
 msgid "Error: Cannot export nested tags unless --mark-tags is specified."
 msgstr ""
 
-#: builtin/fast-export.c:1179
+#: builtin/fast-export.c:1260
 msgid "--anonymize-map token cannot be empty"
 msgstr ""
 
-#: builtin/fast-export.c:1202
+#: builtin/fast-export.c:1284
 msgid "show progress after <n> objects"
 msgstr ""
 
-#: builtin/fast-export.c:1204
+#: builtin/fast-export.c:1286
 msgid "select handling of signed tags"
 msgstr ""
 
-#: builtin/fast-export.c:1207
+#: builtin/fast-export.c:1289
+msgid "select handling of signed commits"
+msgstr ""
+
+#: builtin/fast-export.c:1292
 msgid "select handling of tags that tag filtered objects"
 msgstr ""
 
-#: builtin/fast-export.c:1210
+#: builtin/fast-export.c:1295
 msgid "select handling of commit messages in an alternate encoding"
 msgstr ""
 
-#: builtin/fast-export.c:1213
+#: builtin/fast-export.c:1298
 msgid "dump marks to this file"
 msgstr ""
 
-#: builtin/fast-export.c:1215
+#: builtin/fast-export.c:1300
 msgid "import marks from this file"
 msgstr ""
 
-#: builtin/fast-export.c:1219
+#: builtin/fast-export.c:1304
 msgid "import marks from this file if it exists"
 msgstr ""
 
-#: builtin/fast-export.c:1221
+#: builtin/fast-export.c:1306
 msgid "fake a tagger when tags lack one"
 msgstr ""
 
-#: builtin/fast-export.c:1223
+#: builtin/fast-export.c:1308
 msgid "output full tree for each commit"
 msgstr ""
 
-#: builtin/fast-export.c:1225
+#: builtin/fast-export.c:1310
 msgid "use the done feature to terminate the stream"
 msgstr ""
 
-#: builtin/fast-export.c:1226
+#: builtin/fast-export.c:1311
 msgid "skip output of blob data"
 msgstr ""
 
-#: builtin/fast-export.c:1227 builtin/log.c:2130
+#: builtin/fast-export.c:1312 builtin/log.c:2130
 msgid "refspec"
 msgstr ""
 
-#: builtin/fast-export.c:1228
+#: builtin/fast-export.c:1313
 msgid "apply refspec to exported refs"
 msgstr ""
 
-#: builtin/fast-export.c:1229
+#: builtin/fast-export.c:1314
 msgid "anonymize output"
 msgstr ""
 
-#: builtin/fast-export.c:1230
+#: builtin/fast-export.c:1315
 msgid "from:to"
 msgstr ""
 
-#: builtin/fast-export.c:1231
+#: builtin/fast-export.c:1316
 msgid "convert <from> to <to> in anonymized output"
 msgstr ""
 
-#: builtin/fast-export.c:1234
+#: builtin/fast-export.c:1319
 msgid "reference parents which are not in fast-export stream by object id"
 msgstr ""
 
-#: builtin/fast-export.c:1236
+#: builtin/fast-export.c:1321
 msgid "show original object ids of blobs/commits"
 msgstr ""
 
-#: builtin/fast-export.c:1238
+#: builtin/fast-export.c:1323
 msgid "label tags with mark ids"
 msgstr ""
 
-#: builtin/fast-import.c:3138
+#: builtin/fast-import.c:3161
 #, c-format
 msgid "Missing from marks for submodule '%s'"
 msgstr ""
 
-#: builtin/fast-import.c:3140
+#: builtin/fast-import.c:3163
 #, c-format
 msgid "Missing to marks for submodule '%s'"
 msgstr ""
 
-#: builtin/fast-import.c:3268
+#: builtin/fast-import.c:3291
 #, c-format
 msgid "Expected 'mark' command, got %s"
 msgstr ""
 
-#: builtin/fast-import.c:3273
+#: builtin/fast-import.c:3296
 #, c-format
 msgid "Expected 'to' command, got %s"
 msgstr ""
 
-#: builtin/fast-import.c:3369
+#: builtin/fast-import.c:3392
 msgid "Expected format name:filename for submodule rewrite option"
 msgstr ""
 
-#: builtin/fast-import.c:3429
+#: builtin/fast-import.c:3452
 #, c-format
 msgid "feature '%s' forbidden in input without --allow-unsafe-features"
 msgstr ""
@@ -18069,12 +18074,12 @@ msgstr ""
 msgid "[GLE %ld] unable to get protocol information for '%ls'"
 msgstr ""
 
-#: compat/mingw.c:2845
+#: compat/mingw.c:2847
 #, c-format
 msgid "failed to copy SID (%ld)"
 msgstr ""
 
-#: compat/mingw.c:2931
+#: compat/mingw.c:2933
 #, c-format
 msgid "failed to get owner for '%s' (%ld)"
 msgstr ""
@@ -20497,30 +20502,30 @@ msgstr ""
 msgid "Unknown value for http.proactiveauth"
 msgstr ""
 
-#: http.c:1287
+#: http.c:1286
 #, c-format
 msgid "Unsupported SSL backend '%s'. Supported SSL backends:"
 msgstr ""
 
-#: http.c:1294
+#: http.c:1293
 #, c-format
 msgid "Could not set SSL backend to '%s': cURL was built without SSL backends"
 msgstr ""
 
-#: http.c:1298
+#: http.c:1297
 #, c-format
 msgid "Could not set SSL backend to '%s': already set"
 msgstr ""
 
-#: http.c:1483
+#: http.c:1482
 msgid "refusing to read cookies from http.cookiefile '-'"
 msgstr ""
 
-#: http.c:1489
+#: http.c:1488
 msgid "ignoring http.savecookies for empty http.cookiefile"
 msgstr ""
 
-#: http.c:2194
+#: http.c:2193
 #, c-format
 msgid ""
 "unable to update url base from redirection:\n"
@@ -26151,27 +26156,27 @@ msgstr ""
 msgid "command token to send to the server"
 msgstr ""
 
-#: t/unit-tests/unit-test.c:7
+#: t/unit-tests/unit-test.c:9
 msgid "unit-test [<options>]"
 msgstr ""
 
-#: t/unit-tests/unit-test.c:18
+#: t/unit-tests/unit-test.c:20
 msgid "immediately exit upon the first failed test"
 msgstr ""
 
-#: t/unit-tests/unit-test.c:19
+#: t/unit-tests/unit-test.c:21
 msgid "suite[::test]"
 msgstr ""
 
-#: t/unit-tests/unit-test.c:20
+#: t/unit-tests/unit-test.c:22
 msgid "run only test suite or individual test <suite[::test]>"
 msgstr ""
 
-#: t/unit-tests/unit-test.c:21
+#: t/unit-tests/unit-test.c:23
 msgid "suite"
 msgstr ""
 
-#: t/unit-tests/unit-test.c:22
+#: t/unit-tests/unit-test.c:24
 msgid "exclude test suite <suite>"
 msgstr ""
 

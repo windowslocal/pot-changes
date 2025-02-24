@@ -1,0 +1,16 @@
+
+
+#################### Mon, 24 Feb 2025 18:57:30 +0000 ####################
+
+--- po/git.pot.old	2025-02-24 18:57:30.155496075 +0000
++++ po/git.pot.new	2025-02-24 18:57:30.233496207 +0000
+@@ -18089,6 +18089,9 @@
+ msgid "select handling of commit messages in an alternate encoding"
+ msgstr ""
+ 
++msgid "select handling of signed commits"
++msgstr ""
++
+ msgid "select handling of signed tags"
+ msgstr ""
+ 
