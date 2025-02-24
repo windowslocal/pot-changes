@@ -14,3 +14,30 @@
  msgid "select handling of signed tags"
  msgstr ""
  
+
+
+#################### Mon, 24 Feb 2025 21:57:25 +0000 ####################
+
+--- po/git.pot.old	2025-02-24 21:57:25.376833661 +0000
++++ po/git.pot.new	2025-02-24 21:57:25.454833643 +0000
+@@ -17546,6 +17546,10 @@
+ msgid "remote-helper doesn't support push; refspec needed"
+ msgstr ""
+ 
++#, c-format
++msgid "remote-object-info command input overflow (no more than %d objects are allowed)"
++msgstr ""
++
+ msgid "remote-object-info requires objects"
+ msgstr ""
+ 
+@@ -18746,6 +18750,9 @@
+ msgid "spend extra cycles to find better match"
+ msgstr ""
+ 
++msgid "split remote-object-info command"
++msgstr ""
++
+ #, c-format
+ msgid "splitIndex.maxPercentChange value '%d' should be between 0 and 100"
+ msgstr ""
