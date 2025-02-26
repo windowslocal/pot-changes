@@ -1,0 +1,28 @@
+
+
+#################### Wed, 26 Feb 2025 18:57:26 +0000 ####################
+
+--- po/git.pot.old	2025-02-26 18:57:26.669448098 +0000
++++ po/git.pot.new	2025-02-26 18:57:26.746447738 +0000
+@@ -19802,6 +19802,10 @@
+ msgid "unable to open %s: %s\n"
+ msgstr ""
+ 
++#, c-format
++msgid "unable to open '%s'"
++msgstr ""
++
+ msgid "unable to open commit-graph chain file"
+ msgstr ""
+ 
+@@ -19885,6 +19889,10 @@
+ msgid "unable to read %s"
+ msgstr ""
+ 
++#, c-format
++msgid "unable to read '%s'"
++msgstr ""
++
+ msgid "unable to read alternates file"
+ msgstr ""
+ 

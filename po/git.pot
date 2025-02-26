@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Git\n"
 "Report-Msgid-Bugs-To: Git Mailing List <git@vger.kernel.org>\n"
-"POT-Creation-Date: 2025-02-25 23:57+0000\n"
+"POT-Creation-Date: 2025-02-26 18:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: make by the Makefile\n"
 "Language-Team: Git Mailing List <git@vger.kernel.org>\n"
@@ -1753,7 +1753,7 @@ msgstr ""
 msgid "bad --attr-source or GIT_ATTR_SOURCE"
 msgstr ""
 
-#: attr.c:1259 read-cache.c:803 refs/packed-backend.c:2058
+#: attr.c:1259 read-cache.c:803 refs/packed-backend.c:2072
 #, c-format
 msgid "unable to stat '%s'"
 msgstr ""
@@ -1761,8 +1761,7 @@ msgstr ""
 #: bisect.c:165 builtin/cat-file.c:247 builtin/cat-file.c:511
 #: builtin/index-pack.c:785 builtin/notes.c:727 builtin/pack-objects.c:342
 #: builtin/pack-objects.c:403 builtin/pack-objects.c:511 combine-diff.c:330
-#: object-file.c:2018 object-file.c:2024 refs/packed-backend.c:2092
-#: rerere.c:1006
+#: object-file.c:2018 object-file.c:2024 rerere.c:1006
 #, c-format
 msgid "unable to read %s"
 msgstr ""
@@ -23619,6 +23618,16 @@ msgstr ""
 
 #: refs/files-backend.c:3827
 msgid "Checking references consistency"
+msgstr ""
+
+#: refs/packed-backend.c:2069
+#, c-format
+msgid "unable to open '%s'"
+msgstr ""
+
+#: refs/packed-backend.c:2084
+#, c-format
+msgid "unable to read '%s'"
 msgstr ""
 
 #: refs/reftable-backend.c:691
