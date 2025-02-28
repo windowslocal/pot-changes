@@ -1,0 +1,16 @@
+
+
+#################### Fri, 28 Feb 2025 03:16:36 +0000 ####################
+
+--- po/git.pot.old	2025-02-28 03:16:36.765380901 +0000
++++ po/git.pot.new	2025-02-28 03:16:36.843381157 +0000
+@@ -10994,6 +10994,9 @@
+ "Connecting to %s (port %s) ... "
+ msgstr ""
+ 
++msgid "drop reflogs entirely during the migration"
++msgstr ""
++
+ #, c-format
+ msgid "dropping %s %s -- patch contents already upstream\n"
+ msgstr ""
